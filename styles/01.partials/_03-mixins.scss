@@ -1,0 +1,73 @@
+//container :
+@mixin container($max-width: 1260px) {
+  display: grid;
+  grid-template-columns:
+    minmax(5vw, 1fr) repeat(12, minmax(11px, $max-width / 12))
+    minmax(5vw, 1fr);
+}
+
+// responsive  :
+@mixin ipad() {
+  @media screen and (min-width: $ipad) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin ipadPro() {
+  @media screen and (min-width: $ipadPro) and (max-width: 1279px) {
+    @content;
+  }
+}
+
+@mixin laptop13() {
+  @media screen and (min-width: $laptop13) and (max-width: 1439px) {
+    @content;
+  }
+}
+
+@mixin laptop() {
+  @media screen and (min-width: $laptop) and (max-width: 1919px) {
+    @content;
+  }
+}
+
+@mixin pc() {
+  @media screen and (min-width: $pc) and (max-width: 3439px) {
+    @content;
+  }
+}
+
+@mixin bigPc() {
+  @media screen and (min-width: $bigPc) {
+    @content;
+  }
+}
+
+//toggle for theme switcher :
+@mixin crater($top, $left, $size) {
+  content: "";
+  position: absolute;
+  top: $top;
+  left: $left;
+  width: $size;
+  height: $size;
+  background-color: #efeeda;
+  border-radius: 100%;
+  border: 4px solid #dee1c5;
+}
+
+@mixin cloudBubble($top, $right, $width, $height, $deg) {
+  content: "";
+  display: block;
+  position: relative;
+  top: $top;
+  right: $right;
+  width: $width;
+  height: $height;
+  border: 8px solid #d4d4d2;
+  border-radius: 100%;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  transform: rotateZ($deg);
+  background-color: #fff;
+}

@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&display=swap");
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+\*::before,
+\*::after {
+  box-sizing: inherit;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  cursor: noen;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .globalheader {
+  margin-top: 0px;
+  padding: 10px 0px 10px;
+  border-bottom: 0.5px solid rgb(128, 128, 128);
+  width: 1210px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .globalheader .logo {
+  display: flex;
+}
+header .globalheader .logo .last-name {
+  display: inline-block;
+  padding-left: 10px;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: #ffffff;
+}
+header .globalheader .logo .last-name span {
+  font-weight: 100;
+  font-size: 30px;
+  color: #ff9142;
+  transform: scaleX(2.2);
+}
+header .globalheader .logo .last-name:hover {
+  cursor: pointer;
+  color: #ff9142;
+}
+header .globalheader .menu ul {
+  display: flex;
+  column-gap: 60px;
+}
+header .globalheader .menu ul li a {
+  font-family: "Rubik", sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  color: #ffffff;
+}
+header .globalheader .menu ul li a:hover {
+  border-bottom: 2px solid #ff9142;
+  color: gray;
+  cursor: pointer;
+}
+header .globalheader .menu ul li .contact {
+  padding: 0.3125rem 1.25rem;
+  border-radius: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.285);
+  color: rgb(229, 229, 229);
+  cursor: pointer;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.755);
+}
+header .globalheader .menu ul li .contact:hover {
+  padding: 0.3125rem 1.25rem;
+  border-radius: 20px;
+  border: 1px solid #ff9142;
+  color: #ff9142;
+  cursor: pointer;
+}
+header .globalheader .theme-switcher label {
+  width: 28px;
+  height: 28px;
+  background-color: #ff9142;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .globalheader .theme-switcher input {
+  position: absolute;
+  opacity: 0;
+}
+header .globalheader .theme-switcher .moon {
+  font-size: 19px;
+  color: #ffffff;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.504));
+  transition: 0.8s ease;
+  transition-delay: 0.3s;
+}
+header .globalheader .theme-switcher .moon:hover {
+  color: #080d1b;
+}
+header .globalheader .theme-switcher input:checked ~ .moon {
+  transition-delay: 0s;
+  transform: rotate(360deg) scale(0);
+}
+header .globalheader .theme-switcher .sun {
+  position: absolute;
+  font-size: 19px;
+  color: #080d1b;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.6));
+  transform: scale(0);
+  transition: 0.8s ease;
+}
+header .globalheader .theme-switcher .sun:hover {
+  color: #ff9142;
+}
+header .globalheader .theme-switcher input:checked ~ .sun {
+  transition-delay: 0.3s;
+  transform: scale(1) rotate(360deg);
+}
+header .globalheader .theme-switcher .toggle {
+  position: absolute;
+  display: block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1), inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px -4px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  transition: 0.8s;
+}
+header .globalheader .theme-switcher input:checked ~ .toggle {
+  background: #ffffff;
+}
+
+body {
+  background: rgb(7, 15, 34);
+  background: radial-gradient(circle, rgb(7, 15, 34) 0%, rgb(0, 0, 0) 100%);
+  min-height: 100vh;
+  transition: all 0.8s ease-in-out;
+}
+body .overlay {
+  position: fixed;
+  top: 0;
+  height: 50vh;
+  width: 100vw;
+  background-color: #ff9142;
+  transition: transform 1s ease-in-out;
+  z-index: 1;
+}
+body #topOverlay {
+  left: 0;
+  transform-origin: top left;
+  transform: translateY(0) translateX(0);
+}
+body #bottomOverlay {
+  left: 0;
+  top: 50vh;
+  transform-origin: top left;
+  transform: translateY(0) translateX(0);
+}
+body .social {
+  position: fixed;
+  top: 335px;
+  left: 128px;
+  opacity: 0.8;
+}
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  body .social {
+    left: 0px;
+  }
+}
+@media screen and (min-width: 1920px) and (max-width: 3439px) {
+  body .social {
+    left: 234px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  body .social {
+    left: 918px;
+  }
+}
+body .social .image {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+body .social .image .mail {
+  font-size: 20px;
+  color: #ff9142;
+}
+body .social .image img {
+  opacity: 1;
+  height: auto;
+  width: 18px;
+}
+body .social .image a {
+  padding-bottom: 10px;
+}
+body .social .image a:hover {
+  transform: scale(1.2);
+}
+body #profile {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body #profile .middle-text {
+  transform: translateY(-40px);
+}
+body #profile .middle-text h1 {
+  text-transform: uppercase;
+  font-size: 85px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 80px;
+}
+body #profile .middle-text h1 span {
+  color: #ff9142;
+  font-style: italic;
+  letter-spacing: 3px;
+}
+body #profile .middle-text p {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: -1px;
+  padding: 10px 0 0;
+  margin-bottom: 40px;
+}
+body #profile .middle-text p span {
+  font-weight: 100;
+  color: #ffffff;
+  font-style: italic;
+}
+body #profile .middle-text p .FS {
+  font-style: normal;
+  padding-top: 30px;
+  font-size: 24px;
+  font-weight: 300;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -1px;
+  text-align: end;
+  color: #ff9142;
+  text-transform: uppercase;
+}
+body #profile .middle-text .btns .download {
+  font-family: "Rubik", sans-serif;
+  font-weight: 100;
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.344);
+  padding: 7px 15px;
+  border-radius: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.347);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.283);
+}
+body #profile .middle-text .btns .download:hover {
+  transition: 0.3s ease;
+  color: #ff9142;
+  border: 1px solid #ff9142;
+}
+body .arrow-section {
+  position: relative;
+}
+body .arrow-section .arrow {
+  position: absolute;
+  bottom: 30px;
+  right: 50%;
+  color: #ffffff;
+  font-size: 40px;
+}
+body .arrow-section .arrow:hover {
+  cursor: pointer;
+  color: #ff9142;
+  transform: scale(1.2);
+}
+
+.work-section {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(5vw, 1fr) repeat(12, minmax(11px, 105px)) minmax(5vw, 1fr);
+}
+.work-section .work {
+  grid-column: 4/7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.work-section .work .work-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+}
+.work-section .work h4 {
+  color: white;
+}
+.work-section .work p {
+  color: white;
+}

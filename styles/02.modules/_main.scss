@@ -1,0 +1,156 @@
+body {
+  // background-color: $darkBlue;
+  background: rgb(7, 15, 34);
+  background: radial-gradient(
+    circle,
+    rgba(7, 15, 34, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  min-height: 100vh;
+  transition: all 0.8s ease-in-out;
+  .overlay {
+    position: fixed;
+    top: 0;
+    height: 50vh;
+    width: 100vw;
+    background-color: #ff9142;
+    transition: transform 1s ease-in-out;
+    z-index: 1;
+  }
+
+  #topOverlay {
+    left: 0;
+    transform-origin: top left;
+    transform: translateY(0) translateX(0);
+  }
+
+  #bottomOverlay {
+    left: 0;
+    top: 50vh;
+    transform-origin: top left;
+    transform: translateY(0) translateX(0);
+  }
+
+  .social {
+    position: fixed;
+    top: 335px;
+    left: 128px;
+    opacity: 0.8;
+    @include laptop13 {
+      left: 0px;
+    }
+    @include pc {
+      left: 234px;
+    }
+    @include bigPc {
+      left: 918px;
+    }
+    .image {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: center;
+      .mail {
+        font-size: 20px;
+        color: $orange;
+      }
+      img {
+        opacity: 1;
+        height: auto;
+        width: 18px;
+      }
+      a {
+        padding-bottom: 10px;
+      }
+      a:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  //title , profile
+  #profile {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .middle-text {
+      transform: translateY(-40px);
+      h1 {
+        text-transform: uppercase;
+        font-size: 85px;
+        font-family: $fontOswald;
+        font-weight: 600;
+        color: $white;
+        line-height: 80px;
+        span {
+          color: $orange;
+          font-style: italic;
+          letter-spacing: 3px;
+        }
+      }
+
+      p {
+        text-transform: uppercase;
+        font-size: 25px;
+        font-family: $fontInter;
+        font-weight: 400;
+        color: $white;
+        letter-spacing: -1px;
+        padding: 10px 0 0;
+        margin-bottom: 40px;
+        span {
+          font-weight: 100;
+          color: $white;
+          font-style: italic;
+        }
+        .FS {
+          font-style: normal;
+          padding-top: 30px;
+          font-size: 24px;
+          font-weight: 300;
+          font-family: $fontInter;
+          letter-spacing: -1px;
+          text-align: end;
+          color: $orange;
+          text-transform: uppercase;
+        }
+      }
+      .btns {
+        .download {
+          font-family: $fontRubik;
+          font-weight: 100;
+          font-size: 17px;
+          color: rgba(255, 255, 255, 0.344);
+          padding: 7px 15px;
+          border-radius: 20px;
+          border: 1px solid rgba(128, 128, 128, 0.347);
+          box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.283);
+        }
+        .download:hover {
+          transition: 0.3s ease;
+          color: $orange;
+          border: 1px solid $orange;
+        }
+      }
+    }
+  }
+
+  .arrow-section {
+    position: relative;
+    .arrow {
+      position: absolute;
+      bottom: 30px;
+      right: 50%;
+      color: $white;
+      font-size: 40px;
+    }
+    .arrow:hover {
+      cursor: pointer;
+      color: $orange;
+      transform: scale(1.2);
+    }
+  }
+}
