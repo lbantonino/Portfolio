@@ -1,156 +1,170 @@
 body {
-  // background-color: $darkBlue;
-  background: rgb(7, 15, 34);
-  background: radial-gradient(
-    circle,
-    rgba(7, 15, 34, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  background-color: $darkBlue;
   min-height: 100vh;
-  transition: all 0.8s ease-in-out;
-  .overlay {
-    position: fixed;
-    top: 0;
-    height: 50vh;
-    width: 100vw;
-    background-color: #ff9142;
-    transition: transform 1s ease-in-out;
-    z-index: 1;
-  }
+}
 
-  #topOverlay {
-    left: 0;
-    transform-origin: top left;
-    transform: translateY(0) translateX(0);
-  }
+// Effects Overlay
+.overlay {
+  position: fixed;
+  top: 0;
+  height: 50vh;
+  width: 100vw;
+  background-color: $lightBlue;
+  transition: transform 1s ease-in-out;
+  z-index: 1;
+}
 
-  #bottomOverlay {
-    left: 0;
-    top: 50vh;
-    transform-origin: top left;
-    transform: translateY(0) translateX(0);
-  }
+#topOverlay {
+  left: 0;
+  transform-origin: top left;
+  transform: translateY(0) translateX(0);
+}
 
-  .social {
-    position: fixed;
-    top: 335px;
-    left: 128px;
-    opacity: 0.8;
-    @include laptop13 {
-      left: 0px;
+#bottomOverlay {
+  left: 0;
+  top: 50vh;
+  transform-origin: top left;
+  transform: translateY(0) translateX(0);
+}
+
+main {
+  .nomJob {
+    @include gridContainer1;
+    grid-template-rows: 35vh 35vh;
+    .el1 {
+      grid-column: 1 / 1;
+      border-left: 0.5px solid $bluegrid;
+      border-right: 0.5px solid $bluegrid;
+      border-bottom: 0.5px solid $bluegrid;
     }
-    @include pc {
-      left: 234px;
+    .el2 {
+      grid-column: 4 / 4;
+      border-left: 0.5px solid $bluegrid;
+      border-right: 0.5px solid $bluegrid;
+      border-bottom: 0.5px solid $bluegrid;
+      overflow: hidden;
+      position: relative;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: contain;
+        transform: scale(4);
+      }
     }
-    @include bigPc {
-      left: 918px;
+    .el3 {
+      grid-column: 5/ 5;
+      border-left: 0.5px solid $bluegrid;
+      border-right: 0.5px solid $bluegrid;
+      border-bottom: 0.5px solid $bluegrid;
     }
-    .image {
+    .el4 {
+      grid-column: 1 / 1;
+      grid-row: 2 / 2;
+      border-left: 0.5px solid $bluegrid;
+      border-right: 0.5px solid $bluegrid;
+      border-bottom: 0.5px solid $bluegrid;
+    }
+    .el5 {
+      grid-column: 2 / 4;
+      grid-row: 2 / 2;
+      border-left: 0.5px solid $bluegrid;
+      border-right: 0.5px solid $bluegrid;
+      border-bottom: 0.5px solid $bluegrid;
+      overflow: hidden;
+      position: relative;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: contain;
+        transform: scale(2);
+      }
+    }
+    .social {
+      grid-column: 4/ 4;
+      grid-row: 2 / 2;
+      border-left: 0.5px solid $bluegrid;
+      border-right: 0.5px solid $bluegrid;
+      border-bottom: 0.5px solid $bluegrid;
+      ul {
+        margin-top: 130px;
+
+        li {
+          margin: 20px 0 35px 30px;
+          a {
+            padding: 10px 231px 10px 25px;
+            border: 1px solid $white;
+            border-radius: 30px;
+            color: $white;
+            font-size: 20px;
+            font-family: $fontSyne;
+            font-weight: 200;
+            position: relative;
+            &:hover {
+              color: $lightBlue;
+              border: 1px solid $lightBlue;
+            }
+            .arrow-link {
+              position: absolute;
+              right: 34px;
+              top: 13px;
+            }
+            .arrow-link:hover {
+              position: absolute;
+              right: 34px;
+              top: 13px;
+              transform: 1s ease;
+              transition-delay: 0, 2s ease;
+            }
+          }
+          .github {
+            padding: 10px 244px 10px 25px;
+          }
+        }
+      }
+    }
+    .el6 {
+      grid-column: 5 / 5;
+      grid-row: 2 / 2;
+      border-left: 0.5px solid $bluegrid;
+      border-right: 0.5px solid $bluegrid;
+      border-bottom: 0.5px solid $bluegrid;
+    }
+    .nomJob-global {
+      border-left: 0.5px solid $bluegrid;
+      border-right: 0.5px solid $bluegrid;
+      border-bottom: 0.5px solid $bluegrid;
+      grid-column: 2 / 4;
+      grid-row: 1 / 1;
       display: flex;
       flex-direction: column;
-      align-items: end;
       justify-content: center;
-      .mail {
-        font-size: 20px;
-        color: $orange;
-      }
-      img {
-        opacity: 1;
-        height: auto;
-        width: 18px;
-      }
-      a {
-        padding-bottom: 10px;
-      }
-      a:hover {
-        transform: scale(1.2);
-      }
-    }
-  }
+      align-items: start;
+      padding-left: 15px;
 
-  //title , profile
-  #profile {
-    position: relative;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    .middle-text {
-      transform: translateY(-40px);
       h1 {
-        text-transform: uppercase;
-        font-size: 85px;
         font-family: $fontOswald;
+        font-size: 85px;
         font-weight: 600;
+        letter-spacing: -2px;
         color: $white;
-        line-height: 80px;
+        margin: 0;
+        transform: translate(-5px, 0px);
         span {
-          color: $orange;
+          color: $lightBlue;
           font-style: italic;
-          letter-spacing: 3px;
+          letter-spacing: 12px;
         }
       }
-
-      p {
-        text-transform: uppercase;
-        font-size: 25px;
+      h2 {
         font-family: $fontInter;
-        font-weight: 400;
+        font-size: 70px;
+        font-weight: 200;
         color: $white;
-        letter-spacing: -1px;
-        padding: 10px 0 0;
-        margin-bottom: 40px;
-        span {
-          font-weight: 100;
-          color: $white;
-          font-style: italic;
-        }
-        .FS {
-          font-style: normal;
-          padding-top: 30px;
-          font-size: 24px;
-          font-weight: 300;
-          font-family: $fontInter;
-          letter-spacing: -1px;
-          text-align: end;
-          color: $orange;
-          text-transform: uppercase;
-        }
+        letter-spacing: -8px;
+        transform: translate(0px, -35px);
       }
-      .btns {
-        .download {
-          font-family: $fontRubik;
-          font-weight: 100;
-          font-size: 17px;
-          color: rgba(255, 255, 255, 0.344);
-          padding: 7px 15px;
-          border-radius: 20px;
-          border: 1px solid rgba(128, 128, 128, 0.347);
-          box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.283);
-        }
-        .download:hover {
-          transition: 0.3s ease;
-          color: $orange;
-          border: 1px solid $orange;
-        }
-      }
-    }
-  }
-
-  .arrow-section {
-    position: relative;
-    .arrow {
-      position: absolute;
-      bottom: 30px;
-      right: 50%;
-      color: $white;
-      font-size: 40px;
-    }
-    .arrow:hover {
-      cursor: pointer;
-      color: $orange;
-      transform: scale(1.2);
     }
   }
 }

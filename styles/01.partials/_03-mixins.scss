@@ -6,6 +6,12 @@
     minmax(5vw, 1fr);
 }
 
+@mixin gridContainer1 {
+  display: grid;
+  grid-template-columns: 8.5% 1fr 1fr 1fr 8.5%;
+  // grid-template-rows: 80px;
+}
+
 // responsive  :
 @mixin ipad() {
   @media screen and (min-width: $ipad) and (max-width: 1023px) {
