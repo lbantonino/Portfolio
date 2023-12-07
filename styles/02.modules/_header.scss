@@ -43,10 +43,9 @@ header {
         letter-spacing: -1px;
         a {
           color: $white;
-
-          a:hover {
-            color: $lightBlue;
-          }
+        }
+        a:hover {
+          color: $lightBlue;
         }
       }
     }
