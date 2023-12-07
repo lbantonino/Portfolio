@@ -30,7 +30,7 @@ body {
 main {
   .nomJob {
     @include gridContainer1;
-    grid-template-rows: 35vh 35vh;
+    grid-template-rows: 35vh 20vh;
     .el1 {
       grid-column: 1 / 1;
       border-left: 0.5px solid $bluegrid;
@@ -88,16 +88,16 @@ main {
       border-right: 0.5px solid $bluegrid;
       border-bottom: 0.5px solid $bluegrid;
       ul {
-        margin-top: 130px;
+        margin-top: 35px;
 
         li {
           margin: 20px 0 35px 30px;
           a {
-            padding: 10px 231px 10px 25px;
+            padding: 7px 231px 7px 25px;
             border: 1px solid $white;
             border-radius: 30px;
             color: $white;
-            font-size: 20px;
+            font-size: 18px;
             font-family: $fontSyne;
             font-weight: 200;
             position: relative;
@@ -108,7 +108,7 @@ main {
             .arrow-link {
               position: absolute;
               right: 34px;
-              top: 13px;
+              top: 9px;
             }
             .arrow-link:hover {
               position: absolute;
@@ -119,7 +119,7 @@ main {
             }
           }
           .github {
-            padding: 10px 244px 10px 25px;
+            padding: 7px 244px 7px 25px;
           }
         }
       }

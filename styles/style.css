@@ -73,10 +73,6 @@ a {
   text-decoration: none;
 }
 
-* {
-  cursor: noen;
-}
-
 header .header-global {
   display: grid;
   grid-template-columns: 8.5% 1fr 1fr 1fr 8.5%;
@@ -123,6 +119,12 @@ header .header-global .name-logo h1 {
   color: #ffffff;
   letter-spacing: -1px;
 }
+header .header-global .name-logo h1 a {
+  color: #ffffff;
+}
+header .header-global .name-logo h1 a a:hover {
+  color: #0466c8;
+}
 header .header-global .menu {
   grid-column: 4/4;
   grid-row: 1/1;
@@ -140,12 +142,6 @@ header .header-global .menu ul li a {
   font-weight: 200;
   letter-spacing: -1px;
   color: #ffffff;
-}
-header .header-global .menu ul li li:hover {
-  cursor: pointer;
-  padding: 10px 15px;
-  border: 1px solid #0466c8;
-  color: #0466c8;
 }
 header .header-global .theme-switcher {
   display: flex;
@@ -242,7 +238,7 @@ body {
 main .nomJob {
   display: grid;
   grid-template-columns: 8.5% 1fr 1fr 1fr 8.5%;
-  grid-template-rows: 35vh 35vh;
+  grid-template-rows: 35vh 20vh;
 }
 main .nomJob .el1 {
   grid-column: 1/1;
@@ -302,17 +298,17 @@ main .nomJob .social {
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.118);
 }
 main .nomJob .social ul {
-  margin-top: 130px;
+  margin-top: 35px;
 }
 main .nomJob .social ul li {
   margin: 20px 0 35px 30px;
 }
 main .nomJob .social ul li a {
-  padding: 10px 231px 10px 25px;
+  padding: 7px 231px 7px 25px;
   border: 1px solid #ffffff;
   border-radius: 30px;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Syne", sans-serif;
   font-weight: 200;
   position: relative;
@@ -324,7 +320,7 @@ main .nomJob .social ul li a:hover {
 main .nomJob .social ul li a .arrow-link {
   position: absolute;
   right: 34px;
-  top: 13px;
+  top: 9px;
 }
 main .nomJob .social ul li a .arrow-link:hover {
   position: absolute;
@@ -334,7 +330,7 @@ main .nomJob .social ul li a .arrow-link:hover {
   transition-delay: 0, 2s ease;
 }
 main .nomJob .social ul li .github {
-  padding: 10px 244px 10px 25px;
+  padding: 7px 244px 7px 25px;
 }
 main .nomJob .el6 {
   grid-column: 5/5;

@@ -41,6 +41,13 @@ header {
         font-weight: lighter;
         color: $white;
         letter-spacing: -1px;
+        a {
+          color: $white;
+
+          a:hover {
+            color: $lightBlue;
+          }
+        }
       }
     }
     .menu {
@@ -59,12 +66,6 @@ header {
             font-weight: 200;
             letter-spacing: -1px;
             color: $white;
-          }
-          li:hover {
-            cursor: pointer;
-            padding: 10px 15px;
-            border: 1px solid $lightBlue;
-            color: $lightBlue;
           }
         }
       }
