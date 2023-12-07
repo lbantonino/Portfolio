@@ -143,6 +143,9 @@ header .header-global .menu ul li a {
   letter-spacing: -1px;
   color: #ffffff;
 }
+header .header-global .menu ul li a:hover {
+  color: #0466c8;
+}
 header .header-global .theme-switcher {
   display: flex;
   align-items: center;

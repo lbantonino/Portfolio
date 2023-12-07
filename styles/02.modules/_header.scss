@@ -66,6 +66,9 @@ header {
             letter-spacing: -1px;
             color: $white;
           }
+          a:hover {
+            color: $lightBlue;
+          }
         }
       }
     }
