@@ -8,10 +8,10 @@
 
 @mixin gridContainer1 {
   display: grid;
-  grid-template-columns: 8.5% 1fr 1fr 1fr 8.5%;
-  // grid-template-rows: 80px;
+  grid-template-columns: 1fr repeat(3, 400px) 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
-
 // responsive  :
 @mixin ipad() {
   @media screen and (min-width: $ipad) and (max-width: 1023px) {

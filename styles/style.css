@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html,
 body,
 p,
@@ -73,91 +79,91 @@ a {
   text-decoration: none;
 }
 
-header .header-global {
+body {
+  font-size: 16px;
+}
+
+header {
   display: grid;
-  grid-template-columns: 8.5% 1fr 1fr 1fr 8.5%;
+  grid-template-columns: 1fr repeat(3, 400px) 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   grid-template-rows: 80px;
 }
-header .header-global .el1 {
+header .el1 {
+  display: flex;
   grid-column: 1/1;
   grid-row: 1/1;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.118);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
 }
-header .header-global .el2 {
+header .logo {
+  grid-column: 2/2;
+  grid-row: 1/1;
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-left: 0.5px solid rgba(51, 59, 81, 0.605);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0 20px;
+}
+header .logo .logo-svg {
+  width: 35px;
+}
+header .logo .logo-svg:hover {
+  transform: scale(1.2);
+}
+header .logo .name-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .logo .name-logo h1 {
+  font-size: 1rem;
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  padding-left: 20px;
+}
+header .logo .name-logo h1 a {
+  color: #ffffff;
+}
+header .logo .name-logo h1 a:hover {
+  cursor: pointer;
+}
+header .el3 {
   grid-column: 3/3;
   grid-row: 1/1;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.118);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
 }
-header .header-global .el3 {
-  grid-column: 5/5;
-  grid-row: 1/1;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.118);
-}
-header .header-global .logo {
-  grid-column: 2/2;
-  grid-row: 1/1;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.118);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.118);
-  border-left: 0.5px solid rgba(255, 255, 255, 0.118);
+header .menu-global {
   display: flex;
-  padding-left: 15px;
-}
-header .header-global .logo .logo-svg {
-  width: 37px;
-}
-header .header-global .name-logo {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  grid-column: 2/2;
-  grid-row: 1/1;
-}
-header .header-global .name-logo h1 {
-  font-size: 20px;
-  font-family: "Syne", sans-serif;
-  font-weight: lighter;
-  color: #ffffff;
-  letter-spacing: -1px;
-}
-header .header-global .name-logo h1 a {
-  color: #ffffff;
-}
-header .header-global .name-logo h1 a:hover {
-  color: #0466c8;
-}
-header .header-global .menu {
+  justify-content: space-around;
   grid-column: 4/4;
   grid-row: 1/1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-left: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
 }
-header .header-global .menu ul {
+header .menu-global nav ul {
   display: flex;
-  gap: 20px;
 }
-header .header-global .menu ul li a {
-  font-size: 17px;
+header .menu-global nav ul li {
+  margin: 0 10px;
+}
+header .menu-global nav ul li a {
+  font-size: 1rem;
   font-family: "Syne", sans-serif;
-  font-weight: 200;
-  letter-spacing: -1px;
+  font-weight: 600;
   color: #ffffff;
+  position: relative;
 }
-header .header-global .menu ul li a:hover {
-  color: #0466c8;
+header .menu-global nav ul li a:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #0466c8;
 }
-header .header-global .theme-switcher {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  padding-right: 15px;
-  grid-column: 4/4;
-  grid-row: 1/1;
-  border-left: 0.5px solid rgba(255, 255, 255, 0.118);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.118);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.118);
-}
-header .header-global .theme-switcher label {
+header .menu-global .theme-switcher label {
   width: 28px;
   height: 28px;
   border-radius: 50%;
@@ -166,23 +172,23 @@ header .header-global .theme-switcher label {
   justify-content: center;
   align-items: center;
 }
-header .header-global .theme-switcher input {
+header .menu-global .theme-switcher input {
   position: absolute;
   opacity: 0;
 }
-header .header-global .theme-switcher .moon {
+header .menu-global .theme-switcher .moon {
   font-size: 19px;
   color: #ffffff;
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.504));
   transition: 0.7s ease;
 }
-header .header-global .theme-switcher .moon:hover {
+header .menu-global .theme-switcher .moon:hover {
   color: #0466c8;
 }
-header .header-global .theme-switcher input:checked ~ .moon {
+header .menu-global .theme-switcher input:checked ~ .moon {
   transform: rotate(360deg) scale(0);
 }
-header .header-global .theme-switcher .sun {
+header .menu-global .theme-switcher .sun {
   position: absolute;
   font-size: 19px;
   color: #080d1b;
@@ -190,13 +196,13 @@ header .header-global .theme-switcher .sun {
   transform: scale(0);
   transition: 0.7s ease;
 }
-header .header-global .theme-switcher .sun:hover {
+header .menu-global .theme-switcher .sun:hover {
   color: #0466c8;
 }
-header .header-global .theme-switcher input:checked ~ .sun {
+header .menu-global .theme-switcher input:checked ~ .sun {
   transform: scale(1) rotate(360deg);
 }
-header .header-global .theme-switcher .toggle {
+header .menu-global .theme-switcher .toggle {
   position: absolute;
   display: block;
   width: 28px;
@@ -206,13 +212,13 @@ header .header-global .theme-switcher .toggle {
   z-index: -1;
   transition: 0.7s;
 }
-header .header-global .theme-switcher input:checked ~ .toggle {
+header .menu-global .theme-switcher input:checked ~ .toggle {
   background: #ffffff;
 }
-
-body {
-  background-color: #080d1b;
-  min-height: 100vh;
+header .el4 {
+  grid-column: 5/5;
+  grid-row: 1/1;
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
 }
 
 .overlay {
@@ -240,112 +246,35 @@ body {
 
 main .nomJob {
   display: grid;
-  grid-template-columns: 8.5% 1fr 1fr 1fr 8.5%;
-  grid-template-rows: 35vh 20vh;
+  grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
+  grid-template-rows: 280px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 main .nomJob .el1 {
   grid-column: 1/1;
-  border-left: 0.5px solid rgba(255, 255, 255, 0.118);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.118);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.118);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
 }
 main .nomJob .el2 {
-  grid-column: 4/4;
-  border-left: 0.5px solid rgba(255, 255, 255, 0.118);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.118);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.118);
+  border-left: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
   overflow: hidden;
   position: relative;
 }
 main .nomJob .el2 img {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -192px;
+  left: 70px;
   object-fit: contain;
   transform: scale(4);
 }
 main .nomJob .el3 {
-  grid-column: 5/5;
-  border-left: 0.5px solid rgba(255, 255, 255, 0.118);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.118);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.118);
-}
-main .nomJob .el4 {
-  grid-column: 1/1;
-  grid-row: 2/2;
-  border-left: 0.5px solid rgba(255, 255, 255, 0.118);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.118);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.118);
-}
-main .nomJob .el5 {
-  grid-column: 2/4;
-  grid-row: 2/2;
-  border-left: 0.5px solid rgba(255, 255, 255, 0.118);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.118);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.118);
-  overflow: hidden;
-  position: relative;
-}
-main .nomJob .el5 img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: contain;
-  transform: scale(2);
-}
-main .nomJob .social {
-  grid-column: 4/4;
-  grid-row: 2/2;
-  border-left: 0.5px solid rgba(255, 255, 255, 0.118);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.118);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.118);
-}
-main .nomJob .social ul {
-  margin-top: 35px;
-}
-main .nomJob .social ul li {
-  margin: 20px 0 35px 30px;
-}
-main .nomJob .social ul li a {
-  padding: 7px 231px 7px 25px;
-  border: 1px solid #ffffff;
-  border-radius: 30px;
-  color: #ffffff;
-  font-size: 18px;
-  font-family: "Syne", sans-serif;
-  font-weight: 200;
-  position: relative;
-}
-main .nomJob .social ul li a:hover {
-  color: #0466c8;
-  border: 1px solid #0466c8;
-}
-main .nomJob .social ul li a .arrow-link {
-  position: absolute;
-  right: 34px;
-  top: 9px;
-}
-main .nomJob .social ul li a .arrow-link:hover {
-  position: absolute;
-  right: 34px;
-  top: 13px;
-  transform: 1s ease;
-  transition-delay: 0, 2s ease;
-}
-main .nomJob .social ul li .github {
-  padding: 7px 244px 7px 25px;
-}
-main .nomJob .el6 {
-  grid-column: 5/5;
-  grid-row: 2/2;
-  border-left: 0.5px solid rgba(255, 255, 255, 0.118);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.118);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.118);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
 }
 main .nomJob .nomJob-global {
-  border-left: 0.5px solid rgba(255, 255, 255, 0.118);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.118);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.118);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
   grid-column: 2/4;
   grid-row: 1/1;
   display: flex;
@@ -356,7 +285,7 @@ main .nomJob .nomJob-global {
 }
 main .nomJob .nomJob-global h1 {
   font-family: "Oswald", sans-serif;
-  font-size: 85px;
+  font-size: 75px;
   font-weight: 600;
   letter-spacing: -2px;
   color: #ffffff;
@@ -366,13 +295,176 @@ main .nomJob .nomJob-global h1 {
 main .nomJob .nomJob-global h1 span {
   color: #0466c8;
   font-style: italic;
-  letter-spacing: 12px;
 }
 main .nomJob .nomJob-global h2 {
   font-family: "Inter", sans-serif;
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 200;
   color: #ffffff;
-  letter-spacing: -8px;
-  transform: translate(0px, -35px);
+  letter-spacing: -6px;
+  transform: translate(0px, -25px);
+}
+main .social-img {
+  display: grid;
+  grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
+  grid-template-rows: 220px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+main .social-img .el4 {
+  grid-column: 1/1;
+  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+}
+main .social-img .el5 {
+  grid-column: 2/4;
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+  overflow: hidden;
+  position: relative;
+}
+main .social-img .el5 img {
+  position: absolute;
+  top: 17px;
+  left: 180px;
+  right: 147px;
+  object-fit: contain;
+  transform: scale(2);
+}
+main .social-img .social {
+  grid-column: 4/4;
+  border-left: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
+}
+main .social-img .social h1 {
+  font-family: "Oswald", sans-serif;
+  color: #0466c8;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-left: 16px;
+  padding-top: 12px;
+}
+main .social-img .social .logo-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .social-img .social .logo-social ul {
+  margin-top: 2px;
+}
+main .social-img .social .logo-social ul li {
+  margin: 35px 0;
+}
+main .social-img .social .logo-social ul li a {
+  padding: 7px 235px 7px 25px;
+  border: 0.5px solid rgba(255, 255, 255, 0.1490196078);
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Syne", sans-serif;
+  font-weight: 200;
+  position: relative;
+}
+main .social-img .social .logo-social ul li a:hover {
+  color: #0466c8;
+  border: 1px solid #0466c8;
+}
+main .social-img .social .logo-social ul li a .arrow-link {
+  position: absolute;
+  right: 34px;
+  top: 9px;
+}
+main .social-img .social .logo-social ul li a .arrow-link:hover {
+  transform: rotate(-45deg);
+}
+main .social-img .social .logo-social ul li .github {
+  padding: 7px 244px 7px 25px;
+}
+main .social-img .el6 {
+  grid-column: 5/5;
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+}
+main .about {
+  display: grid;
+  grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
+  grid-template-rows: 200px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+main .about .el1 {
+  grid-column: 1/1;
+  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+}
+main .about .aboutMe {
+  grid-column: 2/4;
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+}
+main .about .aboutMe h1 {
+  font-family: "Oswald", sans-serif;
+  color: #0466c8;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-left: 16px;
+  padding-top: 12px;
+}
+main .about .aboutMe p {
+  padding: 10px 40px 35px;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  line-height: 22px;
+}
+main .about .aboutMe a {
+  padding: 7px 534px 7px 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1490196078);
+  border-radius: 30px;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
+  line-height: 25px;
+  text-decoration: underline;
+  text-decoration: none;
+  margin-left: 30px;
+  position: relative;
+}
+main .about .aboutMe a:hover {
+  color: #0466c8;
+  border: 1px solid #0466c8;
+}
+main .about .aboutMe .arrow-link {
+  position: absolute;
+  right: 34px;
+  top: 9px;
+}
+main .about .aboutMe .arrow-link:hover {
+  transform: rotate(-45deg);
+}
+main .about .el2 {
+  overflow: hidden;
+  position: relative;
+  grid-column: 4/4;
+  border-left: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+}
+main .about .el2 img {
+  position: absolute;
+  top: 17px;
+  left: -97px;
+  object-fit: contain;
+  transform: scale(2);
+}
+main .about .el3 {
+  grid-column: 5/5;
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+}
+
+body {
+  background-color: #080d1b;
+  min-height: 100vh;
+  overflow-x: hidden;
 }

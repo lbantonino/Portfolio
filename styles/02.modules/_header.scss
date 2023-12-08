@@ -1,87 +1,81 @@
 header {
-  .header-global {
-    @include gridContainer1;
-    grid-template-rows: 80px;
-    .el1 {
-      grid-column: 1 / 1;
-      grid-row: 1/1;
-      border-bottom: 0.5px solid $bluegrid;
-    }
-    .el2 {
-      grid-column: 3 / 3;
-      grid-row: 1/1;
-      border-bottom: 0.5px solid $bluegrid;
-    }
-    .el3 {
-      grid-column: 5 / 5;
-      grid-row: 1/1;
-      border-bottom: 0.5px solid $bluegrid;
-    }
-    .logo {
-      grid-column: 2 / 2;
-      grid-row: 1/1;
-      border-bottom: 0.5px solid $bluegrid;
-      border-right: 0.5px solid $bluegrid;
-      border-left: 0.5px solid $bluegrid;
-      display: flex;
-      padding-left: 15px;
-      .logo-svg {
-        width: 37px;
+  @include gridContainer1;
+  grid-template-rows: 80px;
+  .el1 {
+    display: flex;
+    grid-column: 1/1;
+    grid-row: 1 / 1;
+    border-bottom: 0.5px solid $bluegrid;
+  }
+  .logo {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+    border-bottom: 0.5px solid $bluegrid;
+    border-right: 0.5px solid $bluegrid;
+    border-left: 0.5px solid $bluegrid;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0 20px;
+    .logo-svg {
+      width: 35px;
+      &:hover {
+        transform: scale(1.2);
       }
     }
     .name-logo {
       display: flex;
       justify-content: center;
       align-items: center;
-      grid-column: 2 / 2;
-      grid-row: 1/1;
       h1 {
-        font-size: 20px;
+        font-size: 1rem;
         font-family: $fontSyne;
-        font-weight: lighter;
+        font-weight: 600;
         color: $white;
-        letter-spacing: -1px;
+        padding-left: 20px;
         a {
           color: $white;
         }
         a:hover {
-          color: $lightBlue;
+          cursor: pointer;
         }
       }
     }
-    .menu {
-      grid-column: 4 / 4;
-      grid-row: 1/1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+  }
+  .el3 {
+    grid-column: 3 / 3;
+    grid-row: 1 / 1;
+    border-bottom: 0.5px solid $bluegrid;
+  }
+  .menu-global {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-column: 4 / 4;
+    grid-row: 1/1;
+    border-left: 0.5px solid $bluegrid;
+    border-right: 0.5px solid $bluegrid;
+    border-bottom: 0.5px solid $bluegrid;
+    nav {
       ul {
         display: flex;
-        gap: 20px;
         li {
+          margin: 0 10px;
           a {
-            font-size: 17px;
+            font-size: 1rem;
             font-family: $fontSyne;
-            font-weight: 200;
-            letter-spacing: -1px;
+            font-weight: 600;
             color: $white;
-          }
-          a:hover {
-            color: $lightBlue;
+            position: relative;
+            &:hover {
+              padding-bottom: 5px;
+              border-bottom: 2px solid $lightBlue;
+            }
           }
         }
       }
     }
     .theme-switcher {
-      display: flex;
-      align-items: center;
-      justify-content: end;
-      padding-right: 15px;
-      grid-column: 4 / 4;
-      grid-row: 1/1;
-      border-left: 0.5px solid $bluegrid;
-      border-right: 0.5px solid $bluegrid;
-      border-bottom: 0.5px solid $bluegrid;
       label {
         width: 28px;
         height: 28px;
@@ -146,5 +140,10 @@ header {
         background: #ffffff;
       }
     }
+  }
+  .el4 {
+    grid-column: 5 / 5;
+    grid-row: 1 / 1;
+    border-bottom: 0.5px solid $bluegrid;
   }
 }
