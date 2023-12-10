@@ -1,3 +1,7 @@
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
 header {
   @include gridContainer1;
   grid-template-rows: 80px;
@@ -95,7 +99,7 @@ header {
         font-size: 19px;
         color: $white;
         filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.504));
-        transition: 1.5s ease;
+        transition: 0.8s ease;
         transition-delay: 0.4s;
       }
       .moon:hover {
@@ -103,7 +107,7 @@ header {
       }
 
       input:checked ~ .moon {
-        transition-delay: 1s;
+        transition-delay: 0.5s;
         transform: rotate(360deg) scale(0);
       }
 
@@ -121,7 +125,7 @@ header {
       }
 
       input:checked ~ .sun {
-        transition-delay: 1.5s;
+        transition-delay: 0.5s;
         transform: scale(1) rotate(360deg);
       }
 

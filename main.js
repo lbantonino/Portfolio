@@ -53,7 +53,7 @@ const applyTheme = (theme) => {
             element.style.color = '#121a38';
         });
     } else {
-        body.style.backgroundColor = '#121a38';
+        body.style.backgroundColor = '#0c1021';
         aboutText.style.color = '#0466c8';
         socialText.style.color = '#0466c8';
         text.forEach(element => {
@@ -90,7 +90,7 @@ theme.addEventListener('click', () => {
             });
             saveThemeToLocalStorage('dark');
         } else {
-            body.style.backgroundColor = '#121a38';
+            body.style.backgroundColor = '#0c1021';
             aboutText.style.color = '#0466c8';
             socialText.style.color = '#0466c8';
             text.forEach(element => {

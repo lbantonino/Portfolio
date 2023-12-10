@@ -83,6 +83,11 @@ body {
   font-size: 16px;
 }
 
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
 header {
   display: grid;
   grid-template-columns: 1fr repeat(3, 400px) 1fr;
@@ -180,20 +185,20 @@ header .menu-global .theme-switcher .moon {
   font-size: 19px;
   color: #ffffff;
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.504));
-  transition: 1.5s ease;
+  transition: 0.8s ease;
   transition-delay: 0.4s;
 }
 header .menu-global .theme-switcher .moon:hover {
   color: #0466c8;
 }
 header .menu-global .theme-switcher input:checked ~ .moon {
-  transition-delay: 1s;
+  transition-delay: 0.5s;
   transform: rotate(360deg) scale(0);
 }
 header .menu-global .theme-switcher .sun {
   position: absolute;
   font-size: 19px;
-  color: #080d1b;
+  color: rgb(4, 7, 14);
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.6));
   transform: scale(0);
   transition: 1s ease;
@@ -203,7 +208,7 @@ header .menu-global .theme-switcher .sun:hover {
   color: #0466c8;
 }
 header .menu-global .theme-switcher input:checked ~ .sun {
-  transition-delay: 1.5s;
+  transition-delay: 0.5s;
   transform: scale(1) rotate(360deg);
 }
 header .menu-global .theme-switcher .toggle {
@@ -462,10 +467,4 @@ main .about .el2 img {
 main .about .el3 {
   grid-column: 5/5;
   border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
-}
-
-body {
-  background-color: #080d1b;
-  min-height: 100vh;
-  overflow-x: hidden;
 }
