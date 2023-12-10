@@ -180,12 +180,14 @@ header .menu-global .theme-switcher .moon {
   font-size: 19px;
   color: #ffffff;
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.504));
-  transition: 0.7s ease;
+  transition: 1.5s ease;
+  transition-delay: 0.4s;
 }
 header .menu-global .theme-switcher .moon:hover {
   color: #0466c8;
 }
 header .menu-global .theme-switcher input:checked ~ .moon {
+  transition-delay: 1s;
   transform: rotate(360deg) scale(0);
 }
 header .menu-global .theme-switcher .sun {
@@ -194,12 +196,14 @@ header .menu-global .theme-switcher .sun {
   color: #080d1b;
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.6));
   transform: scale(0);
-  transition: 0.7s ease;
+  transition: 1s ease;
+  transition-delay: 0.4s;
 }
 header .menu-global .theme-switcher .sun:hover {
   color: #0466c8;
 }
 header .menu-global .theme-switcher input:checked ~ .sun {
+  transition-delay: 1.5s;
   transform: scale(1) rotate(360deg);
 }
 header .menu-global .theme-switcher .toggle {
@@ -210,10 +214,7 @@ header .menu-global .theme-switcher .toggle {
   border-radius: 50%;
   box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1), inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px -4px rgba(0, 0, 0, 0.1);
   z-index: -1;
-  transition: 0.7s;
-}
-header .menu-global .theme-switcher input:checked ~ .toggle {
-  background: #ffffff;
+  transition: 0.2s;
 }
 header .el4 {
   grid-column: 5/5;

@@ -95,15 +95,15 @@ header {
         font-size: 19px;
         color: $white;
         filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.504));
-        transition: 0.7s ease;
-        // transition-delay: 0.3s;
+        transition: 1.5s ease;
+        transition-delay: 0.4s;
       }
       .moon:hover {
         color: $lightBlue;
       }
 
       input:checked ~ .moon {
-        // transition-delay: 0s;
+        transition-delay: 1s;
         transform: rotate(360deg) scale(0);
       }
 
@@ -113,14 +113,15 @@ header {
         color: $darkBlue;
         filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.6));
         transform: scale(0);
-        transition: 0.7s ease;
+        transition: 1s ease;
+        transition-delay: 0.4s;
       }
       .sun:hover {
         color: $lightBlue;
       }
 
       input:checked ~ .sun {
-        // transition-delay: 0.3s;
+        transition-delay: 1.5s;
         transform: scale(1) rotate(360deg);
       }
 
@@ -134,11 +135,11 @@ header {
           inset 0 8px 8px rgba(0, 0, 0, 0.1),
           inset 0 -4px -4px rgba(0, 0, 0, 0.1);
         z-index: -1;
-        transition: 0.7s;
+        transition: 0.2s;
       }
-      input:checked ~ .toggle {
-        background: #ffffff;
-      }
+      // input:checked ~ .toggle {
+      //   background: #ffffff;
+      // }
     }
   }
   .el4 {
