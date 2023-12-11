@@ -47,18 +47,8 @@ const loadThemeFromLocalStorage = () => {
 const applyTheme = (theme) => {
     if (theme === 'dark') {
         body.style.backgroundColor = 'white';
-        aboutText.style.color = '#0466c8';
-        socialText.style.color = '#0466c8';
-        text.forEach(element => {
-            element.style.color = '#121a38';
-        });
     } else {
         body.style.backgroundColor = '#0c1021';
-        aboutText.style.color = '#0466c8';
-        socialText.style.color = '#0466c8';
-        text.forEach(element => {
-            element.style.color = 'white';
-        });
     }
 };
 
@@ -83,20 +73,9 @@ theme.addEventListener('click', () => {
     setTimeout(() => {
         if (theme.checked) {
             body.style.backgroundColor = 'white';
-            aboutText.style.color = '#0466c8';
-            socialText.style.color = '#0466c8';
-            text.forEach(element => {
-                element.style.color = '#121a38';
-            });
             saveThemeToLocalStorage('dark');
         } else {
             body.style.backgroundColor = '#0c1021';
-            aboutText.style.color = '#0466c8';
-            socialText.style.color = '#0466c8';
-            text.forEach(element => {
-                element.style.color = 'white';
-            });
-            saveThemeToLocalStorage('light');
         }
         }, 1001);
 });
