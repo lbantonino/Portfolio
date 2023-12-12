@@ -46,9 +46,9 @@ const loadThemeFromLocalStorage = () => {
 
 const applyTheme = (theme) => {
     if (theme === 'dark') {
-        body.style.backgroundColor = 'white';
-    } else {
         body.style.backgroundColor = '#0c1021';
+    } else {
+        body.style.backgroundColor = 'white';
     }
 };
 

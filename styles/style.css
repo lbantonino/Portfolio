@@ -543,7 +543,7 @@ main .technos .el4 {
 main .work {
   display: grid;
   grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-  grid-template-rows: 400px 300px 300px 300px;
+  grid-template-rows: 320px 280px 300px 300px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -606,6 +606,8 @@ main .work .el6 {
   justify-content: center;
   flex-direction: column;
   grid-column: 2/2;
+  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
   padding: 0 40px;
 }
 main .work .el6 h4 {
@@ -659,6 +661,7 @@ main .work .el7 {
   justify-content: center;
   align-items: center;
   grid-column: 3/5;
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
   border-right: 0.5px solid rgba(51, 59, 81, 0.605);
   overflow: hidden;
   position: relative;
@@ -666,13 +669,11 @@ main .work .el7 {
 main .work .el7 img {
   position: absolute;
   object-fit: contain;
-  width: 80%;
-  border-radius: 15px;
-  border: 0.2px solid #fff;
-  box-shadow: 0px 13px 15px rgba(0, 0, 0, 0.24);
+  width: 95%;
+  opacity: 0.9;
 }
 main .work .el7 img:hover {
-  transform: scale(102%);
+  cursor: pointer;
 }
 main .work .el8 {
   grid-column: 5/5;
