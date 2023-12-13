@@ -42,11 +42,12 @@ main {
       position: relative;
       img {
         position: absolute;
-        top: -192px;
-        left: 70px;
-        opacity: 0.45;
+        top: -58px;
+        left: -13px;
+        opacity: 0.9;
         object-fit: contain;
-        transform: scale(4);
+        width: 100%;
+        transform: scale(2);
       }
     }
     .el3 {
@@ -89,7 +90,7 @@ main {
   .social-img {
     display: grid;
     grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-    grid-template-rows: 215px;
+    grid-template-rows: 195px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     .el4 {
@@ -104,12 +105,13 @@ main {
       position: relative;
       img {
         position: absolute;
-        top: 17px;
-        left: 180px;
+        top: -101px;
+        left: 0px;
         right: 147px;
         object-fit: contain;
-        transform: scale(2);
-        opacity: 0.45;
+        transform: scale(1);
+        width: 100%;
+        opacity: 0.9;
       }
     }
     .social {
@@ -131,7 +133,7 @@ main {
         justify-content: center;
         align-items: center;
         ul {
-          margin-top: 2px;
+          transform: translateY(-10px);
           li {
             margin: 35px 0;
             a {
@@ -236,11 +238,12 @@ main {
       border-bottom: 0.5px solid $bluegrid;
       img {
         position: absolute;
-        top: 17px;
-        left: -97px;
+        top: -116px;
+        left: 125px;
         object-fit: contain;
         transform: scale(2);
-        opacity: 0.45;
+        opacity: 0.9;
+        width: 100%;
       }
     }
     .el3 {
@@ -267,12 +270,13 @@ main {
       position: relative;
       img {
         position: absolute;
-        top: 23px;
-        left: -165px;
+        top: 119px;
+        left: 52px;
         right: 147px;
         object-fit: contain;
         transform: scale(2);
-        opacity: 0.45;
+        opacity: 0.9;
+        width: 100%;
       }
     }
     .el3 {
@@ -335,12 +339,12 @@ main {
       img {
         position: absolute;
         top: -32px;
-        left: -293px;
+        left: -134px;
         right: -197px;
         object-fit: contain;
         transform: scale(2);
-        transform: translateX(164px);
-        opacity: 0.45;
+        opacity: 0.9;
+        width: 100%;
       }
     }
     .el4 {
@@ -358,7 +362,7 @@ main {
       flex-direction: column;
       grid-column: 2 / 2;
       border-right: 0.5px solid $bluegrid;
-      border-bottom: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
       padding: 0 40px;
       h4 {
         letter-spacing: 1.5px;
@@ -385,11 +389,9 @@ main {
         font-family: $fontSyne;
         font-size: 1rem;
         font-weight: 200;
-        text-decoration: underline;
         text-decoration: none;
         position: relative;
         margin-top: 30px;
-        text-transform: uppercase;
         .arrow-link {
           position: absolute;
           right: 34px;
@@ -403,7 +405,7 @@ main {
         &:hover {
           color: $lightBlue;
           border: 1px solid $lightBlue;
-          transform: scale(105%);
+          cursor: pointer;
         }
       }
     }
@@ -412,7 +414,7 @@ main {
       justify-content: center;
       align-items: center;
       grid-column: 3 / 5;
-      border-bottom: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
       border-right: 0.5px solid $bluegrid;
       overflow: hidden;
       position: relative;
@@ -441,20 +443,8 @@ main {
       align-items: center;
       grid-column: 2 / 2;
       border-right: 0.5px solid $bluegrid;
-      border-bottom: 0.5px solid $bluegrid;
       flex-direction: column;
       padding: 0 40px;
-      // h4 {
-      //   span {
-      //     color: #12399b;
-      //   }
-      //   font-family: $fontInter;
-      //   color: #e0871e;
-      //   font-size: 1.3em;
-      //   text-transform: uppercase;
-      //   font-weight: 500;
-      //   padding-bottom: 10px;
-      // }
       p {
         color: $white;
         font-family: $fontInter;
@@ -472,7 +462,6 @@ main {
         text-decoration: none;
         position: relative;
         margin-top: 30px;
-        text-transform: uppercase;
         .arrow-link {
           position: absolute;
           right: 34px;
@@ -486,7 +475,7 @@ main {
         &:hover {
           color: $lightBlue;
           border: 1px solid $lightBlue;
-          transform: scale(105%);
+          cursor: pointer;
         }
       }
 
@@ -497,7 +486,7 @@ main {
       align-items: center;
       grid-column:  3 / 5;
       border-right: 0.5px solid $bluegrid;
-      border-bottom: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
       overflow: hidden;
       position: relative;
       img {
@@ -516,12 +505,14 @@ main {
     .el13 {
       grid-column: 1 / 1;
       border-right: 0.5px solid $bluegrid;
+      border-bottom: 0.5px solid $bluegrid;
     }
     .el14 {
       display: flex;
       justify-content: center;
       flex-direction: column;
       grid-column: 2 / 2;
+      border-bottom: 0.5px solid $bluegrid;
       border-right: 0.5px solid $bluegrid;
       padding: 0 40px;
       h4 {
@@ -552,7 +543,6 @@ main {
         text-decoration: none;
         position: relative;
         margin-top: 30px;
-        text-transform: uppercase;
         .arrow-link {
           position: absolute;
           right: 34px;
@@ -566,7 +556,7 @@ main {
         &:hover {
           color: $lightBlue;
           border: 1px solid $lightBlue;
-          transform: scale(105%);
+          cursor: pointer;
         }
       }
     }
@@ -575,7 +565,7 @@ main {
       justify-content: center;
       align-items: center;
       grid-column: 3 / 5;
-
+      border-bottom: 0.5px solid $bluegrid;
       border-right: 0.5px solid $bluegrid;
       overflow: hidden;
       position: relative;
@@ -587,6 +577,10 @@ main {
           cursor: pointer;
         }
       }
+    }
+    .el16 {
+      grid-column: 5 / 5;
+      border-bottom: 0.5px solid $bluegrid;
     }
   }
 }

@@ -99,14 +99,14 @@ header .el1 {
   display: flex;
   grid-column: 1/1;
   grid-row: 1/1;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
 }
 header .logo {
   grid-column: 2/2;
   grid-row: 1/1;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-left: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-left: 0.5px solid rgba(255, 255, 255, 0.075);
   display: flex;
   align-items: center;
   justify-content: start;
@@ -139,7 +139,7 @@ header .logo .name-logo h1 a:hover {
 header .el3 {
   grid-column: 3/3;
   grid-row: 1/1;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
 }
 header .menu-global {
   display: flex;
@@ -147,9 +147,9 @@ header .menu-global {
   justify-content: space-around;
   grid-column: 4/4;
   grid-row: 1/1;
-  border-left: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-left: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
 }
 header .menu-global nav ul {
   display: flex;
@@ -224,7 +224,7 @@ header .menu-global .theme-switcher .toggle {
 header .el4 {
   grid-column: 5/5;
   grid-row: 1/1;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
 }
 
 footer {
@@ -236,14 +236,12 @@ footer {
 }
 footer .el1 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-top: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
 }
 footer .el2 {
   grid-column: 2/4;
-  border-top: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -277,41 +275,97 @@ footer .el2 a {
   line-height: 25px;
   text-decoration: underline;
   text-decoration: none;
-  margin-left: 30px;
+  transform: translateX(-15px);
+}
+footer .el2 a .arrow-link {
+  position: absolute;
+  right: 34px;
+  top: 13px;
+  font-size: 15px;
+}
+footer .el2 a .arrow-link:hover {
+  color: #0466c8;
+  transform: rotate(-45deg);
 }
 footer .el2 a:hover {
-  cursor: pointer;
   color: #0466c8;
   border: 1px solid #0466c8;
+  cursor: pointer;
 }
 footer .el3 {
   grid-column: 4/5;
-  border-left: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-top: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-left: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  overflow: hidden;
+  position: relative;
+}
+footer .el3 img {
+  position: absolute;
+  top: 124px;
+  left: -134px;
+  right: -197px;
+  object-fit: contain;
+  transform: scale(2);
+  width: 100%;
 }
 footer .el4 {
   grid-column: 5/5;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-top: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
 }
 footer .el5 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
 }
 footer .el6 {
   grid-column: 2/2;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 20px;
+}
+footer .el6 .logo-svg {
+  width: 35px;
+}
+footer .el6 .logo-svg:hover {
+  transform: scale(1.2);
+}
+footer .el6 .name-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .el6 .name-logo h1 {
+  font-size: 1rem;
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  padding-left: 20px;
+}
+footer .el6 .name-logo h1 a {
+  color: #ffffff;
+}
+footer .el6 .name-logo h1 a:hover {
+  cursor: pointer;
 }
 footer .el7 {
   grid-column: 3/3;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
 }
 footer .el8 {
   grid-column: 4/4;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .el8 h1 {
+  font-size: 0.85rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  color: #ffffff;
 }
 footer .el9 {
   grid-column: 5/5;
@@ -349,29 +403,30 @@ main .nomJob {
 }
 main .nomJob .el1 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
 }
 main .nomJob .el2 {
-  border-left: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-left: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
   overflow: hidden;
   position: relative;
 }
 main .nomJob .el2 img {
   position: absolute;
-  top: -192px;
-  left: 70px;
-  opacity: 0.45;
+  top: -58px;
+  left: -13px;
+  opacity: 0.9;
   object-fit: contain;
-  transform: scale(4);
+  width: 100%;
+  transform: scale(2);
 }
 main .nomJob .el3 {
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
 }
 main .nomJob .nomJob-global {
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
   grid-column: 2/4;
   grid-row: 1/1;
   display: flex;
@@ -404,35 +459,36 @@ main .nomJob .nomJob-global h2 {
 main .social-img {
   display: grid;
   grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-  grid-template-rows: 215px;
+  grid-template-rows: 195px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
 main .social-img .el4 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
 }
 main .social-img .el5 {
   grid-column: 2/4;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
   overflow: hidden;
   position: relative;
 }
 main .social-img .el5 img {
   position: absolute;
-  top: 17px;
-  left: 180px;
+  top: -101px;
+  left: 0px;
   right: 147px;
   object-fit: contain;
-  transform: scale(2);
-  opacity: 0.45;
+  transform: scale(1);
+  width: 100%;
+  opacity: 0.9;
 }
 main .social-img .social {
   grid-column: 4/4;
-  border-left: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-left: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
 }
 main .social-img .social h1 {
   font-family: "Oswald", sans-serif;
@@ -449,7 +505,7 @@ main .social-img .social .logo-social {
   align-items: center;
 }
 main .social-img .social .logo-social ul {
-  margin-top: 2px;
+  transform: translateY(-10px);
 }
 main .social-img .social .logo-social ul li {
   margin: 35px 0;
@@ -481,7 +537,7 @@ main .social-img .social .logo-social ul li .github {
 }
 main .social-img .el6 {
   grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
 }
 main .about {
   display: grid;
@@ -492,12 +548,12 @@ main .about {
 }
 main .about .el1 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
 }
 main .about .aboutMe {
   grid-column: 2/4;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
 }
 main .about .aboutMe h1 {
   font-family: "Oswald", sans-serif;
@@ -545,21 +601,22 @@ main .about .el2 {
   overflow: hidden;
   position: relative;
   grid-column: 4/4;
-  border-left: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-left: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
 }
 main .about .el2 img {
   position: absolute;
-  top: 17px;
-  left: -97px;
+  top: -116px;
+  left: 125px;
   object-fit: contain;
   transform: scale(2);
-  opacity: 0.45;
+  opacity: 0.9;
+  width: 100%;
 }
 main .about .el3 {
   grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
 }
 main .technos {
   display: grid;
@@ -570,29 +627,30 @@ main .technos {
 }
 main .technos .el1 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
 }
 main .technos .el2 {
   grid-column: 2/3;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
   overflow: hidden;
   position: relative;
 }
 main .technos .el2 img {
   position: absolute;
-  top: 23px;
-  left: -165px;
+  top: 119px;
+  left: 52px;
   right: 147px;
   object-fit: contain;
   transform: scale(2);
-  opacity: 0.45;
+  opacity: 0.9;
+  width: 100%;
 }
 main .technos .el3 {
   grid-column: 3/5;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
   color: white;
   display: flex;
   align-items: center;
@@ -600,7 +658,7 @@ main .technos .el3 {
 }
 main .technos .el4 {
   grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
 }
 main .work {
   display: grid;
@@ -611,13 +669,13 @@ main .work {
 }
 main .work .el1 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
 }
 main .work .el2 {
   grid-column: 2/4;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
   display: flex;
   align-items: start;
   justify-content: center;
@@ -641,37 +699,36 @@ main .work .el2 p {
 }
 main .work .el3 {
   grid-column: 4/5;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
   overflow: hidden;
   position: relative;
 }
 main .work .el3 img {
   position: absolute;
   top: -32px;
-  left: -293px;
+  left: -134px;
   right: -197px;
   object-fit: contain;
   transform: scale(2);
-  transform: translateX(164px);
-  opacity: 0.45;
+  opacity: 0.9;
+  width: 100%;
 }
 main .work .el4 {
   grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
 }
 main .work .el5 {
   grid-column: 1/1;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
 }
 main .work .el6 {
   display: flex;
   justify-content: center;
   flex-direction: column;
   grid-column: 2/2;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
   padding: 0 40px;
 }
 main .work .el6 h4 {
@@ -699,11 +756,9 @@ main .work .el6 a {
   font-family: "Syne", sans-serif;
   font-size: 1rem;
   font-weight: 200;
-  text-decoration: underline;
   text-decoration: none;
   position: relative;
   margin-top: 30px;
-  text-transform: uppercase;
 }
 main .work .el6 a .arrow-link {
   position: absolute;
@@ -718,15 +773,14 @@ main .work .el6 a .arrow-link:hover {
 main .work .el6 a:hover {
   color: #0466c8;
   border: 1px solid #0466c8;
-  transform: scale(105%);
+  cursor: pointer;
 }
 main .work .el7 {
   display: flex;
   justify-content: center;
   align-items: center;
   grid-column: 3/5;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
   overflow: hidden;
   position: relative;
 }
@@ -741,20 +795,19 @@ main .work .el7 img:hover {
 }
 main .work .el8 {
   grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
 }
 main .work .el9 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
 }
 main .work .el10 {
   display: flex;
   justify-content: center;
   align-items: center;
   grid-column: 2/2;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
   flex-direction: column;
   padding: 0 40px;
 }
@@ -775,7 +828,6 @@ main .work .el10 a {
   text-decoration: none;
   position: relative;
   margin-top: 30px;
-  text-transform: uppercase;
 }
 main .work .el10 a .arrow-link {
   position: absolute;
@@ -790,15 +842,14 @@ main .work .el10 a .arrow-link:hover {
 main .work .el10 a:hover {
   color: #0466c8;
   border: 1px solid #0466c8;
-  transform: scale(105%);
+  cursor: pointer;
 }
 main .work .el11 {
   display: flex;
   justify-content: center;
   align-items: center;
   grid-column: 3/5;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
   overflow: hidden;
   position: relative;
 }
@@ -812,18 +863,20 @@ main .work .el11 img:hover {
 }
 main .work .el12 {
   grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
 }
 main .work .el13 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
 }
 main .work .el14 {
   display: flex;
   justify-content: center;
   flex-direction: column;
   grid-column: 2/2;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
   padding: 0 40px;
 }
 main .work .el14 h4 {
@@ -854,7 +907,6 @@ main .work .el14 a {
   text-decoration: none;
   position: relative;
   margin-top: 30px;
-  text-transform: uppercase;
 }
 main .work .el14 a .arrow-link {
   position: absolute;
@@ -869,14 +921,15 @@ main .work .el14 a .arrow-link:hover {
 main .work .el14 a:hover {
   color: #0466c8;
   border: 1px solid #0466c8;
-  transform: scale(105%);
+  cursor: pointer;
 }
 main .work .el15 {
   display: flex;
   justify-content: center;
   align-items: center;
   grid-column: 3/5;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
   overflow: hidden;
   position: relative;
 }
@@ -887,4 +940,8 @@ main .work .el15 img {
 }
 main .work .el15 img:hover {
   cursor: pointer;
+}
+main .work .el16 {
+  grid-column: 5/5;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
 }

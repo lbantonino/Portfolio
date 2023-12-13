@@ -7,12 +7,10 @@ footer {
   .el1 {
     grid-column: 1/1;
     border-right: 0.5px solid $bluegrid;
-    border-top: 0.5px solid $bluegrid;
     border-bottom: 0.5px solid $bluegrid;
   }
   .el2 {
     grid-column: 2/4;
-    border-top: 0.5px solid $bluegrid;
     border-bottom: 0.5px solid $bluegrid;
     display: flex;
     flex-direction: column;
@@ -46,26 +44,44 @@ footer {
       line-height: 25px;
       text-decoration: underline;
       text-decoration: none;
-      margin-left: 30px;
+      transform: translateX(-15px);
+      .arrow-link {
+        position: absolute;
+        right: 34px;
+        top: 13px;
+        font-size: 15px;
+        &:hover {
+          color: $lightBlue;
+          transform: rotate(-45deg);
+        }
+      }
       &:hover {
-        cursor: pointer;
         color: $lightBlue;
         border: 1px solid $lightBlue;
+        cursor: pointer;
       }
   }
 }
-
   .el3 {
     grid-column: 4 / 5;
     border-left: 0.5px solid $bluegrid;
     border-right: 0.5px solid $bluegrid;
-    border-top: 0.5px solid $bluegrid;
     border-bottom: 0.5px solid $bluegrid;
+    overflow: hidden;
+    position: relative;
+    img {
+      position: absolute;
+      top: 124px;
+      left: -134px;
+      right: -197px;
+      object-fit: contain;
+      transform: scale(2);
+      // opacity: 0.9;
+      width: 100%;
+    }
   }
   .el4 {
     grid-column: 5/ 5;
-    border-right: 0.5px solid $bluegrid;
-    border-top: 0.5px solid $bluegrid;
     border-bottom: 0.5px solid $bluegrid;
   }
   .el5 {
@@ -75,6 +91,35 @@ footer {
   .el6 {
     grid-column: 2/2;
     border-right: 0.5px solid $bluegrid;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 20px;
+    .logo-svg {
+     
+      width: 35px;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    .name-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        font-size: 1rem;
+        font-family: $fontSyne;
+        font-weight: 600;
+        color: $white;
+        padding-left: 20px;
+        a {
+          color: $white;
+        }
+        a:hover {
+          cursor: pointer;
+        }
+      }
+    }
   }
   .el7 {
     grid-column: 3/3;
@@ -83,6 +128,16 @@ footer {
   .el8 {
     grid-column: 4/4;
     border-right: 0.5px solid $bluegrid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+      font-size: 0.85rem;
+      font-family: $fontInter;
+      font-weight: 300;
+      letter-spacing: -0.5px;
+      color: $white;
+    }
   }
   .el9 {
     grid-column: 5/5;
