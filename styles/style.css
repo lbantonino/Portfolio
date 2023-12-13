@@ -99,14 +99,14 @@ header .el1 {
   display: flex;
   grid-column: 1/1;
   grid-row: 1/1;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
 }
 header .logo {
   grid-column: 2/2;
   grid-row: 1/1;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-left: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-left: 0.5px solid rgba(255, 255, 255, 0.112);
   display: flex;
   align-items: center;
   justify-content: start;
@@ -139,7 +139,7 @@ header .logo .name-logo h1 a:hover {
 header .el3 {
   grid-column: 3/3;
   grid-row: 1/1;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
 }
 header .menu-global {
   display: flex;
@@ -147,9 +147,9 @@ header .menu-global {
   justify-content: space-around;
   grid-column: 4/4;
   grid-row: 1/1;
-  border-left: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-left: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
 }
 header .menu-global nav ul {
   display: flex;
@@ -166,7 +166,7 @@ header .menu-global nav ul li a {
 }
 header .menu-global nav ul li a:hover {
   padding-bottom: 5px;
-  border-bottom: 2px solid #0466c8;
+  border-bottom: 2px solid #fe9950;
 }
 header .menu-global .theme-switcher label {
   width: 28px;
@@ -189,7 +189,7 @@ header .menu-global .theme-switcher .moon {
   transition-delay: 0.4s;
 }
 header .menu-global .theme-switcher .moon:hover {
-  color: #0466c8;
+  color: #fe9950;
 }
 header .menu-global .theme-switcher input:checked ~ .moon {
   transition-delay: 0.5s;
@@ -205,7 +205,7 @@ header .menu-global .theme-switcher .sun {
   transition-delay: 0.4s;
 }
 header .menu-global .theme-switcher .sun:hover {
-  color: #0466c8;
+  color: #fe9950;
 }
 header .menu-global .theme-switcher input:checked ~ .sun {
   transition-delay: 0.5s;
@@ -224,7 +224,7 @@ header .menu-global .theme-switcher .toggle {
 header .el4 {
   grid-column: 5/5;
   grid-row: 1/1;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
 }
 
 footer {
@@ -236,12 +236,12 @@ footer {
 }
 footer .el1 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
 }
 footer .el2 {
   grid-column: 2/4;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -249,7 +249,7 @@ footer .el2 {
 }
 footer .el2 h1 {
   font-family: "Oswald", sans-serif;
-  color: #0466c8;
+  color: #fe9950;
   font-size: 1.8em;
   text-transform: uppercase;
   font-weight: 600;
@@ -284,19 +284,19 @@ footer .el2 a .arrow-link {
   font-size: 15px;
 }
 footer .el2 a .arrow-link:hover {
-  color: #0466c8;
+  color: #fe9950;
   transform: rotate(-45deg);
 }
 footer .el2 a:hover {
-  color: #0466c8;
-  border: 1px solid #0466c8;
+  color: #fe9950;
+  border: 1px solid #fe9950;
   cursor: pointer;
 }
 footer .el3 {
   grid-column: 4/5;
-  border-left: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-left: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
   overflow: hidden;
   position: relative;
 }
@@ -311,15 +311,15 @@ footer .el3 img {
 }
 footer .el4 {
   grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
 }
 footer .el5 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
 }
 footer .el6 {
   grid-column: 2/2;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
   display: flex;
   justify-content: start;
   align-items: center;
@@ -351,11 +351,11 @@ footer .el6 .name-logo h1 a:hover {
 }
 footer .el7 {
   grid-column: 3/3;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
 }
 footer .el8 {
   grid-column: 4/4;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -376,7 +376,7 @@ footer .el9 {
   top: 0;
   height: 50vh;
   width: 100vw;
-  background-color: #0466c8;
+  background-color: #fe9950;
   transition: transform 1s ease-in-out;
   z-index: 1;
 }
@@ -403,13 +403,13 @@ main .nomJob {
 }
 main .nomJob .el1 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
 }
 main .nomJob .el2 {
-  border-left: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-left: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
   overflow: hidden;
   position: relative;
 }
@@ -417,16 +417,16 @@ main .nomJob .el2 img {
   position: absolute;
   top: -58px;
   left: -13px;
-  opacity: 0.9;
+  opacity: 1;
   object-fit: contain;
   width: 100%;
   transform: scale(2);
 }
 main .nomJob .el3 {
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
 }
 main .nomJob .nomJob-global {
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
   grid-column: 2/4;
   grid-row: 1/1;
   display: flex;
@@ -445,7 +445,7 @@ main .nomJob .nomJob-global h1 {
   transform: translate(-5px, 0px);
 }
 main .nomJob .nomJob-global h1 span {
-  color: #0466c8;
+  color: #fe9950;
   font-style: italic;
 }
 main .nomJob .nomJob-global h2 {
@@ -465,12 +465,12 @@ main .social-img {
 }
 main .social-img .el4 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
 }
 main .social-img .el5 {
   grid-column: 2/4;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
   overflow: hidden;
   position: relative;
 }
@@ -486,13 +486,13 @@ main .social-img .el5 img {
 }
 main .social-img .social {
   grid-column: 4/4;
-  border-left: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-left: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
 }
 main .social-img .social h1 {
   font-family: "Oswald", sans-serif;
-  color: #0466c8;
+  color: #fe9950;
   font-size: 1.8em;
   text-transform: uppercase;
   font-weight: 600;
@@ -521,8 +521,8 @@ main .social-img .social .logo-social ul li a {
   position: relative;
 }
 main .social-img .social .logo-social ul li a:hover {
-  color: #0466c8;
-  border: 1px solid #0466c8;
+  color: #fe9950;
+  border: 1px solid #fe9950;
 }
 main .social-img .social .logo-social ul li a .arrow-link {
   position: absolute;
@@ -537,27 +537,27 @@ main .social-img .social .logo-social ul li .github {
 }
 main .social-img .el6 {
   grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
 }
 main .about {
   display: grid;
   grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-  grid-template-rows: 210px;
+  grid-template-rows: 225px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
 main .about .el1 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
 }
 main .about .aboutMe {
   grid-column: 2/4;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
 }
 main .about .aboutMe h1 {
   font-family: "Oswald", sans-serif;
-  color: #0466c8;
+  color: #fe9950;
   font-size: 1.8em;
   text-transform: uppercase;
   font-weight: 600;
@@ -586,8 +586,8 @@ main .about .aboutMe a {
 }
 main .about .aboutMe a:hover {
   transform: scale(105%);
-  color: #0466c8;
-  border: 1px solid #0466c8;
+  color: #fe9950;
+  border: 1px solid #fe9950;
 }
 main .about .aboutMe .arrow-link {
   position: absolute;
@@ -601,9 +601,9 @@ main .about .el2 {
   overflow: hidden;
   position: relative;
   grid-column: 4/4;
-  border-left: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-left: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
 }
 main .about .el2 img {
   position: absolute;
@@ -616,24 +616,24 @@ main .about .el2 img {
 }
 main .about .el3 {
   grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
 }
 main .technos {
   display: grid;
   grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-  grid-template-rows: 155px;
+  grid-template-rows: 200px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
 main .technos .el1 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
 }
 main .technos .el2 {
   grid-column: 2/3;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
   overflow: hidden;
   position: relative;
 }
@@ -649,16 +649,75 @@ main .technos .el2 img {
 }
 main .technos .el3 {
   grid-column: 3/5;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
   color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  position: relative;
+}
+main .technos .el3 h1 {
+  font-family: "Oswald", sans-serif;
+  color: #fe9950;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: 600;
+  top: 5px;
+  left: 17px;
+  position: absolute;
+}
+main .technos .el3 img {
+  margin-top: 18px;
+}
+main .technos .el3 .react {
+  width: 50px;
+  animation: turnright 7s linear 0s infinite normal;
+}
+main .technos .el3 .nodejs {
+  width: 50px;
+  animation-delay: 3s;
+  animation: turnleft 7s linear 1s infinite normal;
+}
+main .technos .el3 .mongo {
+  width: 50px;
+  animation: turnright 7s linear 2s infinite normal;
+}
+main .technos .el3 .mysql {
+  width: 50px;
+  animation: turnleft 7s linear 3s infinite normal;
+}
+main .technos .el3 .html {
+  width: 50px;
+  animation: turnright 7s linear 4s infinite normal;
+}
+main .technos .el3 .sass {
+  width: 50px;
+  animation: turnleft 7s linear 5s infinite normal;
+}
+main .technos .el3 .tailwind {
+  width: 50px;
+  animation: turnright 7s linear 6s infinite normal;
+}
+@keyframes turnright {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes turnleft {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 main .technos .el4 {
   grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
 }
 main .work {
   display: grid;
@@ -669,13 +728,13 @@ main .work {
 }
 main .work .el1 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
 }
 main .work .el2 {
   grid-column: 2/4;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
   display: flex;
   align-items: start;
   justify-content: center;
@@ -683,7 +742,7 @@ main .work .el2 {
 }
 main .work .el2 h1 {
   font-family: "Oswald", sans-serif;
-  color: #0466c8;
+  color: #fe9950;
   font-size: 1.8em;
   text-transform: uppercase;
   font-weight: 600;
@@ -699,8 +758,8 @@ main .work .el2 p {
 }
 main .work .el3 {
   grid-column: 4/5;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
   overflow: hidden;
   position: relative;
 }
@@ -716,19 +775,19 @@ main .work .el3 img {
 }
 main .work .el4 {
   grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
 }
 main .work .el5 {
   grid-column: 1/1;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
 }
 main .work .el6 {
   display: flex;
   justify-content: center;
   flex-direction: column;
   grid-column: 2/2;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
   padding: 0 40px;
 }
 main .work .el6 h4 {
@@ -767,12 +826,12 @@ main .work .el6 a .arrow-link {
   font-size: 15px;
 }
 main .work .el6 a .arrow-link:hover {
-  color: #0466c8;
+  color: #fe9950;
   transform: rotate(-45deg);
 }
 main .work .el6 a:hover {
-  color: #0466c8;
-  border: 1px solid #0466c8;
+  color: #fe9950;
+  border: 1px solid #fe9950;
   cursor: pointer;
 }
 main .work .el7 {
@@ -780,7 +839,7 @@ main .work .el7 {
   justify-content: center;
   align-items: center;
   grid-column: 3/5;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
   overflow: hidden;
   position: relative;
 }
@@ -795,19 +854,19 @@ main .work .el7 img:hover {
 }
 main .work .el8 {
   grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
 }
 main .work .el9 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
 }
 main .work .el10 {
   display: flex;
   justify-content: center;
   align-items: center;
   grid-column: 2/2;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
   flex-direction: column;
   padding: 0 40px;
 }
@@ -836,12 +895,12 @@ main .work .el10 a .arrow-link {
   font-size: 15px;
 }
 main .work .el10 a .arrow-link:hover {
-  color: #0466c8;
+  color: #fe9950;
   transform: rotate(-45deg);
 }
 main .work .el10 a:hover {
-  color: #0466c8;
-  border: 1px solid #0466c8;
+  color: #fe9950;
+  border: 1px solid #fe9950;
   cursor: pointer;
 }
 main .work .el11 {
@@ -849,7 +908,7 @@ main .work .el11 {
   justify-content: center;
   align-items: center;
   grid-column: 3/5;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
   overflow: hidden;
   position: relative;
 }
@@ -863,20 +922,20 @@ main .work .el11 img:hover {
 }
 main .work .el12 {
   grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
 }
 main .work .el13 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
 }
 main .work .el14 {
   display: flex;
   justify-content: center;
   flex-direction: column;
   grid-column: 2/2;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
   padding: 0 40px;
 }
 main .work .el14 h4 {
@@ -915,12 +974,12 @@ main .work .el14 a .arrow-link {
   font-size: 15px;
 }
 main .work .el14 a .arrow-link:hover {
-  color: #0466c8;
+  color: #fe9950;
   transform: rotate(-45deg);
 }
 main .work .el14 a:hover {
-  color: #0466c8;
-  border: 1px solid #0466c8;
+  color: #fe9950;
+  border: 1px solid #fe9950;
   cursor: pointer;
 }
 main .work .el15 {
@@ -928,8 +987,8 @@ main .work .el15 {
   justify-content: center;
   align-items: center;
   grid-column: 3/5;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
   overflow: hidden;
   position: relative;
 }
@@ -943,5 +1002,5 @@ main .work .el15 img:hover {
 }
 main .work .el16 {
   grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
 }

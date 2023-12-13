@@ -44,7 +44,7 @@ main {
         position: absolute;
         top: -58px;
         left: -13px;
-        opacity: 0.9;
+        opacity: 1;
         object-fit: contain;
         width: 100%;
         transform: scale(2);
@@ -174,7 +174,7 @@ main {
   .about {
     display: grid;
     grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-    grid-template-rows: 210px;
+    grid-template-rows: 225px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     .el1 {
@@ -254,7 +254,7 @@ main {
   .technos {
     display: grid;
     grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-    grid-template-rows: 155px;
+    grid-template-rows: 200px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     .el1 {
@@ -286,7 +286,66 @@ main {
       color: white;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-around;
+      position: relative;
+      h1{
+        font-family: $fontOswald;
+        color: $lightBlue;
+        font-size: 1.8em;
+        text-transform: uppercase;
+        font-weight: 600;
+        top: 5px;
+        left: 17px;
+        position: absolute;
+      }
+        img{
+        margin-top: 18px;
+      }
+      .react{
+        width: 50px;
+        animation: turnright 7s linear 0s infinite normal;
+      }
+      .nodejs{
+        width: 50px;
+        animation-delay: 3s;
+        animation: turnleft 7s linear 1s infinite normal;
+      }
+      .mongo{
+        width: 50px;
+        animation: turnright 7s linear 2s infinite normal;
+      }
+      .mysql{
+        width: 50px;
+        animation: turnleft 7s linear 3s infinite normal;
+      }
+      .html{
+        width: 50px;
+        animation: turnright 7s linear 4s infinite normal;
+      }
+      .sass{
+        width: 50px;
+        animation: turnleft 7s linear 5s infinite normal;
+      }
+      .tailwind{
+        width: 50px;
+        animation: turnright 7s linear 6s infinite normal;
+      }
+      @keyframes turnright {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes turnleft {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(-360deg);
+        }
+      }
     }
     .el4 {
       grid-column: 5 / 5;
