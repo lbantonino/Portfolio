@@ -99,14 +99,14 @@ header .el1 {
   display: flex;
   grid-column: 1/1;
   grid-row: 1/1;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
 }
 header .logo {
   grid-column: 2/2;
   grid-row: 1/1;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
-  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
-  border-left: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-left: 0.5px solid rgba(51, 59, 81, 0.244);
   display: flex;
   align-items: center;
   justify-content: start;
@@ -139,7 +139,7 @@ header .logo .name-logo h1 a:hover {
 header .el3 {
   grid-column: 3/3;
   grid-row: 1/1;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
 }
 header .menu-global {
   display: flex;
@@ -147,9 +147,9 @@ header .menu-global {
   justify-content: space-around;
   grid-column: 4/4;
   grid-row: 1/1;
-  border-left: 0.5px solid rgba(51, 59, 81, 0.605);
-  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-left: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
 }
 header .menu-global nav ul {
   display: flex;
@@ -198,7 +198,7 @@ header .menu-global .theme-switcher input:checked ~ .moon {
 header .menu-global .theme-switcher .sun {
   position: absolute;
   font-size: 19px;
-  color: rgb(4, 7, 14);
+  color: #131a32;
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.6));
   transform: scale(0);
   transition: 1s ease;
@@ -224,39 +224,97 @@ header .menu-global .theme-switcher .toggle {
 header .el4 {
   grid-column: 5/5;
   grid-row: 1/1;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
 }
 
 footer {
   display: grid;
   grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-  grid-template-rows: 80px;
+  grid-template-rows: 200px 80px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
 footer .el1 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
-  border-top: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-top: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
 }
 footer .el2 {
-  grid-column: 2/2;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
-  border-top: 0.5px solid rgba(51, 59, 81, 0.605);
+  grid-column: 2/4;
+  border-top: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .el2 h1 {
+  font-family: "Oswald", sans-serif;
+  color: #0466c8;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-left: 16px;
+  padding-top: 12px;
+  transform: translate(-336px, -30px);
+}
+footer .el2 p {
+  padding: 10px 40px 35px;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  line-height: 22px;
+}
+footer .el2 a {
+  transform: translateY(-10px);
+  padding: 7px 534px 7px 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1490196078);
+  border-radius: 30px;
+  color: #ffffff;
+  font-family: "Syne", sans-serif;
+  font-size: 1rem;
+  line-height: 25px;
+  text-decoration: underline;
+  text-decoration: none;
+  margin-left: 30px;
+}
+footer .el2 a:hover {
+  cursor: pointer;
+  color: #0466c8;
+  border: 1px solid #0466c8;
 }
 footer .el3 {
-  grid-column: 3/3;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
-  border-top: 0.5px solid rgba(51, 59, 81, 0.605);
+  grid-column: 4/5;
+  border-left: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-top: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
 }
 footer .el4 {
-  grid-column: 4/4;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
-  border-top: 0.5px solid rgba(51, 59, 81, 0.605);
+  grid-column: 5/5;
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-top: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
 }
 footer .el5 {
+  grid-column: 1/1;
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+}
+footer .el6 {
+  grid-column: 2/2;
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+}
+footer .el7 {
+  grid-column: 3/3;
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+}
+footer .el8 {
+  grid-column: 4/4;
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+}
+footer .el9 {
   grid-column: 5/5;
-  border-top: 0.5px solid rgba(51, 59, 81, 0.605);
 }
 
 .overlay {
@@ -291,13 +349,13 @@ main .nomJob {
 }
 main .nomJob .el1 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
 }
 main .nomJob .el2 {
-  border-left: 0.5px solid rgba(51, 59, 81, 0.605);
-  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-left: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
   overflow: hidden;
   position: relative;
 }
@@ -305,14 +363,15 @@ main .nomJob .el2 img {
   position: absolute;
   top: -192px;
   left: 70px;
+  opacity: 0.45;
   object-fit: contain;
   transform: scale(4);
 }
 main .nomJob .el3 {
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
 }
 main .nomJob .nomJob-global {
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
   grid-column: 2/4;
   grid-row: 1/1;
   display: flex;
@@ -351,12 +410,12 @@ main .social-img {
 }
 main .social-img .el4 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
 }
 main .social-img .el5 {
   grid-column: 2/4;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
   overflow: hidden;
   position: relative;
 }
@@ -367,12 +426,13 @@ main .social-img .el5 img {
   right: 147px;
   object-fit: contain;
   transform: scale(2);
+  opacity: 0.45;
 }
 main .social-img .social {
   grid-column: 4/4;
-  border-left: 0.5px solid rgba(51, 59, 81, 0.605);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
-  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-left: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
 }
 main .social-img .social h1 {
   font-family: "Oswald", sans-serif;
@@ -421,7 +481,7 @@ main .social-img .social .logo-social ul li .github {
 }
 main .social-img .el6 {
   grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
 }
 main .about {
   display: grid;
@@ -432,12 +492,12 @@ main .about {
 }
 main .about .el1 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
 }
 main .about .aboutMe {
   grid-column: 2/4;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
 }
 main .about .aboutMe h1 {
   font-family: "Oswald", sans-serif;
@@ -485,9 +545,9 @@ main .about .el2 {
   overflow: hidden;
   position: relative;
   grid-column: 4/4;
-  border-left: 0.5px solid rgba(51, 59, 81, 0.605);
-  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-left: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
 }
 main .about .el2 img {
   position: absolute;
@@ -495,10 +555,11 @@ main .about .el2 img {
   left: -97px;
   object-fit: contain;
   transform: scale(2);
+  opacity: 0.45;
 }
 main .about .el3 {
   grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
 }
 main .technos {
   display: grid;
@@ -509,13 +570,13 @@ main .technos {
 }
 main .technos .el1 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
 }
 main .technos .el2 {
   grid-column: 2/3;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
-  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
   overflow: hidden;
   position: relative;
 }
@@ -526,11 +587,12 @@ main .technos .el2 img {
   right: 147px;
   object-fit: contain;
   transform: scale(2);
+  opacity: 0.45;
 }
 main .technos .el3 {
   grid-column: 3/5;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
-  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
   color: white;
   display: flex;
   align-items: center;
@@ -538,24 +600,24 @@ main .technos .el3 {
 }
 main .technos .el4 {
   grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
 }
 main .work {
   display: grid;
   grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-  grid-template-rows: 320px 280px 300px 300px;
+  grid-template-rows: 200px 320px 320px 320px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
 main .work .el1 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
 }
 main .work .el2 {
   grid-column: 2/4;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
-  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
   display: flex;
   align-items: start;
   justify-content: center;
@@ -579,8 +641,8 @@ main .work .el2 p {
 }
 main .work .el3 {
   grid-column: 4/5;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
-  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
   overflow: hidden;
   position: relative;
 }
@@ -592,22 +654,24 @@ main .work .el3 img {
   object-fit: contain;
   transform: scale(2);
   transform: translateX(164px);
+  opacity: 0.45;
 }
 main .work .el4 {
   grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
 }
 main .work .el5 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
 }
 main .work .el6 {
   display: flex;
   justify-content: center;
   flex-direction: column;
   grid-column: 2/2;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
   padding: 0 40px;
 }
 main .work .el6 h4 {
@@ -661,8 +725,8 @@ main .work .el7 {
   justify-content: center;
   align-items: center;
   grid-column: 3/5;
-  border-bottom: 0.5px solid rgba(51, 59, 81, 0.605);
-  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
   overflow: hidden;
   position: relative;
 }
@@ -677,28 +741,22 @@ main .work .el7 img:hover {
 }
 main .work .el8 {
   grid-column: 5/5;
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
 }
 main .work .el9 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
 }
 main .work .el10 {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
   grid-column: 2/2;
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
+  flex-direction: column;
   padding: 0 40px;
-}
-main .work .el10 h4 {
-  font-family: "Inter", sans-serif;
-  color: #e0871e;
-  font-size: 1.3em;
-  text-transform: uppercase;
-  font-weight: 500;
-  padding-bottom: 10px;
-}
-main .work .el10 h4 span {
-  color: #12399b;
 }
 main .work .el10 p {
   color: #ffffff;
@@ -707,7 +765,7 @@ main .work .el10 p {
 }
 main .work .el10 a {
   color: #ffffff;
-  padding: 7px 25px;
+  padding: 7px 147px 7px 25px;
   border: 1px solid rgba(255, 255, 255, 0.1490196078);
   border-radius: 30px;
   font-family: "Syne", sans-serif;
@@ -739,33 +797,33 @@ main .work .el11 {
   justify-content: center;
   align-items: center;
   grid-column: 3/5;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
   overflow: hidden;
   position: relative;
 }
 main .work .el11 img {
   position: absolute;
   object-fit: contain;
-  width: 80%;
-  border-radius: 15px;
-  border: 0.2px solid #fff;
-  box-shadow: 0px 13px 15px rgba(0, 0, 0, 0.24);
+  width: 95%;
 }
 main .work .el11 img:hover {
-  transform: scale(102%);
+  cursor: pointer;
 }
 main .work .el12 {
   grid-column: 5/5;
+  border-bottom: 0.5px solid rgba(51, 59, 81, 0.244);
 }
 main .work .el13 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
 }
 main .work .el14 {
   display: flex;
   justify-content: center;
   flex-direction: column;
   grid-column: 2/2;
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
   padding: 0 40px;
 }
 main .work .el14 h4 {
@@ -818,18 +876,15 @@ main .work .el15 {
   justify-content: center;
   align-items: center;
   grid-column: 3/5;
-  border-right: 0.5px solid rgba(51, 59, 81, 0.605);
+  border-right: 0.5px solid rgba(51, 59, 81, 0.244);
   overflow: hidden;
   position: relative;
 }
 main .work .el15 img {
   position: absolute;
   object-fit: contain;
-  width: 80%;
-  border-radius: 15px;
-  border: 0.8px solid #fff;
-  box-shadow: 0px 13px 15px rgba(0, 0, 0, 0.24);
+  width: 95%;
 }
 main .work .el15 img:hover {
-  transform: scale(102%);
+  cursor: pointer;
 }
