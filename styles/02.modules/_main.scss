@@ -26,7 +26,7 @@ main {
   .nomJob {
     display: grid;
     grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-    grid-template-rows: 280px;
+    grid-template-rows: 450px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     .el1 {
@@ -42,7 +42,7 @@ main {
       position: relative;
       img {
         position: absolute;
-        top: -58px;
+        top: 95px;
         left: -13px;
         opacity: 1;
         object-fit: contain;
@@ -64,7 +64,7 @@ main {
       padding-left: 15px;
       h1 {
         font-family: $fontOswald;
-        font-size: 75px;
+        font-size: 90px;
         font-weight: 600;
         letter-spacing: -2px;
         color: $white;
@@ -78,11 +78,11 @@ main {
         }
       }
       h2 {
-        font-family: $fontInter;
+        font-family: $fontOswald;
         font-size: 60px;
         font-weight: 200;
         color: $white;
-        letter-spacing: -6px;
+        letter-spacing: -2px;
         transform: translate(0px, -25px);
       }
     }
@@ -90,7 +90,7 @@ main {
   .social-img {
     display: grid;
     grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-    grid-template-rows: 195px;
+    grid-template-rows: 255px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     .el4 {
@@ -98,46 +98,98 @@ main {
       border-right: 0.5px solid $bluegrid;
       border-bottom: 0.5px solid $bluegrid;
     }
-    .el5 {
-      grid-column: 2 / 4;
-      border-bottom: 0.5px solid $bluegrid;
-      overflow: hidden;
-      position: relative;
-      img {
-        position: absolute;
-        top: -101px;
-        left: 0px;
-        right: 147px;
-        object-fit: contain;
-        transform: scale(1);
-        width: 100%;
-        opacity: 0.9;
+      .aboutMe {
+        grid-column: 2 / 4;
+        border-bottom: 0.5px solid $bluegrid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        .about-text{
+          width: 715px;
+          display: flex;
+          align-items: start;
+          justify-content: start;
+        h1 {
+          font-family: $fontOswald;
+          color: $lightBlue;
+          padding: 3px 0;
+          border-bottom: 1px solid $lightBlue;
+          font-size: 22px;
+          text-transform: uppercase;
+          font-weight: 500;
+        }
       }
-    }
+        p {
+          padding: 0 45px ;
+          color: $white;
+          font-family: $fontInter;
+          font-size: 0.9rem;
+          line-height: 22px;
+        }
+        a {
+          padding: 7px 534px 7px 25px;
+          border: 1px solid #ffffff26;
+          border-radius: 30px;
+          color: $white;
+          font-family: $fontSyne;
+          font-size: 1rem;
+          line-height: 25px;
+          text-decoration: underline;
+          text-decoration: none;
+          position: relative;
+          &:hover {
+            color: $lightBlue;
+            border: 1px solid $lightBlue;
+          }
+        }
+  
+        .arrow-link {
+          position: absolute;
+          right: 34px;
+          top: 12px;
+        }
+        .arrow-link:hover {
+          transform: rotate(-45deg);
+        }
+      }
+    
     .social {
       grid-column: 4/ 4;
       border-left: 0.5px solid $bluegrid;
       border-bottom: 0.5px solid $bluegrid;
       border-right: 0.5px solid $bluegrid;
-      h1 {
-        font-family: $fontOswald;
-        color: $lightBlue;
-        font-size: 1.8em;
-        text-transform: uppercase;
-        font-weight: 600;
-        padding-left: 16px;
-        padding-top: 12px;
-      }
-      .logo-social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 15px;
+      .social-text{
+        width: 320px;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        align-items: start;
+        justify-content: start;
+        h1 {
+          font-family: $fontOswald;
+          color: $lightBlue;
+          padding: 3px 0;
+          border-bottom: 1px solid $lightBlue;
+          font-size: 22px;
+          text-transform: uppercase;
+          font-weight: 500;
+        }
+      }
+
+      .logo-social {
         ul {
+         
           transform: translateY(-10px);
           li {
-            margin: 35px 0;
+            transform: translateY(29px);
+            margin: 30px 0;
             a {
-              padding: 7px 235px 7px 25px;
+              padding: 9.5px 235px 9.5px 25px;
               border: 0.5px solid #ffffff26;
               border-radius: 30px;
               color: $white;
@@ -152,15 +204,19 @@ main {
               .arrow-link {
                 position: absolute;
                 right: 34px;
-                top: 9px;
+                top: 12px;
               }
               .arrow-link:hover {
                 transform: rotate(-45deg);
               }
             }
             .github {
-              padding: 7px 244px 7px 25px;
+              padding: 9.5px 244px 9.5px 25px;
             }
+
+          }
+          .githubli{
+            transform: translateY(8px);
           }
         }
       }
@@ -171,90 +227,10 @@ main {
       border-bottom: 0.5px solid $bluegrid;
     }
   }
-  .about {
-    display: grid;
-    grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-    grid-template-rows: 225px;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    .el1 {
-      grid-column: 1 / 1;
-      border-right: 0.5px solid $bluegrid;
-      border-bottom: 0.5px solid $bluegrid;
-    }
-    .aboutMe {
-      grid-column: 2 / 4;
-      border-bottom: 0.5px solid $bluegrid;
-      h1 {
-        font-family: $fontOswald;
-        color: $lightBlue;
-        font-size: 1.8em;
-        text-transform: uppercase;
-        font-weight: 600;
-        padding-left: 16px;
-        padding-top: 12px;
-      }
-      p {
-        padding: 10px 40px 35px;
-        color: $white;
-        font-family: $fontInter;
-        font-size: 0.9rem;
-        line-height: 22px;
-      }
-      a {
-        padding: 7px 534px 7px 25px;
-        border: 1px solid #ffffff26;
-        border-radius: 30px;
-        color: $white;
-        font-family: $fontSyne;
-        font-size: 1rem;
-        line-height: 25px;
-        text-decoration: underline;
-        text-decoration: none;
-        margin-left: 30px;
-        position: relative;
-        &:hover {
-          transform: scale(105%);
-          color: $lightBlue;
-          border: 1px solid $lightBlue;
-        }
-      }
-
-      .arrow-link {
-        position: absolute;
-        right: 34px;
-        top: 9px;
-      }
-      .arrow-link:hover {
-        transform: rotate(-45deg);
-      }
-    }
-    .el2 {
-      overflow: hidden;
-      position: relative;
-      grid-column: 4 / 4;
-      border-left: 0.5px solid $bluegrid;
-      border-right: 0.5px solid $bluegrid;
-      border-bottom: 0.5px solid $bluegrid;
-      img {
-        position: absolute;
-        top: -116px;
-        left: 125px;
-        object-fit: contain;
-        transform: scale(2);
-        opacity: 0.9;
-        width: 100%;
-      }
-    }
-    .el3 {
-      grid-column: 5 / 5;
-      border-bottom: 0.5px solid $bluegrid;
-    }
-  }
   .technos {
     display: grid;
     grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-    grid-template-rows: 200px;
+    grid-template-rows: 300px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     .el1 {
@@ -286,66 +262,77 @@ main {
       color: white;
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: center;
+      flex-direction: column;
       position: relative;
-      h1{
+      .text-skill{
+        transform: translateY(-30px);
+        width: 700px;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        transform: translateY(-75px);
+      h1 {
         font-family: $fontOswald;
         color: $lightBlue;
-        font-size: 1.8em;
+        padding: 3px 0;
+        border-bottom: 1px solid $lightBlue;
+        font-size: 22px;
         text-transform: uppercase;
-        font-weight: 600;
-        top: 5px;
-        left: 17px;
-        position: absolute;
+        font-weight: 500;
       }
-        img{
-        margin-top: 18px;
       }
-      .react{
-        width: 50px;
-        animation: turnright 7s linear 0s infinite normal;
-      }
-      .nodejs{
-        width: 50px;
-        animation-delay: 3s;
-        animation: turnleft 7s linear 1s infinite normal;
-      }
-      .mongo{
-        width: 50px;
-        animation: turnright 7s linear 2s infinite normal;
-      }
-      .mysql{
-        width: 50px;
-        animation: turnleft 7s linear 3s infinite normal;
-      }
-      .html{
-        width: 50px;
-        animation: turnright 7s linear 4s infinite normal;
-      }
-      .sass{
-        width: 50px;
-        animation: turnleft 7s linear 5s infinite normal;
-      }
-      .tailwind{
-        width: 50px;
-        animation: turnright 7s linear 6s infinite normal;
-      }
-      @keyframes turnright {
-        0% {
-          transform: rotate(0deg);
+      
+      .logo-techno{
+        display: flex;
+        gap: 60px;
+        transform: translateY(-10px);
+        .react{
+          width: 50px;
+          animation: turnright 7s linear 0s infinite normal;
         }
-        100% {
-          transform: rotate(360deg);
+        .nodejs{
+          width: 50px;
+          animation: turnleft 7s linear 0.5s infinite normal;
+        }
+        .mongo{
+          width: 50px;
+          animation: turnright 7s linear 1s infinite normal;
+        }
+        .mysql{
+          width: 50px;
+          animation: turnleft 7s linear 1.5s infinite normal;
+        }
+        .html{
+          width: 50px;
+          animation: turnright 7s linear 2s infinite normal;
+        }
+        .sass{
+          width: 50px;
+          animation: turnleft 7s linear 2.5s infinite normal;
+        }
+        .tailwind{
+          width: 50px;
+          animation: turnright 7s linear 3s infinite normal;
+        }
+        @keyframes turnright {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+        @keyframes turnleft {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(-360deg);
+          }
         }
       }
-      @keyframes turnleft {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(-360deg);
-        }
-      }
+      
     }
     .el4 {
       grid-column: 5 / 5;
@@ -355,7 +342,7 @@ main {
   .work {
     display: grid;
     grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-    grid-template-rows: 200px 320px 320px 320px;
+    grid-template-rows: 300px 320px 320px 320px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     .el1 {
@@ -368,18 +355,26 @@ main {
       border-bottom: 0.5px solid $bluegrid;
       border-right: 0.5px solid $bluegrid;
       display: flex;
-      align-items: start;
+      align-items: center;
       justify-content: center;
       flex-direction: column;
+      .work-text{
+        width: 720px;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        margin-bottom: 10px;
+        transform: translateY(-40px);
+
       h1 {
         font-family: $fontOswald;
         color: $lightBlue;
-        font-size: 1.8em;
+        padding: 3px 0;
+        border-bottom: 1px solid $lightBlue;
+        font-size: 22px;
         text-transform: uppercase;
-        font-weight: 600;
-        padding-left: 16px;
-        padding-top: 12px;
-        // transform: translateY(-21px);
+        font-weight: 500;
+      }
       }
       p {
         padding: 10px 40px 35px;
@@ -418,55 +413,50 @@ main {
     .el6 {
       display: flex;
       justify-content: center;
+      align-items: center;
       flex-direction: column;
       grid-column: 2 / 2;
       border-right: 0.5px solid $bluegrid;
-      // border-bottom: 0.5px solid $bluegrid;
-      padding: 0 40px;
-      h4 {
-        letter-spacing: 1.5px;
-        span {
-          color: #c00;
+      .width{
+        width: 300px;
+        p {
+          color: $white;
+          font-family: $fontInter;
+          font-size: 0.8rem;
+          margin-bottom: 20px;
         }
-        font-family: $fontInter;
-        color: $white;
-        font-size: 1.3em;
-        text-transform: uppercase;
-        font-weight: 500;
-        padding-bottom: 10px;
-      }
-      p {
-        color: $white;
-        font-family: $fontInter;
-        font-size: 0.8rem;
-      }
-      a {
-        color: $white;
-        padding: 7px 25px;
-        border: 1px solid rgba(255, 255, 255, 0.1490196078);
-        border-radius: 30px;
-        font-family: $fontSyne;
-        font-size: 1rem;
-        font-weight: 200;
-        text-decoration: none;
-        position: relative;
-        margin-top: 30px;
-        .arrow-link {
-          position: absolute;
-          right: 34px;
-          top: 10px;
-          font-size: 15px;
+        a {
+          
+          color: $white;
+          background-color: #0466c81b;
+          padding: 7px 170px 7px 25px;
+          border: 1px solid $lightBlue;
+          border-radius: 30px;
+          font-family: $fontInter;
+          font-size: 13px;
+          font-weight: 300;
+          text-decoration: none;
+          position: relative;
+          margin-top: 30px;
+          .arrow-link {
+            position: absolute;
+            right: 34px;
+            top: 8px;
+            font-size: 15px;
+            &:hover {
+              color: $lightBlue;
+              transform: rotate(-45deg);
+            }
+          }
           &:hover {
-            color: $lightBlue;
-            transform: rotate(-45deg);
+            background-color: $lightBlue;
+            color: white;
+            border: 1px solid $lightBlue;
+            cursor: pointer;
           }
         }
-        &:hover {
-          color: $lightBlue;
-          border: 1px solid $lightBlue;
-          cursor: pointer;
-        }
       }
+     
     }
     .el7 {
       display: flex;
@@ -483,6 +473,7 @@ main {
         width: 95%;
         opacity: 0.9;
         &:hover {
+          border: 2px solid $lightBlue;
           cursor: pointer;
         }
       }
@@ -500,44 +491,48 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       grid-column: 2 / 2;
       border-right: 0.5px solid $bluegrid;
-      flex-direction: column;
-      padding: 0 40px;
-      p {
-        color: $white;
-        font-family: $fontInter;
-        font-size: 0.8rem;
-      }
-      a {
-        color: $white;
-        padding: 7px 147px 7px 25px;
-        border: 1px solid rgba(255, 255, 255, 0.1490196078);
-        border-radius: 30px;
-        font-family: $fontSyne;
-        font-size: 1rem;
-        font-weight: 200;
-        text-decoration: underline;
-        text-decoration: none;
-        position: relative;
-        margin-top: 30px;
-        .arrow-link {
-          position: absolute;
-          right: 34px;
-          top: 10px;
-          font-size: 15px;
+      .width{
+        width: 300px;
+        p {
+          color: $white;
+          font-family: $fontInter;
+          font-size: 0.8rem;
+          margin-bottom: 30px;
+        }
+        a { 
+          color: $white;
+          background-color: #0466c81b;
+          padding: 7px 148px 7px 25px;
+          border: 1px solid $lightBlue;
+          border-radius: 30px;
+          font-family: $fontInter;
+          font-size: 13px;
+          font-weight: 300;
+          text-decoration: none;
+          position: relative;
+          margin-top: 30px;
+          .arrow-link {
+            position: absolute;
+            right: 34px;
+            top: 8px;
+            font-size: 15px;
+            &:hover {
+              color: $lightBlue;
+              transform: rotate(-45deg);
+            }
+          }
           &:hover {
-            color: $lightBlue;
-            transform: rotate(-45deg);
+            color: white;
+            background-color: $lightBlue;
+            border: 1px solid $lightBlue;
+            cursor: pointer;
+            transform: scale(105%);
           }
         }
-        &:hover {
-          color: $lightBlue;
-          border: 1px solid $lightBlue;
-          cursor: pointer;
-        }
       }
-
     }
     .el11 {
       display: flex;
@@ -552,6 +547,7 @@ main {
         position: absolute;
         object-fit: contain;
         width: 95%;
+        opacity: 1;
         &:hover {
           cursor: pointer;
         }
@@ -570,52 +566,47 @@ main {
       display: flex;
       justify-content: center;
       flex-direction: column;
+      align-items: center;
       grid-column: 2 / 2;
       border-bottom: 0.5px solid $bluegrid;
       border-right: 0.5px solid $bluegrid;
-      padding: 0 40px;
-      h4 {
-        span {
-          color: #12399b;
+      .width{
+        width: 300px;
+        p {
+          color: $white;
+          font-family: $fontInter;
+          font-size: 0.8rem;
+          margin-bottom: 20px;
         }
-        font-family: $fontInter;
-        color: #21d86b;
-        font-size: 1.3em;
-        text-transform: uppercase;
-        font-weight: 500;
-        padding-bottom: 10px;
-      }
-      p {
-        color: $white;
-        font-family: $fontInter;
-        font-size: 0.8rem;
-      }
-      a {
-        color: $white;
-        padding: 7px 25px;
-        border: 1px solid rgba(255, 255, 255, 0.1490196078);
-        border-radius: 30px;
-        font-family: $fontSyne;
-        font-size: 1rem;
-        font-weight: 200;
-        text-decoration: underline;
-        text-decoration: none;
-        position: relative;
-        margin-top: 30px;
-        .arrow-link {
-          position: absolute;
-          right: 34px;
-          top: 10px;
-          font-size: 15px;
-          &:hover {
-            color: $lightBlue;
-            transform: rotate(-45deg);
-          }
-        }
-        &:hover {
-          color: $lightBlue;
+        a {
+          
+          color: $white;
+          background-color: #0466c81b;
+          padding: 7px 162px 7px 25px;
           border: 1px solid $lightBlue;
-          cursor: pointer;
+          border-radius: 30px;
+          font-family: $fontInter;
+          font-size: 13px;
+          font-weight: 300;
+          text-decoration: none;
+          position: relative;
+          margin-top: 30px;
+          .arrow-link {
+            position: absolute;
+            right: 34px;
+            top: 8px;
+            font-size: 15px;
+            &:hover {
+              color: $lightBlue;
+              transform: rotate(-45deg);
+            }
+          }
+          &:hover {
+            background-color: $lightBlue;
+            color: white;
+            border: 1px solid $lightBlue;
+            cursor: pointer;
+          }
         }
       }
     }

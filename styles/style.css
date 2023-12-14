@@ -99,14 +99,14 @@ header .el1 {
   display: flex;
   grid-column: 1/1;
   grid-row: 1/1;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
 header .logo {
   grid-column: 2/2;
   grid-row: 1/1;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-left: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  border-left: 0.5px solid rgba(255, 255, 255, 0.0941176471);
   display: flex;
   align-items: center;
   justify-content: start;
@@ -139,7 +139,7 @@ header .logo .name-logo h1 a:hover {
 header .el3 {
   grid-column: 3/3;
   grid-row: 1/1;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
 header .menu-global {
   display: flex;
@@ -147,9 +147,9 @@ header .menu-global {
   justify-content: space-around;
   grid-column: 4/4;
   grid-row: 1/1;
-  border-left: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-left: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
 header .menu-global nav ul {
   display: flex;
@@ -166,7 +166,7 @@ header .menu-global nav ul li a {
 }
 header .menu-global nav ul li a:hover {
   padding-bottom: 5px;
-  border-bottom: 2px solid #fe9950;
+  border-bottom: 2px solid #0466c8;
 }
 header .menu-global .theme-switcher label {
   width: 28px;
@@ -189,7 +189,7 @@ header .menu-global .theme-switcher .moon {
   transition-delay: 0.4s;
 }
 header .menu-global .theme-switcher .moon:hover {
-  color: #fe9950;
+  color: #0466c8;
 }
 header .menu-global .theme-switcher input:checked ~ .moon {
   transition-delay: 0.5s;
@@ -198,14 +198,14 @@ header .menu-global .theme-switcher input:checked ~ .moon {
 header .menu-global .theme-switcher .sun {
   position: absolute;
   font-size: 19px;
-  color: #131a32;
+  color: #050712;
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.6));
   transform: scale(0);
   transition: 1s ease;
   transition-delay: 0.4s;
 }
 header .menu-global .theme-switcher .sun:hover {
-  color: #fe9950;
+  color: #0466c8;
 }
 header .menu-global .theme-switcher input:checked ~ .sun {
   transition-delay: 0.5s;
@@ -224,7 +224,7 @@ header .menu-global .theme-switcher .toggle {
 header .el4 {
   grid-column: 5/5;
   grid-row: 1/1;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
 
 footer {
@@ -236,12 +236,12 @@ footer {
 }
 footer .el1 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
 footer .el2 {
   grid-column: 2/4;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -249,7 +249,7 @@ footer .el2 {
 }
 footer .el2 h1 {
   font-family: "Oswald", sans-serif;
-  color: #fe9950;
+  color: #0466c8;
   font-size: 1.8em;
   text-transform: uppercase;
   font-weight: 600;
@@ -284,19 +284,19 @@ footer .el2 a .arrow-link {
   font-size: 15px;
 }
 footer .el2 a .arrow-link:hover {
-  color: #fe9950;
+  color: #0466c8;
   transform: rotate(-45deg);
 }
 footer .el2 a:hover {
-  color: #fe9950;
-  border: 1px solid #fe9950;
+  color: #0466c8;
+  border: 1px solid #0466c8;
   cursor: pointer;
 }
 footer .el3 {
   grid-column: 4/5;
-  border-left: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-left: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
   overflow: hidden;
   position: relative;
 }
@@ -311,15 +311,15 @@ footer .el3 img {
 }
 footer .el4 {
   grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
 footer .el5 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
 footer .el6 {
   grid-column: 2/2;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
   display: flex;
   justify-content: start;
   align-items: center;
@@ -351,11 +351,11 @@ footer .el6 .name-logo h1 a:hover {
 }
 footer .el7 {
   grid-column: 3/3;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
 footer .el8 {
   grid-column: 4/4;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -376,7 +376,7 @@ footer .el9 {
   top: 0;
   height: 50vh;
   width: 100vw;
-  background-color: #fe9950;
+  background-color: #0466c8;
   transition: transform 1s ease-in-out;
   z-index: 1;
 }
@@ -397,25 +397,25 @@ footer .el9 {
 main .nomJob {
   display: grid;
   grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-  grid-template-rows: 280px;
+  grid-template-rows: 450px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
 main .nomJob .el1 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
 main .nomJob .el2 {
-  border-left: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-left: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
   overflow: hidden;
   position: relative;
 }
 main .nomJob .el2 img {
   position: absolute;
-  top: -58px;
+  top: 95px;
   left: -13px;
   opacity: 1;
   object-fit: contain;
@@ -423,10 +423,10 @@ main .nomJob .el2 img {
   transform: scale(2);
 }
 main .nomJob .el3 {
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
 main .nomJob .nomJob-global {
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
   grid-column: 2/4;
   grid-row: 1/1;
   display: flex;
@@ -437,7 +437,7 @@ main .nomJob .nomJob-global {
 }
 main .nomJob .nomJob-global h1 {
   font-family: "Oswald", sans-serif;
-  font-size: 75px;
+  font-size: 90px;
   font-weight: 600;
   letter-spacing: -2px;
   color: #ffffff;
@@ -445,133 +445,61 @@ main .nomJob .nomJob-global h1 {
   transform: translate(-5px, 0px);
 }
 main .nomJob .nomJob-global h1 span {
-  color: #fe9950;
+  color: #0466c8;
   font-style: italic;
 }
 main .nomJob .nomJob-global h2 {
-  font-family: "Inter", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 60px;
   font-weight: 200;
   color: #ffffff;
-  letter-spacing: -6px;
+  letter-spacing: -2px;
   transform: translate(0px, -25px);
 }
 main .social-img {
   display: grid;
   grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-  grid-template-rows: 195px;
+  grid-template-rows: 255px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
 main .social-img .el4 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
-main .social-img .el5 {
+main .social-img .aboutMe {
   grid-column: 2/4;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
-  overflow: hidden;
-  position: relative;
-}
-main .social-img .el5 img {
-  position: absolute;
-  top: -101px;
-  left: 0px;
-  right: 147px;
-  object-fit: contain;
-  transform: scale(1);
-  width: 100%;
-  opacity: 0.9;
-}
-main .social-img .social {
-  grid-column: 4/4;
-  border-left: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
-}
-main .social-img .social h1 {
-  font-family: "Oswald", sans-serif;
-  color: #fe9950;
-  font-size: 1.8em;
-  text-transform: uppercase;
-  font-weight: 600;
-  padding-left: 16px;
-  padding-top: 12px;
-}
-main .social-img .social .logo-social {
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
 }
-main .social-img .social .logo-social ul {
-  transform: translateY(-10px);
+main .social-img .aboutMe .about-text {
+  width: 715px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
 }
-main .social-img .social .logo-social ul li {
-  margin: 35px 0;
-}
-main .social-img .social .logo-social ul li a {
-  padding: 7px 235px 7px 25px;
-  border: 0.5px solid rgba(255, 255, 255, 0.1490196078);
-  border-radius: 30px;
-  color: #ffffff;
-  font-size: 16px;
-  font-family: "Syne", sans-serif;
-  font-weight: 200;
-  position: relative;
-}
-main .social-img .social .logo-social ul li a:hover {
-  color: #fe9950;
-  border: 1px solid #fe9950;
-}
-main .social-img .social .logo-social ul li a .arrow-link {
-  position: absolute;
-  right: 34px;
-  top: 9px;
-}
-main .social-img .social .logo-social ul li a .arrow-link:hover {
-  transform: rotate(-45deg);
-}
-main .social-img .social .logo-social ul li .github {
-  padding: 7px 244px 7px 25px;
-}
-main .social-img .el6 {
-  grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
-}
-main .about {
-  display: grid;
-  grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-  grid-template-rows: 225px;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-main .about .el1 {
-  grid-column: 1/1;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
-}
-main .about .aboutMe {
-  grid-column: 2/4;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
-}
-main .about .aboutMe h1 {
+main .social-img .aboutMe .about-text h1 {
   font-family: "Oswald", sans-serif;
-  color: #fe9950;
-  font-size: 1.8em;
+  color: #0466c8;
+  padding: 3px 0;
+  border-bottom: 1px solid #0466c8;
+  font-size: 22px;
   text-transform: uppercase;
-  font-weight: 600;
-  padding-left: 16px;
-  padding-top: 12px;
+  font-weight: 500;
 }
-main .about .aboutMe p {
-  padding: 10px 40px 35px;
+main .social-img .aboutMe p {
+  padding: 0 45px;
   color: #ffffff;
   font-family: "Inter", sans-serif;
   font-size: 0.9rem;
   line-height: 22px;
 }
-main .about .aboutMe a {
+main .social-img .aboutMe a {
   padding: 7px 534px 7px 25px;
   border: 1px solid rgba(255, 255, 255, 0.1490196078);
   border-radius: 30px;
@@ -581,59 +509,101 @@ main .about .aboutMe a {
   line-height: 25px;
   text-decoration: underline;
   text-decoration: none;
-  margin-left: 30px;
   position: relative;
 }
-main .about .aboutMe a:hover {
-  transform: scale(105%);
-  color: #fe9950;
-  border: 1px solid #fe9950;
+main .social-img .aboutMe a:hover {
+  color: #0466c8;
+  border: 1px solid #0466c8;
 }
-main .about .aboutMe .arrow-link {
+main .social-img .aboutMe .arrow-link {
   position: absolute;
   right: 34px;
-  top: 9px;
+  top: 12px;
 }
-main .about .aboutMe .arrow-link:hover {
+main .social-img .aboutMe .arrow-link:hover {
   transform: rotate(-45deg);
 }
-main .about .el2 {
-  overflow: hidden;
-  position: relative;
+main .social-img .social {
   grid-column: 4/4;
-  border-left: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-left: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
 }
-main .about .el2 img {
+main .social-img .social .social-text {
+  width: 320px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+main .social-img .social .social-text h1 {
+  font-family: "Oswald", sans-serif;
+  color: #0466c8;
+  padding: 3px 0;
+  border-bottom: 1px solid #0466c8;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+main .social-img .social .logo-social ul {
+  transform: translateY(-10px);
+}
+main .social-img .social .logo-social ul li {
+  transform: translateY(29px);
+  margin: 30px 0;
+}
+main .social-img .social .logo-social ul li a {
+  padding: 9.5px 235px 9.5px 25px;
+  border: 0.5px solid rgba(255, 255, 255, 0.1490196078);
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Syne", sans-serif;
+  font-weight: 200;
+  position: relative;
+}
+main .social-img .social .logo-social ul li a:hover {
+  color: #0466c8;
+  border: 1px solid #0466c8;
+}
+main .social-img .social .logo-social ul li a .arrow-link {
   position: absolute;
-  top: -116px;
-  left: 125px;
-  object-fit: contain;
-  transform: scale(2);
-  opacity: 0.9;
-  width: 100%;
+  right: 34px;
+  top: 12px;
 }
-main .about .el3 {
+main .social-img .social .logo-social ul li a .arrow-link:hover {
+  transform: rotate(-45deg);
+}
+main .social-img .social .logo-social ul li .github {
+  padding: 9.5px 244px 9.5px 25px;
+}
+main .social-img .social .logo-social ul .githubli {
+  transform: translateY(8px);
+}
+main .social-img .el6 {
   grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
 main .technos {
   display: grid;
   grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-  grid-template-rows: 200px;
+  grid-template-rows: 300px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
 main .technos .el1 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
 main .technos .el2 {
   grid-column: 2/3;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
   overflow: hidden;
   position: relative;
 }
@@ -649,55 +619,64 @@ main .technos .el2 img {
 }
 main .technos .el3 {
   grid-column: 3/5;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
   color: white;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  flex-direction: column;
   position: relative;
 }
-main .technos .el3 h1 {
+main .technos .el3 .text-skill {
+  transform: translateY(-30px);
+  width: 700px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  transform: translateY(-75px);
+}
+main .technos .el3 .text-skill h1 {
   font-family: "Oswald", sans-serif;
-  color: #fe9950;
-  font-size: 1.8em;
+  color: #0466c8;
+  padding: 3px 0;
+  border-bottom: 1px solid #0466c8;
+  font-size: 22px;
   text-transform: uppercase;
-  font-weight: 600;
-  top: 5px;
-  left: 17px;
-  position: absolute;
+  font-weight: 500;
 }
-main .technos .el3 img {
-  margin-top: 18px;
+main .technos .el3 .logo-techno {
+  display: flex;
+  gap: 60px;
+  transform: translateY(-10px);
 }
-main .technos .el3 .react {
+main .technos .el3 .logo-techno .react {
   width: 50px;
   animation: turnright 7s linear 0s infinite normal;
 }
-main .technos .el3 .nodejs {
+main .technos .el3 .logo-techno .nodejs {
   width: 50px;
-  animation-delay: 3s;
-  animation: turnleft 7s linear 1s infinite normal;
+  animation: turnleft 7s linear 0.5s infinite normal;
 }
-main .technos .el3 .mongo {
+main .technos .el3 .logo-techno .mongo {
+  width: 50px;
+  animation: turnright 7s linear 1s infinite normal;
+}
+main .technos .el3 .logo-techno .mysql {
+  width: 50px;
+  animation: turnleft 7s linear 1.5s infinite normal;
+}
+main .technos .el3 .logo-techno .html {
   width: 50px;
   animation: turnright 7s linear 2s infinite normal;
 }
-main .technos .el3 .mysql {
+main .technos .el3 .logo-techno .sass {
   width: 50px;
-  animation: turnleft 7s linear 3s infinite normal;
+  animation: turnleft 7s linear 2.5s infinite normal;
 }
-main .technos .el3 .html {
+main .technos .el3 .logo-techno .tailwind {
   width: 50px;
-  animation: turnright 7s linear 4s infinite normal;
-}
-main .technos .el3 .sass {
-  width: 50px;
-  animation: turnleft 7s linear 5s infinite normal;
-}
-main .technos .el3 .tailwind {
-  width: 50px;
-  animation: turnright 7s linear 6s infinite normal;
+  animation: turnright 7s linear 3s infinite normal;
 }
 @keyframes turnright {
   0% {
@@ -717,37 +696,45 @@ main .technos .el3 .tailwind {
 }
 main .technos .el4 {
   grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
 main .work {
   display: grid;
   grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-  grid-template-rows: 200px 320px 320px 320px;
+  grid-template-rows: 300px 320px 320px 320px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
 main .work .el1 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
 main .work .el2 {
   grid-column: 2/4;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-main .work .el2 h1 {
+main .work .el2 .work-text {
+  width: 720px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-bottom: 10px;
+  transform: translateY(-40px);
+}
+main .work .el2 .work-text h1 {
   font-family: "Oswald", sans-serif;
-  color: #fe9950;
-  font-size: 1.8em;
+  color: #0466c8;
+  padding: 3px 0;
+  border-bottom: 1px solid #0466c8;
+  font-size: 22px;
   text-transform: uppercase;
-  font-weight: 600;
-  padding-left: 16px;
-  padding-top: 12px;
+  font-weight: 500;
 }
 main .work .el2 p {
   padding: 10px 40px 35px;
@@ -758,8 +745,8 @@ main .work .el2 p {
 }
 main .work .el3 {
   grid-column: 4/5;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
   overflow: hidden;
   position: relative;
 }
@@ -775,63 +762,57 @@ main .work .el3 img {
 }
 main .work .el4 {
   grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
 main .work .el5 {
   grid-column: 1/1;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
 main .work .el6 {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   grid-column: 2/2;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
-  padding: 0 40px;
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
-main .work .el6 h4 {
-  letter-spacing: 1.5px;
-  font-family: "Inter", sans-serif;
-  color: #ffffff;
-  font-size: 1.3em;
-  text-transform: uppercase;
-  font-weight: 500;
-  padding-bottom: 10px;
+main .work .el6 .width {
+  width: 300px;
 }
-main .work .el6 h4 span {
-  color: #c00;
-}
-main .work .el6 p {
+main .work .el6 .width p {
   color: #ffffff;
   font-family: "Inter", sans-serif;
   font-size: 0.8rem;
+  margin-bottom: 20px;
 }
-main .work .el6 a {
+main .work .el6 .width a {
   color: #ffffff;
-  padding: 7px 25px;
-  border: 1px solid rgba(255, 255, 255, 0.1490196078);
+  background-color: rgba(4, 102, 200, 0.1058823529);
+  padding: 7px 170px 7px 25px;
+  border: 1px solid #0466c8;
   border-radius: 30px;
-  font-family: "Syne", sans-serif;
-  font-size: 1rem;
-  font-weight: 200;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
   text-decoration: none;
   position: relative;
   margin-top: 30px;
 }
-main .work .el6 a .arrow-link {
+main .work .el6 .width a .arrow-link {
   position: absolute;
   right: 34px;
-  top: 10px;
+  top: 8px;
   font-size: 15px;
 }
-main .work .el6 a .arrow-link:hover {
-  color: #fe9950;
+main .work .el6 .width a .arrow-link:hover {
+  color: #0466c8;
   transform: rotate(-45deg);
 }
-main .work .el6 a:hover {
-  color: #fe9950;
-  border: 1px solid #fe9950;
+main .work .el6 .width a:hover {
+  background-color: #0466c8;
+  color: white;
+  border: 1px solid #0466c8;
   cursor: pointer;
 }
 main .work .el7 {
@@ -839,7 +820,7 @@ main .work .el7 {
   justify-content: center;
   align-items: center;
   grid-column: 3/5;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
   overflow: hidden;
   position: relative;
 }
@@ -850,65 +831,71 @@ main .work .el7 img {
   opacity: 0.9;
 }
 main .work .el7 img:hover {
+  border: 2px solid #0466c8;
   cursor: pointer;
 }
 main .work .el8 {
   grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
 main .work .el9 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
 main .work .el10 {
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-column: 2/2;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
   flex-direction: column;
-  padding: 0 40px;
+  grid-column: 2/2;
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
-main .work .el10 p {
+main .work .el10 .width {
+  width: 300px;
+}
+main .work .el10 .width p {
   color: #ffffff;
   font-family: "Inter", sans-serif;
   font-size: 0.8rem;
+  margin-bottom: 30px;
 }
-main .work .el10 a {
+main .work .el10 .width a {
   color: #ffffff;
-  padding: 7px 147px 7px 25px;
-  border: 1px solid rgba(255, 255, 255, 0.1490196078);
+  background-color: rgba(4, 102, 200, 0.1058823529);
+  padding: 7px 148px 7px 25px;
+  border: 1px solid #0466c8;
   border-radius: 30px;
-  font-family: "Syne", sans-serif;
-  font-size: 1rem;
-  font-weight: 200;
-  text-decoration: underline;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
   text-decoration: none;
   position: relative;
   margin-top: 30px;
 }
-main .work .el10 a .arrow-link {
+main .work .el10 .width a .arrow-link {
   position: absolute;
   right: 34px;
-  top: 10px;
+  top: 8px;
   font-size: 15px;
 }
-main .work .el10 a .arrow-link:hover {
-  color: #fe9950;
+main .work .el10 .width a .arrow-link:hover {
+  color: #0466c8;
   transform: rotate(-45deg);
 }
-main .work .el10 a:hover {
-  color: #fe9950;
-  border: 1px solid #fe9950;
+main .work .el10 .width a:hover {
+  color: white;
+  background-color: #0466c8;
+  border: 1px solid #0466c8;
   cursor: pointer;
+  transform: scale(105%);
 }
 main .work .el11 {
   display: flex;
   justify-content: center;
   align-items: center;
   grid-column: 3/5;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
   overflow: hidden;
   position: relative;
 }
@@ -916,70 +903,65 @@ main .work .el11 img {
   position: absolute;
   object-fit: contain;
   width: 95%;
+  opacity: 1;
 }
 main .work .el11 img:hover {
   cursor: pointer;
 }
 main .work .el12 {
   grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
 main .work .el13 {
   grid-column: 1/1;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
 main .work .el14 {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   grid-column: 2/2;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
-  padding: 0 40px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
-main .work .el14 h4 {
-  font-family: "Inter", sans-serif;
-  color: #21d86b;
-  font-size: 1.3em;
-  text-transform: uppercase;
-  font-weight: 500;
-  padding-bottom: 10px;
+main .work .el14 .width {
+  width: 300px;
 }
-main .work .el14 h4 span {
-  color: #12399b;
-}
-main .work .el14 p {
+main .work .el14 .width p {
   color: #ffffff;
   font-family: "Inter", sans-serif;
   font-size: 0.8rem;
+  margin-bottom: 20px;
 }
-main .work .el14 a {
+main .work .el14 .width a {
   color: #ffffff;
-  padding: 7px 25px;
-  border: 1px solid rgba(255, 255, 255, 0.1490196078);
+  background-color: rgba(4, 102, 200, 0.1058823529);
+  padding: 7px 162px 7px 25px;
+  border: 1px solid #0466c8;
   border-radius: 30px;
-  font-family: "Syne", sans-serif;
-  font-size: 1rem;
-  font-weight: 200;
-  text-decoration: underline;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
   text-decoration: none;
   position: relative;
   margin-top: 30px;
 }
-main .work .el14 a .arrow-link {
+main .work .el14 .width a .arrow-link {
   position: absolute;
   right: 34px;
-  top: 10px;
+  top: 8px;
   font-size: 15px;
 }
-main .work .el14 a .arrow-link:hover {
-  color: #fe9950;
+main .work .el14 .width a .arrow-link:hover {
+  color: #0466c8;
   transform: rotate(-45deg);
 }
-main .work .el14 a:hover {
-  color: #fe9950;
-  border: 1px solid #fe9950;
+main .work .el14 .width a:hover {
+  background-color: #0466c8;
+  color: white;
+  border: 1px solid #0466c8;
   cursor: pointer;
 }
 main .work .el15 {
@@ -987,8 +969,8 @@ main .work .el15 {
   justify-content: center;
   align-items: center;
   grid-column: 3/5;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
   overflow: hidden;
   position: relative;
 }
@@ -1002,5 +984,5 @@ main .work .el15 img:hover {
 }
 main .work .el16 {
   grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.112);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }

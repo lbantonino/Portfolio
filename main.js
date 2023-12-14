@@ -38,44 +38,48 @@ const saveThemeToLocalStorage = (theme) => {
     localStorage.setItem('theme', theme);
 };
 
-
 const loadThemeFromLocalStorage = () => {
     return localStorage.getItem('theme');
 };
 
-
 const applyTheme = (theme) => {
     if (theme === 'dark') {
-        body.style.backgroundColor = '#131a32';
+        setDarkTheme();
     } else {
-        body.style.backgroundColor = 'white';
+        setLightTheme();
     }
 };
 
+const setDarkTheme = () => {
+    body.style.backgroundColor = '#050712';
 
+};
+
+const setLightTheme = () => {
+    body.style.backgroundColor = 'white';
+
+};
 
 document.addEventListener('DOMContentLoaded', function () {
     const savedTheme = loadThemeFromLocalStorage();
     applyTheme(savedTheme);
 });
 
-// variables
+// Variables
 const theme = document.querySelector('#themeSwitch');
 const body = document.querySelector('body');
-const text = document.querySelectorAll('.jobTitle,jobTitle2, h2, h3, h4, p, a, li, button, input, textarea');
-const socialText = document.querySelector('.social-text');
-const aboutText = document.querySelector('.about-text');
-const svgLogo = document.querySelector('.logo-svg');
+// Ajoutez d'autres éléments nécessaires ici
 
 // Switch de thème (dark et light)
 theme.addEventListener('click', () => {
     overlayAnimation2();
     setTimeout(() => {
         if (theme.checked) {
-            body.style.backgroundColor = 'white';
-            saveThemeToLocalStorage('dark');
+            setLightTheme();
+            saveThemeToLocalStorage('light');
         } else {
-            body.style.backgroundColor = '#131a32';
+            setDarkTheme();
+            saveThemeToLocalStorage('dark');
         }
     }, 1001);
 });
