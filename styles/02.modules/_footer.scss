@@ -16,23 +16,25 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .contact{
+      width: 720px;
+      display: flex;
+      align-items: start;
+      justify-content: start;
+      margin-bottom: 10px;
+      transform: translateY(-40px);
+
     h1 {
       font-family: $fontOswald;
       color: $lightBlue;
-      font-size: 1.8em;
+      padding: 3px 0;
+      border-bottom: 1px solid $lightBlue;
+      font-size: 22px;
       text-transform: uppercase;
-      font-weight: 600;
-      padding-left: 16px;
-      padding-top: 12px;
-      transform: translate(-336px, -30px);
+      font-weight: 500;
     }
-    p {
-      padding: 10px 40px 35px;
-      color: $white;
-      font-family: $fontInter;
-      font-size: 0.9rem;
-      line-height: 22px;
     }
+
     a {
       transform: translateY(-10px) ;
       padding: 7px 534px 7px 25px;
@@ -44,7 +46,7 @@ footer {
       line-height: 25px;
       text-decoration: underline;
       text-decoration: none;
-      transform: translateX(-15px);
+      transform: translate(-15px, -15px);
       .arrow-link {
         position: absolute;
         right: 34px;

@@ -72,8 +72,9 @@ header {
             color: $white;
             position: relative;
             &:hover {
-              padding-bottom: 5px;
+              padding-bottom: 3px;
               border-bottom: 2px solid $lightBlue;
+              color: $lightBlue;
             }
           }
         }
