@@ -4,19 +4,23 @@ body {
 }
 header {
   @include gridContainer1;
+  display: grid;
+  grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   grid-template-rows: 80px;
   .el1 {
     display: flex;
     grid-column: 1/1;
     grid-row: 1 / 1;
     border-bottom: 0.5px solid $bluegrid;
+    border-right: 0.5px solid $bluegrid;
   }
   .logo {
     grid-column: 2 / 2;
     grid-row: 1 / 1;
     border-bottom: 0.5px solid $bluegrid;
     border-right: 0.5px solid $bluegrid;
-    border-left: 0.5px solid $bluegrid;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -72,7 +76,7 @@ header {
             color: $white;
             position: relative;
             &:hover {
-              padding-bottom: 3px;
+              padding-bottom: 5px;
               border-bottom: 2px solid $lightBlue;
               color: $lightBlue;
             }

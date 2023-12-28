@@ -93,6 +93,10 @@ header {
   grid-template-columns: 1fr repeat(3, 400px) 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  display: grid;
+  grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   grid-template-rows: 80px;
 }
 header .el1 {
@@ -100,13 +104,13 @@ header .el1 {
   grid-column: 1/1;
   grid-row: 1/1;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
 header .logo {
   grid-column: 2/2;
   grid-row: 1/1;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
   border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-  border-left: 0.5px solid rgba(255, 255, 255, 0.0941176471);
   display: flex;
   align-items: center;
   justify-content: start;
@@ -165,7 +169,7 @@ header .menu-global nav ul li a {
   position: relative;
 }
 header .menu-global nav ul li a:hover {
-  padding-bottom: 3px;
+  padding-bottom: 5px;
   border-bottom: 2px solid #0466c8;
   color: #0466c8;
 }
@@ -352,7 +356,6 @@ footer .el6 .name-logo h1 a:hover {
 }
 footer .el7 {
   grid-column: 3/3;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
 footer .el8 {
   grid-column: 4/4;
@@ -360,9 +363,10 @@ footer .el8 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-left: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
 footer .el8 h1 {
-  font-size: 0.85rem;
+  font-size: 11px;
   font-family: "Inter", sans-serif;
   font-weight: 300;
   letter-spacing: -0.5px;
@@ -451,11 +455,22 @@ main .nomJob .nomJob-global h1 span {
 }
 main .nomJob .nomJob-global h2 {
   font-family: "Oswald", sans-serif;
-  font-size: 60px;
-  font-weight: 200;
+  font-size: 41.5px;
+  font-weight: 100;
   color: #ffffff;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   transform: translate(0px, -25px);
+  text-transform: uppercase;
+}
+main .nomJob .nomJob-global h2 .FS {
+  color: #ffffff;
+  font-weight: 300;
+  font-style: normal;
+}
+main .nomJob .nomJob-global h2 span {
+  color: #0466c8;
+  font-weight: 500;
+  font-style: italic;
 }
 main .social-img {
   display: grid;
@@ -621,6 +636,7 @@ main .technos .el2 img {
 main .technos .el3 {
   grid-column: 3/5;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
   color: white;
   display: flex;
   align-items: center;
@@ -664,7 +680,7 @@ main .technos .el3 .logo-techno .colon1 {
   margin-left: 50px;
 }
 main .technos .el3 .logo-techno .colon1 img {
-  width: 10%;
+  width: 9%;
 }
 main .technos .el3 .logo-techno .colon1 img.react {
   margin-left: 40px;
@@ -691,7 +707,7 @@ main .technos .el3 .logo-techno .colon2 {
   margin-left: 50px;
 }
 main .technos .el3 .logo-techno .colon2 img {
-  width: 10%;
+  width: 9%;
 }
 main .technos .el3 .logo-techno .colon2 img.html {
   margin-left: 40px;
@@ -859,13 +875,19 @@ main .work .el7 {
   overflow: hidden;
   position: relative;
 }
-main .work .el7 img {
+main .work .el7 a {
   position: absolute;
   object-fit: contain;
   width: 95%;
   opacity: 0.9;
+  height: 92%;
 }
-main .work .el7 img:hover {
+main .work .el7 a img {
+  object-fit: contain;
+  width: 100%;
+  opacity: 0.9;
+}
+main .work .el7 a:hover {
   border: 2px solid #0466c8;
   cursor: pointer;
 }
@@ -950,15 +972,21 @@ main .work .el11 {
   overflow: hidden;
   position: relative;
 }
-main .work .el11 img {
+main .work .el11 a {
   position: absolute;
   object-fit: contain;
   width: 95%;
-  opacity: 1;
+  opacity: 0.9;
+  height: 92%;
 }
-main .work .el11 img:hover {
-  cursor: pointer;
+main .work .el11 a img {
+  object-fit: contain;
+  width: 100%;
+  opacity: 0.9;
+}
+main .work .el11 a:hover {
   border: 2px solid #0466c8;
+  cursor: pointer;
 }
 main .work .el12 {
   grid-column: 5/5;
@@ -1042,14 +1070,21 @@ main .work .el15 {
   overflow: hidden;
   position: relative;
 }
-main .work .el15 img {
+main .work .el15 a {
   position: absolute;
   object-fit: contain;
   width: 95%;
+  opacity: 0.9;
+  height: 92%;
 }
-main .work .el15 img:hover {
-  cursor: pointer;
+main .work .el15 a img {
+  object-fit: contain;
+  width: 100%;
+  opacity: 0.9;
+}
+main .work .el15 a:hover {
   border: 2px solid #0466c8;
+  cursor: pointer;
 }
 main .work .el16 {
   grid-column: 5/5;

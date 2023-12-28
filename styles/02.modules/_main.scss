@@ -79,12 +79,30 @@ main {
       }
       h2 {
         font-family: $fontOswald;
-        font-size: 60px;
-        font-weight: 200;
+        font-size: 41.5px;
+        font-weight: 100;
         color: $white;
-        letter-spacing: -2px;
+        letter-spacing: -1px;
         transform: translate(0px, -25px);
+        text-transform: uppercase;
+        .FS{
+          color: $white;
+          font-weight: 300;
+          font-style: normal;
+        }
+        span{
+          color: $lightBlue;
+          font-weight: 500;
+          font-style: italic;
+        }
       }
+      // h3{
+      //   font-family: $fontOswald;
+      //   font-size: 20px;
+      //   font-weight: 100;
+      //   color: $white;
+      //   transform: translate(0px, -35px);
+      // }
     }
   }
   .social-img {
@@ -258,7 +276,7 @@ main {
     .el3 {
       grid-column: 3 / 5;
       border-bottom: 0.5px solid $bluegrid;
-      // border-right: 0.5px solid $bluegrid;
+      border-right: 0.5px solid $bluegrid;
       color: white;
       display: flex;
       align-items: center;
@@ -267,10 +285,10 @@ main {
       position: relative;
       .text-skill{
         width: 361px;
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  transform: translate(-185px, -85px);
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        transform: translate(-185px, -85px);
       h1 {
         font-family: $fontOswald;
         color: $lightBlue;
@@ -301,7 +319,7 @@ main {
           .colon1 {
             margin-left: 50px;
             img{
-              width: 10%;
+              width: 9%;
             }
             img.react {
               margin-left: 40px;
@@ -329,7 +347,7 @@ main {
             margin-top: 30px;
             margin-left: 50px;
             img{
-              width: 10%;
+              width: 9%;
             }
             img.html {
               margin-left: 40px;
@@ -534,16 +552,22 @@ main {
       border-right: 0.5px solid $bluegrid;
       overflow: hidden;
       position: relative;
-      img {
+      a{
         position: absolute;
         object-fit: contain;
         width: 95%;
         opacity: 0.9;
-        &:hover {
-          border: 2px solid $lightBlue;
-          cursor: pointer;
-        }
+        height: 92%;  
+      img {
+        object-fit: contain;
+        width: 100%;
+        opacity: 0.9;
       }
+      &:hover {
+        border: 2px solid $lightBlue;
+        cursor: pointer;
+      }
+    }
     }
     .el8 {
       grid-column: 5 / 5;
@@ -627,16 +651,22 @@ main {
       // border-bottom: 0.5px solid $bluegrid;
       overflow: hidden;
       position: relative;
-      img {
+      a{
         position: absolute;
         object-fit: contain;
         width: 95%;
-        opacity: 1;
-        &:hover {
-          cursor: pointer;
-          border: 2px solid $lightBlue;
-        }
+        opacity: 0.9;
+        height: 92%;  
+      img {
+        object-fit: contain;
+        width: 100%;
+        opacity: 0.9;
       }
+      &:hover {
+        border: 2px solid $lightBlue;
+        cursor: pointer;
+      }
+    }
     }
     .el12 {
       grid-column: 5 / 5;
@@ -721,15 +751,22 @@ main {
       border-right: 0.5px solid $bluegrid;
       overflow: hidden;
       position: relative;
-      img {
+      a{
         position: absolute;
         object-fit: contain;
         width: 95%;
-        &:hover {
-          cursor: pointer;
-          border: 2px solid $lightBlue;
-        }
+        opacity: 0.9;
+        height: 92%;  
+      img {
+        object-fit: contain;
+        width: 100%;
+        opacity: 0.9;
       }
+      &:hover {
+        border: 2px solid $lightBlue;
+        cursor: pointer;
+      }
+    }
     }
     .el16 {
       grid-column: 5 / 5;

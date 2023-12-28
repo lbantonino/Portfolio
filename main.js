@@ -51,7 +51,7 @@ const applyTheme = (theme) => {
 };
 
 const setDarkTheme = () => {
-    body.style.backgroundColor = '#050712';
+    body.style.backgroundColor = '#070b1c';
 
 };
 
