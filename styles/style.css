@@ -395,10 +395,36 @@ footer .el9 {
   transform: translateY(0) translateX(0);
 }
 
+#blob {
+  height: 20vh;
+  width: 10vh;
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: #0466c8;
+}
+
+#blur {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  backdrop-filter: blur(500px);
+  position: fixed;
+  margin: 0;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+}
+
 main .nomJob {
   display: grid;
   grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-  grid-template-rows: 450px;
+  grid-template-rows: 380px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -435,42 +461,40 @@ main .nomJob .nomJob-global {
   justify-content: center;
   align-items: start;
   padding-left: 40px;
+  position: relative;
 }
-main .nomJob .nomJob-global h1 {
+main .nomJob .nomJob-global .title {
+  position: absolute;
+  top: 90px;
+  left: 33px;
+}
+main .nomJob .nomJob-global .title h1 {
   font-family: "Oswald", sans-serif;
   font-size: 85px;
   font-weight: 600;
   letter-spacing: -2px;
   color: #ffffff;
   margin: 0;
-  transform: translate(-5px, 0px);
 }
-main .nomJob .nomJob-global h1 span {
+main .nomJob .nomJob-global .title h1 span {
   color: #0466c8;
   font-style: italic;
 }
-main .nomJob .nomJob-global h2 {
-  font-family: "Oswald", sans-serif;
-  font-size: 40px;
+main .nomJob .nomJob-global .word-container {
+  position: absolute;
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 60px;
   font-weight: 100;
   color: #ffffff;
-  letter-spacing: -1px;
-  transform: translate(0px, -15px);
+  letter-spacing: 0px;
   text-transform: uppercase;
-}
-main .nomJob .nomJob-global h2 .FS {
-  color: #ffffff;
-  font-weight: 300;
-  font-style: normal;
-}
-main .nomJob .nomJob-global h2 span {
-  color: #0466c8;
-  font-weight: 300;
+  top: 176px;
+  left: 43px;
 }
 main .social-img {
   display: grid;
   grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-  grid-template-rows: 255px;
+  grid-template-rows: 305px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -731,7 +755,7 @@ main .technos .el5 {
 main .work {
   display: grid;
   grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-  grid-template-rows: 320px 460px 460px 460px;
+  grid-template-rows: 320px 490px 490px 550px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -837,30 +861,56 @@ main .work .el6 .width .work-techno {
   font-size: 0.7rem;
   margin-bottom: 20px;
 }
-main .work .el6 .width a {
+main .work .el6 .width .website {
   color: #ffffff;
   background-color: rgba(4, 102, 200, 0.1058823529);
   padding: 7px 170px 7px 25px;
   border: 1px solid #0466c8;
   border-radius: 30px;
   font-family: "Inter", sans-serif;
-  font-size: 13px;
-  font-weight: 300;
+  font-size: 12px;
+  font-weight: 500;
   position: relative;
 }
-main .work .el6 .width a .arrow-link {
+main .work .el6 .width .website .arrow-link {
   position: absolute;
   right: 34px;
   top: 8px;
   font-size: 15px;
 }
-main .work .el6 .width a .arrow-link:hover {
+main .work .el6 .width .website .arrow-link:hover {
   color: #ffffff;
   transform: rotate(-45deg);
 }
-main .work .el6 .width a:hover {
+main .work .el6 .width .website:hover {
   background-color: #0466c8;
   color: white;
+  border: 1px solid #0466c8;
+  cursor: pointer;
+}
+main .work .el6 .width .repo {
+  color: #ffffff;
+  padding: 7px 170px 7px 25px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.0941176471);
+  border-radius: 30px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+  position: relative;
+}
+main .work .el6 .width .repo .arrow-link {
+  position: absolute;
+  right: 34px;
+  top: 8px;
+  font-size: 15px;
+}
+main .work .el6 .width .repo .arrow-link:hover {
+  color: #ffffff;
+  transform: rotate(-45deg);
+}
+main .work .el6 .width .repo:hover {
+  color: #0466c8;
   border: 1px solid #0466c8;
   cursor: pointer;
 }
@@ -876,9 +926,9 @@ main .work .el7 {
 main .work .el7 a {
   position: absolute;
   object-fit: contain;
-  width: 86.5%;
+  width: 88.5%;
   opacity: 0.9;
-  height: 83.8%;
+  height: 81%;
 }
 main .work .el7 a img {
   object-fit: contain;
@@ -886,7 +936,7 @@ main .work .el7 a img {
   opacity: 0.9;
 }
 main .work .el7 a:hover {
-  border: 2px solid #0466c8;
+  border: 4px solid #0466c8;
   cursor: pointer;
 }
 main .work .el8 {
@@ -937,34 +987,58 @@ main .work .el10 .width .work-techno {
   font-size: 0.7rem;
   margin-bottom: 20px;
 }
-main .work .el10 .width a {
+main .work .el10 .width .website {
   color: #ffffff;
   background-color: rgba(4, 102, 200, 0.1058823529);
-  padding: 7px 148px 7px 25px;
+  padding: 7px 170px 7px 25px;
   border: 1px solid #0466c8;
   border-radius: 30px;
   font-family: "Inter", sans-serif;
-  font-size: 13px;
-  font-weight: 300;
-  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
   position: relative;
 }
-main .work .el10 .width a .arrow-link {
+main .work .el10 .width .website .arrow-link {
   position: absolute;
   right: 34px;
   top: 8px;
   font-size: 15px;
 }
-main .work .el10 .width a .arrow-link:hover {
+main .work .el10 .width .website .arrow-link:hover {
   color: #ffffff;
   transform: rotate(-45deg);
 }
-main .work .el10 .width a:hover {
-  color: white;
+main .work .el10 .width .website:hover {
   background-color: #0466c8;
+  color: white;
   border: 1px solid #0466c8;
   cursor: pointer;
-  transform: scale(105%);
+}
+main .work .el10 .width .repo {
+  color: #ffffff;
+  padding: 7px 0px 7px 25px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.0941176471);
+  border-radius: 30px;
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: 100;
+  position: relative;
+}
+main .work .el10 .width .repo .arrow-link {
+  position: absolute;
+  right: 34px;
+  top: 8px;
+  font-size: 15px;
+}
+main .work .el10 .width .repo .arrow-link:hover {
+  color: #ffffff;
+  transform: rotate(-45deg);
+}
+main .work .el10 .width .repo:hover {
+  color: #0466c8;
+  border: 1px solid #0466c8;
+  cursor: pointer;
 }
 main .work .el11 {
   display: flex;
@@ -977,9 +1051,9 @@ main .work .el11 {
 main .work .el11 a {
   position: absolute;
   object-fit: contain;
-  width: 86.5%;
+  width: 88.5%;
   opacity: 0.9;
-  height: 83.8%;
+  height: 81%;
 }
 main .work .el11 a img {
   object-fit: contain;
@@ -987,7 +1061,7 @@ main .work .el11 a img {
   opacity: 0.9;
 }
 main .work .el11 a:hover {
-  border: 2px solid #0466c8;
+  border: 4px solid #0466c8;
   cursor: pointer;
 }
 main .work .el12 {
@@ -1038,31 +1112,56 @@ main .work .el14 .width .work-techno {
   font-size: 0.7rem;
   margin-bottom: 20px;
 }
-main .work .el14 .width a {
+main .work .el14 .width .website {
   color: #ffffff;
   background-color: rgba(4, 102, 200, 0.1058823529);
-  padding: 7px 162px 7px 25px;
+  padding: 7px 170px 7px 25px;
   border: 1px solid #0466c8;
   border-radius: 30px;
   font-family: "Inter", sans-serif;
-  font-size: 13px;
-  font-weight: 300;
-  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
   position: relative;
 }
-main .work .el14 .width a .arrow-link {
+main .work .el14 .width .website .arrow-link {
   position: absolute;
   right: 34px;
   top: 8px;
   font-size: 15px;
 }
-main .work .el14 .width a .arrow-link:hover {
+main .work .el14 .width .website .arrow-link:hover {
   color: #ffffff;
   transform: rotate(-45deg);
 }
-main .work .el14 .width a:hover {
+main .work .el14 .width .website:hover {
   background-color: #0466c8;
   color: white;
+  border: 1px solid #0466c8;
+  cursor: pointer;
+}
+main .work .el14 .width .repo {
+  color: #ffffff;
+  padding: 7px 0px 7px 25px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.0941176471);
+  border-radius: 30px;
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: 100;
+  position: relative;
+}
+main .work .el14 .width .repo .arrow-link {
+  position: absolute;
+  right: 34px;
+  top: 8px;
+  font-size: 15px;
+}
+main .work .el14 .width .repo .arrow-link:hover {
+  color: #ffffff;
+  transform: rotate(-45deg);
+}
+main .work .el14 .width .repo:hover {
+  color: #0466c8;
   border: 1px solid #0466c8;
   cursor: pointer;
 }
@@ -1079,9 +1178,10 @@ main .work .el15 {
 main .work .el15 a {
   position: absolute;
   object-fit: contain;
-  width: 86.5%;
+  width: 88.5%;
   opacity: 0.9;
-  height: 84%;
+  height: 72.2%;
+  bottom: 60px;
 }
 main .work .el15 a img {
   object-fit: contain;
@@ -1089,7 +1189,7 @@ main .work .el15 a img {
   opacity: 0.9;
 }
 main .work .el15 a:hover {
-  border: 2px solid #0466c8;
+  border: 4px solid #0466c8;
   cursor: pointer;
 }
 main .work .el16 {

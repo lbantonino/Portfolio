@@ -20,13 +20,44 @@
   transform: translateY(0) translateX(0);
 }
 
+
+// Mouse effect
+
+#blob {
+  height: 20vh;
+ width: 10vh;
+ position: absolute;
+ z-index: -1;
+ left: 50%;
+ top: 50%;
+ translate: -50% -50%;
+ border-radius: 50%;
+ background: $lightBlue;
+}
+
+
+#blur {
+ height: 100%;
+ width: 100%;
+ z-index: -1;
+ backdrop-filter: blur(500px);
+ position: fixed;
+ margin: 0;
+ top: 0;
+ left: 0;
+ height: 100vh;
+ width: 100%;
+ padding: 0;
+}
+
+
 ////////////////////////////////// main :
 
 main {
   .nomJob {
     display: grid;
     grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-    grid-template-rows: 450px;
+    grid-template-rows: 380px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     .el1 {
@@ -62,52 +93,63 @@ main {
       justify-content: center;
       align-items: start;
       padding-left: 40px;
-      h1 {
-        font-family: $fontOswald;
-        font-size: 85px;
-        font-weight: 600;
-        letter-spacing: -2px;
-        color: $white;
-        margin: 0;
-        transform: translate(-5px, 0px);
-        span {
-          // color: transparent;
-          color: $lightBlue;
-          font-style: italic;
-          // letter-spacing: 12px;
+      position: relative;
+      .title{
+        position: absolute;
+        top: 90px;
+        left: 33px;
+        h1 {
+          font-family: $fontOswald;
+          font-size: 85px;
+          font-weight: 600;
+          letter-spacing: -2px;
+          color: $white;
+          margin: 0;
+          span {
+            // color: transparent;
+            color: $lightBlue;
+            font-style: italic;
+            // letter-spacing: 12px;
+          }
         }
       }
-      h2 {
-        font-family: $fontOswald;
-        font-size: 40px;
+      
+      .word-container {
+        position: absolute;
+        font-family: $fontSaira;
+        font-size: 60px;
         font-weight: 100;
         color: $white;
-        letter-spacing: -1px;
-        transform: translate(0px, -15px);
+        letter-spacing: 0px;
         text-transform: uppercase;
-        .FS{
-          color: $white;
-          font-weight: 300;
-          font-style: normal;
-        }
-        span{
-          color: $lightBlue;
-          font-weight: 300;
-        }
+        top: 176px;
+        left: 43px;
       }
-      // h3{
+      // h2 {
       //   font-family: $fontOswald;
-      //   font-size: 20px;
+      //   font-size: 40px;
       //   font-weight: 100;
       //   color: $white;
-      //   transform: translate(0px, -35px);
+      //   letter-spacing: -1px;
+      //   transform: translate(0px, -15px);
+      //   text-transform: uppercase;
+      //   .FS{
+      //     color: $white;
+      //     font-weight: 300;
+      //     font-style: normal;
+      //   }
+      //   span{
+      //     color: $lightBlue;
+      //     font-weight: 300;
+      //   }
       // }
+
     }
   }
   .social-img {
     display: grid;
     grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-    grid-template-rows: 255px;
+    grid-template-rows: 305px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     .el4 {
@@ -369,38 +411,10 @@ main {
               animation: heartbeat 0.8s infinite, heartbeat 3.3s infinite;
             }
           }
-          // p{
-          //   font-family: $fontInter;
-          //   font-size: 1rem;
-          //   color: $white;
-          //   border: 1px solid rgba(128, 128, 128, 0.533);
-          //   padding: 5px 15px;
-          //   width: 120px;
-          //   border-radius: 20px;
-          // }
+
       }
       
     }
-    // .el4 {
-    //   grid-column: 4 / 4;
-    //   border-bottom: 0.5px solid $bluegrid;
-    //   border-right: 0.5px solid $bluegrid;
-    //   color: white;
-    //   display: flex;
-    //   align-items: center;
-    //   justify-content: center;
-    //   flex-direction: column;
-    //   position: relative;
-      
-    //   .logo-techno{
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: start;
-    //     flex-direction: column;
-    //     gap: 20px;
-    //     transform: translateY(20px);
-    // }
-    // }
     .el5 {
       grid-column: 5 / 5;
       border-bottom: 0.5px solid $bluegrid;
@@ -410,7 +424,7 @@ main {
   .work {
     display: grid;
     grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-    grid-template-rows: 320px  460px 460px 460px;
+    grid-template-rows: 320px  490px 490px 550px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     .el1 {
@@ -484,7 +498,6 @@ main {
       align-items: center;
       flex-direction: column;
       grid-column: 2 / 2;
-      // border-right: 0.5px solid $bluegrid;
       .width{
         width: 334px;
         height: 300px;
@@ -515,15 +528,15 @@ main {
           font-size: 0.7rem;
           margin-bottom: 20px;
         }
-        a {
+        .website {
           color: $white;
           background-color: #0466c81b;
           padding: 7px 170px 7px 25px;
           border: 1px solid $lightBlue;
           border-radius: 30px;
           font-family: $fontInter;
-          font-size: 13px;
-          font-weight: 300;
+          font-size: 12px;
+          font-weight: 500;
           position: relative;
           // margin-top: 50px;
           .arrow-link {
@@ -539,6 +552,33 @@ main {
           &:hover {
             background-color: $lightBlue;
             color: white;
+            border: 1px solid $lightBlue;
+            cursor: pointer;
+          }
+        }
+        .repo {
+          color: $white;
+          padding: 7px 170px 7px 25px;
+          background-color: transparent;
+          border: 1px solid $bluegrid;
+          border-radius: 30px;
+          font-family: $fontInter;
+          font-size: 12px;
+          font-weight: 100;
+          position: relative;
+
+          .arrow-link {
+            position: absolute;
+            right: 34px;
+            top: 8px;
+            font-size: 15px;
+            &:hover {
+              color: $white;
+              transform: rotate(-45deg);
+            }
+          }
+          &:hover {
+            color: $lightBlue;
             border: 1px solid $lightBlue;
             cursor: pointer;
           }
@@ -559,16 +599,16 @@ main {
       a{
         position: absolute;
         object-fit: contain;
-        width: 86.5%;
+        width: 88.5%;
         opacity: 0.9;
-        height: 83.8%;  
+        height: 81%;
       img {
         object-fit: contain;
         width: 100%;
         opacity: 0.9;
       }
       &:hover {
-        border: 2px solid $lightBlue;
+        border: 4px solid $lightBlue;
         cursor: pointer;
 
       }
@@ -620,18 +660,17 @@ main {
           font-size: 0.7rem;
           margin-bottom: 20px;
         }
-        a { 
+        .website {
           color: $white;
           background-color: #0466c81b;
-          padding: 7px 148px 7px 25px;
+          padding: 7px 170px 7px 25px;
           border: 1px solid $lightBlue;
           border-radius: 30px;
           font-family: $fontInter;
-          font-size: 13px;
-          font-weight: 300;
-          text-decoration: none;
+          font-size: 12px;
+          font-weight: 500;
           position: relative;
-          // margin-top: 30px;
+          // margin-top: 50px;
           .arrow-link {
             position: absolute;
             right: 34px;
@@ -643,11 +682,37 @@ main {
             }
           }
           &:hover {
-            color: white;
             background-color: $lightBlue;
+            color: white;
             border: 1px solid $lightBlue;
             cursor: pointer;
-            transform: scale(105%);
+          }
+        }
+        .repo {
+          color: $white;
+          padding: 7px 0px 7px 25px;
+          background-color: transparent;
+          border: 1px solid $bluegrid;
+          border-radius: 30px;
+          font-family: $fontInter;
+          font-size: 11px;
+          font-weight: 100;
+          position: relative;
+          // margin-top: 50px;
+          .arrow-link {
+            position: absolute;
+            right: 34px;
+            top: 8px;
+            font-size: 15px;
+            &:hover {
+              color: $white;
+              transform: rotate(-45deg);
+            }
+          }
+          &:hover {
+            color: $lightBlue;
+            border: 1px solid $lightBlue;
+            cursor: pointer;
           }
         }
       }
@@ -664,16 +729,16 @@ main {
       a{
         position: absolute;
         object-fit: contain;
-        width: 86.5%;
+        width: 88.5%;
         opacity: 0.9;
-        height: 83.8%;  
+        height: 81%;  
       img {
         object-fit: contain;
         width: 100%;
         opacity: 0.9;
       }
       &:hover {
-        border: 2px solid $lightBlue;
+        border: 4px solid $lightBlue;
         cursor: pointer;
 
       }
@@ -726,17 +791,17 @@ main {
           font-size: 0.7rem;
           margin-bottom: 20px;
         }
-        a {
+        .website {
           color: $white;
           background-color: #0466c81b;
-          padding: 7px 162px 7px 25px;
+          padding: 7px 170px 7px 25px;
           border: 1px solid $lightBlue;
           border-radius: 30px;
           font-family: $fontInter;
-          font-size: 13px;
-          font-weight: 300;
-          text-decoration: none;
+          font-size: 12px;
+          font-weight: 500;
           position: relative;
+          // margin-top: 50px;
           .arrow-link {
             position: absolute;
             right: 34px;
@@ -750,6 +815,33 @@ main {
           &:hover {
             background-color: $lightBlue;
             color: white;
+            border: 1px solid $lightBlue;
+            cursor: pointer;
+          }
+        }
+        .repo {
+          color: $white;
+          padding: 7px 0px 7px 25px;
+          background-color: transparent;
+          border: 1px solid $bluegrid;
+          border-radius: 30px;
+          font-family: $fontInter;
+          font-size: 11px;
+          font-weight: 100;
+          position: relative;
+          // margin-top: 50px;
+          .arrow-link {
+            position: absolute;
+            right: 34px;
+            top: 8px;
+            font-size: 15px;
+            &:hover {
+              color: $white;
+              transform: rotate(-45deg);
+            }
+          }
+          &:hover {
+            color: $lightBlue;
             border: 1px solid $lightBlue;
             cursor: pointer;
           }
@@ -768,16 +860,17 @@ main {
       a{
         position: absolute;
         object-fit: contain;
-        width: 86.5%;
+        width: 88.5%;
         opacity: 0.9;
-        height: 84%;  
+        height: 72.2%;
+        bottom: 60px;
       img {
         object-fit: contain;
         width: 100%;
         opacity: 0.9;
       }
       &:hover {
-        border: 2px solid $lightBlue;
+        border: 4px solid $lightBlue;
         cursor: pointer;
 
       }

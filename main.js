@@ -34,6 +34,23 @@ document.addEventListener('DOMContentLoaded', function () {
     overlayAnimation();
 });
 
+// Mouse effect
+const blob = document.getElementById("blob");
+window.onpointermove = (event) => {
+    const { clientX, clientY } = event;
+    blob.animate(
+        {
+            left: `${clientX}px`,
+            top: `${clientY}px`
+        },
+        { duration: 600, fill: "forwards" }
+    );
+};
+
+
+
+
+// Theme switcher
 const saveThemeToLocalStorage = (theme) => {
     localStorage.setItem('theme', theme);
 };
@@ -82,4 +99,55 @@ theme.addEventListener('click', () => {
             saveThemeToLocalStorage('dark');
         }
     }, 1001);
+});
+
+
+
+
+
+
+// Animation text 'Fullstack / Bakcend / Frontend'
+
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(() => {
+
+
+        let words = ['Specialized in Backend', ' But I AM Fullstack'];
+        let part, i = 0, offset = 0, len = words.length, forwards = true, skip_count = 0, skip_delay = 15, speed = 70;
+        let wordContainer = document.querySelector('.word-container');
+
+        let wordflick = function () {
+            setInterval(function () {
+                if (forwards) {
+                    if (offset >= words[i].length) {
+                        ++skip_count;
+                        if (skip_count == skip_delay) {
+                            forwards = false;
+                            skip_count = 0;
+                        }
+                    }
+                } else {
+                    if (offset == 0) {
+                        forwards = true;
+                        i++;
+                        offset = 0;
+                        if (i >= len) {
+                            i = 0;
+                        }
+                    }
+                }
+                part = words[i].substr(0, offset);
+                if (skip_count == 0) {
+                    if (forwards) {
+                        offset++;
+                    } else {
+                        offset--;
+                    }
+                }
+                wordContainer.textContent = part;
+            }, speed);
+        };
+
+        wordflick();
+    }, 620);
 });
