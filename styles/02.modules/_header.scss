@@ -43,9 +43,7 @@ header {
         padding-left: 20px;
         a {
           color: $white;
-        }
-        a:hover {
-          cursor: pointer;
+          cursor: default;
         }
       }
     }

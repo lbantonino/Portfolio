@@ -136,9 +136,7 @@ header .logo .name-logo h1 {
 }
 header .logo .name-logo h1 a {
   color: #ffffff;
-}
-header .logo .name-logo h1 a:hover {
-  cursor: pointer;
+  cursor: default;
 }
 header .el3 {
   grid-column: 3/3;
@@ -253,7 +251,7 @@ footer .el2 {
   align-items: center;
 }
 footer .el2 .contact {
-  width: 720px;
+  width: 735px;
   display: flex;
   align-items: start;
   justify-content: start;
@@ -271,7 +269,7 @@ footer .el2 .contact h1 {
 }
 footer .el2 a {
   transform: translateY(-10px);
-  padding: 7px 534px 7px 25px;
+  padding: 7px 568px 7px 25px;
   border: 1px solid rgba(255, 255, 255, 0.1490196078);
   border-radius: 30px;
   color: #ffffff;
@@ -328,7 +326,7 @@ footer .el6 {
   display: flex;
   justify-content: start;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 footer .el6 .logo-svg {
   width: 35px;
@@ -350,9 +348,7 @@ footer .el6 .name-logo h1 {
 }
 footer .el6 .name-logo h1 a {
   color: #ffffff;
-}
-footer .el6 .name-logo h1 a:hover {
-  cursor: pointer;
+  cursor: default;
 }
 footer .el7 {
   grid-column: 3/3;
@@ -812,6 +808,17 @@ main .work .el6 {
 }
 main .work .el6 .width {
   width: 334px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .work .el6 .width h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  font-weight: 500;
 }
 main .work .el6 .width .description {
   color: #ffffff;
@@ -825,21 +832,10 @@ main .work .el6 .width .description span {
   font-size: 1rem;
 }
 main .work .el6 .width .work-techno {
-  color: #ffffff;
+  color: #0466c8;
   font-family: "Inter", sans-serif;
   font-size: 0.7rem;
-  font-style: italic;
-}
-main .work .el6 .width .work-techno .site {
-  color: #0466c8;
-  text-decoration: none;
-  background-color: unset;
-  padding: 0px;
-  border: unset;
-}
-main .work .el6 .width .work-techno span {
-  color: #0466c8;
-  font-style: italic;
+  margin-bottom: 20px;
 }
 main .work .el6 .width a {
   color: #ffffff;
@@ -850,9 +846,7 @@ main .work .el6 .width a {
   font-family: "Inter", sans-serif;
   font-size: 13px;
   font-weight: 300;
-  text-decoration: none;
   position: relative;
-  margin-top: 30px;
 }
 main .work .el6 .width a .arrow-link {
   position: absolute;
@@ -861,7 +855,7 @@ main .work .el6 .width a .arrow-link {
   font-size: 15px;
 }
 main .work .el6 .width a .arrow-link:hover {
-  color: #0466c8;
+  color: #ffffff;
   transform: rotate(-45deg);
 }
 main .work .el6 .width a:hover {
@@ -882,9 +876,9 @@ main .work .el7 {
 main .work .el7 a {
   position: absolute;
   object-fit: contain;
-  width: 91.5%;
+  width: 86.5%;
   opacity: 0.9;
-  height: 88.5%;
+  height: 83.8%;
 }
 main .work .el7 a img {
   object-fit: contain;
@@ -913,13 +907,24 @@ main .work .el10 {
   border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
 main .work .el10 .width {
-  width: 300px;
+  width: 334px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .work .el10 .width h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  font-weight: 500;
 }
 main .work .el10 .width .description {
   color: #ffffff;
   font-family: "Inter", sans-serif;
   font-size: 0.8rem;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 main .work .el10 .width .description span {
   color: #0466c8;
@@ -927,21 +932,10 @@ main .work .el10 .width .description span {
   font-size: 1rem;
 }
 main .work .el10 .width .work-techno {
-  color: #ffffff;
+  color: #0466c8;
   font-family: "Inter", sans-serif;
   font-size: 0.7rem;
-  font-style: italic;
-}
-main .work .el10 .width .work-techno .site {
-  color: #0466c8;
-  text-decoration: none;
-  background-color: unset;
-  padding: 0px;
-  border: unset;
-}
-main .work .el10 .width .work-techno span {
-  color: #0466c8;
-  font-style: italic;
+  margin-bottom: 20px;
 }
 main .work .el10 .width a {
   color: #ffffff;
@@ -954,7 +948,6 @@ main .work .el10 .width a {
   font-weight: 300;
   text-decoration: none;
   position: relative;
-  margin-top: 30px;
 }
 main .work .el10 .width a .arrow-link {
   position: absolute;
@@ -963,7 +956,7 @@ main .work .el10 .width a .arrow-link {
   font-size: 15px;
 }
 main .work .el10 .width a .arrow-link:hover {
-  color: #0466c8;
+  color: #ffffff;
   transform: rotate(-45deg);
 }
 main .work .el10 .width a:hover {
@@ -984,8 +977,9 @@ main .work .el11 {
 main .work .el11 a {
   position: absolute;
   object-fit: contain;
-  width: 91.5%;
-  height: 88.6%;
+  width: 86.5%;
+  opacity: 0.9;
+  height: 83.8%;
 }
 main .work .el11 a img {
   object-fit: contain;
@@ -1015,29 +1009,34 @@ main .work .el14 {
 }
 main .work .el14 .width {
   width: 334px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-main .work .el14 .width p {
+main .work .el14 .width h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  font-weight: 500;
+}
+main .work .el14 .width .description {
   color: #ffffff;
   font-family: "Inter", sans-serif;
   font-size: 0.8rem;
   margin-bottom: 20px;
 }
+main .work .el14 .width .description span {
+  color: #0466c8;
+  font-weight: 500;
+  font-size: 1rem;
+}
 main .work .el14 .width .work-techno {
-  color: #ffffff;
+  color: #0466c8;
   font-family: "Inter", sans-serif;
   font-size: 0.7rem;
-  font-style: italic;
-}
-main .work .el14 .width .work-techno .site {
-  color: #0466c8;
-  text-decoration: none;
-  background-color: unset;
-  padding: 0px;
-  border: unset;
-}
-main .work .el14 .width .work-techno span {
-  color: #0466c8;
-  font-style: italic;
+  margin-bottom: 20px;
 }
 main .work .el14 .width a {
   color: #ffffff;
@@ -1050,7 +1049,6 @@ main .work .el14 .width a {
   font-weight: 300;
   text-decoration: none;
   position: relative;
-  margin-top: 30px;
 }
 main .work .el14 .width a .arrow-link {
   position: absolute;
@@ -1059,7 +1057,7 @@ main .work .el14 .width a .arrow-link {
   font-size: 15px;
 }
 main .work .el14 .width a .arrow-link:hover {
-  color: #0466c8;
+  color: #ffffff;
   transform: rotate(-45deg);
 }
 main .work .el14 .width a:hover {
@@ -1081,9 +1079,9 @@ main .work .el15 {
 main .work .el15 a {
   position: absolute;
   object-fit: contain;
-  width: 91.5%;
+  width: 86.5%;
   opacity: 0.9;
-  height: 88.8%;
+  height: 84%;
 }
 main .work .el15 a img {
   object-fit: contain;

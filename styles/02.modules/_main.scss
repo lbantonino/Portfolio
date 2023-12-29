@@ -487,6 +487,17 @@ main {
       // border-right: 0.5px solid $bluegrid;
       .width{
         width: 334px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h1{
+          margin-bottom: 20px;
+          font-size: 2rem;
+          font-family: $fontOswald;
+          color: $white;
+          font-weight: 500;
+        }
         .description {
           color: $white;
           font-family: $fontInter;
@@ -499,21 +510,10 @@ main {
           }
         }
         .work-techno{
-          color: $white;
+          color: $lightBlue;
           font-family: $fontInter;
           font-size: 0.7rem;
-          font-style: italic;
-          .site{
-            color: $lightBlue;
-            text-decoration: none;
-            background-color: unset;
-            padding: 0px;
-            border: unset;
-          }
-          span{
-            color: $lightBlue;
-            font-style: italic;
-          }
+          margin-bottom: 20px;
         }
         a {
           color: $white;
@@ -524,16 +524,15 @@ main {
           font-family: $fontInter;
           font-size: 13px;
           font-weight: 300;
-          text-decoration: none;
           position: relative;
-          margin-top: 30px;
+          // margin-top: 50px;
           .arrow-link {
             position: absolute;
             right: 34px;
             top: 8px;
             font-size: 15px;
             &:hover {
-              color: $lightBlue;
+              color: $white;
               transform: rotate(-45deg);
             }
           }
@@ -556,12 +555,13 @@ main {
       border-right: 0.5px solid $bluegrid;
       overflow: hidden;
       position: relative;
+
       a{
         position: absolute;
         object-fit: contain;
-        width: 91.5%;
+        width: 86.5%;
         opacity: 0.9;
-        height: 88.5%;  
+        height: 83.8%;  
       img {
         object-fit: contain;
         width: 100%;
@@ -570,6 +570,7 @@ main {
       &:hover {
         border: 2px solid $lightBlue;
         cursor: pointer;
+
       }
     }
     }
@@ -590,12 +591,23 @@ main {
       grid-column: 4 / 4;
       border-right: 0.5px solid $bluegrid;
       .width{
-        width: 300px;
+        width: 334px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h1{
+          margin-bottom: 20px;
+          font-size: 2rem;
+          font-family: $fontOswald;
+          color: $white;
+          font-weight: 500;
+        }
         .description {
           color: $white;
           font-family: $fontInter;
           font-size: 0.8rem;
-          margin-bottom: 30px;
+          margin-bottom: 20px;
           span{
             color: $lightBlue;
             font-weight: 500;
@@ -603,21 +615,10 @@ main {
           }
         }
         .work-techno{
-          color: $white;
+          color: $lightBlue;
           font-family: $fontInter;
           font-size: 0.7rem;
-          font-style: italic;
-          .site{
-            color: $lightBlue;
-            text-decoration: none;
-            background-color: unset;
-            padding: 0px;
-            border: unset;
-          }
-          span{
-            color: $lightBlue;
-            font-style: italic;
-          }
+          margin-bottom: 20px;
         }
         a { 
           color: $white;
@@ -630,14 +631,14 @@ main {
           font-weight: 300;
           text-decoration: none;
           position: relative;
-          margin-top: 30px;
+          // margin-top: 30px;
           .arrow-link {
             position: absolute;
             right: 34px;
             top: 8px;
             font-size: 15px;
             &:hover {
-              color: $lightBlue;
+              color: $white;
               transform: rotate(-45deg);
             }
           }
@@ -663,8 +664,9 @@ main {
       a{
         position: absolute;
         object-fit: contain;
-        width: 91.5%;
-        height: 88.6%;  
+        width: 86.5%;
+        opacity: 0.9;
+        height: 83.8%;  
       img {
         object-fit: contain;
         width: 100%;
@@ -673,6 +675,7 @@ main {
       &:hover {
         border: 2px solid $lightBlue;
         cursor: pointer;
+
       }
     }
     }
@@ -695,31 +698,35 @@ main {
       // border-right: 0.5px solid $bluegrid;
       .width{
         width: 334px;
-        p {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h1{
+          margin-bottom: 20px;
+          font-size: 2rem;
+          font-family: $fontOswald;
+          color: $white;
+          font-weight: 500;
+        }
+        .description {
           color: $white;
           font-family: $fontInter;
           font-size: 0.8rem;
           margin-bottom: 20px;
-        }
-        .work-techno{
-          color: $white;
-          font-family: $fontInter;
-          font-size: 0.7rem;
-          font-style: italic;
-          .site{
-            color: $lightBlue;
-            text-decoration: none;
-            background-color: unset;
-            padding: 0px;
-            border: unset;
-          }
           span{
             color: $lightBlue;
-            font-style: italic;
+            font-weight: 500;
+            font-size: 1rem;
           }
         }
+        .work-techno{
+          color: $lightBlue;
+          font-family: $fontInter;
+          font-size: 0.7rem;
+          margin-bottom: 20px;
+        }
         a {
-          
           color: $white;
           background-color: #0466c81b;
           padding: 7px 162px 7px 25px;
@@ -730,14 +737,13 @@ main {
           font-weight: 300;
           text-decoration: none;
           position: relative;
-          margin-top: 30px;
           .arrow-link {
             position: absolute;
             right: 34px;
             top: 8px;
             font-size: 15px;
             &:hover {
-              color: $lightBlue;
+              color: $white;
               transform: rotate(-45deg);
             }
           }
@@ -762,9 +768,9 @@ main {
       a{
         position: absolute;
         object-fit: contain;
-        width: 91.5%;
+        width: 86.5%;
         opacity: 0.9;
-        height: 88.8%;  
+        height: 84%;  
       img {
         object-fit: contain;
         width: 100%;
@@ -773,6 +779,7 @@ main {
       &:hover {
         border: 2px solid $lightBlue;
         cursor: pointer;
+
       }
     }
     }
