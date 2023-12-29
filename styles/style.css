@@ -114,7 +114,7 @@ header .logo {
   display: flex;
   align-items: center;
   justify-content: start;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 header .logo .logo-svg {
   width: 35px;
@@ -169,8 +169,8 @@ header .menu-global nav ul li a {
   position: relative;
 }
 header .menu-global nav ul li a:hover {
-  padding-bottom: 5px;
-  border-bottom: 2px solid #0466c8;
+  padding-top: 5px;
+  border-top: 3px solid #0466c8;
   color: #0466c8;
 }
 header .menu-global .theme-switcher label {
@@ -438,11 +438,11 @@ main .nomJob .nomJob-global {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  padding-left: 15px;
+  padding-left: 40px;
 }
 main .nomJob .nomJob-global h1 {
   font-family: "Oswald", sans-serif;
-  font-size: 90px;
+  font-size: 85px;
   font-weight: 600;
   letter-spacing: -2px;
   color: #ffffff;
@@ -455,11 +455,11 @@ main .nomJob .nomJob-global h1 span {
 }
 main .nomJob .nomJob-global h2 {
   font-family: "Oswald", sans-serif;
-  font-size: 41.5px;
+  font-size: 40px;
   font-weight: 100;
   color: #ffffff;
   letter-spacing: -1px;
-  transform: translate(0px, -25px);
+  transform: translate(0px, -15px);
   text-transform: uppercase;
 }
 main .nomJob .nomJob-global h2 .FS {
@@ -469,8 +469,7 @@ main .nomJob .nomJob-global h2 .FS {
 }
 main .nomJob .nomJob-global h2 span {
   color: #0466c8;
-  font-weight: 500;
-  font-style: italic;
+  font-weight: 300;
 }
 main .social-img {
   display: grid;
@@ -494,7 +493,7 @@ main .social-img .aboutMe {
   gap: 30px;
 }
 main .social-img .aboutMe .about-text {
-  width: 715px;
+  width: 735px;
   display: flex;
   align-items: start;
   justify-content: start;
@@ -509,14 +508,14 @@ main .social-img .aboutMe .about-text h1 {
   font-weight: 500;
 }
 main .social-img .aboutMe p {
-  padding: 0 45px;
+  padding: 0 34px;
   color: #ffffff;
   font-family: "Inter", sans-serif;
   font-size: 0.9rem;
   line-height: 22px;
 }
 main .social-img .aboutMe a {
-  padding: 7px 534px 7px 25px;
+  padding: 7px 549px 7px 25px;
   border: 1px solid rgba(255, 255, 255, 0.1490196078);
   border-radius: 30px;
   color: #ffffff;
@@ -755,7 +754,7 @@ main .work .el2 {
   flex-direction: column;
 }
 main .work .el2 .work-text {
-  width: 720px;
+  width: 732px;
   display: flex;
   align-items: start;
   justify-content: start;
@@ -772,7 +771,7 @@ main .work .el2 .work-text h1 {
   font-weight: 500;
 }
 main .work .el2 p {
-  padding: 10px 40px 35px;
+  padding: 10px 32px 35px;
   color: #ffffff;
   font-family: "Inter", sans-serif;
   font-size: 0.9rem;
@@ -812,13 +811,18 @@ main .work .el6 {
   grid-column: 2/2;
 }
 main .work .el6 .width {
-  width: 300px;
+  width: 334px;
 }
-main .work .el6 .width p {
+main .work .el6 .width .description {
   color: #ffffff;
   font-family: "Inter", sans-serif;
   font-size: 0.8rem;
   margin-bottom: 20px;
+}
+main .work .el6 .width .description span {
+  color: #0466c8;
+  font-weight: 500;
+  font-size: 1rem;
 }
 main .work .el6 .width .work-techno {
   color: #ffffff;
@@ -878,9 +882,9 @@ main .work .el7 {
 main .work .el7 a {
   position: absolute;
   object-fit: contain;
-  width: 95%;
+  width: 91.5%;
   opacity: 0.9;
-  height: 92%;
+  height: 88.5%;
 }
 main .work .el7 a img {
   object-fit: contain;
@@ -911,11 +915,16 @@ main .work .el10 {
 main .work .el10 .width {
   width: 300px;
 }
-main .work .el10 .width p {
+main .work .el10 .width .description {
   color: #ffffff;
   font-family: "Inter", sans-serif;
   font-size: 0.8rem;
   margin-bottom: 30px;
+}
+main .work .el10 .width .description span {
+  color: #0466c8;
+  font-weight: 500;
+  font-size: 1rem;
 }
 main .work .el10 .width .work-techno {
   color: #ffffff;
@@ -975,9 +984,8 @@ main .work .el11 {
 main .work .el11 a {
   position: absolute;
   object-fit: contain;
-  width: 95%;
-  opacity: 0.9;
-  height: 92%;
+  width: 91.5%;
+  height: 88.6%;
 }
 main .work .el11 a img {
   object-fit: contain;
@@ -1006,7 +1014,7 @@ main .work .el14 {
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
 main .work .el14 .width {
-  width: 300px;
+  width: 334px;
 }
 main .work .el14 .width p {
   color: #ffffff;
@@ -1073,9 +1081,9 @@ main .work .el15 {
 main .work .el15 a {
   position: absolute;
   object-fit: contain;
-  width: 95%;
+  width: 91.5%;
   opacity: 0.9;
-  height: 92%;
+  height: 88.8%;
 }
 main .work .el15 a img {
   object-fit: contain;
@@ -1091,24 +1099,24 @@ main .work .el16 {
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
 
-.about {
+.about-section {
   display: grid;
   grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-  grid-template-rows: 650px 399px;
+  grid-template-rows: 710px 399px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
-.about .el1 {
+.about-section .el1 {
   grid-column: 1/1;
   border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
-.about .el2 {
+.about-section .el2 {
   grid-column: 2/5;
   border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
-.about .el2 .title {
+.about-section .el2 .title {
   width: 720px;
   display: flex;
   align-items: start;
@@ -1117,7 +1125,7 @@ main .work .el16 {
   margin-left: 30px;
   margin-top: 20px;
 }
-.about .el2 .title h1 {
+.about-section .el2 .title h1 {
   font-family: "Oswald", sans-serif;
   color: #0466c8;
   padding: 3px 0;
@@ -1126,7 +1134,7 @@ main .work .el16 {
   text-transform: uppercase;
   font-weight: 500;
 }
-.about .el2 .text-about {
+.about-section .el2 .text-about {
   display: flex;
   align-items: start;
   justify-content: start;
@@ -1134,7 +1142,7 @@ main .work .el16 {
   margin-left: 30px;
   margin-right: 30px;
 }
-.about .el2 .text-about p {
+.about-section .el2 .text-about p {
   font-family: "Inter", sans-serif;
   color: #ffffff;
   font-size: 0.9rem;
@@ -1143,10 +1151,10 @@ main .work .el16 {
   text-align: justify;
   font-weight: 400;
 }
-.about .el2 .text-about p span {
+.about-section .el2 .text-about p span {
   color: #0466c8;
 }
-.about .el2 .text-about a {
+.about-section .el2 .text-about a {
   font-family: "Inter", sans-serif;
   color: #0466c8;
   font-size: 0.85rem;
@@ -1155,17 +1163,17 @@ main .work .el16 {
   text-align: justify;
   font-weight: 400;
 }
-.about .el4 {
+.about-section .el4 {
   grid-column: 5/5;
   border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
-.about .el5 {
+.about-section .el5 {
   grid-column: 1/1;
   border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
-.about .el6 {
+.about-section .el6 {
   grid-column: 2/4;
   border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
@@ -1174,7 +1182,7 @@ main .work .el16 {
   justify-content: center;
   flex-direction: column;
 }
-.about .el6 .title {
+.about-section .el6 .title {
   display: flex;
   align-items: start;
   justify-content: start;
@@ -1183,7 +1191,7 @@ main .work .el16 {
   margin-top: 20px;
   transform: translate(-330px, -55px);
 }
-.about .el6 .title h1 {
+.about-section .el6 .title h1 {
   font-family: "Oswald", sans-serif;
   color: #0466c8;
   padding: 3px 0;
@@ -1192,7 +1200,7 @@ main .work .el16 {
   text-transform: uppercase;
   font-weight: 500;
 }
-.about .el6 .xp-text {
+.about-section .el6 .xp-text {
   display: flex;
   align-items: start;
   justify-content: center;
@@ -1203,11 +1211,11 @@ main .work .el16 {
   transform: translate(-73px, -20px);
   gap: 20px;
 }
-.about .el6 .xp-text .line {
+.about-section .el6 .xp-text .line {
   width: 600px;
   border: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
-.about .el6 .xp-text .crispin h1 {
+.about-section .el6 .xp-text .crispin h1 {
   font-family: "Inter", sans-serif;
   color: #ffffff;
   font-size: 0.95rem;
@@ -1215,7 +1223,7 @@ main .work .el16 {
   font-weight: 400;
   padding-bottom: 10px;
 }
-.about .el6 .xp-text .crispin h2 {
+.about-section .el6 .xp-text .crispin h2 {
   font-family: "Inter", sans-serif;
   color: white;
   font-size: 0.85rem;
@@ -1223,7 +1231,7 @@ main .work .el16 {
   padding-bottom: 10px;
   font-style: italic;
 }
-.about .el6 .xp-text .crispin p {
+.about-section .el6 .xp-text .crispin p {
   font-family: "Inter", sans-serif;
   color: rgba(255, 255, 255, 0.753);
   font-size: 0.8rem;
@@ -1231,10 +1239,10 @@ main .work .el16 {
   text-align: justify;
   font-weight: 100;
 }
-.about .el6 .xp-text .crispin p span {
+.about-section .el6 .xp-text .crispin p span {
   color: #0466c8;
 }
-.about .el6 .xp-text .voo h1 {
+.about-section .el6 .xp-text .voo h1 {
   font-family: "Inter", sans-serif;
   color: #ffffff;
   font-size: 0.95rem;
@@ -1242,7 +1250,7 @@ main .work .el16 {
   font-weight: 400;
   padding-bottom: 10px;
 }
-.about .el6 .xp-text .voo h2 {
+.about-section .el6 .xp-text .voo h2 {
   font-family: "Inter", sans-serif;
   color: white;
   font-size: 0.85rem;
@@ -1250,7 +1258,7 @@ main .work .el16 {
   padding-bottom: 10px;
   font-style: italic;
 }
-.about .el6 .xp-text .voo p {
+.about-section .el6 .xp-text .voo p {
   font-family: "Inter", sans-serif;
   color: rgba(255, 255, 255, 0.753);
   font-size: 0.8rem;
@@ -1258,15 +1266,76 @@ main .work .el16 {
   text-align: justify;
   font-weight: 100;
 }
-.about .el6 .xp-text .voo p span {
+.about-section .el6 .xp-text .voo p span {
   color: #0466c8;
 }
-.about .el7 {
+.about-section .el7 {
   grid-column: 4/4;
   border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }
-.about .el8 {
+.about-section .el7 .title {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.about-section .el7 .title h1 {
+  font-family: "Oswald", sans-serif;
+  color: #0466c8;
+  padding: 3px 0;
+  border-bottom: 1px solid #0466c8;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.about-section .el7 .files {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 62.5%;
+}
+.about-section .el7 .files a {
+  color: #ffffff;
+  padding: 9.5px 170px 9.5px 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1490196078);
+  border-radius: 30px;
+  font-family: "Syne", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+  margin-top: 30px;
+}
+.about-section .el7 .files a .arrow-link {
+  position: absolute;
+  right: 34px;
+  top: 12px;
+  font-size: 16px;
+}
+.about-section .el7 .files a .arrow-link:hover {
+  color: #0466c8;
+  transform: rotate(-45deg);
+}
+.about-section .el7 .files a:hover {
+  color: #0466c8;
+  border: 1px solid #0466c8;
+  cursor: pointer;
+}
+.about-section .el7 .files p {
+  font-family: "Inter", sans-serif;
+  color: rgba(255, 255, 255, 0.753);
+  font-size: 0.8rem;
+  font-weight: 100;
+  padding: 20px 60px;
+  line-height: 20px;
+}
+.about-section .el7 .files p span {
+  color: #0466c8;
+}
+.about-section .el8 {
   grid-column: 5/5;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
 }

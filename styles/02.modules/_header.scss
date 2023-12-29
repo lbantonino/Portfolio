@@ -24,7 +24,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: start;
-    padding: 0 20px;
+    padding: 0 30px;
     .logo-svg {
       width: 35px;
       &:hover {
@@ -76,8 +76,8 @@ header {
             color: $white;
             position: relative;
             &:hover {
-              padding-bottom: 5px;
-              border-bottom: 2px solid $lightBlue;
+              padding-top: 5px;
+              border-top: 3px solid $lightBlue;
               color: $lightBlue;
             }
           }

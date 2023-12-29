@@ -61,10 +61,10 @@ main {
       flex-direction: column;
       justify-content: center;
       align-items: start;
-      padding-left: 15px;
+      padding-left: 40px;
       h1 {
         font-family: $fontOswald;
-        font-size: 90px;
+        font-size: 85px;
         font-weight: 600;
         letter-spacing: -2px;
         color: $white;
@@ -79,11 +79,11 @@ main {
       }
       h2 {
         font-family: $fontOswald;
-        font-size: 41.5px;
+        font-size: 40px;
         font-weight: 100;
         color: $white;
         letter-spacing: -1px;
-        transform: translate(0px, -25px);
+        transform: translate(0px, -15px);
         text-transform: uppercase;
         .FS{
           color: $white;
@@ -92,8 +92,7 @@ main {
         }
         span{
           color: $lightBlue;
-          font-weight: 500;
-          font-style: italic;
+          font-weight: 300;
         }
       }
       // h3{
@@ -125,7 +124,7 @@ main {
         flex-direction: column;
         gap: 30px;
         .about-text{
-          width: 715px;
+          width: 735px;
           display: flex;
           align-items: start;
           justify-content: start;
@@ -140,14 +139,14 @@ main {
         }
       }
         p {
-          padding: 0 45px ;
+          padding: 0 34px ;
           color: $white;
           font-family: $fontInter;
           font-size: 0.9rem;
           line-height: 22px;
         }
         a {
-          padding: 7px 534px 7px 25px;
+          padding: 7px 549px 7px 25px;
           border: 1px solid #ffffff26;
           border-radius: 30px;
           color: $white;
@@ -428,7 +427,7 @@ main {
       justify-content: center;
       flex-direction: column;
       .work-text{
-        width: 720px;
+        width: 732px;
         display: flex;
         align-items: start;
         justify-content: start;
@@ -446,7 +445,7 @@ main {
       }
       }
       p {
-        padding: 10px 40px 35px;
+        padding: 10px 32px 35px;
         color: $white;
         font-family: $fontInter;
         font-size: 0.9rem;
@@ -487,12 +486,17 @@ main {
       grid-column: 2 / 2;
       // border-right: 0.5px solid $bluegrid;
       .width{
-        width: 300px;
-        p {
+        width: 334px;
+        .description {
           color: $white;
           font-family: $fontInter;
           font-size: 0.8rem;
           margin-bottom: 20px;
+          span{
+            color: $lightBlue;
+            font-weight: 500;
+            font-size: 1rem;
+          }
         }
         .work-techno{
           color: $white;
@@ -555,9 +559,9 @@ main {
       a{
         position: absolute;
         object-fit: contain;
-        width: 95%;
+        width: 91.5%;
         opacity: 0.9;
-        height: 92%;  
+        height: 88.5%;  
       img {
         object-fit: contain;
         width: 100%;
@@ -587,11 +591,16 @@ main {
       border-right: 0.5px solid $bluegrid;
       .width{
         width: 300px;
-        p {
+        .description {
           color: $white;
           font-family: $fontInter;
           font-size: 0.8rem;
           margin-bottom: 30px;
+          span{
+            color: $lightBlue;
+            font-weight: 500;
+            font-size: 1rem;
+          }
         }
         .work-techno{
           color: $white;
@@ -654,9 +663,8 @@ main {
       a{
         position: absolute;
         object-fit: contain;
-        width: 95%;
-        opacity: 0.9;
-        height: 92%;  
+        width: 91.5%;
+        height: 88.6%;  
       img {
         object-fit: contain;
         width: 100%;
@@ -686,7 +694,7 @@ main {
       border-bottom: 0.5px solid $bluegrid;
       // border-right: 0.5px solid $bluegrid;
       .width{
-        width: 300px;
+        width: 334px;
         p {
           color: $white;
           font-family: $fontInter;
@@ -754,9 +762,9 @@ main {
       a{
         position: absolute;
         object-fit: contain;
-        width: 95%;
+        width: 91.5%;
         opacity: 0.9;
-        height: 92%;  
+        height: 88.8%;  
       img {
         object-fit: contain;
         width: 100%;
@@ -778,10 +786,10 @@ main {
 ///////// 
 // pages about
 
-.about {
+.about-section {
   display: grid;
   grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-  grid-template-rows: 650px  399px ;
+  grid-template-rows: 710px  399px ;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   .el1 {
@@ -958,6 +966,67 @@ main {
     grid-column: 4/4;
     border-right: 0.5px solid $bluegrid;
     border-bottom: 0.5px solid $bluegrid;
+    .title{
+      display: flex;
+      align-items: start;
+      justify-content: start;
+      margin-bottom: 30px;
+      margin-left: 30px;
+      margin-top: 20px;
+      h1 {
+        font-family: $fontOswald;
+        color: $lightBlue;
+        padding: 3px 0;
+        border-bottom: 1px solid $lightBlue;
+        font-size: 22px;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+    }
+    .files {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 62.5%;
+      a{
+        color: $white;
+        padding:9.5px 170px 9.5px 25px;
+        border: 1px solid rgba(255, 255, 255, 0.1490196078);
+        border-radius: 30px;
+        font-family: $fontSyne;
+        font-size: 16px;
+        text-decoration: none;
+        position: relative;
+        margin-top: 30px;
+        .arrow-link {
+          position: absolute;
+          right: 34px;
+          top: 12px;
+          font-size: 16px;
+          &:hover {
+            color: $lightBlue;
+            transform: rotate(-45deg);
+          }
+        }
+        &:hover {
+          color: $lightBlue;
+          border: 1px solid $lightBlue;
+          cursor: pointer;
+        }
+      }
+      p{
+        font-family: $fontInter;
+        color: rgba(255, 255, 255, 0.753);
+        font-size: 0.80rem;
+        font-weight: 100;
+        padding: 20px 60px;
+        line-height: 20px;
+        span{
+          color: $lightBlue;
+        }
+      }
+    }
   }
   .el8{
     grid-column: 5/5;
