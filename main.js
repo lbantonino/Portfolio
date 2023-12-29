@@ -35,17 +35,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Mouse effect
-const blob = document.getElementById("blob");
-window.onpointermove = (event) => {
-    const { clientX, clientY } = event;
-    blob.animate(
-        {
-            left: `${clientX}px`,
-            top: `${clientY}px`
-        },
-        { duration: 600, fill: "forwards" }
-    );
-};
 
 
 
