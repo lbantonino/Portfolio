@@ -30,22 +30,46 @@ header {
     align-items: center;
     justify-content: start;
     padding: 0 30px;
-    .logo-svg {
-      width: 35px;
-      &:hover {
-        transform: scale(1.2);
+    .logo-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+       a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        font-family: $fontOswald;
+        color: $white;
+        font-weight: 700;
+        text-decoration: none;
+        font-style: italic;
+        transform: scaleX(1.5);
+        z-index: 5;
+        position: relative;
+       }
+       div{
+        position: absolute;
+        width: 15px;
+        height: 6px;
+        background-color: $lightBlue;
+        top: 47.5px;
+        left: 167px;
       }
-    }
+      }
+    
     .name-logo {
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-left: 30px;
       h1 {
         font-size: 1rem;
         font-family: $fontSyne;
         font-weight: 600;
         color: $white;
         padding-left: 20px;
+        transform: translateY(4px);
         a {
           color: $white;
           cursor: default;

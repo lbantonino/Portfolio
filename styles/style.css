@@ -117,16 +117,38 @@ header .logo {
   justify-content: start;
   padding: 0 30px;
 }
-header .logo .logo-svg {
-  width: 35px;
+header .logo .logo-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-header .logo .logo-svg:hover {
-  transform: scale(1.2);
+header .logo .logo-group a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: italic;
+  transform: scaleX(1.5);
+  z-index: 5;
+  position: relative;
+}
+header .logo .logo-group div {
+  position: absolute;
+  width: 15px;
+  height: 6px;
+  background-color: #0466c8;
+  top: 47.5px;
+  left: 167px;
 }
 header .logo .name-logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 30px;
 }
 header .logo .name-logo h1 {
   font-size: 1rem;
@@ -134,6 +156,7 @@ header .logo .name-logo h1 {
   font-weight: 600;
   color: #ffffff;
   padding-left: 20px;
+  transform: translateY(4px);
 }
 header .logo .name-logo h1 a {
   color: #ffffff;
@@ -605,13 +628,13 @@ main .nomJob .nomJob-global {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  padding-left: 40px;
+  padding-left: 30px;
   position: relative;
 }
 main .nomJob .nomJob-global .title {
   position: absolute;
   top: 90px;
-  left: 33px;
+  left: 18px;
 }
 main .nomJob .nomJob-global .title h1 {
   font-family: "Oswald", sans-serif;
@@ -634,7 +657,6 @@ main .nomJob .nomJob-global .word-container {
   letter-spacing: 0px;
   text-transform: uppercase;
   top: 180px;
-  left: 43px;
 }
 main .social-img {
   display: grid;

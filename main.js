@@ -75,149 +75,52 @@ const applyTheme = (theme) => {
     }
 };
 
+
+
 const setDarkTheme = () => {
-    // body.style.backgroundColor = '#070b1c';
     body.style.backgroundColor = '#1a1d2e';
-    const el1 = document.querySelector('.el1');
-    el1.style.backgroundColor = '#070b1c';
-    const el2 = document.querySelector('.el2');
-    el2.style.backgroundColor = '#070b1c';
-    const el3 = document.querySelector('.el3');
-    el3.style.backgroundColor = '#070b1c';
-    const el4 = document.querySelector('.el4');
-    el4.style.backgroundColor = '#070b1c';
-    const logo = document.querySelector('.logo');
-    logo.style.backgroundColor = '#070b1c';
-    const nomJob = document.querySelector('.nomJob-global');
-    nomJob.style.backgroundColor = '#070b1c';
-    const aboutMe = document.querySelector('.aboutMe');
-    aboutMe.style.backgroundColor = '#070b1c';
-    const social = document.querySelector('.social');
-    social.style.backgroundColor = '#070b1c';
-    const el5 = document.querySelector('.el5');
-    el5.style.backgroundColor = '#070b1c';
-    const el6 = document.querySelector('.el6');
-    el6.style.backgroundColor = '#070b1c';
-    const el7 = document.querySelector('.el7');
-    el7.style.backgroundColor = '#070b1c';
-    const el8 = document.querySelector('.el8');
-    el8.style.backgroundColor = '#070b1c';
-    const el9 = document.querySelector('.el9');
-    el9.style.backgroundColor = '#070b1c';
-    const el10 = document.querySelector('.el10');
-    el10.style.backgroundColor = '#070b1c';
-    const el11 = document.querySelector('.el11');
-    el11.style.backgroundColor = '#070b1c';
-    const el12 = document.querySelector('.el12');
-    el12.style.backgroundColor = '#070b1c';
-    const el13 = document.querySelector('.el13');
-    el13.style.backgroundColor = '#070b1c';
-    const el14 = document.querySelector('.el14');
-    el14.style.backgroundColor = '#070b1c';
-    const el15 = document.querySelector('.el15');
-    el15.style.backgroundColor = '#070b1c';
-    const el16 = document.querySelector('.el16');
-    el16.style.backgroundColor = '#070b1c';
-    const menuGlobal = document.querySelector('.menu-global');
-    menuGlobal.style.backgroundColor = '#070b1c';
-    const menuGlobalAbout = document.querySelector('.menu-global-about');
-    menuGlobalAbout.style.backgroundColor = '#070b1c';
-    const el1n = document.querySelector('.el1n');
-    el1n.style.backgroundColor = '#070b1c';
-    const el3n = document.querySelector('.el3n');
-    el3n.style.backgroundColor = '#070b1c';
-    const el4s = document.querySelector('.el4s');
-    el4s.style.backgroundColor = '#070b1c';
-    const el6w = document.querySelector('.el6w');
-    el6w.style.backgroundColor = '#070b1c';
-    const el1f = document.querySelector('.el1f');
-    el1f.style.backgroundColor = '#070b1c';
-    const el2f = document.querySelector('.el2f');
-    el2f.style.backgroundColor = '#070b1c';
-    const el3f = document.querySelector('.el3f');
-    el3f.style.backgroundColor = '#070b1c';
-    const el5f = document.querySelector('.el5f');
-    el5f.style.backgroundColor = '#070b1c';
-    const el6f = document.querySelector('.el6f');
-    el6f.style.backgroundColor = '#070b1c';
-    const el7f = document.querySelector('.el7f');
-    el7f.style.backgroundColor = '#070b1c';
-    const el8f = document.querySelector('.el8f');
-    el8f.style.backgroundColor = '#070b1c';
-    const el9f = document.querySelector('.el9f');
+    const elements = document.querySelectorAll('*');
+    const text = document.querySelectorAll('p , h1 , h2 , h3 , h4 , h5 , h6 , a , span , li , label , input , textarea , button , .word-container');
+
+    elements.forEach(element => {
+        const backgroundColor = window.getComputedStyle(element).backgroundColor;
+        if (backgroundColor === 'rgb(255, 255, 255)' || backgroundColor === 'rgba(255, 255, 255, 0)') {
+            element.style.backgroundColor = '#070b1c';
+        }
+    });
+
+    text.forEach(element => {
+        const color = window.getComputedStyle(element).color;
+        if (color === 'rgb(18, 28, 70)') {
+            element.style.color = '#ffffff';
+        }
+    });
 };
 
+
+
+
 const setLightTheme = () => {
-    body.style.backgroundColor = '#23253421';
-    const el1 = document.querySelector('.el1');
-    el1.style.backgroundColor = 'white';
-    const el2 = document.querySelector('.el2');
-    el2.style.backgroundColor = 'white';
-    const el3 = document.querySelector('.el3');
-    el3.style.backgroundColor = 'white';
-    const el4 = document.querySelector('.el4');
-    el4.style.backgroundColor = 'white';
-    const logo = document.querySelector('.logo');
-    logo.style.backgroundColor = 'white';
-    const nomJob = document.querySelector('.nomJob-global');
-    nomJob.style.backgroundColor = 'white';
-    const aboutMe = document.querySelector('.aboutMe');
-    aboutMe.style.backgroundColor = 'white';
-    const social = document.querySelector('.social');
-    social.style.backgroundColor = 'white';
-    const el5 = document.querySelector('.el5');
-    el5.style.backgroundColor = 'white';
-    const el6 = document.querySelector('.el6');
-    el6.style.backgroundColor = 'white';
-    const el7 = document.querySelector('.el7');
-    el7.style.backgroundColor = 'white';
-    const el8 = document.querySelector('.el8');
-    el8.style.backgroundColor = 'white';
-    const el9 = document.querySelector('.el9');
-    el9.style.backgroundColor = 'white';
-    const el10 = document.querySelector('.el10');
-    el10.style.backgroundColor = 'white';
-    const el11 = document.querySelector('.el11');
-    el11.style.backgroundColor = 'white';
-    const el12 = document.querySelector('.el12');
-    el12.style.backgroundColor = 'white';
-    const el13 = document.querySelector('.el13');
-    el13.style.backgroundColor = 'white';
-    const el14 = document.querySelector('.el14');
-    el14.style.backgroundColor = 'white';
-    const el15 = document.querySelector('.el15');
-    el15.style.backgroundColor = 'white';
-    const el16 = document.querySelector('.el16');
-    el16.style.backgroundColor = 'white';
-    const menuGlobal = document.querySelector('.menu-global');
-    menuGlobal.style.backgroundColor = 'white';
-    const menuGlobalAbout = document.querySelector('.menu-global-about');
-    menuGlobalAbout.style.backgroundColor = 'white';
-    const el1n = document.querySelector('.el1n');
-    el1n.style.backgroundColor = 'white';
-    const el3n = document.querySelector('.el3n');
-    el3n.style.backgroundColor = 'white';
-    const el4s = document.querySelector('.el4s');
-    el4s.style.backgroundColor = 'white';
-    const el6w = document.querySelector('.el6w');
-    el6w.style.backgroundColor = 'white';
-    const el1f = document.querySelector('.el1f');
-    el1f.style.backgroundColor = 'white';
-    const el2f = document.querySelector('.el2f');
-    el2f.style.backgroundColor = 'white';
-    const el3f = document.querySelector('.el3f');
-    el3f.style.backgroundColor = 'white';
-    const el5f = document.querySelector('.el5f');
-    el5f.style.backgroundColor = 'white';
-    const el6f = document.querySelector('.el6f');
-    el6f.style.backgroundColor = 'white';
-    const el7f = document.querySelector('.el7f');
-    el7f.style.backgroundColor = 'white';
-    const el8f = document.querySelector('.el8f');
-    el8f.style.backgroundColor = 'white';
-    const el9f = document.querySelector('.el9f');
-    el9f.style.backgroundColor = 'white';
+    const elements = document.querySelectorAll('*');
+    const text = document.querySelectorAll('p , h1 , h2 , h3 , h4 , h5 , h6 , a , span , li , label , input , textarea , button , .word-container');
+    elements.forEach(element => {
+        const backgroundColor = window.getComputedStyle(element).backgroundColor;
+        if (backgroundColor === 'rgb(7, 11, 28)') {
+            element.style.backgroundColor = '#ffffff';
+            body.style.backgroundColor = 'rgba(46, 52, 75, 0.19)';
+        }
+    });
+    text.forEach(element => {
+        const color = window.getComputedStyle(element).color;
+        if (color === 'rgb(255, 255, 255)') {
+            element.style.color = '#121c46';
+        }
+    });
 };
+
+
+
+
 
 document.addEventListener('DOMContentLoaded', function () {
     const savedTheme = loadThemeFromLocalStorage();
@@ -227,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // Variables
 const theme = document.querySelector('#themeSwitch');
 const body = document.querySelector('body');
-// Ajoutez d'autres éléments nécessaires ici
+
 
 // Switch de thème (dark et light)
 theme.addEventListener('click', () => {
@@ -242,6 +145,8 @@ theme.addEventListener('click', () => {
         }
     }, 1001);
 });
+
+
 
 
 
