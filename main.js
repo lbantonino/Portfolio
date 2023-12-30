@@ -1,6 +1,5 @@
 // overlayAnimation
 const overlayAnimation = () => {
-    console.log('overlayAnimation called');
     document.querySelector('#topOverlay').style.transition = 'transform 700ms ease-in-out';
     document.querySelector('#bottomOverlay').style.transition = 'transform 700ms ease-in-out';
 
@@ -56,97 +55,272 @@ document.onpointermove = (event) => {
 
 
 
+///////////////////////////////////////////////
 
+// ESSAI 1
 
-// Theme switcher
-const saveThemeToLocalStorage = (theme) => {
-    localStorage.setItem('theme', theme);
-};
+// Theme switcher 
+// const saveThemeToLocalStorage = (theme) => {
+//     localStorage.setItem('theme', theme);
+// };
+// const loadThemeFromLocalStorage = () => {
+//     return localStorage.getItem('theme');
+// };
+// const applyTheme = (theme) => {
+//     if (theme === 'dark') {
+//         setDarkTheme();
+//     } else {
+//         setLightTheme();
+//         updateThemeIcon(theme);
+//     }
+// };
+// const setDarkTheme = () => {
+//     body.style.backgroundColor = '#1a1d2e';
+//     const elements = document.querySelectorAll('*');
+//     const text = document.querySelectorAll('p , h1 , h2 , h3 , h4 , h5 , h6 , a , span , li , label , input , textarea , button , .word-container');
+//     const liMenuAbout = document.querySelector('.about-li');
+//     const liMenuWork = document.querySelector('.work-li');
+//     const sunIcon = document.querySelector('.sun');
+//     elements.forEach(element => {
+//         const backgroundColor = window.getComputedStyle(element).backgroundColor;
+//         if (backgroundColor === 'rgb(255, 255, 255)' || backgroundColor === 'rgba(255, 255, 255, 0)') {
+//             element.style.backgroundColor = '#070b1c';
+//         }
+//     });
 
-const loadThemeFromLocalStorage = () => {
-    return localStorage.getItem('theme');
-};
+//     text.forEach(element => {
+//         const color = window.getComputedStyle(element).color;
+//         if (color === 'rgb(18, 28, 70)') {
+//             element.style.color = '#ffffff';
+//         }
+//     });
 
-const applyTheme = (theme) => {
-    if (theme === 'dark') {
-        setDarkTheme();
-    } else {
-        setLightTheme();
-    }
-};
+//     liMenuAbout.addEventListener('mouseover', () => {
+//         liMenuAbout.style.color = '#0466c8';
+//     });
+//     liMenuAbout.addEventListener('mouseout', () => {
+//         liMenuAbout.style.color = '#ffffff';
+//     });
+//     liMenuWork.addEventListener('mouseover', () => {
+//         liMenuWork.style.color = '#0466c8';
+//     });
+//     liMenuWork.addEventListener('mouseout', () => {
+//         liMenuWork.style.color = '#ffffff';
+//     });
+//     sunIcon.style.display = 'none';
 
+// };
+// const setLightTheme = () => {
+//     const elements = document.querySelectorAll('*');
+//     const text = document.querySelectorAll('p , h1 , h2 , h3 , h4 , h5 , h6 , a , span , li , label , input , textarea , button , .word-container');
+//     const line = document.querySelector('.line');
+//     const liMenuAbout = document.querySelector('.about-li');
+//     const liMenuWork = document.querySelector('.work-li');
+//     const moonIcon = document.querySelector('.moon');
+//     const sunIcon = document.querySelector('.sun');
+//     elements.forEach(element => {
+//         const backgroundColor = window.getComputedStyle(element).backgroundColor;
+//         if (backgroundColor === 'rgb(7, 11, 28)') {
+//             element.style.backgroundColor = '#ffffff';
+//             body.style.backgroundColor = 'rgba(46, 52, 75, 0.19)';
+//         }
+//     });
+//     text.forEach(element => {
+//         const color = window.getComputedStyle(element).color;
+//         if (color === 'rgb(255, 255, 255)' || color === 'rgba(255, 255, 255, 0.753)') {
+//             element.style.color = '#121c46';
+//         }
+//     });
+//     liMenuAbout.addEventListener('mouseover', () => {
+//         liMenuAbout.style.color = '#0466c8';
+//     });
+//     liMenuAbout.addEventListener('mouseout', () => {
+//         liMenuAbout.style.color = '#121c46';
+//     });
+//     liMenuWork.addEventListener('mouseover', () => {
+//         liMenuWork.style.color = '#0466c8';
+//     });
+//     liMenuWork.addEventListener('mouseout', () => {
+//         liMenuWork.style.color = '#121c46';
+//     });
+//     sunIcon.style.display = 'block';
+//     moonIcon.style.display = 'none';
 
+// };
+// const updateThemeIcon = (theme) => {
+//     const moonIcon = document.querySelector('.moon');
+//     const sunIcon = document.querySelector('.sun');
+//     if (theme === 'dark') {
+//         sunIcon.style.display = 'none';
+//         moonIcon.style.display = 'block';
+//     } else {
+//         sunIcon.style.display = 'block';
+//         moonIcon.style.display = 'none';
+//     }
+// };
+// document.addEventListener('DOMContentLoaded', function () {
+//     const savedTheme = loadThemeFromLocalStorage();
+//     applyTheme(savedTheme);
+//     updateThemeIcon(savedTheme);
+// });
 
-const setDarkTheme = () => {
-    body.style.backgroundColor = '#1a1d2e';
-    const elements = document.querySelectorAll('*');
-    const text = document.querySelectorAll('p , h1 , h2 , h3 , h4 , h5 , h6 , a , span , li , label , input , textarea , button , .word-container');
+// // Variables
+// const theme = document.querySelector('#themeSwitch');
+// const body = document.querySelector('body');
+// // Switch de thème (dark et light)
+// theme.addEventListener('click', () => {
+//     overlayAnimation2();
+//     setTimeout(() => {
+//         const newTheme = theme.checked ? 'light' : 'dark';
+//         if (newTheme === 'light') {
+//             setLightTheme();
+//         } else {
+//             setDarkTheme();
+//         }
+//         saveThemeToLocalStorage(newTheme);
+//         updateThemeIcon(newTheme);
+//     }, 1001);
+// });
 
-    elements.forEach(element => {
-        const backgroundColor = window.getComputedStyle(element).backgroundColor;
-        if (backgroundColor === 'rgb(255, 255, 255)' || backgroundColor === 'rgba(255, 255, 255, 0)') {
-            element.style.backgroundColor = '#070b1c';
-        }
-    });
+// window.addEventListener('storage', (event) => {
+//     if (event.key === 'theme') {
+//         applyTheme(event.newValue);
+//         updateThemeIcon(event.newValue);
+//     }
+// });
 
-    text.forEach(element => {
-        const color = window.getComputedStyle(element).color;
-        if (color === 'rgb(18, 28, 70)') {
-            element.style.color = '#ffffff';
-        }
-    });
-};
+////////////////////////////////////////////
 
+// ESSAI 2
 
+// theme switcher
 
+// const btn = document.querySelector('.btn-theme');
+// btn.addEventListener('click', () => {
+//     console.log('click');
+// });
 
-const setLightTheme = () => {
-    const elements = document.querySelectorAll('*');
-    const text = document.querySelectorAll('p , h1 , h2 , h3 , h4 , h5 , h6 , a , span , li , label , input , textarea , button , .word-container');
-    elements.forEach(element => {
-        const backgroundColor = window.getComputedStyle(element).backgroundColor;
-        if (backgroundColor === 'rgb(7, 11, 28)') {
-            element.style.backgroundColor = '#ffffff';
-            body.style.backgroundColor = 'rgba(46, 52, 75, 0.19)';
-        }
-    });
-    text.forEach(element => {
-        const color = window.getComputedStyle(element).color;
-        if (color === 'rgb(255, 255, 255)') {
-            element.style.color = '#121c46';
-        }
-    });
-};
+// const saveThemeToLocalStorage = (theme) => {
+//     localStorage.setItem('theme', theme);
+// };
+// const loadThemeFromLocalStorage = () => {
+//     return localStorage.getItem('theme');
+// };
+// const applyTheme = (theme) => {
+//     if (theme === 'dark') {
+//         setDarkTheme();
+//     } else {
+//         setLightTheme();
+//         updateThemeIcon(theme);
+//     }
+// };
 
+// const setDarkTheme = () => {
+//     const body = document.querySelector('body');
+//     body.style.backgroundColor = '#1a1d2e';
+//     const elements = document.querySelectorAll('*');
+//     const text = document.querySelectorAll('p , h1 , h2 , h3 , h4 , h5 , h6 , a , span , li , label , input , textarea , button , .word-container');
+//     const liMenuAbout = document.querySelector('.about-li');
+//     const liMenuWork = document.querySelector('.work-li');
+//     const sunIcon = document.querySelector('.sun');
+//     elements.forEach(element => {
+//         const backgroundColor = window.getComputedStyle(element).backgroundColor;
+//         if (backgroundColor === 'rgb(255, 255, 255)' || backgroundColor === 'rgba(255, 255, 255, 0)') {
+//             element.style.backgroundColor = '#070b1c';
+//         }
+//     });
 
+//     text.forEach(element => {
+//         const color = window.getComputedStyle(element).color;
+//         if (color === 'rgb(18, 28, 70)') {
+//             element.style.color = '#ffffff';
+//         }
+//     });
 
+//     liMenuAbout.addEventListener('mouseover', () => {
+//         liMenuAbout.style.color = '#0466c8';
+//     });
+//     liMenuAbout.addEventListener('mouseout', () => {
+//         liMenuAbout.style.color = '#ffffff';
+//     });
+//     liMenuWork.addEventListener('mouseover', () => {
+//         liMenuWork.style.color = '#0466c8';
+//     });
+//     liMenuWork.addEventListener('mouseout', () => {
+//         liMenuWork.style.color = '#ffffff';
+//     });
+//     sunIcon.style.display = 'none';
 
+// };
+// const setLightTheme = () => {
+//     const elements = document.querySelectorAll('*');
+//     const text = document.querySelectorAll('p , h1 , h2 , h3 , h4 , h5 , h6 , a , span , li , label , input , textarea , button , .word-container');
+//     const line = document.querySelector('.line');
+//     const liMenuAbout = document.querySelector('.about-li');
+//     const liMenuWork = document.querySelector('.work-li');
+//     const moonIcon = document.querySelector('.moon');
+//     const sunIcon = document.querySelector('.sun');
+//     elements.forEach(element => {
+//         const backgroundColor = window.getComputedStyle(element).backgroundColor;
+//         if (backgroundColor === 'rgb(7, 11, 28)') {
+//             element.style.backgroundColor = '#ffffff';
+//             body.style.backgroundColor = 'rgba(46, 52, 75, 0.19)';
+//         }
+//     });
+//     text.forEach(element => {
+//         const color = window.getComputedStyle(element).color;
+//         if (color === 'rgb(255, 255, 255)' || color === 'rgba(255, 255, 255, 0.753)') {
+//             element.style.color = '#121c46';
+//         }
+//     });
+//     liMenuAbout.addEventListener('mouseover', () => {
+//         liMenuAbout.style.color = '#0466c8';
+//     });
+//     liMenuAbout.addEventListener('mouseout', () => {
+//         liMenuAbout.style.color = '#121c46';
+//     });
+//     liMenuWork.addEventListener('mouseover', () => {
+//         liMenuWork.style.color = '#0466c8';
+//     });
+//     liMenuWork.addEventListener('mouseout', () => {
+//         liMenuWork.style.color = '#121c46';
+//     });
+//     sunIcon.style.display = 'block';
+//     moonIcon.style.display = 'none';
 
-document.addEventListener('DOMContentLoaded', function () {
-    const savedTheme = loadThemeFromLocalStorage();
-    applyTheme(savedTheme);
-});
+// };
 
-// Variables
-const theme = document.querySelector('#themeSwitch');
-const body = document.querySelector('body');
+// const updateThemeIcon = (theme) => {
+//     const moonIcon = document.querySelector('.moon');
+//     const sunIcon = document.querySelector('.sun');
+//     if (theme === 'dark') {
+//         sunIcon.style.display = 'none';
+//         moonIcon.style.display = 'block';
+//     } else {
+//         sunIcon.style.display = 'block';
+//         moonIcon.style.display = 'none';
+//     }
+// };
+// document.addEventListener('DOMContentLoaded', function () {
+//     const savedTheme = loadThemeFromLocalStorage();
+//     applyTheme(savedTheme);
+//     updateThemeIcon(savedTheme);
+// });
 
+// const btn = document.querySelector('.btn-theme');
+// btn.addEventListener('click', () => {
+//     const savedTheme = loadThemeFromLocalStorage();
+//     const newTheme = savedTheme === 'dark' ? 'light' : 'dark';
 
-// Switch de thème (dark et light)
-theme.addEventListener('click', () => {
-    overlayAnimation2();
-    setTimeout(() => {
-        if (theme.checked) {
-            setLightTheme();
-            saveThemeToLocalStorage('light');
-        } else {
-            setDarkTheme();
-            saveThemeToLocalStorage('dark');
-        }
-    }, 1001);
-});
+//     if (newTheme === 'dark') {
+//         setDarkTheme();
+//     } else {
+//         setLightTheme();
+//     }
 
-
+//     updateThemeIcon(newTheme);
+//     saveThemeToLocalStorage(newTheme);
+// });
 
 
 
@@ -155,46 +329,46 @@ theme.addEventListener('click', () => {
 
 // Animation text 'Fullstack / Bakcend / Frontend'
 
-document.addEventListener("DOMContentLoaded", function () {
-    setTimeout(() => {
+// document.addEventListener("DOMContentLoaded", function () {
+//     setTimeout(() => {
 
 
-        let words = ['Specialized in Frontend', ' But I AM Fullstack'];
-        let part, i = 0, offset = 0, len = words.length, forwards = true, skip_count = 0, skip_delay = 15, speed = 70;
-        let wordContainer = document.querySelector('.word-container');
+//         let words = ['Specialized in Frontend', ' But I AM Fullstack'];
+//         let part, i = 0, offset = 0, len = words.length, forwards = true, skip_count = 0, skip_delay = 15, speed = 70;
+//         let wordContainer = document.querySelector('.word-container');
 
-        let wordflick = function () {
-            setInterval(function () {
-                if (forwards) {
-                    if (offset >= words[i].length) {
-                        ++skip_count;
-                        if (skip_count == skip_delay) {
-                            forwards = false;
-                            skip_count = 0;
-                        }
-                    }
-                } else {
-                    if (offset == 0) {
-                        forwards = true;
-                        i++;
-                        offset = 0;
-                        if (i >= len) {
-                            i = 0;
-                        }
-                    }
-                }
-                part = words[i].substr(0, offset);
-                if (skip_count == 0) {
-                    if (forwards) {
-                        offset++;
-                    } else {
-                        offset--;
-                    }
-                }
-                wordContainer.textContent = part;
-            }, speed);
-        };
+//         let wordflick = function () {
+//             setInterval(function () {
+//                 if (forwards) {
+//                     if (offset >= words[i].length) {
+//                         ++skip_count;
+//                         if (skip_count == skip_delay) {
+//                             forwards = false;
+//                             skip_count = 0;
+//                         }
+//                     }
+//                 } else {
+//                     if (offset == 0) {
+//                         forwards = true;
+//                         i++;
+//                         offset = 0;
+//                         if (i >= len) {
+//                             i = 0;
+//                         }
+//                     }
+//                 }
+//                 part = words[i].substr(0, offset);
+//                 if (skip_count == 0) {
+//                     if (forwards) {
+//                         offset++;
+//                     } else {
+//                         offset--;
+//                     }
+//                 }
+//                 wordContainer.textContent = part;
+//             }, speed);
+//         };
 
-        wordflick();
-    }, 620);
-});
+//         wordflick();
+//     }, 620);
+// });

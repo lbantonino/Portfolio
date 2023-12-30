@@ -51,9 +51,9 @@
 
 }
 
-// body{
-//   background-color: #070b1cb4;
-// }
+body{
+  background-color: #070b1ce2;
+}
 
 ////////////////////////////////// main :
 
@@ -264,7 +264,9 @@ main {
         }
         a {
           padding: 7px 549px 7px 25px;
-          border: 1px solid #ffffff26;
+          border: 1px solid $lightBlue;
+          // background-color: #0466c81b;
+          background-color: rgba(4, 102, 200, 0.04);
           border-radius: 30px;
           color: $white;
           font-family: $fontSyne;
@@ -274,8 +276,7 @@ main {
           text-decoration: none;
           position: relative;
           &:hover {
-            color: $lightBlue;
-            border: 1px solid $lightBlue;
+            border: 2px solid $lightBlue2;
           }
         }
   
@@ -283,9 +284,6 @@ main {
           position: absolute;
           right: 34px;
           top: 12px;
-        }
-        .arrow-link:hover {
-          transform: rotate(-45deg);
         }
       }
     
@@ -328,7 +326,9 @@ main {
             margin: 30px 0;
             a {
               padding: 9.5px 235px 9.5px 25px;
-              border: 0.5px solid #ffffff26;
+              border: 1px solid $lightBlue;
+              // background-color: #0466c81b;
+              background-color: rgba(4, 102, 200, 0.04);
               border-radius: 30px;
               color: $white;
               font-size: 16px;
@@ -336,16 +336,13 @@ main {
               font-weight: 200;
               position: relative;
               &:hover {
-                color: $lightBlue;
-                border: 1px solid $lightBlue;
+                cursor: pointer;
+                border: 2px solid $lightBlue2;
               }
               .arrow-link {
                 position: absolute;
                 right: 34px;
                 top: 12px;
-              }
-              .arrow-link:hover {
-                transform: rotate(-45deg);
               }
             }
             .github {
@@ -414,9 +411,9 @@ main {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        transform: translateY(30px);
+        transform: translateY(50px);
         h1{
-          margin-bottom: 20px;
+          margin-bottom: 10px;
           font-size: 2rem;
           font-family: $fontOswald;
           color: $white;
@@ -426,7 +423,7 @@ main {
           color: $white;
           font-family: $fontInter;
           font-size: 0.8rem;
-          margin-bottom: 20px;
+          margin-bottom: 10px;
           span{
             color: $lightBlue;
             font-weight: 500;
@@ -441,13 +438,14 @@ main {
         }
         .website {
           color: $white;
-          background-color: #0466c81b;
-          padding: 7px 170px 7px 25px;
+          // background-color: #0466c81b;
+          background-color: rgba(4, 102, 200, 0.04);
+          padding: 9.5px 150px 9.5px 25px;
           border: 1px solid $lightBlue;
           border-radius: 30px;
-          font-family: $fontInter;
-          font-size: 12px;
-          font-weight: 500;
+          font-family: $fontSyne;
+          font-size: 16px;
+          font-weight: 400;
           position: relative;
           // margin-top: 50px;
           .arrow-link {
@@ -455,42 +453,10 @@ main {
             right: 34px;
             top: 8px;
             font-size: 15px;
-            &:hover {
-              color: $white;
-              transform: rotate(-45deg);
-            }
+            transform: translateY(4px);
           }
           &:hover {
-            background-color: $lightBlue;
-            color: white;
-            border: 1px solid $lightBlue;
-            cursor: pointer;
-          }
-        }
-        .repo {
-          color: $white;
-          padding: 7px 170px 7px 25px;
-          background-color: transparent;
-          border: 1px solid $bluegrid;
-          border-radius: 30px;
-          font-family: $fontInter;
-          font-size: 12px;
-          font-weight: 100;
-          position: relative;
-
-          .arrow-link {
-            position: absolute;
-            right: 34px;
-            top: 8px;
-            font-size: 15px;
-            &:hover {
-              color: $white;
-              transform: rotate(-45deg);
-            }
-          }
-          &:hover {
-            color: $lightBlue;
-            border: 1px solid $lightBlue;
+            border: 2px solid $lightBlue2;
             cursor: pointer;
           }
         }
@@ -538,7 +504,6 @@ main {
       align-items: center;
       flex-direction: column;
       grid-column: 4 / 4;
-      // border-right: 0.5px solid $bluegrid;
       background-color: #070b1c;
       .width{
         width: 334px;
@@ -547,7 +512,7 @@ main {
         flex-direction: column;
         gap: 10px;
         h1{
-          margin-bottom: 20px;
+          margin-bottom: 10px;
           font-size: 2rem;
           font-family: $fontOswald;
           color: $white;
@@ -557,7 +522,7 @@ main {
           color: $white;
           font-family: $fontInter;
           font-size: 0.8rem;
-          margin-bottom: 20px;
+          margin-bottom: 10px;
           span{
             color: $lightBlue;
             font-weight: 500;
@@ -568,60 +533,28 @@ main {
           color: $lightBlue;
           font-family: $fontInter;
           font-size: 0.7rem;
-          margin-bottom: 20px;
+          margin-bottom: 10px;
         }
         .website {
           color: $white;
-          background-color: #0466c81b;
-          padding: 7px 170px 7px 25px;
+          // background-color: #0466c81b;
+          background-color: rgba(4, 102, 200, 0.04);
+          padding: 9.5px 150px 9.5px 25px;
           border: 1px solid $lightBlue;
           border-radius: 30px;
-          font-family: $fontInter;
-          font-size: 12px;
-          font-weight: 500;
+          font-family: $fontSyne;
+          font-size: 16px;
+          font-weight: 400;
           position: relative;
-          // margin-top: 50px;
           .arrow-link {
             position: absolute;
             right: 34px;
             top: 8px;
             font-size: 15px;
-            &:hover {
-              color: $white;
-              transform: rotate(-45deg);
-            }
+            transform: translateY(4px);
           }
           &:hover {
-            background-color: $lightBlue;
-            color: white;
-            border: 1px solid $lightBlue;
-            cursor: pointer;
-          }
-        }
-        .repo {
-          color: $white;
-          padding: 7px 0px 7px 25px;
-          background-color: transparent;
-          border: 1px solid $bluegrid;
-          border-radius: 30px;
-          font-family: $fontInter;
-          font-size: 11px;
-          font-weight: 100;
-          position: relative;
-          // margin-top: 50px;
-          .arrow-link {
-            position: absolute;
-            right: 34px;
-            top: 8px;
-            font-size: 15px;
-            &:hover {
-              color: $white;
-              transform: rotate(-45deg);
-            }
-          }
-          &:hover {
-            color: $lightBlue;
-            border: 1px solid $lightBlue;
+            border: 2px solid $lightBlue2;
             cursor: pointer;
           }
         }
@@ -701,13 +634,14 @@ main {
         }
         .website {
           color: $white;
-          background-color: #0466c81b;
-          padding: 7px 170px 7px 25px;
+          // background-color: #0466c81b;
+          background-color: rgba(4, 102, 200, 0.04);
+          padding: 9.5px 150px 9.5px 25px;
           border: 1px solid $lightBlue;
           border-radius: 30px;
-          font-family: $fontInter;
-          font-size: 12px;
-          font-weight: 500;
+          font-family: $fontSyne;
+          font-size: 16px;
+          font-weight: 400;
           position: relative;
           // margin-top: 50px;
           .arrow-link {
@@ -715,42 +649,10 @@ main {
             right: 34px;
             top: 8px;
             font-size: 15px;
-            &:hover {
-              color: $white;
-              transform: rotate(-45deg);
-            }
+            transform: translateY(4px);
           }
           &:hover {
-            background-color: $lightBlue;
-            color: white;
-            border: 1px solid $lightBlue;
-            cursor: pointer;
-          }
-        }
-        .repo {
-          color: $white;
-          padding: 7px 0px 7px 25px;
-          background-color: transparent;
-          border: 1px solid $bluegrid;
-          border-radius: 30px;
-          font-family: $fontInter;
-          font-size: 11px;
-          font-weight: 100;
-          position: relative;
-          // margin-top: 50px;
-          .arrow-link {
-            position: absolute;
-            right: 34px;
-            top: 8px;
-            font-size: 15px;
-            &:hover {
-              color: $white;
-              transform: rotate(-45deg);
-            }
-          }
-          &:hover {
-            color: $lightBlue;
-            border: 1px solid $lightBlue;
+            border: 2px solid $lightBlue2;
             cursor: pointer;
           }
         }
@@ -905,7 +807,8 @@ main {
       gap: 20px;
       .line{
         width: 600px;
-        border: 0.5px solid $bluegrid;
+        height:0.5px;
+        background-color: $lightBlue;
       }
       .crispin{
         h1{
@@ -913,14 +816,14 @@ main {
           color: $white;
           font-size: 0.95rem;
           text-transform: uppercase;
-          font-weight: 400;
+          font-weight: 700;
           padding-bottom: 10px;
         }
         h2{
           font-family: $fontInter;
           color: white;
           font-size: 0.85rem;
-          font-weight: 300;
+          font-weight: 500;
           padding-bottom: 10px;
           font-style: italic;
         }
@@ -930,10 +833,7 @@ main {
           font-size: 0.80rem;
           text-decoration: none;
           text-align: justify;
-          font-weight: 100;
-          span{
-            color: $lightBlue;
-          }
+          font-weight: 300;
         }
       }
       .voo{
@@ -942,14 +842,14 @@ main {
           color: $white;
           font-size: 0.95rem;
           text-transform: uppercase;
-          font-weight: 400;
+          font-weight: 700;
           padding-bottom: 10px;
         }
         h2{
           font-family: $fontInter;
           color: white;
           font-size: 0.85rem;
-          font-weight: 300;
+          font-weight: 500;
           padding-bottom: 10px;
           font-style: italic;
         }
@@ -959,7 +859,7 @@ main {
           font-size: 0.80rem;
           text-decoration: none;
           text-align: justify;
-          font-weight: 100;
+          font-weight: 300;
           span{
             color: $lightBlue;
           }
@@ -1002,7 +902,8 @@ main {
       a{
         color: $white;
         padding:9.5px 170px 9.5px 25px;
-        border: 1px solid rgba(255, 255, 255, 0.1490196078);
+        border: 1px solid $lightBlue;
+        background-color: rgba(4, 102, 200, 0.04);
         border-radius: 30px;
         font-family: $fontSyne;
         font-size: 16px;
@@ -1014,14 +915,9 @@ main {
           right: 34px;
           top: 12px;
           font-size: 16px;
-          &:hover {
-            color: $lightBlue;
-            transform: rotate(-45deg);
-          }
         }
         &:hover {
-          color: $lightBlue;
-          border: 1px solid $lightBlue;
+          border: 2px solid $lightBlue;
           cursor: pointer;
         }
       }
@@ -1029,7 +925,7 @@ main {
         font-family: $fontInter;
         color: rgba(255, 255, 255, 0.753);
         font-size: 0.80rem;
-        font-weight: 100;
+        font-weight: 300;
         padding: 20px 60px;
         line-height: 20px;
         span{

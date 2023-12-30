@@ -21,9 +21,9 @@
         <div class="logo">
             <div class="logo-group">
                 <a href="#">
-                    A
+                    <span>-</span>LB<span>-</span>
                 </a>
-                <div></div>
+
             </div>
             <div class="name-logo">
                 <h1><a href="#">ANTONINO</a></h1>
@@ -33,20 +33,15 @@
         <div class="menu-global">
             <nav>
                 <ul>
-                    <li><a href="about.html">ABOUT<span>_</span></a></li>
-                    <li><a href="#work">WORK<span>_</span></a></li>
+                    <li><a href="about.html" class="about-li">ABOUT<span>_</span></a></li>
+                    <li><a href="#work" class="work-li">WORK<span>_</span></a></li>
                 </ul>
             </nav>
             <div class="theme-switcher">
-                <label>
-                    <input type="checkbox" id="themeSwitch">
-                    <!-- <ion-icon name="moon" class="moon"></ion-icon> -->
+                <button class="btn-theme">
                     <ion-icon name="moon-outline" class="moon"></ion-icon>
-                    <!-- <ion-icon name="sunny" class="sun"></ion-icon> -->
                     <ion-icon name="sunny-outline" class="sun"></ion-icon>
-                    <span class="toggle"></span>
-                    <span class="animateBg"></span>
-                </label>
+                </button>
             </div>
         </div>
         <div class="el4"></div>
@@ -151,9 +146,6 @@
                     <a href="https://lbantonino.github.io/BeMovies/" target="_blank" rel="noopener noreferrer"
                         class="website">BEMOVIES<ion-icon name="arrow-forward-outline"
                             class="arrow-link"></ion-icon></a>
-                    <a href="https://github.com/lbantonino/BeMovies" target="_blank" rel="noopener noreferrer"
-                        class="repo">REPOSITORY BEMOVIES <ion-icon name="arrow-forward-outline"
-                            class="arrow-link"></ion-icon></a>
                 </div>
             </div>
             <div class="el7">
@@ -182,9 +174,7 @@
                     <a href="https://job-tracker-rho.vercel.app/" target="_blank" rel="noopener noreferrer"
                         class="website">
                         JOBTRACKER <ion-icon name="arrow-forward-outline" class="arrow-link"></ion-icon></a>
-                    <a href="https://github.com/lbantonino/JobTracker" target="_blank" rel="noopener noreferrer"
-                        class="repo">REPOSITORY JOBTRACKER <ion-icon name="arrow-forward-outline"
-                            class="arrow-link"></ion-icon></a>
+
 
                 </div>
             </div>
@@ -208,9 +198,7 @@
                     <a href="https://lbantonino.github.io/A-Studio/" target="_blank" rel="noopener noreferrer"
                         class="website">
                         A+ STUDIO <ion-icon name="arrow-forward-outline" class="arrow-link"></ion-icon></a>
-                    <a href="https://github.com/lbantonino/A-Studio" target="_blank" rel="noopener noreferrer"
-                        class="repo">REPOSITORY A+ STUDIO <ion-icon name="arrow-forward-outline"
-                            class="arrow-link"></ion-icon></a>
+
 
                 </div>
             </div>
@@ -236,8 +224,9 @@
         <div class="el6f">
             <div class="logo-group">
                 <a href="#">
-                    <img src="/assets/Logo_antonino/logoantonino1.svg" alt="logoAntonino" class="logo-svg">
+                    <span>-</span>LB<span>-</span>
                 </a>
+
             </div>
             <div class="name-logo">
                 <h1><a href="#">ANTONINO</a></h1>
@@ -249,6 +238,48 @@
         </div>
         <div class="el9f"></div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(() => {
+                let words = ['Specialized in Frontend', ' But I AM Fullstack'];
+                let part, i = 0, offset = 0, len = words.length, forwards = true, skip_count = 0, skip_delay = 15, speed = 70;
+                let wordContainer = document.querySelector('.word-container');
+                let wordflick = function () {
+                    setInterval(function () {
+                        if (forwards) {
+                            if (offset >= words[i].length) {
+                                ++skip_count;
+                                if (skip_count == skip_delay) {
+                                    forwards = false;
+                                    skip_count = 0;
+                                }
+                            }
+                        } else {
+                            if (offset == 0) {
+                                forwards = true;
+                                i++;
+                                offset = 0;
+                                if (i >= len) {
+                                    i = 0;
+                                }
+                            }
+                        }
+                        part = words[i].substr(0, offset);
+                        if (skip_count == 0) {
+                            if (forwards) {
+                                offset++;
+                            } else {
+                                offset--;
+                            }
+                        }
+                        wordContainer.textContent = part;
+                    }, speed);
+                };
+
+                wordflick();
+            }, 620);
+        });
+    </script>
     <script src="main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>

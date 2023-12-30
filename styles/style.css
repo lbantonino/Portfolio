@@ -81,6 +81,7 @@ a {
 
 body {
   font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.0941176471);
 }
 
 body {
@@ -123,39 +124,28 @@ header .logo .logo-group {
   justify-content: center;
 }
 header .logo .logo-group a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 30px;
   font-family: "Oswald", sans-serif;
   color: #ffffff;
   font-weight: 700;
   text-decoration: none;
   font-style: italic;
-  transform: scaleX(1.5);
-  z-index: 5;
   position: relative;
 }
-header .logo .logo-group div {
-  position: absolute;
-  width: 15px;
-  height: 6px;
-  background-color: #0466c8;
-  top: 47.5px;
-  left: 167px;
+header .logo .logo-group a span {
+  color: #0466c8;
 }
 header .logo .name-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 30px;
 }
 header .logo .name-logo h1 {
   font-size: 1rem;
   font-family: "Syne", sans-serif;
   font-weight: 600;
   color: #ffffff;
-  padding-left: 20px;
+  padding-left: 10px;
   transform: translateY(4px);
 }
 header .logo .name-logo h1 a {
@@ -193,58 +183,27 @@ header .menu-global nav ul li a:hover {
   border-top: 3px solid #0466c8;
   color: #0466c8;
 }
-header .menu-global .theme-switcher label {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  cursor: pointer;
+header .menu-global .theme-switcher {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
-header .menu-global .theme-switcher input {
-  position: absolute;
-  opacity: 0;
+header .menu-global .theme-switcher button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
-header .menu-global .theme-switcher .moon {
-  font-size: 19px;
+header .menu-global .theme-switcher button .sun {
+  display: none;
+}
+header .menu-global .theme-switcher button .moon {
+  font-size: 1.3rem;
+  font-weight: 700;
   color: #ffffff;
-  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.504));
-  transition: 0.8s ease;
-  transition-delay: 0.4s;
 }
-header .menu-global .theme-switcher .moon:hover {
+header .menu-global .theme-switcher button .moon:hover {
+  transition: 200ms ease-in-out;
   color: #0466c8;
-}
-header .menu-global .theme-switcher input:checked ~ .moon {
-  transition-delay: 0.5s;
-  transform: rotate(360deg) scale(0);
-}
-header .menu-global .theme-switcher .sun {
-  position: absolute;
-  font-size: 19px;
-  color: #050712;
-  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.6));
-  transform: scale(0);
-  transition: 1s ease;
-  transition-delay: 0.4s;
-}
-header .menu-global .theme-switcher .sun:hover {
-  color: #0466c8;
-}
-header .menu-global .theme-switcher input:checked ~ .sun {
-  transition-delay: 0.5s;
-  transform: scale(1) rotate(360deg);
-}
-header .menu-global .theme-switcher .toggle {
-  position: absolute;
-  display: block;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1), inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px -4px rgba(0, 0, 0, 0.1);
-  z-index: -1;
-  transition: 0.2s;
 }
 header .menu-global-about {
   display: flex;
@@ -271,59 +230,6 @@ header .menu-global-about nav ul li a:hover {
   padding-top: 5px;
   border-top: 3px solid #0466c8;
   color: #0466c8;
-}
-header .menu-global-about .theme-switcher label {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header .menu-global-about .theme-switcher input {
-  position: absolute;
-  opacity: 0;
-}
-header .menu-global-about .theme-switcher .moon {
-  font-size: 19px;
-  color: #ffffff;
-  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.504));
-  transition: 0.8s ease;
-  transition-delay: 0.4s;
-}
-header .menu-global-about .theme-switcher .moon:hover {
-  color: #0466c8;
-}
-header .menu-global-about .theme-switcher input:checked ~ .moon {
-  transition-delay: 0.5s;
-  transform: rotate(360deg) scale(0);
-}
-header .menu-global-about .theme-switcher .sun {
-  position: absolute;
-  font-size: 19px;
-  color: #050712;
-  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.6));
-  transform: scale(0);
-  transition: 1s ease;
-  transition-delay: 0.4s;
-}
-header .menu-global-about .theme-switcher .sun:hover {
-  color: #0466c8;
-}
-header .menu-global-about .theme-switcher input:checked ~ .sun {
-  transition-delay: 0.5s;
-  transform: scale(1) rotate(360deg);
-}
-header .menu-global-about .theme-switcher .toggle {
-  position: absolute;
-  display: block;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1), inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px -4px rgba(0, 0, 0, 0.1);
-  z-index: -1;
-  transition: 0.2s;
 }
 header .el4 {
   grid-column: 5/5;
@@ -370,8 +276,9 @@ footer .el2f .contact h1 {
   font-weight: 500;
 }
 footer .el2f a {
-  padding: 7px 568px 7px 25px;
-  border: 1px solid rgba(255, 255, 255, 0.1490196078);
+  padding: 9.5px 568px 9.5px 25px;
+  border: 1px solid #0466c8;
+  background-color: rgba(4, 102, 200, 0.04);
   border-radius: 30px;
   color: #ffffff;
   font-family: "Syne", sans-serif;
@@ -388,13 +295,8 @@ footer .el2f a .arrow-link {
   top: 13px;
   font-size: 15px;
 }
-footer .el2f a .arrow-link:hover {
-  color: #0466c8;
-  transform: rotate(-45deg);
-}
 footer .el2f a:hover {
-  color: #0466c8;
-  border: 1px solid #0466c8;
+  border: 2px solid #0466c8;
   cursor: pointer;
 }
 footer .el3f {
@@ -424,11 +326,22 @@ footer .el6f {
   align-items: center;
   padding: 0 30px;
 }
-footer .el6f .logo-svg {
-  width: 35px;
+footer .el6f .logo-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-footer .el6f .logo-svg:hover {
-  transform: scale(1.2);
+footer .el6f .logo-group a {
+  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: italic;
+  position: relative;
+}
+footer .el6f .logo-group a span {
+  color: #0466c8;
 }
 footer .el6f .name-logo {
   display: flex;
@@ -440,7 +353,8 @@ footer .el6f .name-logo h1 {
   font-family: "Syne", sans-serif;
   font-weight: 600;
   color: #ffffff;
-  padding-left: 20px;
+  padding-left: 10px;
+  transform: translateY(4px);
 }
 footer .el6f .name-logo h1 a {
   color: #ffffff;
@@ -500,7 +414,7 @@ footer .el9f {
   top: 50%;
   translate: -50% -50%;
   border-radius: 50%;
-  background: #0381ff;
+  background: #2592ff;
 }
 
 #blur {
@@ -515,6 +429,10 @@ footer .el9f {
   height: 100vh;
   width: 100%;
   padding: 0;
+}
+
+body {
+  background-color: rgba(7, 11, 28, 0.8862745098);
 }
 
 main {
@@ -707,7 +625,8 @@ main .social-img .aboutMe p {
 }
 main .social-img .aboutMe a {
   padding: 7px 549px 7px 25px;
-  border: 1px solid rgba(255, 255, 255, 0.1490196078);
+  border: 1px solid #0466c8;
+  background-color: rgba(4, 102, 200, 0.04);
   border-radius: 30px;
   color: #ffffff;
   font-family: "Syne", sans-serif;
@@ -718,16 +637,12 @@ main .social-img .aboutMe a {
   position: relative;
 }
 main .social-img .aboutMe a:hover {
-  color: #0466c8;
-  border: 1px solid #0466c8;
+  border: 2px solid #2592ff;
 }
 main .social-img .aboutMe .arrow-link {
   position: absolute;
   right: 34px;
   top: 12px;
-}
-main .social-img .aboutMe .arrow-link:hover {
-  transform: rotate(-45deg);
 }
 main .social-img .social {
   grid-column: 4/4;
@@ -766,7 +681,8 @@ main .social-img .social .logo-social ul li {
 }
 main .social-img .social .logo-social ul li a {
   padding: 9.5px 235px 9.5px 25px;
-  border: 0.5px solid rgba(255, 255, 255, 0.1490196078);
+  border: 1px solid #0466c8;
+  background-color: rgba(4, 102, 200, 0.04);
   border-radius: 30px;
   color: #ffffff;
   font-size: 16px;
@@ -775,16 +691,13 @@ main .social-img .social .logo-social ul li a {
   position: relative;
 }
 main .social-img .social .logo-social ul li a:hover {
-  color: #0466c8;
-  border: 1px solid #0466c8;
+  cursor: pointer;
+  border: 2px solid #2592ff;
 }
 main .social-img .social .logo-social ul li a .arrow-link {
   position: absolute;
   right: 34px;
   top: 12px;
-}
-main .social-img .social .logo-social ul li a .arrow-link:hover {
-  transform: rotate(-45deg);
 }
 main .social-img .social .logo-social ul li .github {
   padding: 9.5px 244px 9.5px 25px;
@@ -841,10 +754,10 @@ main .work .el6w .width {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  transform: translateY(30px);
+  transform: translateY(50px);
 }
 main .work .el6w .width h1 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 2rem;
   font-family: "Oswald", sans-serif;
   color: #ffffff;
@@ -854,7 +767,7 @@ main .work .el6w .width .description {
   color: #ffffff;
   font-family: "Inter", sans-serif;
   font-size: 0.8rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 main .work .el6w .width .description span {
   color: #0466c8;
@@ -869,13 +782,13 @@ main .work .el6w .width .work-techno {
 }
 main .work .el6w .width .website {
   color: #ffffff;
-  background-color: rgba(4, 102, 200, 0.1058823529);
-  padding: 7px 170px 7px 25px;
+  background-color: rgba(4, 102, 200, 0.04);
+  padding: 9.5px 150px 9.5px 25px;
   border: 1px solid #0466c8;
   border-radius: 30px;
-  font-family: "Inter", sans-serif;
-  font-size: 12px;
-  font-weight: 500;
+  font-family: "Syne", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
   position: relative;
 }
 main .work .el6w .width .website .arrow-link {
@@ -883,41 +796,10 @@ main .work .el6w .width .website .arrow-link {
   right: 34px;
   top: 8px;
   font-size: 15px;
-}
-main .work .el6w .width .website .arrow-link:hover {
-  color: #ffffff;
-  transform: rotate(-45deg);
+  transform: translateY(4px);
 }
 main .work .el6w .width .website:hover {
-  background-color: #0466c8;
-  color: white;
-  border: 1px solid #0466c8;
-  cursor: pointer;
-}
-main .work .el6w .width .repo {
-  color: #ffffff;
-  padding: 7px 170px 7px 25px;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.0941176471);
-  border-radius: 30px;
-  font-family: "Inter", sans-serif;
-  font-size: 12px;
-  font-weight: 100;
-  position: relative;
-}
-main .work .el6w .width .repo .arrow-link {
-  position: absolute;
-  right: 34px;
-  top: 8px;
-  font-size: 15px;
-}
-main .work .el6w .width .repo .arrow-link:hover {
-  color: #ffffff;
-  transform: rotate(-45deg);
-}
-main .work .el6w .width .repo:hover {
-  color: #0466c8;
-  border: 1px solid #0466c8;
+  border: 2px solid #2592ff;
   cursor: pointer;
 }
 main .work .el7 {
@@ -965,7 +847,7 @@ main .work .el10 .width {
   gap: 10px;
 }
 main .work .el10 .width h1 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 2rem;
   font-family: "Oswald", sans-serif;
   color: #ffffff;
@@ -975,7 +857,7 @@ main .work .el10 .width .description {
   color: #ffffff;
   font-family: "Inter", sans-serif;
   font-size: 0.8rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 main .work .el10 .width .description span {
   color: #0466c8;
@@ -986,17 +868,17 @@ main .work .el10 .width .work-techno {
   color: #0466c8;
   font-family: "Inter", sans-serif;
   font-size: 0.7rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 main .work .el10 .width .website {
   color: #ffffff;
-  background-color: rgba(4, 102, 200, 0.1058823529);
-  padding: 7px 170px 7px 25px;
+  background-color: rgba(4, 102, 200, 0.04);
+  padding: 9.5px 150px 9.5px 25px;
   border: 1px solid #0466c8;
   border-radius: 30px;
-  font-family: "Inter", sans-serif;
-  font-size: 12px;
-  font-weight: 500;
+  font-family: "Syne", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
   position: relative;
 }
 main .work .el10 .width .website .arrow-link {
@@ -1004,41 +886,10 @@ main .work .el10 .width .website .arrow-link {
   right: 34px;
   top: 8px;
   font-size: 15px;
-}
-main .work .el10 .width .website .arrow-link:hover {
-  color: #ffffff;
-  transform: rotate(-45deg);
+  transform: translateY(4px);
 }
 main .work .el10 .width .website:hover {
-  background-color: #0466c8;
-  color: white;
-  border: 1px solid #0466c8;
-  cursor: pointer;
-}
-main .work .el10 .width .repo {
-  color: #ffffff;
-  padding: 7px 0px 7px 25px;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.0941176471);
-  border-radius: 30px;
-  font-family: "Inter", sans-serif;
-  font-size: 11px;
-  font-weight: 100;
-  position: relative;
-}
-main .work .el10 .width .repo .arrow-link {
-  position: absolute;
-  right: 34px;
-  top: 8px;
-  font-size: 15px;
-}
-main .work .el10 .width .repo .arrow-link:hover {
-  color: #ffffff;
-  transform: rotate(-45deg);
-}
-main .work .el10 .width .repo:hover {
-  color: #0466c8;
-  border: 1px solid #0466c8;
+  border: 2px solid #2592ff;
   cursor: pointer;
 }
 main .work .el11 {
@@ -1110,13 +961,13 @@ main .work .el14 .width .work-techno {
 }
 main .work .el14 .width .website {
   color: #ffffff;
-  background-color: rgba(4, 102, 200, 0.1058823529);
-  padding: 7px 170px 7px 25px;
+  background-color: rgba(4, 102, 200, 0.04);
+  padding: 9.5px 150px 9.5px 25px;
   border: 1px solid #0466c8;
   border-radius: 30px;
-  font-family: "Inter", sans-serif;
-  font-size: 12px;
-  font-weight: 500;
+  font-family: "Syne", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
   position: relative;
 }
 main .work .el14 .width .website .arrow-link {
@@ -1124,41 +975,10 @@ main .work .el14 .width .website .arrow-link {
   right: 34px;
   top: 8px;
   font-size: 15px;
-}
-main .work .el14 .width .website .arrow-link:hover {
-  color: #ffffff;
-  transform: rotate(-45deg);
+  transform: translateY(4px);
 }
 main .work .el14 .width .website:hover {
-  background-color: #0466c8;
-  color: white;
-  border: 1px solid #0466c8;
-  cursor: pointer;
-}
-main .work .el14 .width .repo {
-  color: #ffffff;
-  padding: 7px 0px 7px 25px;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.0941176471);
-  border-radius: 30px;
-  font-family: "Inter", sans-serif;
-  font-size: 11px;
-  font-weight: 100;
-  position: relative;
-}
-main .work .el14 .width .repo .arrow-link {
-  position: absolute;
-  right: 34px;
-  top: 8px;
-  font-size: 15px;
-}
-main .work .el14 .width .repo .arrow-link:hover {
-  color: #ffffff;
-  transform: rotate(-45deg);
-}
-main .work .el14 .width .repo:hover {
-  color: #0466c8;
-  border: 1px solid #0466c8;
+  border: 2px solid #2592ff;
   cursor: pointer;
 }
 main .work .el15 {
@@ -1294,21 +1114,22 @@ main .work .el16 {
 }
 .about-section .el6 .xp-text .line {
   width: 600px;
-  border: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+  height: 0.5px;
+  background-color: #0466c8;
 }
 .about-section .el6 .xp-text .crispin h1 {
   font-family: "Inter", sans-serif;
   color: #ffffff;
   font-size: 0.95rem;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 700;
   padding-bottom: 10px;
 }
 .about-section .el6 .xp-text .crispin h2 {
   font-family: "Inter", sans-serif;
   color: white;
   font-size: 0.85rem;
-  font-weight: 300;
+  font-weight: 500;
   padding-bottom: 10px;
   font-style: italic;
 }
@@ -1318,24 +1139,21 @@ main .work .el16 {
   font-size: 0.8rem;
   text-decoration: none;
   text-align: justify;
-  font-weight: 100;
-}
-.about-section .el6 .xp-text .crispin p span {
-  color: #0466c8;
+  font-weight: 300;
 }
 .about-section .el6 .xp-text .voo h1 {
   font-family: "Inter", sans-serif;
   color: #ffffff;
   font-size: 0.95rem;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 700;
   padding-bottom: 10px;
 }
 .about-section .el6 .xp-text .voo h2 {
   font-family: "Inter", sans-serif;
   color: white;
   font-size: 0.85rem;
-  font-weight: 300;
+  font-weight: 500;
   padding-bottom: 10px;
   font-style: italic;
 }
@@ -1345,7 +1163,7 @@ main .work .el16 {
   font-size: 0.8rem;
   text-decoration: none;
   text-align: justify;
-  font-weight: 100;
+  font-weight: 300;
 }
 .about-section .el6 .xp-text .voo p span {
   color: #0466c8;
@@ -1386,7 +1204,8 @@ main .work .el16 {
 .about-section .el7 .files a {
   color: #ffffff;
   padding: 9.5px 170px 9.5px 25px;
-  border: 1px solid rgba(255, 255, 255, 0.1490196078);
+  border: 1px solid #0466c8;
+  background-color: rgba(4, 102, 200, 0.04);
   border-radius: 30px;
   font-family: "Syne", sans-serif;
   font-size: 16px;
@@ -1400,20 +1219,15 @@ main .work .el16 {
   top: 12px;
   font-size: 16px;
 }
-.about-section .el7 .files a .arrow-link:hover {
-  color: #0466c8;
-  transform: rotate(-45deg);
-}
 .about-section .el7 .files a:hover {
-  color: #0466c8;
-  border: 1px solid #0466c8;
+  border: 2px solid #0466c8;
   cursor: pointer;
 }
 .about-section .el7 .files p {
   font-family: "Inter", sans-serif;
   color: rgba(255, 255, 255, 0.753);
   font-size: 0.8rem;
-  font-weight: 100;
+  font-weight: 300;
   padding: 20px 60px;
   line-height: 20px;
 }
