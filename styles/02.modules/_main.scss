@@ -64,11 +64,13 @@ main {
     column-gap: 1px;
     row-gap: 1px;
     margin-top: 1px;
-    .el1 {
+    .el1n {
       grid-column: 1 / 1;
       // border-right: 0.5px solid $bluegrid;
       // border-bottom: 0.5px solid $bluegrid;
       background-color: #070b1c;
+      // background-color: #23253421;
+      
       z-index: 3;
   position: relative;
     }
@@ -162,7 +164,7 @@ main {
 
     }
     }
-    .el3 {
+    .el3n {
       // border-bottom: 0.5px solid $bluegrid;
       background-color: #070b1c;
     }
@@ -218,7 +220,7 @@ main {
     column-gap: 1px;
     row-gap: 1px;
     margin-top: 1px;
-    .el4 {
+    .el4s {
       grid-column: 1 / 1;
       // border-right: 0.5px solid $bluegrid;
       // border-bottom: 0.5px solid $bluegrid;
@@ -379,7 +381,7 @@ main {
       // border-right: 0.5px solid $bluegrid;
       background-color: #070b1c;
     }
-    .el6 {
+    .el6w {
       display: flex;
       justify-content: center;
       align-items: center;
