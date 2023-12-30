@@ -1,17 +1,24 @@
 footer {
+  z-index: 2;
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
   grid-template-rows: 200px 80px;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  // grid-column-gap: 0px;
+  // grid-row-gap: 0px;
+  column-gap: 1px;
+  row-gap: 1px;
+  margin-top: 1px;
   .el1 {
     grid-column: 1/1;
-    border-right: 0.5px solid $bluegrid;
-    border-bottom: 0.5px solid $bluegrid;
+    // border-right: 0.5px solid $bluegrid;
+    // border-bottom: 0.5px solid $bluegrid;
+    background-color: #070b1c;
   }
   .el2 {
     grid-column: 2/4;
-    border-bottom: 0.5px solid $bluegrid;
+    // border-bottom: 0.5px solid $bluegrid;
+    background-color: #070b1c;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,9 +73,10 @@ footer {
 }
   .el3 {
     grid-column: 4 / 5;
-    border-left: 0.5px solid $bluegrid;
-    border-right: 0.5px solid $bluegrid;
-    border-bottom: 0.5px solid $bluegrid;
+    // border-left: 0.5px solid $bluegrid;
+    // border-right: 0.5px solid $bluegrid;
+    // border-bottom: 0.5px solid $bluegrid;
+    background-color: #070b1c;
     overflow: hidden;
     position: relative;
     img {
@@ -84,15 +92,18 @@ footer {
   }
   .el4 {
     grid-column: 5/ 5;
-    border-bottom: 0.5px solid $bluegrid;
+    // border-bottom: 0.5px solid $bluegrid;
+    background-color: #070b1c;
   }
   .el5 {
     grid-column: 1/1;
-    border-right: 0.5px solid $bluegrid;
+    // border-right: 0.5px solid $bluegrid;
+    background-color: #070b1c;
   }
   .el6 {
     grid-column: 2/2;
-    border-right: 0.5px solid $bluegrid;
+    // border-right: 0.5px solid $bluegrid;
+    background-color: #070b1c;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -122,14 +133,16 @@ footer {
   }
   .el7 {
     grid-column: 3/3;
+    background-color: #070b1c;
   }
   .el8 {
     grid-column: 4/4;
-    border-right: 0.5px solid $bluegrid;
+    // border-right: 0.5px solid $bluegrid;
+    background-color: #070b1c;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+    // border-left: 0.5px solid rgba(255, 255, 255, 0.0941176471);
     h1{
       font-size: 11px;
       font-family: $fontInter;
@@ -140,5 +153,6 @@ footer {
   }
   .el9 {
     grid-column: 5/5;
+    background-color: #070b1c;
   }
 }

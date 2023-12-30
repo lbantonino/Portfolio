@@ -23,6 +23,35 @@
 
 // Mouse effect
 
+#blob {
+  height: 300px;
+ width: 200px;
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ translate: -50% -50%;
+ border-radius: 50%;
+ background: $lightBlue2;
+//  animation: rotate 2s infinite alternate, ovalo 5s infinite alternate;
+//  backdrop-filter: blur(100px);
+
+}
+
+
+
+#blur {
+ height: 100%;
+ width: 100%;
+ z-index: 0;
+ backdrop-filter: blur(50px);
+ position: fixed;
+ margin: 0;
+ top: 0;
+ left: 0;
+ height: 100vh;
+ width: 100%;
+ padding: 0;
+}
 
 
 
@@ -36,26 +65,28 @@
 ////////////////////////////////// main :
 
 main {
+  z-index: 2;
+  position: relative;
   .nomJob {
     display: grid;
     grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
     grid-template-rows: 380px;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-
-
-
+    column-gap: 1px;
+    row-gap: 1px;
+    margin-top: 1px;
     .el1 {
       grid-column: 1 / 1;
-      border-right: 0.5px solid $bluegrid;
-      border-bottom: 0.5px solid $bluegrid;
+      // border-right: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
+      background-color: #070b1c;
     }
     
     
     .el2 {
-      border-left: 0.5px solid $bluegrid;
-      border-right: 0.5px solid $bluegrid;
-      border-bottom: 0.5px solid $bluegrid;
+      background-color: #070b1c;
+      // border-left: 0.5px solid $bluegrid;
+      // border-right: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
       overflow: hidden;
       position: relative;
       img {
@@ -69,10 +100,12 @@ main {
       }
     }
     .el3 {
-      border-bottom: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
+      background-color: #070b1c;
     }
     .nomJob-global {
-      border-bottom: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
+      background-color: #070b1c;
       grid-column: 2 / 4;
       grid-row: 1 / 1;
       display: flex;
@@ -137,16 +170,19 @@ main {
     display: grid;
     grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
     grid-template-rows: 305px;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    column-gap: 1px;
+    row-gap: 1px;
+    margin-top: 1px;
     .el4 {
       grid-column: 1 / 1;
-      border-right: 0.5px solid $bluegrid;
-      border-bottom: 0.5px solid $bluegrid;
+      // border-right: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
+      background-color: #070b1c;
     }
       .aboutMe {
         grid-column: 2 / 4;
-        border-bottom: 0.5px solid $bluegrid;
+        // border-bottom: 0.5px solid $bluegrid;
+        background-color: #070b1c;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -203,9 +239,10 @@ main {
     
     .social {
       grid-column: 4/ 4;
-      border-left: 0.5px solid $bluegrid;
-      border-bottom: 0.5px solid $bluegrid;
-      border-right: 0.5px solid $bluegrid;
+      // border-left: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
+      // border-right: 0.5px solid $bluegrid;
+      background-color: #070b1c;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -270,24 +307,30 @@ main {
 
     .el6 {
       grid-column: 5 / 5;
-      border-bottom: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
+      background-color: #070b1c;
     }
   }
   .technos {
     display: grid;
     grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
     grid-template-rows: 400px;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    // grid-column-gap: 0px;
+    // grid-row-gap: 0px;
+    column-gap: 1px;
+    row-gap: 1px;
+    margin-top: 1px;
     .el1 {
+      background-color: #070b1c;
       grid-column: 1 / 1;
-      border-right: 0.5px solid $bluegrid;
-      border-bottom: 0.5px solid $bluegrid;
+      // border-right: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
     }
     .el2 {
       grid-column: 2 / 3;
-      border-bottom: 0.5px solid $bluegrid;
-      border-right: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
+      // border-right: 0.5px solid $bluegrid;
+      background-color: #070b1c;
       overflow: hidden;
       position: relative;
       img {
@@ -303,8 +346,9 @@ main {
     }
     .el3 {
       grid-column: 3 / 5;
-      border-bottom: 0.5px solid $bluegrid;
-      border-right: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
+      // border-right: 0.5px solid $bluegrid;
+      background-color: #070b1c;
       color: white;
       display: flex;
       align-items: center;
@@ -404,7 +448,8 @@ main {
     }
     .el5 {
       grid-column: 5 / 5;
-      border-bottom: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
+      background-color: #070b1c;
     }
 
   }
@@ -412,17 +457,23 @@ main {
     display: grid;
     grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
     grid-template-rows: 320px  490px 490px 550px;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    // grid-column-gap: 0px;
+    // grid-row-gap: 0px;
+    column-gap: 1px;
+    row-gap: 1px;
+    margin-top: 1px;
+  
     .el1 {
       grid-column: 1 / 1;
-      border-right: 0.5px solid $bluegrid;
-      border-bottom: 0.5px solid $bluegrid;
+      // border-right: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
+      background-color: #070b1c;
     }
     .el2 {
+      background-color: #070b1c;
       grid-column: 2 / 4;
-      border-bottom: 0.5px solid $bluegrid;
-      border-right: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
+      // border-right: 0.5px solid $bluegrid;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -455,8 +506,9 @@ main {
     }
     .el3 {
       grid-column: 4 / 5;
-      border-bottom: 0.5px solid $bluegrid;
-      border-right: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
+      // border-right: 0.5px solid $bluegrid;
+      background-color: #070b1c;
       overflow: hidden;
       position: relative;
       img {
@@ -472,12 +524,14 @@ main {
     }
     .el4 {
       grid-column: 5 / 5;
-      border-bottom: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
+      background-color: #070b1c;
     }
     .el5 {
       grid-column: 1 / 1;
-      border-bottom: 0.5px solid $bluegrid;
-      border-right: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
+      // border-right: 0.5px solid $bluegrid;
+      background-color: #070b1c;
     }
     .el6 {
       display: flex;
@@ -485,6 +539,7 @@ main {
       align-items: center;
       flex-direction: column;
       grid-column: 2 / 2;
+      background-color: #070b1c;
       .width{
         width: 334px;
         height: 300px;
@@ -579,7 +634,8 @@ main {
       align-items: center;
       grid-column: 3 / 5;
       // border-bottom: 0.5px solid $bluegrid;
-      border-right: 0.5px solid $bluegrid;
+      // border-right: 0.5px solid $bluegrid;
+      background-color: #070b1c;
       overflow: hidden;
       position: relative;
 
@@ -603,12 +659,14 @@ main {
     }
     .el8 {
       grid-column: 5 / 5;
-      border-bottom: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
+      background-color: #070b1c;
     }
     .el9 {
       grid-column: 1 / 1;
-      border-right: 0.5px solid $bluegrid;
-      border-bottom: 0.5px solid $bluegrid;
+      // border-right: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
+      background-color: #070b1c;
     }
     .el10 {
       display: flex;
@@ -616,7 +674,8 @@ main {
       align-items: center;
       flex-direction: column;
       grid-column: 4 / 4;
-      border-right: 0.5px solid $bluegrid;
+      // border-right: 0.5px solid $bluegrid;
+      background-color: #070b1c;
       .width{
         width: 334px;
         height: 300px;
@@ -713,6 +772,7 @@ main {
       // border-bottom: 0.5px solid $bluegrid;
       overflow: hidden;
       position: relative;
+      background-color: #070b1c;
       a{
         position: absolute;
         object-fit: contain;
@@ -733,12 +793,14 @@ main {
     }
     .el12 {
       grid-column: 5 / 5;
-      border-bottom: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
+      background-color: #070b1c;
     }
     .el13 {
       grid-column: 1 / 1;
-      border-right: 0.5px solid $bluegrid;
-      border-bottom: 0.5px solid $bluegrid;
+      // border-right: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
+      background-color: #070b1c;
     }
     .el14 {
       display: flex;
@@ -746,8 +808,9 @@ main {
       flex-direction: column;
       align-items: center;
       grid-column: 2 / 2;
-      border-bottom: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
       // border-right: 0.5px solid $bluegrid;
+      background-color: #070b1c;
       .width{
         width: 334px;
         height: 300px;
@@ -840,8 +903,9 @@ main {
       justify-content: center;
       align-items: center;
       grid-column: 3 / 5;
-      border-bottom: 0.5px solid $bluegrid;
-      border-right: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
+      // border-right: 0.5px solid $bluegrid;
+      background-color: #070b1c;
       overflow: hidden;
       position: relative;
       a{
@@ -865,7 +929,8 @@ main {
     }
     .el16 {
       grid-column: 5 / 5;
-      border-bottom: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
+      background-color: #070b1c;
     }
   }
 }
@@ -877,17 +942,22 @@ main {
   display: grid;
   grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
   grid-template-rows: 710px  399px ;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  margin-top: 1px;
+  // grid-column-gap: 0px;
+  // grid-row-gap: 0px;
+  row-gap: 1px;
+  column-gap: 1px;
   .el1 {
     grid-column: 1/1;
-    border-right: 0.5px solid $bluegrid;
-    border-bottom: 0.5px solid $bluegrid;
+    // border-right: 0.5px solid $bluegrid;
+    // border-bottom: 0.5px solid $bluegrid;
+    background-color: #070b1c;
   }
   .el2 {
     grid-column: 2 / 5;
-    border-right: 0.5px solid $bluegrid;
-    border-bottom: 0.5px solid $bluegrid;
+    // border-right: 0.5px solid $bluegrid;
+    // border-bottom: 0.5px solid $bluegrid;
+    background-color: #070b1c;
 
       .title{
         width: 720px;
@@ -942,19 +1012,22 @@ main {
   }
   .el4 {
     grid-column: 5/5;
-    border-right: 0.5px solid $bluegrid;
-    border-bottom: 0.5px solid $bluegrid;
+    // border-right: 0.5px solid $bluegrid;
+    // border-bottom: 0.5px solid $bluegrid;
+    background-color: #070b1c;
   }
   .el5{
       grid-column: 1/1;
-      border-right: 0.5px solid $bluegrid;
-      border-bottom: 0.5px solid $bluegrid;
+      // border-right: 0.5px solid $bluegrid;
+      // border-bottom: 0.5px solid $bluegrid;
+      background-color: #070b1c;
     }
   
   .el6 {
     grid-column: 2 / 4;
-    border-right: 0.5px solid $bluegrid;
-    border-bottom: 0.5px solid $bluegrid;
+    // border-right: 0.5px solid $bluegrid;
+    // border-bottom: 0.5px solid $bluegrid;
+    background-color: #070b1c;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1053,8 +1126,9 @@ main {
   }
   .el7{
     grid-column: 4/4;
-    border-right: 0.5px solid $bluegrid;
-    border-bottom: 0.5px solid $bluegrid;
+    // border-right: 0.5px solid $bluegrid;
+    // border-bottom: 0.5px solid $bluegrid;
+    background-color: #070b1c;
     .title{
       display: flex;
       align-items: start;
@@ -1119,7 +1193,8 @@ main {
   }
   .el8{
     grid-column: 5/5;
-    border-bottom: 0.5px solid $bluegrid;
+    // border-bottom: 0.5px solid $bluegrid;
+    background-color: #070b1c;
   }
 }
 

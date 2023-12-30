@@ -35,6 +35,25 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Mouse effect
+const blob = document.getElementById("blob");
+
+document.onpointermove = (event) => {
+    const { clientX, clientY } = event;
+
+    // Obtenez les coordonnées du curseur par rapport à l'ensemble de la page
+    const pageX = clientX + window.pageXOffset;
+    const pageY = clientY + window.pageYOffset;
+
+    blob.animate(
+        {
+            left: `${pageX}px`,
+            top: `${pageY}px`
+        },
+        { duration: 600, fill: "forwards" }
+    );
+};
+
+
 
 
 
@@ -57,7 +76,9 @@ const applyTheme = (theme) => {
 };
 
 const setDarkTheme = () => {
-    body.style.backgroundColor = '#070b1c';
+    // body.style.backgroundColor = '#070b1c';
+    body.style.backgroundColor = '#1a1d2e';
+
 
 };
 
