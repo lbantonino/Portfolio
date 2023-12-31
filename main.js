@@ -127,34 +127,39 @@ btnMoon.addEventListener('click', () => {
     applylightTheme()
 });
 
-// Charger le thème au chargement de la page
+const setLightTheme = () => {
+    const elements = document.querySelectorAll('*');
+    const text = document.querySelectorAll('p , h1 , h2 , h3 , h4 , h5 , h6 , a , span , li , label , input , textarea , button , .word-container');
+
+    elements.forEach(element => {
+        const backgroundColor = window.getComputedStyle(element).backgroundColor;
+        if (backgroundColor === 'rgb(7, 11, 28)') {
+            element.style.backgroundColor = '#ffffff';
+        }
+    });
+
+    text.forEach(element => {
+        const color = window.getComputedStyle(element).color;
+        if (color === 'rgb(255, 255, 255)' || color === 'rgba(255, 255, 255, 0.753)') {
+            element.style.color = '#121c46';
+        }
+    });
+
+    btnMoon.style.display = 'none';
+    btnSun.style.display = 'block';
+};
+
+// Charge le thème au chargement de la page
 document.addEventListener('DOMContentLoaded', function () {
     const savedTheme = localStorage.getItem('theme');
 
     if (savedTheme === 'dark') {
         applyDarkTheme();
     } if (savedTheme === 'light') {
-        const elements = document.querySelectorAll('*');
-        const text = document.querySelectorAll('p , h1 , h2 , h3 , h4 , h5 , h6 , a , span , li , label , input , textarea , button , .word-container');
-
-        elements.forEach(element => {
-            const backgroundColor = window.getComputedStyle(element).backgroundColor;
-            if (backgroundColor === 'rgb(7, 11, 28)') {
-                element.style.backgroundColor = '#ffffff';
-            }
-        });
-
-        text.forEach(element => {
-            const color = window.getComputedStyle(element).color;
-            if (color === 'rgb(255, 255, 255)' || color === 'rgba(255, 255, 255, 0.753)') {
-                element.style.color = '#121c46';
-            }
-        });
-
-        btnMoon.style.display = 'none';
-        btnSun.style.display = 'block';
+        setLightTheme();
     }
 });
+
 
 
 
