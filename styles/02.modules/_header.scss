@@ -97,34 +97,59 @@ header {
             &:hover {
               padding-top: 5px;
               border-top: 3px solid $lightBlue;
-              color: $lightBlue;
             }
           }
         }
       }
     }
-    .theme-switcher {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-        button {
-          cursor: pointer;
-          background-color: transparent;
-          border: none;
-          .sun {
-            display: none;
-          }
-          .moon {
-            font-size: 1.3rem;
+    // button {
+    //   cursor: pointer;
+    //   background-color: transparent;
+    //   border: none;
+    //   .sun {
+    //     display: none;
+    //   }
+    //   .moon {
+    //     font-size: 1.3rem;
+    //     font-weight: 700;
+    //     color: $white;
+    //     &:hover {
+    //       transition: 200ms ease-in-out;
+    //       color: $lightBlue;
+    //     }
+    //   }
+    // }
+    .btn-moon {
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      .moon{
+        font-size: 1.3rem;
             font-weight: 700;
             color: $white;
             &:hover {
               transition: 200ms ease-in-out;
               color: $lightBlue;
             }
-          }
-        }
+      }
     }
+    .btn-sun{
+        display: none;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        .sun{
+          font-size: 1.4rem;
+              font-weight: 700;
+              color: #070b1c;
+              &:hover {
+                transition: 200ms ease-in-out;
+                color: $lightBlue;
+              }
+        }
+      }
+    
+
   }
   .menu-global-about {
     display: flex;
@@ -150,7 +175,6 @@ header {
             &:hover {
               padding-top: 5px;
               border-top: 3px solid $lightBlue;
-              color: $lightBlue;
             }
           }
         }

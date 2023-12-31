@@ -181,27 +181,33 @@ header .menu-global nav ul li a {
 header .menu-global nav ul li a:hover {
   padding-top: 5px;
   border-top: 3px solid #0466c8;
-  color: #0466c8;
 }
-header .menu-global .theme-switcher {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header .menu-global .theme-switcher button {
+header .menu-global .btn-moon {
   cursor: pointer;
   background-color: transparent;
   border: none;
 }
-header .menu-global .theme-switcher button .sun {
-  display: none;
-}
-header .menu-global .theme-switcher button .moon {
+header .menu-global .btn-moon .moon {
   font-size: 1.3rem;
   font-weight: 700;
   color: #ffffff;
 }
-header .menu-global .theme-switcher button .moon:hover {
+header .menu-global .btn-moon .moon:hover {
+  transition: 200ms ease-in-out;
+  color: #0466c8;
+}
+header .menu-global .btn-sun {
+  display: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+header .menu-global .btn-sun .sun {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #070b1c;
+}
+header .menu-global .btn-sun .sun:hover {
   transition: 200ms ease-in-out;
   color: #0466c8;
 }
@@ -229,7 +235,6 @@ header .menu-global-about nav ul li a {
 header .menu-global-about nav ul li a:hover {
   padding-top: 5px;
   border-top: 3px solid #0466c8;
-  color: #0466c8;
 }
 header .el4 {
   grid-column: 5/5;
