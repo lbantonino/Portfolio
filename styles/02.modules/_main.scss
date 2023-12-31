@@ -19,10 +19,7 @@
   transform-origin: top left;
   transform: translateY(0) translateX(0);
 }
-
-
 // Mouse effect
-
 #blob {
   height: 300px;
  width: 200px;
@@ -50,13 +47,10 @@
  padding: 0;
 
 }
-
 body{
   background-color: #070b1ce2;
 }
-
 ////////////////////////////////// main :
-
 main {
   z-index: 3;
   position: relative;
@@ -67,112 +61,123 @@ main {
     column-gap: 1px;
     row-gap: 1px;
     margin-top: 1px;
+    @include smartphone{
+      grid-template-columns: 1fr 40vw 40vw 1fr;
+      grid-template-rows: 45vh 35vh !important;
+      // column-gap: 1px !important;
+      // row-gap: 1px !important;
+      margin-top: 1px;
+    }
     .el1n {
       grid-column: 1 / 1;
-      // border-right: 0.5px solid $bluegrid;
-      // border-bottom: 0.5px solid $bluegrid;
       background-color: #070b1c;
-      // background-color: #23253421;
-      
       z-index: 3;
-  position: relative;
-    }
-    
-    
-    .el2 {
-      background-color: #070b1c;
-      overflow: hidden;
       position: relative;
-      z-index: 0;
+    
+  }
+  .el2 {
+    background-color: #070b1c;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @include smartphone{
+      grid-column: 2/4 !important;
+      grid-row: 2/2 !important;
+      // background-color: #070b1c !important;
+      overflow: hidden;
+    }
+    .logo-techno{
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      .logo-techno{
+      gap: 50px;
+      @keyframes heartbeat {
+        0%, 100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+      }
+      @include smartphone{
+  
+      }
+      .colon1 {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        gap: 50px;
-        @keyframes heartbeat {
-          0%, 100% {
-            transform: scale(1);
-          }
-          50% {
-            transform: scale(1.1);
-          }
+        img{
+          width: 15%;
         }
-        
-        .colon1 {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          img{
-            width: 15%;
-          }
-          img.react {
-            margin-left: 50px;
-            animation: heartbeat 0.8s infinite, heartbeat 1.5s infinite;
-          }
-          img.node {
-            animation: heartbeat 0.8s infinite, heartbeat 1.7s infinite;
-          }
-          img.mongo {
-            margin-left: 50px;
-            animation: heartbeat 0.8s infinite, heartbeat 1.9s infinite;
-          }
-         
+        img.react {
+          margin-left: 50px;
+          animation: heartbeat 0.8s infinite, heartbeat 1.5s infinite;
         }
-        
-        .colon2 {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          img{
-            width: 15%;
-          }
-          img.sql {
-            animation: heartbeat 0.8s infinite, heartbeat 2.1s infinite;
-          }
-          img.php {
-            margin-left: 50px;
-            animation: heartbeat 0.8s infinite, heartbeat 2.3s infinite;
-          }
-          img.html {
-            margin-left: 50px;
-            animation: heartbeat 0.8s infinite, heartbeat 2.5s infinite;
-          }
-        
+        img.node {
+          animation: heartbeat 0.8s infinite, heartbeat 1.7s infinite;
         }
-        .colon3 {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          img{
-            width: 15%;
-          }
-          img.css {
-            animation: heartbeat 0.8s infinite, heartbeat 2.7s infinite;
-          }
-          img.sass {
-            margin-left: 50px;
-            animation: heartbeat 0.8s infinite, heartbeat 2.9s infinite;
-          }
-          img.github {
-            margin-left: 50px;
-            animation: heartbeat 0.8s infinite, heartbeat 3.3s infinite;
-          }
+        img.mongo {
+          margin-left: 50px;
+          animation: heartbeat 0.8s infinite, heartbeat 1.9s infinite;
         }
+       
+      }
+      
+      .colon2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+          width: 15%;
+        }
+        img.sql {
+          animation: heartbeat 0.8s infinite, heartbeat 2.1s infinite;
+        }
+        img.php {
+          margin-left: 50px;
+          animation: heartbeat 0.8s infinite, heartbeat 2.3s infinite;
+        }
+        img.html {
+          margin-left: 50px;
+          animation: heartbeat 0.8s infinite, heartbeat 2.5s infinite;
+        }
+      
+      }
+      .colon3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+          width: 15%;
+        }
+        img.css {
+          animation: heartbeat 0.8s infinite, heartbeat 2.7s infinite;
+        }
+        img.sass {
+          margin-left: 50px;
+          animation: heartbeat 0.8s infinite, heartbeat 2.9s infinite;
+        }
+        img.github {
+          margin-left: 50px;
+          animation: heartbeat 0.8s infinite, heartbeat 3.3s infinite;
+        }
+      }
 
 
-    }
-    }
+  }
+  }
+
+    
     .el3n {
       // border-bottom: 0.5px solid $bluegrid;
       background-color: #070b1c;
     }
     .nomJob-global {
-      // border-bottom: 0.5px solid $bluegrid;
       background-color: #070b1c;
       grid-column: 2 / 4;
       grid-row: 1 / 1;
@@ -182,10 +187,29 @@ main {
       align-items: start;
       padding-left: 30px;
       position: relative;
+      @include smartphone{
+        padding-left: 0px;
+        position: inherit;
+      }
       .title{
         position: absolute;
         top: 90px;
         left: 18px;
+        margin-right: 10px;
+        @media screen and (min-width: 320px) and (max-width: 493px){
+          margin-left: 10px;
+          margin-right: 10px;
+          position: inherit;
+          display: flex;
+          align-items: start;
+          justify-content: start;
+        }
+        @media screen and (min-width: 494px) and (max-width: 767px){
+          position: inherit;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
         h1 {
           font-family: $fontOswald;
           font-size: 85px;
@@ -193,6 +217,15 @@ main {
           letter-spacing: -2px;
           color: $white;
           margin: 0;
+          @media screen and (min-width: 320px) and (max-width: 479px){
+            font-size: 50px;
+            line-height: 60px;
+          }
+          @media screen and (min-width: 480px) and (max-width: 767px){
+            font-size: 50px;
+            line-height: 60px;
+            // margin-right: 13px;
+          }
           span {
             color: $lightBlue;
             font-style: italic;
@@ -209,11 +242,53 @@ main {
         letter-spacing: 0px;
         text-transform: uppercase;
         top: 180px;
-        // left: 43px;
+        @media screen and (min-width: 320px) and (max-width: 479px) {
+          font-size: 30px;
+          line-height: 50px;
+          margin-top: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          left: 59px;
+          top: 207px;
+          }
+          @media screen and (min-width: 480px) and (max-width: 767px){
+            font-size: 30px;
+            line-height: 50px;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 65px;
+            top: 177px;
+          }
       }
 
     }
+    .el1Smart{
+      display: none;
+      @include smartphone{
+        display: block;
+        grid-column: 1/1;
+        grid-row: 2/2;
+        background-color: #070b1c;
+      }
+    }
+    .el2Smart{
+      display: none;
+      @include smartphone{
+        display: block;
+        grid-column: 4/4;
+        grid-row: 2/2;
+        background-color: #070b1c;
+      }
+    }
+ 
   }
+
+
+
+
   .social-img {
     display: grid;
     grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
@@ -363,6 +438,9 @@ main {
       background-color: #070b1c;
     }
   }
+
+
+
 
   .work {
     display: grid;
@@ -687,6 +765,7 @@ main {
     }
   }
 }
+
 
 ///////// 
 // pages about

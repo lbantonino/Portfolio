@@ -93,21 +93,34 @@ header {
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: 1fr repeat(3, 400px) 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  display: grid;
   grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   grid-template-rows: 80px;
   column-gap: 1px;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header {
+    grid-template-columns: 1fr 40vw 40vw 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-rows: 80px;
+    column-gap: 1px;
+  }
+}
 header .el1 {
   display: flex;
   grid-column: 1/1;
   grid-row: 1/1;
   background-color: #070b1c;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header .el1 {
+    display: flex;
+    grid-column: 1/1;
+    grid-row: 1/1;
+    background-color: #070b1c;
+  }
 }
 header .logo {
   grid-column: 2/2;
@@ -117,6 +130,11 @@ header .logo {
   align-items: center;
   justify-content: start;
   padding: 0 30px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header .logo {
+    grid-column: 2/2;
+  }
 }
 header .logo .logo-group {
   display: flex;
@@ -140,6 +158,11 @@ header .logo .name-logo {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header .logo .name-logo {
+    display: none;
+  }
+}
 header .logo .name-logo h1 {
   font-size: 1rem;
   font-family: "Syne", sans-serif;
@@ -157,6 +180,11 @@ header .el3 {
   grid-row: 1/1;
   background-color: #070b1c;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header .el3 {
+    display: none;
+  }
+}
 header .menu-global {
   display: flex;
   align-items: center;
@@ -165,11 +193,38 @@ header .menu-global {
   grid-row: 1/1;
   background-color: #070b1c;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header .menu-global {
+    grid-column: 3/3;
+    grid-row: 1/1;
+  }
+}
 header .menu-global nav ul {
   display: flex;
 }
+header .menu-global nav ul .hamburger {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header .menu-global nav ul .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #ffffff;
+  }
+  header .menu-global nav ul .hamburger:hover {
+    color: #0466c8;
+  }
+}
 header .menu-global nav ul li {
   margin: 0 10px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header .menu-global nav ul li {
+    display: none;
+  }
 }
 header .menu-global nav ul li a {
   font-size: 1rem;
@@ -240,6 +295,11 @@ header .el4 {
   grid-column: 5/5;
   grid-row: 1/1;
   background-color: #070b1c;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header .el4 {
+    grid-column: 4/4;
+  }
 }
 
 footer {
@@ -452,6 +512,13 @@ main .nomJob {
   row-gap: 1px;
   margin-top: 1px;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .nomJob {
+    grid-template-columns: 1fr 40vw 40vw 1fr;
+    grid-template-rows: 45vh 35vh !important;
+    margin-top: 1px;
+  }
+}
 main .nomJob .el1n {
   grid-column: 1/1;
   background-color: #070b1c;
@@ -467,6 +534,13 @@ main .nomJob .el2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .nomJob .el2 {
+    grid-column: 2/4 !important;
+    grid-row: 2/2 !important;
+    overflow: hidden;
+  }
 }
 main .nomJob .el2 .logo-techno {
   display: flex;
@@ -554,10 +628,35 @@ main .nomJob .nomJob-global {
   padding-left: 30px;
   position: relative;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .nomJob .nomJob-global {
+    padding-left: 0px;
+    position: inherit;
+  }
+}
 main .nomJob .nomJob-global .title {
   position: absolute;
   top: 90px;
   left: 18px;
+  margin-right: 10px;
+}
+@media screen and (min-width: 320px) and (max-width: 493px) {
+  main .nomJob .nomJob-global .title {
+    margin-left: 10px;
+    margin-right: 10px;
+    position: inherit;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+}
+@media screen and (min-width: 494px) and (max-width: 767px) {
+  main .nomJob .nomJob-global .title {
+    position: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 main .nomJob .nomJob-global .title h1 {
   font-family: "Oswald", sans-serif;
@@ -566,6 +665,18 @@ main .nomJob .nomJob-global .title h1 {
   letter-spacing: -2px;
   color: #ffffff;
   margin: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  main .nomJob .nomJob-global .title h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  main .nomJob .nomJob-global .title h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 main .nomJob .nomJob-global .title h1 span {
   color: #0466c8;
@@ -580,6 +691,52 @@ main .nomJob .nomJob-global .word-container {
   letter-spacing: 0px;
   text-transform: uppercase;
   top: 180px;
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  main .nomJob .nomJob-global .word-container {
+    font-size: 30px;
+    line-height: 50px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 59px;
+    top: 207px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  main .nomJob .nomJob-global .word-container {
+    font-size: 30px;
+    line-height: 50px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 65px;
+    top: 177px;
+  }
+}
+main .nomJob .el1Smart {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .nomJob .el1Smart {
+    display: block;
+    grid-column: 1/1;
+    grid-row: 2/2;
+    background-color: #070b1c;
+  }
+}
+main .nomJob .el2Smart {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .nomJob .el2Smart {
+    display: block;
+    grid-column: 4/4;
+    grid-row: 2/2;
+    background-color: #070b1c;
+  }
 }
 main .social-img {
   display: grid;

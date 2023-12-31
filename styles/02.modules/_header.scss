@@ -5,20 +5,31 @@ body {
 header {
  position: relative;
  z-index: 2;
-  @include gridContainer1;
   display: grid;
   grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   grid-template-rows: 80px;
   column-gap: 1px;
+  @include smartphone{
+    grid-template-columns: 1fr 40vw 40vw 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-rows: 80px;
+    column-gap: 1px;
+  }
   .el1 {
     display: flex;
     grid-column: 1/1;
     grid-row: 1 / 1;
     background-color: #070b1c;
-    // border-bottom: 0.5px solid $bluegrid;
-    // border-right: 0.5px solid $bluegrid;
+    @include smartphone{
+      display: flex;
+    grid-column: 1/1;
+    grid-row: 1 / 1;
+    background-color: #070b1c;
+    }
+
   }
   .logo {
     grid-column: 2 / 2;
@@ -28,6 +39,9 @@ header {
     align-items: center;
     justify-content: start;
     padding: 0 30px;
+    @include smartphone{
+      grid-column: 2 / 2;
+    }
     .logo-group {
       display: flex;
       align-items: center;
@@ -47,6 +61,9 @@ header {
       }
     
     .name-logo {
+      @include smartphone{
+        display: none;
+      }
       display: flex;
       justify-content: center;
       align-items: center;
@@ -70,6 +87,9 @@ header {
     grid-row: 1 / 1;
     // border-bottom: 0.5px solid $bluegrid;
     background-color: #070b1c;
+    @include smartphone{
+      display: none;
+    }
   }
   .menu-global {
     display: flex;
@@ -79,10 +99,31 @@ header {
     grid-row: 1/1;
 
     background-color: #070b1c;
+    @include smartphone{
+      grid-column: 3 / 3;
+      grid-row: 1/1;
+    }
     nav {
       ul {
         display: flex;
+        .hamburger {
+          display: none;
+          @include smartphone{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 2rem;
+            color: $white;
+            &:hover {
+              color: $lightBlue;
+            }
+          }
+        }
         li {
+          @include smartphone{
+            display: none;
+          }
           margin: 0 10px;
           a {
             font-size: 1rem;
@@ -165,5 +206,8 @@ header {
     grid-row: 1 / 1;
     // border-bottom: 0.5px solid $bluegrid;
     background-color: #070b1c;
+    @include smartphone{
+      grid-column: 4 / 4;
+    }
   }
 }
