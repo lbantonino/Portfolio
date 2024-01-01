@@ -515,15 +515,19 @@ main .nomJob {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   main .nomJob {
     grid-template-columns: 1fr 40vw 40vw 1fr;
-    grid-template-rows: 50vh 50vh;
+    grid-template-rows: 350px 350px;
     margin-top: 1px;
-    height: calc(100vh + constant-height-of-browser-toolbar) !important;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  main .nomJob {
+    grid-template-rows: 250px 250px;
+    margin-top: 1px;
   }
 }
 @media screen and (min-width: 390px) and (max-width: 767px) {
   main .nomJob {
-    grid-template-rows: 40vh 40vh;
-    height: calc(80vh + constant-height-of-browser-toolbar) !important;
+    grid-template-rows: 350px 350px;
   }
 }
 main .nomJob .el1n {
@@ -760,7 +764,7 @@ main .nomJob .nomJob-global .word-container {
     top: inherit;
     font-size: 35px;
     left: 5px;
-    top: 178px;
+    top: 182px;
     margin-left: 6px;
   }
 }
