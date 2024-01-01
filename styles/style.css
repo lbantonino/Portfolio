@@ -515,7 +515,7 @@ main .nomJob {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   main .nomJob {
     grid-template-columns: 1fr 40vw 40vw 1fr;
-    grid-template-rows: 370px 370px;
+    grid-template-rows: 350px 350px;
     margin-top: 1px;
   }
 }
@@ -681,18 +681,18 @@ main .nomJob .nomJob-global .title {
     align-items: center;
   }
 }
-@media screen and (min-width: 375px) and (max-width: 400px) {
+@media screen and (min-width: 375px) and (max-width: 389px) {
   main .nomJob .nomJob-global .title {
-    top: 80px;
+    top: 100px;
     left: 25px;
     margin-right: inherit;
     display: flex;
     align-items: center;
   }
 }
-@media screen and (min-width: 401px) and (max-width: 767px) {
+@media screen and (min-width: 390px) and (max-width: 767px) {
   main .nomJob .nomJob-global .title {
-    top: 90px;
+    top: 110px;
     left: 20px;
     margin-right: inherit;
     display: flex;
@@ -722,14 +722,14 @@ main .nomJob .nomJob-global .title h1 br {
     line-height: 40px;
   }
 }
-@media screen and (min-width: 375px) and (max-width: 400px) {
+@media screen and (min-width: 375px) and (max-width: 389px) {
   main .nomJob .nomJob-global .title h1 {
     font-size: 50px;
     letter-spacing: -1px;
     line-height: 50px;
   }
 }
-@media screen and (min-width: 401px) and (max-width: 767px) {
+@media screen and (min-width: 390px) and (max-width: 767px) {
   main .nomJob .nomJob-global .title h1 {
     font-size: 55px;
     letter-spacing: -1px;
@@ -758,20 +758,20 @@ main .nomJob .nomJob-global .word-container {
     top: 135px;
   }
 }
-@media screen and (min-width: 375px) and (max-width: 400px) {
+@media screen and (min-width: 375px) and (max-width: 389px) {
   main .nomJob .nomJob-global .word-container {
     top: inherit;
     font-size: 29px;
     left: 25px;
-    top: 175px;
+    top: 200px;
   }
 }
-@media screen and (min-width: 401px) and (max-width: 767px) {
+@media screen and (min-width: 390px) and (max-width: 767px) {
   main .nomJob .nomJob-global .word-container {
     top: inherit;
     font-size: 32px;
     left: 20px;
-    top: 190px;
+    top: 210px;
   }
 }
 main .nomJob .el1Smart {
