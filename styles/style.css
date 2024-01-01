@@ -515,13 +515,13 @@ main .nomJob {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   main .nomJob {
     grid-template-columns: 1fr 40vw 40vw 1fr;
-    grid-template-rows: 45vh 45vh !important;
+    grid-template-rows: 50vh 50vh !important;
     margin-top: 1px;
   }
 }
 @media screen and (min-width: 390px) and (max-width: 767px) {
   main .nomJob {
-    grid-template-rows: 40vh 40vh !important;
+    grid-template-rows: 50vh 50vh !important;
   }
 }
 main .nomJob .el1n {

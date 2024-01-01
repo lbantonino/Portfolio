@@ -63,20 +63,20 @@ main {
     margin-top: 1px;
     @include smartphone{
       grid-template-columns: 1fr 40vw 40vw 1fr;
-      grid-template-rows: 45vh 45vh !important;
+      grid-template-rows: 50vh 50vh !important;
       // column-gap: 1px !important;
       // row-gap: 1px !important;
       margin-top: 1px;
     }
     @media screen and (min-width:390px) and (max-width: 767px){
-      grid-template-rows: 40vh 40vh !important;
+      grid-template-rows: 50vh 50vh !important;
     }
     .el1n {
       grid-column: 1 / 1;
       background-color: #070b1c;
       z-index: 3;
       position: relative;
-      
+
     
   }
   .el2 {
