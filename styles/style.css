@@ -521,7 +521,7 @@ main .nomJob {
 }
 @media screen and (min-width: 390px) and (max-width: 767px) {
   main .nomJob {
-    grid-template-rows: 50vh 50vh !important;
+    grid-template-rows: 40vh 40vh !important;
   }
 }
 main .nomJob .el1n {
@@ -649,6 +649,16 @@ main .nomJob .nomJob-global {
     justify-content: center;
   }
 }
+@media screen and (min-width: 390px) and (max-width: 767px) {
+  main .nomJob .nomJob-global .mobile-portrait {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 main .nomJob .nomJob-global .title {
   position: absolute;
   top: 90px;
@@ -667,10 +677,9 @@ main .nomJob .nomJob-global .title {
 }
 @media screen and (min-width: 375px) and (max-width: 400px) {
   main .nomJob .nomJob-global .title {
-    top: 60px;
+    top: 70px;
     left: 10px;
     margin-right: inherit;
-    width: 100%;
     display: flex;
     align-items: center;
   }
@@ -680,7 +689,6 @@ main .nomJob .nomJob-global .title {
     top: 80px;
     left: 10px;
     margin-right: inherit;
-    width: 100%;
     display: flex;
     align-items: center;
   }
