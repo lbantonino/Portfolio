@@ -515,7 +515,7 @@ main .nomJob {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   main .nomJob {
     grid-template-columns: 1fr 40vw 40vw 1fr;
-    grid-template-rows: 350px 350px;
+    grid-template-rows: 340px 340px;
     margin-top: 1px;
   }
 }

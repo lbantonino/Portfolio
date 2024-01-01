@@ -63,7 +63,7 @@ main {
     margin-top: 1px;
     @include smartphone{
       grid-template-columns: 1fr 40vw 40vw 1fr;
-      grid-template-rows: 350px 350px ;
+      grid-template-rows: 340px 340px ;
       // column-gap: 1px !important;
       // row-gap: 1px !important;
       margin-top: 1px;
