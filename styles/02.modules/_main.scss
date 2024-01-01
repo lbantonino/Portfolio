@@ -63,7 +63,7 @@ main {
     margin-top: 1px;
     @include smartphone{
       grid-template-columns: 1fr 40vw 40vw 1fr;
-      grid-template-rows: 350px 350px ;
+      grid-template-rows: 370px 370px ;
       // column-gap: 1px !important;
       // row-gap: 1px !important;
       margin-top: 1px;
@@ -74,7 +74,7 @@ main {
       margin-top: 1px;
     }
     @media screen and (min-width:390px) and (max-width: 767px){
-      grid-template-rows: 350px 350px;
+      grid-template-rows: 370px 370px;
      
 
     }
@@ -225,23 +225,23 @@ main {
         left: 18px;
         margin-right: 10px;
        @media screen and (min-width:320px) and (max-width:374px){
-        top: 50px;
-        left: 10px;
+        top: 60px;
+        left: 20px;
         margin-right: inherit;
         width: 100%;
         display: flex;
         align-items: center;
        }
        @media screen and (min-width:375px) and (max-width:400px){
-        top:70px;
-        left: 10px;
+        top:80px;
+        left: 25px;
         margin-right: inherit;
         display: flex;
         align-items: center;
        }
        @media screen and (min-width:401px) and (max-width:767px){
-        top:80px;
-        left: 10px;
+        top:90px;
+        left: 20px;
         margin-right: inherit;
         display: flex;
         align-items: center;
@@ -262,19 +262,19 @@ main {
           }
           
           @media screen and (min-width:320px) and (max-width: 374px){
+            font-size: 40px;
+            letter-spacing: -1px;
+            line-height: 40px;
+          }
+          @media screen and (min-width:375px) and (max-width: 400px){
             font-size: 50px;
             letter-spacing: -1px;
             line-height: 50px;
           }
-          @media screen and (min-width:375px) and (max-width: 400px){
-            font-size: 60px;
-            letter-spacing: -1px;
-            line-height: 60px;
-          }
           @media screen and (min-width:401px) and (max-width: 767px){
-            font-size: 65px;
+            font-size: 55px;
             letter-spacing: -1px;
-            line-height: 60px;
+            line-height: 52px;
           }
           span {
             color: $lightBlue;
@@ -295,24 +295,22 @@ main {
         top: 180px;
         @media screen and (min-width:320px) and (max-width: 374px){
           top: inherit;
-          font-size: 25px;
-          left: 5px;
-          top: 145px;
-          margin-left: 6px;
+          font-size: 23px;
+          left: 20px;
+          top: 135px;
         }
         @media screen and (min-width:375px) and (max-width: 400px) {
           top: inherit;
-          font-size: 35px;
-          left: 5px;
-          top: 182px;
-          margin-left: 6px;
+          font-size: 29px;
+          left: 25px;
+          top: 175px;
+
         }
         @media screen and (min-width:401px) and (max-width: 767px) {
           top: inherit;
-          font-size: 35px;
-          left: 5px;
-          top: 198px;
-          margin-left: 6px;
+          font-size: 32px;
+          left: 20px;
+          top: 190px;
         }
       }
 
