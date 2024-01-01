@@ -692,7 +692,7 @@ main .nomJob .nomJob-global .title {
 }
 @media screen and (min-width: 390px) and (max-width: 767px) {
   main .nomJob .nomJob-global .title {
-    top: 110px;
+    top: 100px;
     left: 20px;
     margin-right: inherit;
     display: flex;
@@ -771,7 +771,7 @@ main .nomJob .nomJob-global .word-container {
     top: inherit;
     font-size: 32px;
     left: 20px;
-    top: 210px;
+    top: 200px;
   }
 }
 main .nomJob .el1Smart {
