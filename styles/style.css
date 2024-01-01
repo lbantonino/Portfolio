@@ -515,8 +515,13 @@ main .nomJob {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   main .nomJob {
     grid-template-columns: 1fr 40vw 40vw 1fr;
-    grid-template-rows: 45vh 35vh !important;
+    grid-template-rows: 45vh 45vh !important;
     margin-top: 1px;
+  }
+}
+@media screen and (min-width: 390px) and (max-width: 767px) {
+  main .nomJob {
+    grid-template-rows: 40vh 40vh !important;
   }
 }
 main .nomJob .el1n {
@@ -548,6 +553,16 @@ main .nomJob .el2 .logo-techno {
   align-items: center;
   flex-direction: column;
   gap: 50px;
+}
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  main .nomJob .el2 .logo-techno {
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 767px) {
+  main .nomJob .el2 .logo-techno {
+    gap: 50px;
+  }
 }
 @keyframes heartbeat {
   0%, 100% {
@@ -630,8 +645,8 @@ main .nomJob .nomJob-global {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   main .nomJob .nomJob-global {
-    padding-left: 0px;
-    position: inherit;
+    padding-left: inherit;
+    justify-content: center;
   }
 }
 main .nomJob .nomJob-global .title {
@@ -640,22 +655,34 @@ main .nomJob .nomJob-global .title {
   left: 18px;
   margin-right: 10px;
 }
-@media screen and (min-width: 320px) and (max-width: 493px) {
+@media screen and (min-width: 320px) and (max-width: 374px) {
   main .nomJob .nomJob-global .title {
-    margin-left: 10px;
-    margin-right: 10px;
-    position: inherit;
-    display: flex;
-    align-items: start;
-    justify-content: start;
-  }
-}
-@media screen and (min-width: 494px) and (max-width: 767px) {
-  main .nomJob .nomJob-global .title {
-    position: inherit;
+    top: 50px;
+    left: 10px;
+    margin-right: inherit;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 400px) {
+  main .nomJob .nomJob-global .title {
+    top: 60px;
+    left: 10px;
+    margin-right: inherit;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 767px) {
+  main .nomJob .nomJob-global .title {
+    top: 80px;
+    left: 10px;
+    margin-right: inherit;
+    width: 100%;
+    display: flex;
+    align-items: center;
   }
 }
 main .nomJob .nomJob-global .title h1 {
@@ -666,15 +693,32 @@ main .nomJob .nomJob-global .title h1 {
   color: #ffffff;
   margin: 0;
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+main .nomJob .nomJob-global .title h1 br {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .nomJob .nomJob-global .title h1 br {
+    display: block;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
   main .nomJob .nomJob-global .title h1 {
     font-size: 50px;
+    letter-spacing: -1px;
+    line-height: 50px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 400px) {
+  main .nomJob .nomJob-global .title h1 {
+    font-size: 60px;
+    letter-spacing: -1px;
     line-height: 60px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 401px) and (max-width: 767px) {
   main .nomJob .nomJob-global .title h1 {
-    font-size: 50px;
+    font-size: 65px;
+    letter-spacing: -1px;
     line-height: 60px;
   }
 }
@@ -692,28 +736,31 @@ main .nomJob .nomJob-global .word-container {
   text-transform: uppercase;
   top: 180px;
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (min-width: 320px) and (max-width: 374px) {
   main .nomJob .nomJob-global .word-container {
-    font-size: 30px;
-    line-height: 50px;
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 59px;
-    top: 207px;
+    top: inherit;
+    font-size: 25px;
+    left: 5px;
+    top: 145px;
+    margin-left: 6px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 400px) {
   main .nomJob .nomJob-global .word-container {
-    font-size: 30px;
-    line-height: 50px;
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 65px;
-    top: 177px;
+    top: inherit;
+    font-size: 35px;
+    left: 5px;
+    top: 178px;
+    margin-left: 6px;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 767px) {
+  main .nomJob .nomJob-global .word-container {
+    top: inherit;
+    font-size: 35px;
+    left: 5px;
+    top: 198px;
+    margin-left: 6px;
   }
 }
 main .nomJob .el1Smart {
