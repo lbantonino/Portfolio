@@ -63,13 +63,16 @@ main {
     margin-top: 1px;
     @include smartphone{
       grid-template-columns: 1fr 40vw 40vw 1fr;
-      grid-template-rows: 50vh 50vh !important;
+      grid-template-rows: 50vh 50vh ;
       // column-gap: 1px !important;
       // row-gap: 1px !important;
       margin-top: 1px;
+      height: calc(100vh + constant-height-of-browser-toolbar) !important;
     }
     @media screen and (min-width:390px) and (max-width: 767px){
-      grid-template-rows: 40vh 40vh !important;
+      grid-template-rows: 40vh 40vh;
+      height: calc(80vh + constant-height-of-browser-toolbar) !important;
+
     }
     .el1n {
       grid-column: 1 / 1;
