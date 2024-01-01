@@ -18,6 +18,13 @@ header {
     grid-template-rows: 80px;
     column-gap: 1px;
   }
+  @include smarthpone-landscape{
+    grid-template-columns: 1fr 45vw 45vw 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-rows: 80px;
+    column-gap: 1px;
+  }
   .el1 {
     display: flex;
     grid-column: 1/1;
@@ -29,7 +36,12 @@ header {
     grid-row: 1 / 1;
     background-color: #070b1c;
     }
-
+    @include smarthpone-landscape{
+      display: flex;
+      grid-column: 1/1;
+    grid-row: 1 / 1;
+    background-color: #070b1c;
+    }
   }
   .logo {
     grid-column: 2 / 2;
@@ -42,6 +54,10 @@ header {
     @include smartphone{
       grid-column: 2 / 2;
     }
+    @include smarthpone-landscape{
+      grid-column: 2 / 2;
+    }
+    
     .logo-group {
       display: flex;
       align-items: center;
@@ -90,6 +106,9 @@ header {
     @include smartphone{
       display: none;
     }
+    @include smarthpone-landscape{
+      display: none;
+    }
   }
   .menu-global {
     display: flex;
@@ -103,6 +122,10 @@ header {
       grid-column: 3 / 3;
       grid-row: 1/1;
     }
+    @include smarthpone-landscape{
+      grid-column: 3 / 3;
+      grid-row: 1/1;
+    }
     nav {
       ul {
         display: flex;
@@ -113,8 +136,9 @@ header {
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            font-size: 2rem;
+            font-size: 1.9rem;
             color: $white;
+            font-weight: 300;
             &:hover {
               color: $lightBlue;
             }
@@ -207,6 +231,9 @@ header {
     // border-bottom: 0.5px solid $bluegrid;
     background-color: #070b1c;
     @include smartphone{
+      grid-column: 4 / 4;
+    }
+    @include smarthpone-landscape{
       grid-column: 4 / 4;
     }
   }

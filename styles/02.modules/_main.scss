@@ -75,9 +75,17 @@ main {
     }
     @media screen and (min-width:390px) and (max-width: 767px){
       grid-template-rows: 370px 370px;
-     
-
     }
+    @include smarthpone-landscape {
+      grid-template-columns: 1fr 45vw 45vw 1fr;
+      grid-template-rows: 250px 340px ;
+      margin-top: 1px;
+    }
+    @media screen and (min-width:671px) and (max-width:1023px) and (orientation: landscape){
+      grid-template-rows: 300px 300px ;
+      margin-top: 1px;
+    }
+    
     .el1n {
       grid-column: 1 / 1;
       background-color: #070b1c;
@@ -86,7 +94,7 @@ main {
 
     
   }
-  .el2 {
+    .el2 {
     background-color: #070b1c;
     overflow: hidden;
     position: relative;
@@ -96,6 +104,12 @@ main {
     align-items: center;
     flex-direction: column;
     @include smartphone{
+      grid-column: 2/4 !important;
+      grid-row: 2/2 !important;
+      // background-color: #070b1c !important;
+      overflow: hidden;
+    }
+    @include smarthpone-landscape{
       grid-column: 2/4 !important;
       grid-row: 2/2 !important;
       // background-color: #070b1c !important;
@@ -189,8 +203,6 @@ main {
 
   }
   }
-
-    
     .el3n {
       // border-bottom: 0.5px solid $bluegrid;
       background-color: #070b1c;
@@ -209,6 +221,11 @@ main {
         padding-left: inherit;
         justify-content: center;
       }
+      @include smarthpone-landscape{
+        padding-left: inherit;
+        justify-content: center;
+      }
+      
       .mobile-portrait{
         @media screen and (min-width:390px) and (max-width:767px){
           height: 100%;
@@ -246,7 +263,16 @@ main {
         display: flex;
         align-items: center;
        }
-        
+       @media screen and (min-width:565px) and (max-width:670px) and (orientation: landscape){
+        top: 75px;
+        left: 18px;
+        margin-right: 10px;
+       } 
+       @media screen and (min-width:671px) and (max-width:1023px) and (orientation: landscape){
+        top: 65px;
+        left: 18px;
+        margin-right: 10px;
+       }
         h1 {
           font-family: $fontOswald;
           font-size: 85px;
@@ -258,6 +284,9 @@ main {
             display: none;
             @include smartphone{
               display: block;
+            }
+            @include smarthpone-landscape{
+              display: none;
             }
           }
           
@@ -275,6 +304,16 @@ main {
             font-size: 55px;
             letter-spacing: -1px;
             line-height: 52px;
+          }
+          @media screen and (min-width:565px) and (max-width:670px) and (orientation: landscape){
+            font-size: 68px;
+            letter-spacing: -1px;
+            line-height: 40px;
+          }
+          @media screen and (min-width:671px) and (max-width:1023px) and (orientation: landscape){
+            font-size: 75px;
+            letter-spacing: -1px;
+            // line-height: 40px;
           }
           span {
             color: $lightBlue;
@@ -312,6 +351,18 @@ main {
           left: 20px;
           top: 200px;
         }
+        @media screen and (min-width:565px) and (max-width:670px) and (orientation: landscape){
+          top: inherit;
+          font-size: 50px;
+          left: 24px;
+          top: 120px;
+        }
+        @media screen and (min-width:671px) and (max-width:1023px) and (orientation: landscape){
+          top: inherit;
+          font-size: 50px;
+          left: 24px;
+          top: 145px;
+        }
       }
 
     }
@@ -323,10 +374,22 @@ main {
         grid-row: 2/2;
         background-color: #070b1c;
       }
+      @include smarthpone-landscape{
+        display: block;
+        grid-column: 1/1;
+        grid-row: 2/2;
+        background-color: #070b1c;
+      }
     }
     .el2Smart{
       display: none;
       @include smartphone{
+        display: block;
+        grid-column: 4/4;
+        grid-row: 2/2;
+        background-color: #070b1c;
+      }
+      @include smarthpone-landscape{
         display: block;
         grid-column: 4/4;
         grid-row: 2/2;
