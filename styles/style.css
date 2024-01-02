@@ -84,6 +84,20 @@ body {
   background-color: rgba(255, 255, 255, 0.0941176471);
 }
 
+@media screen and (max-device-width: 767px) and (orientation: landscape) {
+  .hidden-desktop {
+    display: inherit !important;
+  }
+  .visible-desktop {
+    display: none !important;
+  }
+  .visible-phone {
+    display: inherit !important;
+  }
+  .hidden-phone {
+    display: none !important;
+  }
+}
 header {
   position: relative;
   z-index: 2;
@@ -919,7 +933,7 @@ main .nomJob {
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
   main .nomJob {
-    grid-template-columns: 1fr 45vw 45vw 1fr;
+    grid-template-columns: 1fr 45vw 45vw 1fr !important;
     grid-template-rows: 250px 340px;
     margin-top: 1px;
     overflow-x: hidden;

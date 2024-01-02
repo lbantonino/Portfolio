@@ -88,3 +88,17 @@ body {
   font-size: 16px;
   background-color: #ffffff18;
 }
+@media screen and (max-device-width: 767px) and (orientation: landscape) {
+  .hidden-desktop {
+    display: inherit !important;
+  }
+  .visible-desktop {
+    display: none !important;
+  }
+  .visible-phone {
+    display: inherit !important;
+  }
+  .hidden-phone {
+    display: none !important;
+  }
+}
