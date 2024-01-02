@@ -7,8 +7,8 @@ const overlayAnimation = () => {
     document.querySelector('#bottomOverlay').classList.add('bottom');
 
     setTimeout(() => {
-        document.querySelector('#topOverlay').style.transform = 'translateY(0) translateX(-300vw)';
-        document.querySelector('#bottomOverlay').style.transform = 'translateY(0) translateX(300vw)';
+        document.querySelector('#topOverlay').style.transform = 'translateY(0) translateX(-200vw)';
+        document.querySelector('#bottomOverlay').style.transform = 'translateY(0) translateX(200vw)';
     }, 200);
 }
 const overlayAnimation2 = () => {
@@ -22,8 +22,8 @@ const overlayAnimation2 = () => {
     document.querySelector('#bottomOverlay').style.transform = 'translateY(0) translateX(0)';
 
     setTimeout(() => {
-        document.querySelector('#topOverlay').style.transform = 'translateY(0) translateX(-300vw)';
-        document.querySelector('#bottomOverlay').style.transform = 'translateY(0) translateX(300vw)';
+        document.querySelector('#topOverlay').style.transform = 'translateY(0) translateX(-200vw)';
+        document.querySelector('#bottomOverlay').style.transform = 'translateY(0) translateX(200vw)';
     }, 1000);
 }
 document.addEventListener('DOMContentLoaded', function () {
