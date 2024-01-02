@@ -423,7 +423,12 @@ main {
           font-size: 29px;
           left: 25px;
           top: 185px;
-
+        }
+        @media screen and (min-width:390px) and (max-width: 565px){
+          top: inherit;
+          font-size: 29px;
+          left: 20px;
+          top: 200px;
         }
   
         @media screen and (min-width:565px) and (max-width:670px) and (orientation: landscape){
