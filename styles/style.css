@@ -1457,9 +1457,37 @@ main .work {
   row-gap: 1px;
   margin-top: 1px;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work {
+    grid-template-columns: 1fr 40vw 40vw 1fr;
+    grid-template-rows: 450px 330px 450px 330px 450px 330px;
+    margin-top: 1px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work {
+    grid-template-columns: 1fr 45vw 45vw 1fr;
+    grid-template-rows: 380px 370px 330px 370px 330px 370px;
+    margin-top: 1px;
+  }
+}
 main .work .el5 {
   grid-column: 1/1;
   background-color: #070b1c;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el5 {
+    grid-column: 1/1 !important;
+    grid-row: 1/1 !important;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el5 {
+    grid-column: 1/1 !important;
+    grid-row: 1/1 !important;
+    overflow: hidden;
+  }
 }
 main .work .el6w {
   display: flex;
@@ -1470,6 +1498,20 @@ main .work .el6w {
   background-color: #070b1c;
   position: relative;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el6w {
+    grid-column: 2/4 !important;
+    grid-row: 1/1 !important;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el6w {
+    grid-column: 2/4 !important;
+    grid-row: 1/1 !important;
+    overflow: hidden;
+  }
+}
 main .work .el6w .work-text {
   position: absolute;
   display: flex;
@@ -1478,6 +1520,18 @@ main .work .el6w .work-text {
   margin-bottom: 10px;
   top: 20px;
   left: 30px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el6w .work-text {
+    top: 20px;
+    left: 20px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el6w .work-text {
+    top: 20px;
+    left: 20px;
+  }
 }
 main .work .el6w .work-text h1 {
   font-family: "Oswald", sans-serif;
@@ -1496,12 +1550,29 @@ main .work .el6w .width {
   gap: 10px;
   transform: translateY(50px);
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el6w .width {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el6w .width {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
 main .work .el6w .width h1 {
   margin-bottom: 10px;
   font-size: 2rem;
   font-family: "Oswald", sans-serif;
   color: #ffffff;
   font-weight: 500;
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el6w .width h1 {
+    margin-top: 30px;
+  }
 }
 main .work .el6w .width .description {
   color: #ffffff;
@@ -1551,11 +1622,34 @@ main .work .el7 {
   overflow: hidden;
   position: relative;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el7 {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el7 {
+    grid-column: 2/4 !important;
+    grid-row: 2/2 !important;
+    overflow: hidden;
+    background-color: #070b1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 main .work .el7 a {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el7 a {
+    position: inherit;
+    width: 100%;
+    height: 100%;
+  }
 }
 main .work .el7 a img {
   object-fit: contain;
@@ -1563,13 +1657,85 @@ main .work .el7 a img {
   opacity: 0.9;
   transform: translateY(25px);
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el7 a img {
+    transform: translateY(0px);
+    width: 95%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el7 a img {
+    transform: translateY(0px);
+    width: 75%;
+  }
+}
+main .work .el7bis {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el7bis {
+    grid-column: 2/4 !important;
+    grid-row: 2/2 !important;
+    overflow: hidden;
+    background-color: #070b1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el7bis {
+    display: none;
+  }
+}
+main .work .el7bis a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el7bis a img {
+    width: 90%;
+    object-fit: contain;
+    opacity: 0.9;
+    transform: translateY(0px);
+  }
+}
 main .work .el8 {
   grid-column: 5/5;
   background-color: #070b1c;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el8 {
+    grid-column: 4/4 !important;
+    grid-row: 1/1 !important;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el8 {
+    grid-column: 4/4 !important;
+    grid-row: 1/1 !important;
+    overflow: hidden;
+  }
+}
 main .work .el9 {
   grid-column: 1/1;
   background-color: #070b1c;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el9 {
+    grid-column: 1/1 !important;
+    grid-row: 2/2 !important;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el9 {
+    grid-column: 1/1 !important;
+    grid-row: 2/2 !important;
+    overflow: hidden;
+  }
 }
 main .work .el10 {
   display: flex;
@@ -1579,12 +1745,44 @@ main .work .el10 {
   grid-column: 4/4;
   background-color: #070b1c;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el10 {
+    grid-column: 2/4 !important;
+    grid-row: 3/3 !important;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el10 {
+    grid-column: 2/4 !important;
+    grid-row: 3/3 !important;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 main .work .el10 .width {
   width: 334px;
   height: 300px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el10 .width {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el10 .width {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-10px);
+  }
 }
 main .work .el10 .width h1 {
   margin-bottom: 10px;
@@ -1641,24 +1839,110 @@ main .work .el11 {
   position: relative;
   background-color: #070b1c;
 }
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el11 {
+    grid-column: 2/4 !important;
+    grid-row: 4/4 !important;
+    overflow: hidden;
+    background-color: #070b1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 main .work .el11 a {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el11 a {
+    position: inherit;
+    width: 100%;
+    height: 100%;
+  }
+}
 main .work .el11 a img {
   object-fit: contain;
   width: 90%;
   opacity: 0.9;
 }
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el11 a img {
+    transform: translateY(0px);
+    width: 75%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el11 a {
+    display: none;
+  }
+}
+main .work .el11bis {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el11bis {
+    grid-column: 2/4 !important;
+    grid-row: 4/4 !important;
+    overflow: hidden;
+    background-color: #070b1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .work .el11bis a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .work .el11bis a img {
+    object-fit: contain;
+    width: 90%;
+    opacity: 0.9;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el11bis {
+    display: none;
+  }
+}
 main .work .el12 {
   grid-column: 5/5;
   background-color: #070b1c;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el12 {
+    grid-column: 4/4 !important;
+    grid-row: 2/2 !important;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el12 {
+    grid-column: 4/4 !important;
+    grid-row: 2/2 !important;
+    overflow: hidden;
+  }
+}
 main .work .el13 {
   grid-column: 1/1;
   background-color: #070b1c;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el13 {
+    grid-column: 1/1 !important;
+    grid-row: 3/3 !important;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el13 {
+    grid-column: 1/1 !important;
+    grid-row: 3/3 !important;
+    overflow: hidden;
+  }
 }
 main .work .el14 {
   display: flex;
@@ -1668,6 +1952,20 @@ main .work .el14 {
   grid-column: 2/2;
   background-color: #070b1c;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el14 {
+    grid-column: 2/4 !important;
+    grid-row: 5/5 !important;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el14 {
+    grid-column: 2/4 !important;
+    grid-row: 5/5 !important;
+    overflow: hidden;
+  }
+}
 main .work .el14 .width {
   width: 334px;
   height: 300px;
@@ -1675,12 +1973,31 @@ main .work .el14 .width {
   flex-direction: column;
   gap: 10px;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el14 .width {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el14 .width {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
 main .work .el14 .width h1 {
   margin-bottom: 20px;
   font-size: 2rem;
   font-family: "Oswald", sans-serif;
   color: #ffffff;
   font-weight: 500;
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el14 .width h1 {
+    transform: translate(0px, -5px);
+  }
 }
 main .work .el14 .width .description {
   color: #ffffff;
@@ -1710,6 +2027,12 @@ main .work .el14 .width .website {
   font-weight: 400;
   position: relative;
 }
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  main .work .el14 .width .website {
+    padding: 9.5px 50px 9.5px 25px;
+    transform: translateY(-20px);
+  }
+}
 main .work .el14 .width .website .arrow-link {
   position: absolute;
   right: 34px;
@@ -1730,20 +2053,206 @@ main .work .el15 {
   overflow: hidden;
   position: relative;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el15 {
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el15 {
+    grid-column: 2/4 !important;
+    grid-row: 6/6 !important;
+    overflow: hidden;
+    background-color: #070b1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 main .work .el15 a {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el15 a {
+    position: inherit;
+    width: 100%;
+    height: 100%;
+  }
+}
 main .work .el15 a img {
   object-fit: contain;
   width: 90%;
   opacity: 0.9;
 }
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el15 a img {
+    transform: translateY(0px);
+    width: 75%;
+  }
+}
+main .work .el15bis {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el15bis {
+    grid-column: 2/4 !important;
+    grid-row: 6/6 !important;
+    overflow: hidden;
+    background-color: #070b1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .work .el15bis a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .work .el15bis a img {
+    object-fit: contain;
+    width: 90%;
+    opacity: 0.9;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el15bis {
+    display: none;
+  }
+}
 main .work .el16 {
   grid-column: 5/5;
   background-color: #070b1c;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el16 {
+    grid-column: 4/4 !important;
+    grid-row: 3/3 !important;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el16 {
+    grid-column: 4/4 !important;
+    grid-row: 3/3 !important;
+    overflow: hidden;
+  }
+}
+main .work .el17 {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el17 {
+    display: block;
+    grid-column: 1/1;
+    grid-row: 4/4;
+    background-color: #070b1c;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el17 {
+    display: block;
+    grid-column: 1/1;
+    grid-row: 4/4;
+    background-color: #070b1c;
+  }
+}
+main .work .el18 {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el18 {
+    display: block;
+    grid-column: 4/4;
+    grid-row: 4/4;
+    background-color: #070b1c;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el18 {
+    display: block;
+    grid-column: 4/4;
+    grid-row: 4/4;
+    background-color: #070b1c;
+  }
+}
+main .work .el19 {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el19 {
+    display: block;
+    grid-column: 1/1;
+    grid-row: 5/5;
+    background-color: #070b1c;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el19 {
+    display: block;
+    grid-column: 1/1;
+    grid-row: 5/5;
+    background-color: #070b1c;
+  }
+}
+main .work .el20 {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el20 {
+    display: block;
+    grid-column: 4/4;
+    grid-row: 5/5;
+    background-color: #070b1c;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el20 {
+    display: block;
+    grid-column: 4/4;
+    grid-row: 5/5;
+    background-color: #070b1c;
+  }
+}
+main .work .el21 {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el21 {
+    display: block;
+    grid-column: 1/1;
+    grid-row: 6/6;
+    background-color: #070b1c;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el21 {
+    display: block;
+    grid-column: 1/1;
+    grid-row: 6/6;
+    background-color: #070b1c;
+  }
+}
+main .work .el22 {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .work .el22 {
+    display: block;
+    grid-column: 4/4;
+    grid-row: 6/6;
+    background-color: #070b1c;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el22 {
+    display: block;
+    grid-column: 4/4;
+    grid-row: 6/6;
+    background-color: #070b1c;
+  }
 }
 
 .about-section {

@@ -804,11 +804,31 @@ main {
     column-gap: 1px;
     row-gap: 1px;
     margin-top: 1px;
+    @include smartphone{
+      grid-template-columns: 1fr 40vw 40vw 1fr;
+      grid-template-rows: 450px 330px 450px 330px 450px 330px ;
+      margin-top: 1px;
+    }
+    @include smarthpone-landscape{
+      grid-template-columns: 1fr 45vw 45vw 1fr;
+      grid-template-rows: 380px 370px 330px 370px 330px 370px ;
+      margin-top: 1px;
+    }
     .el5 {
       grid-column: 1 / 1;
       // border-bottom: 0.5px solid $bluegrid;
       // border-right: 0.5px solid $bluegrid;
       background-color: #070b1c;
+      @include smartphone{
+        grid-column: 1/1 !important;
+        grid-row: 1/1 !important;
+        overflow: hidden;
+      }
+      @include smarthpone-landscape{
+        grid-column: 1/1 !important;
+        grid-row: 1/1 !important;
+        overflow: hidden;
+      }
     }
     .el6w {
       display: flex;
@@ -818,6 +838,16 @@ main {
       grid-column: 2 / 2;
       background-color: #070b1c;
       position: relative;
+      @include smartphone{
+        grid-column: 2/4 !important;
+        grid-row: 1/1 !important;
+        overflow: hidden;
+      }
+      @include smarthpone-landscape{
+        grid-column: 2/4 !important;
+        grid-row: 1/1 !important;
+        overflow: hidden;
+      }
       .work-text{
         position: absolute;
         display: flex;
@@ -826,6 +856,14 @@ main {
         margin-bottom: 10px;
         top: 20px;
         left: 30px;
+        @include smartphone{
+          top: 20px;
+          left: 20px;
+        }
+        @include smarthpone-landscape{
+          top: 20px;
+          left: 20px;
+        }
       h1 {
         font-family: $fontOswald;
         color: $lightBlue;
@@ -834,6 +872,7 @@ main {
         font-size: 30px;
         text-transform: uppercase;
         font-weight: 500;
+       
       }
       }
       .width{
@@ -843,12 +882,23 @@ main {
         flex-direction: column;
         gap: 10px;
         transform: translateY(50px);
+        @include smartphone{
+          width: 100%;
+          padding: 0 20px;
+        }
+        @include smarthpone-landscape{
+          width: 100%;
+          padding: 0 20px;
+        }
         h1{
           margin-bottom: 10px;
           font-size: 2rem;
           font-family: $fontOswald;
           color: $white;
           font-weight: 500;
+          @include smarthpone-landscape{
+            margin-top: 30px;
+          }
         }
         .description {
           color: $white;
@@ -904,17 +954,70 @@ main {
       background-color: #070b1c;
       overflow: hidden;
       position: relative;
-
+      @include smartphone{
+       display: none !important;
+      }
+      @include smarthpone-landscape{
+        grid-column: 2/4 !important;
+        grid-row: 2/2 !important;
+        overflow: hidden;
+        background-color: #070b1c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       a{
         position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
+        @include smarthpone-landscape{
+          position: inherit;
+          width: 100%;
+          height: 100%;
+        }
       img {
         object-fit: contain;
         width: 90%;
         opacity: 0.9;
         transform: translateY(25px);
+        @include smartphone{
+          transform: translateY(0px);
+          width: 95%;
+        }
+        @include smarthpone-landscape{
+          transform: translateY(0px);
+          width: 75%;
+        }
+      }
+    }
+    }
+    .el7bis{
+      display: none;
+      @include smartphone{
+        grid-column: 2/4 !important;
+        grid-row: 2/2 !important;
+        overflow: hidden;
+        background-color: #070b1c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @include smarthpone-landscape{
+        display: none;
+      }
+      a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      img{
+        @include smartphone{
+          width: 90%;
+          object-fit: contain;
+          opacity: 0.9;
+          transform: translateY(0px);
+        }
       }
     }
     }
@@ -922,12 +1025,32 @@ main {
       grid-column: 5 / 5;
       // border-bottom: 0.5px solid $bluegrid;
       background-color: #070b1c;
+      @include smartphone{
+        grid-column: 4/4 !important;
+        grid-row: 1/1 !important;
+        overflow: hidden;
+      }
+      @include smarthpone-landscape{
+        grid-column: 4/4 !important;
+        grid-row: 1/1 !important;
+        overflow: hidden;
+      }
     }
     .el9 {
       grid-column: 1 / 1;
       // border-right: 0.5px solid $bluegrid;
       // border-bottom: 0.5px solid $bluegrid;
       background-color: #070b1c;
+      @include smartphone{
+        grid-column: 1/1 !important;
+        grid-row: 2/2 !important;
+        overflow: hidden;
+      }
+      @include smarthpone-landscape{
+        grid-column: 1/1 !important;
+        grid-row: 2/2 !important;
+        overflow: hidden;
+      }
     }
     .el10 {
       display: flex;
@@ -936,12 +1059,36 @@ main {
       flex-direction: column;
       grid-column: 4 / 4;
       background-color: #070b1c;
+      @include smartphone{
+        grid-column: 2/4 !important;
+        grid-row: 3/3 !important;
+        overflow: hidden;
+      }
+      @include smarthpone-landscape{
+        grid-column: 2/4 !important;
+        grid-row: 3/3 !important;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       .width{
         width: 334px;
         height: 300px;
         display: flex;
         flex-direction: column;
         gap: 10px;
+        @include smartphone{
+          width: 100%;
+          padding: 0 20px;
+        }
+        @include smarthpone-landscape{
+          width: 100%;
+          padding: 0 20px;
+          display: flex;
+          justify-content: center;
+          transform: translateY(-10px);
+        }
         h1{
           margin-bottom: 10px;
           font-size: 2rem;
@@ -1001,28 +1148,97 @@ main {
       overflow: hidden;
       position: relative;
       background-color: #070b1c;
+      @include smarthpone-landscape{
+        grid-column: 2/4 !important;
+        grid-row: 4/4 !important;
+        overflow: hidden;
+        background-color: #070b1c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       a{
         position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
+        @include smarthpone-landscape{
+          position: inherit;
+          width: 100%;
+          height: 100%;
+        }
       img {
         object-fit: contain;
         width: 90%;
         opacity: 0.9;
+        @include smarthpone-landscape{
+          transform: translateY(0px);
+          width: 75%;
+        }
+
+      }
+      @include smartphone{
+        display: none;
+      }
+   
+    }
+    }
+    .el11bis{
+      display: none;
+      @include smartphone{
+        grid-column: 2/4 !important;
+        grid-row: 4/4 !important;
+        overflow: hidden;
+        background-color: #070b1c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        img {
+          object-fit: contain;
+          width: 90%;
+          opacity: 0.9;
+          
       }
     }
     }
+    @include smarthpone-landscape{
+      display: none;
+    }
+  }
     .el12 {
       grid-column: 5 / 5;
       // border-bottom: 0.5px solid $bluegrid;
       background-color: #070b1c;
+      @include smartphone{
+        grid-column: 4/4 !important;
+        grid-row: 2/2 !important;
+        overflow: hidden;
+      }
+      @include smarthpone-landscape{
+        grid-column: 4/4 !important;
+        grid-row: 2/2 !important;
+        overflow: hidden;
+      }
     }
     .el13 {
       grid-column: 1 / 1;
       // border-right: 0.5px solid $bluegrid;
       // border-bottom: 0.5px solid $bluegrid;
       background-color: #070b1c;
+      @include smartphone{
+        grid-column: 1/1 !important;
+        grid-row: 3/3 !important;
+        overflow: hidden;
+      }
+      @include smarthpone-landscape{
+        grid-column: 1/1 !important;
+        grid-row: 3/3 !important;
+        overflow: hidden;
+      }
     }
     .el14 {
       display: flex;
@@ -1033,18 +1249,41 @@ main {
       // border-bottom: 0.5px solid $bluegrid;
       // border-right: 0.5px solid $bluegrid;
       background-color: #070b1c;
+      @include smartphone{
+        grid-column: 2/4 !important;
+        grid-row: 5/5 !important;
+        overflow: hidden;
+      }
+      @include smarthpone-landscape{
+        grid-column: 2/4 !important;
+        grid-row: 5/5 !important;
+        overflow: hidden;
+      }
       .width{
         width: 334px;
         height: 300px;
         display: flex;
         flex-direction: column;
         gap: 10px;
+        @include smartphone{
+          width: 100%;
+          padding: 0 20px;
+        }
+        @include smarthpone-landscape{
+          width: 100%;
+          padding: 0 20px;
+          display: flex;
+          justify-content: center;
+        }
         h1{
           margin-bottom: 20px;
           font-size: 2rem;
           font-family: $fontOswald;
           color: $white;
           font-weight: 500;
+          @include smarthpone-landscape{
+            transform: translate(0px, -5px);
+          }
         }
         .description {
           color: $white;
@@ -1075,6 +1314,10 @@ main {
           font-weight: 400;
           position: relative;
           // margin-top: 50px;
+          @media  screen and (min-width:320px) and (max-width: 374px){
+            padding: 9.5px 50px 9.5px 25px;
+            transform: translateY(-20px);
+          }
           .arrow-link {
             position: absolute;
             right: 34px;
@@ -1099,23 +1342,172 @@ main {
       background-color: #070b1c;
       overflow: hidden;
       position: relative;
+      @include smartphone{
+        display: none;
+      }
+      @include smarthpone-landscape{
+        grid-column: 2/4 !important;
+        grid-row: 6/6 !important;
+        overflow: hidden;
+        background-color: #070b1c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       a{
         position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
+        @include smarthpone-landscape{
+          position: inherit;
+          width: 100%;
+          height: 100%;
+        }
       img {
         object-fit: contain;
         width: 90%;
         opacity: 0.9;
+        @include smarthpone-landscape{
+          transform: translateY(0px);
+          width: 75%;
+        }
+      }
+   
+    }
+    }
+    .el15bis{
+      display: none;
+      @include smartphone{
+        grid-column: 2/4 !important;
+        grid-row: 6/6 !important;
+        overflow: hidden;
+        background-color: #070b1c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        img {
+          object-fit: contain;
+          width: 90%;
+          opacity: 0.9;
+          
       }
     }
     }
+    @include smarthpone-landscape{
+      display: none;
+    }
+  }
     .el16 {
       grid-column: 5 / 5;
       // border-bottom: 0.5px solid $bluegrid;
       background-color: #070b1c;
+      @include smartphone{
+        grid-column: 4/4 !important;
+        grid-row: 3/3 !important;
+        overflow: hidden;
+      }
+      @include smarthpone-landscape{
+        grid-column: 4/4 !important;
+        grid-row: 3/3 !important;
+        overflow: hidden;
+      }
     }
+    .el17{
+      display: none;
+      @include smartphone{
+        display: block;
+        grid-column: 1/1;
+        grid-row: 4/4;
+        background-color: #070b1c;
+      }
+      @include smarthpone-landscape{
+        display: block;
+        grid-column: 1/1;
+        grid-row: 4/4;
+        background-color: #070b1c;
+      }
+    }
+    .el18{
+      display: none;
+      @include smartphone{
+        display: block;
+        grid-column: 4/4;
+        grid-row: 4/4;
+        background-color: #070b1c;
+      }
+      @include smarthpone-landscape{
+        display: block;
+        grid-column: 4/4;
+        grid-row: 4/4;
+        background-color: #070b1c;
+      }
+    }
+    .el19{
+      display: none;
+      @include smartphone{
+        display: block;
+        grid-column: 1/1;
+        grid-row: 5/5;
+        background-color: #070b1c;
+      }
+      @include smarthpone-landscape{
+        display: block;
+        grid-column: 1/1;
+        grid-row: 5/5;
+        background-color: #070b1c;
+      }
+    }
+    .el20{
+      display: none;
+      @include smartphone{
+        display: block;
+        grid-column: 4/4;
+        grid-row: 5/5;
+        background-color: #070b1c;
+      }
+      @include smarthpone-landscape{
+        display: block;
+        grid-column: 4/4;
+        grid-row: 5/5;
+        background-color: #070b1c;
+      }
+    }
+    .el21{
+      display: none;
+      @include smartphone{
+        display: block;
+        grid-column: 1/1;
+        grid-row: 6/6;
+        background-color: #070b1c;
+      }
+      @include smarthpone-landscape{
+        display: block;
+        grid-column: 1/1;
+        grid-row: 6/6;
+        background-color: #070b1c;
+      }
+    }
+    .el22{
+      display: none;
+      @include smartphone{
+        display: block;
+        grid-column: 4/4;
+        grid-row: 6/6;
+        background-color: #070b1c;
+      }
+      @include smarthpone-landscape{
+        display: block;
+        grid-column: 4/4;
+        grid-row: 6/6;
+        background-color: #070b1c;
+      }
+    }
+
   }
 }
 
