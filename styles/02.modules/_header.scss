@@ -1,7 +1,6 @@
 body {
   min-height: 100vh;
   width: 100vw;
-  overflow-x: hidden;
 }
 header {
  position: relative;
@@ -20,7 +19,7 @@ header {
     column-gap: 1px;
   }
   @include smarthpone-landscape{
-    grid-template-columns: 1fr 45vw 45vw 1fr;
+    grid-template-columns: 1fr 40% 40% 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-rows: 80px;

@@ -29,8 +29,6 @@
  translate: -50% -50%;
  border-radius: 50%;
  background: $lightBlue2;
-//  animation: rotate 2s infinite alternate, ovalo 5s infinite alternate;
-//  backdrop-filter: blur(100px);
 
 }
 #blur {
@@ -102,8 +100,6 @@ main {
     @include smartphone{
       grid-template-columns: 1fr 40vw 40vw 1fr;
       grid-template-rows: 340px 340px ;
-      // column-gap: 1px !important;
-      // row-gap: 1px !important;
       margin-top: 1px;
 
     }
@@ -115,7 +111,7 @@ main {
       grid-template-rows: 370px 370px;
     }
     @include smarthpone-landscape {
-      grid-template-columns: 1fr 45vw 45vw 1fr;
+      grid-template-columns: 1fr 40% 40% 1fr;
       grid-template-rows: 250px 340px ;
       margin-top: 1px;
     }
