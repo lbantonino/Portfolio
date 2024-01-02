@@ -19,7 +19,7 @@ header {
     column-gap: 1px;
   }
   @include smarthpone-landscape{
-    grid-template-columns: 1fr 45vw 45vw 1fr;
+    grid-template-columns: 5vw 45vw 45vw 5vw;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-rows: 80px;
