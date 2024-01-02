@@ -20,7 +20,8 @@ header {
   }
   @include smarthpone-landscape{
     display: grid;
-    grid-template-columns: 1fr 45vw 45vw 1fr;
+    // grid-template-columns: 1fr 45vw 45vw 1fr;
+    grid-template-columns:minmax(24px,calc(50% - 600px)) repeat(2,minmax(0,600px)) minmax(24px,calc(50% - 600px));
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-rows: 80px;
