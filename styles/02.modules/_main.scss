@@ -110,9 +110,9 @@ body{
     
     @include smarthpone-landscape{
       overflow-x: hidden !important;
-      width: 100vw !important;
-      min-width: 100vw !important;
-   
+      // width: 100vw !important;
+      // min-width: 100vw !important;
+      width: 100%;
     }
 }
 ////////////////////////////////// main :
@@ -150,8 +150,8 @@ main {
       grid-template-rows: 250px 340px ;
       margin-top: 1px;
       overflow-x: hidden;
-      width: 100vw;
-      min-width: 100vw;
+      width: 100%;
+      // min-width: 100vw;
     }
     
     @include tablet {
