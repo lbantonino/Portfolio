@@ -107,6 +107,13 @@
 // }
 body{
     background-color: #070b1ce2;
+    @include smarthpone-landscape{
+      ::-webkit-scrollbar{
+        background: inherit; 
+     width: inherit; 
+     height: inherit;
+      }
+    }
 }
 ////////////////////////////////// main :
 main {
@@ -125,16 +132,16 @@ main {
       margin-top: 1px;
     }
     
-    @media screen and (min-width:320px) and (max-width:374px){
-      grid-template-columns: 1fr 40vw 40vw 1fr;
-      grid-template-rows: 250px 250px ;
-      margin-top: 1px;
-      overflow-x: hidden;
-    }
-    @media screen and (min-width:390px) and (max-width: 767px){
-      grid-template-columns: 1fr 40vw 40vw 1fr;
-      grid-template-rows: 370px 370px;
-    }
+    // @media screen and (min-width:320px) and (max-width:374px){
+    //   grid-template-columns: 1fr 40vw 40vw 1fr;
+    //   grid-template-rows: 250px 250px ;
+    //   margin-top: 1px;
+    //   overflow-x: hidden;
+    // }
+    // @media screen and (min-width:390px) and (max-width: 767px){
+    //   grid-template-columns: 1fr 40vw 40vw 1fr;
+    //   grid-template-rows: 370px 370px;
+    // }
     @include smarthpone-landscape {
       grid-template-columns: 1fr 45vw 45vw 1fr;
       grid-template-rows: 250px 340px ;
@@ -433,7 +440,7 @@ main {
           top: inherit;
           font-size: 50px;
           left: 24px;
-          top: 145px;
+          top: 116px;
         }
       }
 
@@ -1023,12 +1030,12 @@ main {
       }
       @include smarthpone-landscape{
         grid-column: 2/4 !important;
-        grid-row: 2/2 !important;
-        overflow: hidden;
-        background-color: #070b1c;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    grid-row: 2/2 !important;
+    overflow: hidden;
+    background-color: #070b1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
       }
       @include tablet{
         grid-column: 2/4 !important;
