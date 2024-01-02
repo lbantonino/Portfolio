@@ -888,7 +888,7 @@ footer .el9f {
 }
 
 body {
-  background-color: rgba(7, 11, 28, 0.8862745098);
+  background-color: #070b1c;
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
   body ::-webkit-scrollbar {
