@@ -1242,14 +1242,6 @@ main .nomJob .nomJob-global .word-container {
     top: 185px;
   }
 }
-@media screen and (min-width: 390px) and (max-width: 767px) {
-  main .nomJob .nomJob-global .word-container {
-    top: inherit;
-    font-size: 32px;
-    left: 20px;
-    top: 200px;
-  }
-}
 @media screen and (min-width: 565px) and (max-width: 670px) and (orientation: landscape) {
   main .nomJob .nomJob-global .word-container {
     top: inherit;
@@ -1263,7 +1255,7 @@ main .nomJob .nomJob-global .word-container {
     top: inherit;
     font-size: 50px;
     left: 24px;
-    top: 145px;
+    top: 116px;
   }
 }
 main .nomJob .el1Smart {
