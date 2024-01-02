@@ -117,6 +117,15 @@ header {
     column-gap: 1px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1190px) {
+  header {
+    grid-template-columns: 1fr 45vw 45vw 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-rows: 80px;
+    column-gap: 1px;
+  }
+}
 header .el1 {
   display: flex;
   grid-column: 1/1;
@@ -139,6 +148,14 @@ header .el1 {
     background-color: #070b1c;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1190px) {
+  header .el1 {
+    display: flex;
+    grid-column: 1/1;
+    grid-row: 1/1;
+    background-color: #070b1c;
+  }
+}
 header .logo {
   grid-column: 2/2;
   grid-row: 1/1;
@@ -154,6 +171,11 @@ header .logo {
   }
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  header .logo {
+    grid-column: 2/2;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1190px) {
   header .logo {
     grid-column: 2/2;
   }
@@ -212,6 +234,11 @@ header .el3 {
     display: none;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1190px) {
+  header .el3 {
+    display: none;
+  }
+}
 header .menu-global {
   display: flex;
   align-items: center;
@@ -227,6 +254,12 @@ header .menu-global {
   }
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  header .menu-global {
+    grid-column: 3/3;
+    grid-row: 1/1;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1190px) {
   header .menu-global {
     grid-column: 3/3;
     grid-row: 1/1;
@@ -336,6 +369,11 @@ header .el4 {
   }
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  header .el4 {
+    grid-column: 4/4;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1190px) {
   header .el4 {
     grid-column: 4/4;
   }
@@ -582,6 +620,13 @@ main .nomJob {
     margin-top: 1px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1190px) {
+  main .nomJob {
+    grid-template-columns: 1fr 45vw 45vw 1fr;
+    grid-template-rows: 350px 350px;
+    margin-top: 1px;
+  }
+}
 main .nomJob .el1n {
   grid-column: 1/1;
   background-color: #070b1c;
@@ -606,6 +651,13 @@ main .nomJob .el2 {
   }
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .nomJob .el2 {
+    grid-column: 2/4 !important;
+    grid-row: 2/2 !important;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1190px) {
   main .nomJob .el2 {
     grid-column: 2/4 !important;
     grid-row: 2/2 !important;
@@ -906,6 +958,14 @@ main .nomJob .el1Smart {
     background-color: #070b1c;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1190px) {
+  main .nomJob .el1Smart {
+    display: block;
+    grid-column: 1/1;
+    grid-row: 2/2;
+    background-color: #070b1c;
+  }
+}
 main .nomJob .el2Smart {
   display: none;
 }
@@ -925,6 +985,14 @@ main .nomJob .el2Smart {
     background-color: #070b1c;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1190px) {
+  main .nomJob .el2Smart {
+    display: block;
+    grid-column: 4/4;
+    grid-row: 2/2;
+    background-color: #070b1c;
+  }
+}
 main .social-img {
   display: grid;
   grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
@@ -932,6 +1000,27 @@ main .social-img {
   column-gap: 1px;
   row-gap: 1px;
   margin-top: 1px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .social-img {
+    grid-template-columns: 1fr 40vw 40vw 1fr;
+    grid-template-rows: 450px 340px;
+    margin-top: 1px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .social-img {
+    grid-template-columns: 1fr 45vw 45vw 1fr;
+    grid-template-rows: 350px 340px;
+    margin-top: 1px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1190px) {
+  main .social-img {
+    grid-template-columns: 1fr 45vw 45vw 1fr;
+    grid-template-rows: 350px 340px;
+    margin-top: 1px;
+  }
 }
 main .social-img .el4s {
   grid-column: 1/1;
@@ -947,6 +1036,27 @@ main .social-img .aboutMe {
   gap: 30px;
   position: relative;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .social-img .aboutMe {
+    grid-column: 2/4 !important;
+    grid-row: 1/1 !important;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .social-img .aboutMe {
+    grid-column: 2/4 !important;
+    grid-row: 1/1 !important;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1190px) {
+  main .social-img .aboutMe {
+    grid-column: 2/4 !important;
+    grid-row: 1/1 !important;
+    overflow: hidden;
+  }
+}
 main .social-img .aboutMe .about-text {
   position: absolute;
   top: 20px;
@@ -954,6 +1064,24 @@ main .social-img .aboutMe .about-text {
   display: flex;
   align-items: start;
   justify-content: start;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .social-img .aboutMe .about-text {
+    top: 20px;
+    left: 20px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .social-img .aboutMe .about-text {
+    top: 20px;
+    left: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1190px) {
+  main .social-img .aboutMe .about-text {
+    top: 20px;
+    left: 20px;
+  }
 }
 main .social-img .aboutMe .about-text h1 {
   font-family: "Oswald", sans-serif;
@@ -969,8 +1097,38 @@ main .social-img .aboutMe p {
   padding: 0 34px;
   color: #ffffff;
   font-family: "Inter", sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.93rem;
   line-height: 22px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .social-img .aboutMe p {
+    padding: 0 20px;
+    margin-top: 70px;
+    font-size: 1rem;
+    data-aos: none !important;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .social-img .aboutMe p {
+    padding: 0 20px;
+    margin-top: 70px;
+    font-size: 1rem;
+    data-aos: none !important;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  main .social-img .aboutMe p {
+    margin-top: 20px;
+    data-aos: none !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1190px) {
+  main .social-img .aboutMe p {
+    padding: 0 20px;
+    margin-top: 70px;
+    font-size: 1rem;
+    data-aos: none !important;
+  }
 }
 main .social-img .aboutMe a {
   padding: 7px 549px 7px 25px;
@@ -988,6 +1146,32 @@ main .social-img .aboutMe a {
 main .social-img .aboutMe a:hover {
   border: 2px solid #2592ff;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .social-img .aboutMe a {
+    padding: 7px 70px 7px 25px;
+    margin: 40px 10px 0;
+    data-aos: none !important;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .social-img .aboutMe a {
+    padding: 7px 143px 7px 25px;
+    margin: 40px 10px 0;
+    data-aos: none !important;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  main .social-img .aboutMe a {
+    font-size: 14px;
+    margin: 0 10px 0;
+    data-aos: none !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1190px) {
+  main .social-img .aboutMe a {
+    padding: 7px 145px 7px 25px;
+  }
+}
 main .social-img .aboutMe .arrow-link {
   position: absolute;
   right: 34px;
@@ -1003,6 +1187,27 @@ main .social-img .social {
   gap: 15px;
   position: relative;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .social-img .social {
+    grid-column: 2/4 !important;
+    grid-row: 2/2 !important;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .social-img .social {
+    grid-column: 2/4 !important;
+    grid-row: 2/2 !important;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1190px) {
+  main .social-img .social {
+    grid-column: 2/4 !important;
+    grid-row: 2/2 !important;
+    overflow: hidden;
+  }
+}
 main .social-img .social .social-text {
   width: 320px;
   display: flex;
@@ -1011,6 +1216,22 @@ main .social-img .social .social-text {
   position: absolute;
   top: 20px;
   left: 30px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .social-img .social .social-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: inherit;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .social-img .social .social-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: inherit;
+  }
 }
 main .social-img .social .social-text h1 {
   font-family: "Oswald", sans-serif;
@@ -1023,6 +1244,16 @@ main .social-img .social .social-text h1 {
 }
 main .social-img .social .logo-social {
   margin-top: 20px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .social-img .social .logo-social ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+  }
 }
 main .social-img .social .logo-social ul li {
   transform: translateY(17px);
@@ -1048,15 +1279,125 @@ main .social-img .social .logo-social ul li a .arrow-link {
   right: 34px;
   top: 12px;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .social-img .social .logo-social ul li a {
+    padding: 9.5px 170px 9.5px 25px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  main .social-img .social .logo-social ul li a {
+    padding: 9.5px 140px 9.5px 25px;
+  }
+}
+@media screen and (min-width: 665px) and (max-width: 667px) {
+  main .social-img .social .logo-social ul li a {
+    padding: 9.5px 250px 9.5px 25px;
+  }
+}
 main .social-img .social .logo-social ul li .github {
   padding: 9.5px 244px 9.5px 25px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .social-img .social .logo-social ul li .github {
+    padding: 9.5px 178px 9.5px 25px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  main .social-img .social .logo-social ul li .github {
+    padding: 9.5px 145px 9.5px 25px;
+  }
+}
+@media screen and (min-width: 665px) and (max-width: 667px) {
+  main .social-img .social .logo-social ul li .github {
+    padding: 9.5px 250px 9.5px 25px;
+  }
 }
 main .social-img .social .logo-social ul .githubli {
   transform: translateY(8px);
 }
+@media screen and (min-width: 768px) and (max-width: 1190px) {
+  main .social-img .social .logo-social ul .githubli {
+    transform: translateY(-12px);
+  }
+}
 main .social-img .el6 {
   grid-column: 5/5;
   background-color: #070b1c;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .social-img .el6 {
+    grid-column: 4/4 !important;
+    grid-row: 1/1 !important;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .social-img .el6 {
+    grid-column: 4/4 !important;
+    grid-row: 1/1 !important;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1190px) {
+  main .social-img .el6 {
+    grid-column: 4/4 !important;
+    grid-row: 1/1 !important;
+    overflow: hidden;
+  }
+}
+main .social-img .el7 {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .social-img .el7 {
+    display: block;
+    grid-column: 1/1;
+    grid-row: 2/2;
+    background-color: #070b1c;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .social-img .el7 {
+    display: block;
+    grid-column: 1/1;
+    grid-row: 2/2;
+    background-color: #070b1c;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1190px) {
+  main .social-img .el7 {
+    display: block;
+    grid-column: 1/1;
+    grid-row: 2/2;
+    background-color: #070b1c;
+  }
+}
+main .social-img .el8 {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  main .social-img .el8 {
+    display: block;
+    grid-column: 4/4;
+    grid-row: 2/2;
+    background-color: #070b1c;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .social-img .el8 {
+    display: block;
+    grid-column: 4/4;
+    grid-row: 2/2;
+    background-color: #070b1c;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1190px) {
+  main .social-img .el8 {
+    display: block;
+    grid-column: 4/4;
+    grid-row: 2/2;
+    background-color: #070b1c;
+  }
 }
 main .work {
   display: grid;

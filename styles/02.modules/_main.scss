@@ -85,7 +85,11 @@ main {
       grid-template-rows: 300px 300px ;
       margin-top: 1px;
     }
-    
+    @include tablet{
+      grid-template-columns: 1fr 45vw 45vw 1fr;
+      grid-template-rows: 350px 350px ;
+      margin-top: 1px;
+    }
     .el1n {
       grid-column: 1 / 1;
       background-color: #070b1c;
@@ -115,7 +119,12 @@ main {
       // background-color: #070b1c !important;
       overflow: hidden;
     }
-    
+    @include tablet {
+      grid-column: 2/4 !important;
+      grid-row: 2/2 !important;
+      // background-color: #070b1c !important;
+      overflow: hidden;
+    }
     .logo-techno{
       display: flex;
       justify-content: center;
@@ -380,6 +389,12 @@ main {
         grid-row: 2/2;
         background-color: #070b1c;
       }
+      @include tablet {
+        display: block;
+        grid-column: 1/1;
+        grid-row: 2/2;
+        background-color: #070b1c;
+      }
     }
     .el2Smart{
       display: none;
@@ -395,12 +410,15 @@ main {
         grid-row: 2/2;
         background-color: #070b1c;
       }
+      @include tablet {
+        display: block;
+        grid-column: 4/4;
+        grid-row: 2/2;
+        background-color: #070b1c;
+      }
     }
  
   }
-
-
-
 
   .social-img {
     display: grid;
@@ -409,15 +427,27 @@ main {
     column-gap: 1px;
     row-gap: 1px;
     margin-top: 1px;
+    @include smartphone{
+      grid-template-columns: 1fr 40vw 40vw 1fr;
+      grid-template-rows: 450px 340px ;
+      margin-top: 1px;
+    }
+    @include smarthpone-landscape{
+      grid-template-columns: 1fr 45vw 45vw 1fr;
+      grid-template-rows: 350px 340px ;
+      margin-top: 1px;
+    }
+    @include tablet{
+      grid-template-columns: 1fr 45vw 45vw 1fr;
+      grid-template-rows: 350px 340px ;
+      margin-top: 1px;
+    }
     .el4s {
       grid-column: 1 / 1;
-      // border-right: 0.5px solid $bluegrid;
-      // border-bottom: 0.5px solid $bluegrid;
       background-color: #070b1c;
     }
       .aboutMe {
         grid-column: 2 / 4;
-        // border-bottom: 0.5px solid $bluegrid;
         background-color: #070b1c;
         display: flex;
         align-items: center;
@@ -425,6 +455,21 @@ main {
         flex-direction: column;
         gap: 30px;
         position: relative;
+        @include smartphone{
+          grid-column: 2/4 !important;
+          grid-row: 1/1 !important;
+          overflow: hidden;
+        }
+        @include smarthpone-landscape{
+          grid-column: 2/4 !important;
+          grid-row: 1/1 !important;
+          overflow: hidden;
+        }
+        @include tablet{
+          grid-column: 2/4 !important;
+          grid-row: 1/1 !important;
+          overflow: hidden;
+        }
         .about-text{
           position: absolute;
           top: 20px;
@@ -432,6 +477,18 @@ main {
           display: flex;
           align-items: start;
           justify-content: start;
+          @include smartphone{
+            top: 20px;
+            left: 20px;
+          }
+          @include smarthpone-landscape{
+            top: 20px;
+            left: 20px;
+          }
+          @include tablet{
+            top: 20px;
+            left: 20px;
+          }
         h1 {
           font-family: $fontOswald;
           color: $lightBlue;
@@ -447,8 +504,30 @@ main {
           padding: 0 34px ;
           color: $white;
           font-family: $fontInter;
-          font-size: 0.9rem;
+          font-size: 0.93rem;
           line-height: 22px;
+          @include smartphone{
+            padding: 0 20px;
+            margin-top: 70px;
+            font-size: 1rem;
+            data-aos: none !important;
+          }
+          @include smarthpone-landscape{
+            padding: 0 20px;
+            margin-top: 70px;
+            font-size: 1rem;
+            data-aos: none !important;
+          }
+          @media screen and (min-width:320px) and (max-width: 374px){
+            margin-top: 20px;
+            data-aos: none !important;
+          }
+          @include tablet{
+            padding: 0 20px;
+            margin-top: 70px;
+            font-size: 1rem;
+            data-aos: none !important;
+          }
         }
         a {
           padding: 7px 549px 7px 25px;
@@ -465,6 +544,24 @@ main {
           position: relative;
           &:hover {
             border: 2px solid $lightBlue2;
+          }
+          @include smartphone{
+            padding: 7px 70px 7px 25px;
+            margin: 40px 10px 0;
+            data-aos: none !important;
+          }
+          @include smarthpone-landscape{
+            padding: 7px 143px 7px 25px;
+            margin: 40px 10px 0;
+            data-aos: none !important;
+          }
+          @media screen and (min-width:320px) and (max-width: 374px){
+            font-size: 14px;
+            margin: 0 10px 0;
+            data-aos: none !important;
+          }
+          @include tablet{
+            padding: 7px 145px 7px 25px;
           }
         }
   
@@ -487,7 +584,34 @@ main {
       flex-direction: column;
       gap: 15px;
       position: relative;
+      @include smartphone{
+        grid-column: 2/4 !important;
+        grid-row: 2/2 !important;
+        overflow: hidden;
+      }
+      @include smarthpone-landscape{
+        grid-column: 2/4 !important;
+        grid-row: 2/2 !important;
+        overflow: hidden;
+      }
+      @include tablet{
+        grid-column: 2/4 !important;
+        grid-row: 2/2 !important;
+        overflow: hidden;
+      }
       .social-text{
+        @include smartphone{
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          width: inherit;
+        }
+        @include smarthpone-landscape{
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          width: inherit;
+        }
         width: 320px;
         display: flex;
         align-items: start;
@@ -509,6 +633,14 @@ main {
       .logo-social {
         margin-top: 20px;
         ul {
+          @include smartphone{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 90%;
+          }
           li {
             transform: translateY(17px);
             margin: 30px 0;
@@ -532,14 +664,36 @@ main {
                 right: 34px;
                 top: 12px;
               }
+              @include smartphone{
+                padding: 9.5px 170px 9.5px 25px;
+              }
+              @media screen and (min-width:320px) and (max-width: 374px){
+                padding: 9.5px 140px 9.5px 25px;
+              }
+              @media screen and (min-width:665px) and (max-width: 667px){
+                padding: 9.5px 250px 9.5px 25px;
+              }
+              
             }
             .github {
               padding: 9.5px 244px 9.5px 25px;
+              @include smartphone{
+                padding: 9.5px 178px 9.5px 25px;
+              }
+              @media screen and (min-width:320px) and (max-width: 374px){
+                padding: 9.5px 145px 9.5px 25px;
+              }
+              @media screen and (min-width:665px) and (max-width: 667px){
+                padding: 9.5px 250px 9.5px 25px;
+              }
             }
 
           }
           .githubli{
             transform: translateY(8px);
+            @include tablet {
+              transform: translateY(-12px);
+            }
           }
         }
       }
@@ -549,10 +703,65 @@ main {
       grid-column: 5 / 5;
       // border-bottom: 0.5px solid $bluegrid;
       background-color: #070b1c;
+      @include smartphone{
+        grid-column: 4/4 !important;
+        grid-row: 1/1 !important;
+        overflow: hidden;
+      }
+      @include smarthpone-landscape{
+        grid-column: 4/4 !important;
+        grid-row: 1/1 !important;
+        overflow: hidden;
+      }
+      @include tablet{
+        grid-column: 4/4 !important;
+        grid-row: 1/1 !important;
+        overflow: hidden;
+      }
+    }
+    .el7{
+      display: none;
+      @include smartphone {
+        display: block;
+        grid-column: 1/1;
+        grid-row: 2/2;
+        background-color: #070b1c;
+      }
+      @include smarthpone-landscape {
+        display: block;
+        grid-column: 1/1;
+        grid-row: 2/2;
+        background-color: #070b1c;
+      }
+      @include tablet {
+        display: block;
+        grid-column: 1/1;
+        grid-row: 2/2;
+        background-color: #070b1c;
+      }
+    }
+    .el8{
+      display: none;
+      @include smartphone {
+        display: block;
+        grid-column: 4/4;
+        grid-row: 2/2;
+        background-color: #070b1c;
+      }
+      @include smarthpone-landscape {
+        display: block;
+        grid-column: 4/4;
+        grid-row: 2/2;
+        background-color: #070b1c;
+      }
+      @include tablet {
+        display: block;
+        grid-column: 4/4;
+        grid-row: 2/2;
+        background-color: #070b1c;
+      }
     }
   }
-
-
 
 
   .work {
