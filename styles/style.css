@@ -904,11 +904,12 @@ footer .el9f {
 
 body {
   background-color: rgba(7, 11, 28, 0.8862745098);
+  position: relative;
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
   body {
     overflow-x: hidden !important;
-    width: 125vw;
+    width: 100%;
   }
 }
 
@@ -3373,6 +3374,10 @@ main .work .el22 {
     grid-row: 3/3;
     background-color: #070b1c;
   }
+}
+
+.square {
+  display: none;
 }
 
 .about-header {

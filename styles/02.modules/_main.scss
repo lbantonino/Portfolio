@@ -107,12 +107,12 @@
 // }
 body{
     background-color: #070b1ce2;
-    
+    position: relative;
     @include smarthpone-landscape{
       overflow-x: hidden !important;
       // width: 100vw !important;
       // min-width: 100vw !important;
-      width: 125vw;
+      width: 100%;
 }
 }
 ////////////////////////////////// main :
@@ -2272,4 +2272,7 @@ main {
   }
 }
 
+.square{
+  display: none;
 
+}
