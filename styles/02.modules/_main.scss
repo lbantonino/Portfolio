@@ -109,7 +109,7 @@ body{
     background-color: #070b1ce2;
     
     @include smarthpone-landscape{
-      // background-color: #070b1c;
+      background-color: #070b1c;
       ::-webkit-scrollbar{
         background: inherit; 
      width: inherit; 
