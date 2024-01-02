@@ -48,33 +48,43 @@
 
 }
 body{
+  width: 100vw;
   background-color: #070b1ce2;
   @include smartphone{
-   overflow-x: hidden;
+    overflow: auto;
+   width: 100vw;
   }
   @include smarthpone-landscape{
-    overflow-x: hidden;
+    overflow: auto;
+    width: 100vw;
   }
   @include tablet{
     overflow-x: hidden;
+    width: 100vw;
   }
   @include tablet{
-    overflow-x: hidden;
+    overflow: auto;
+    width: 100vw;
   }
   @media screen and (min-width:320px) and (max-width: 374px){
-    overflow-x: hidden;
+    overflow: auto;
+    width: 100vw;
   }
   @media screen and (min-width:375px) and (max-width: 389px){
-    overflow-x: hidden;
+    overflow: auto;
+    width: 100vw;
   }
   @media screen and (min-width:390px) and (max-width: 767px){
-    overflow-x: hidden;
+    overflow: auto;
+    width: 100vw;
   }
   @media screen and (min-width:565px) and (max-width:670px) and (orientation: landscape){
-    overflow-x: hidden;
+    overflow: auto;
+    width: 100vw;
   }
   @media screen and (min-width:671px) and (max-width:1023px) and (orientation: landscape){
-    overflow-x: hidden;
+    overflow: auto;
+    width: 100vw;
   }
 
 }
