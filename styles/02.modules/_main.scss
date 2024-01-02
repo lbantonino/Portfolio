@@ -114,6 +114,7 @@ body{
         background: inherit; 
      width: inherit; 
      height: inherit;
+        overflow-x: hidden;
       }
     }
 }
@@ -354,7 +355,7 @@ main {
         margin-right: 10px;
        } 
        @media screen and (min-width:671px) and (max-width:1023px) and (orientation: landscape){
-        top: 40px;
+        top: 60px;
         left: 18px;
         margin-right: 10px;
        }
@@ -435,18 +436,18 @@ main {
           left: 20px;
           top: 200px;
         }
-        @media screen and (min-width:565px) and (max-width:670px) and (orientation: landscape){
+        @media screen and (min-width:565px) and (max-width:659px) and (orientation: landscape){
           top: inherit;
           font-size: 50px;
           left: 24px;
           top: 110px;
         }
-  
-        @media screen and (min-width:671px) and (max-width:678px) and (orientation: landscape){
+        @media screen and (min-width:660px) and (max-width:679px) and (orientation: landscape){
           top: inherit;
           font-size: 50px;
           left: 24px;
-          top: 90px;
+          top: 110px;
+          
         }
         @media screen and (min-width:679px) and (max-width:1023px) and (orientation: landscape){
           top: inherit;
