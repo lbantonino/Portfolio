@@ -110,13 +110,9 @@ body{
     
     @include smarthpone-landscape{
       overflow-x: hidden !important;
-      // background-color: #070b1c;
-      ::-webkit-scrollbar{
-        background: inherit; 
-     width: inherit; 
-     height: inherit;
-        
-      }
+      width: 100vw !important;
+      min-width: 100vw !important;
+   
     }
 }
 ////////////////////////////////// main :
@@ -458,7 +454,7 @@ main {
         }
         @include tablet{
           top: 180px;
-    left: 25px;
+          left: 25px;
         }
       }
 
