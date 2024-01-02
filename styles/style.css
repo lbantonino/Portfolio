@@ -949,12 +949,14 @@ main .nomJob {
 }
 @media screen and (min-width: 320px) and (max-width: 374px) {
   main .nomJob {
+    grid-template-columns: 1fr 40vw 40vw 1fr;
     grid-template-rows: 250px 250px;
     margin-top: 1px;
   }
 }
 @media screen and (min-width: 390px) and (max-width: 767px) {
   main .nomJob {
+    grid-template-columns: 1fr 40vw 40vw 1fr;
     grid-template-rows: 370px 370px;
   }
 }
