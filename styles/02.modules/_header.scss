@@ -151,6 +151,11 @@ header {
     nav {
       ul {
         display: flex;
+        .menu-hamburger{
+          display: none;
+          @include smartphone{
+            display: block;
+          }
         .hamburger {
           display: none;
           @include smartphone{
@@ -161,11 +166,12 @@ header {
             font-size: 1.9rem;
             color: $white;
             font-weight: 300;
+            transform: translateY(-3px);
             &:hover {
               color: $lightBlue;
             }
           }
-        }
+        }}
         li {
           @include smartphone{
             display: none;

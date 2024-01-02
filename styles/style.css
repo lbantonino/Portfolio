@@ -268,11 +268,19 @@ header .menu-global {
 header .menu-global nav ul {
   display: flex;
 }
-header .menu-global nav ul .hamburger {
+header .menu-global nav ul .menu-hamburger {
   display: none;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  header .menu-global nav ul .hamburger {
+  header .menu-global nav ul .menu-hamburger {
+    display: block;
+  }
+}
+header .menu-global nav ul .menu-hamburger .hamburger {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header .menu-global nav ul .menu-hamburger .hamburger {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -280,8 +288,9 @@ header .menu-global nav ul .hamburger {
     font-size: 1.9rem;
     color: #ffffff;
     font-weight: 300;
+    transform: translateY(-3px);
   }
-  header .menu-global nav ul .hamburger:hover {
+  header .menu-global nav ul .menu-hamburger .hamburger:hover {
     color: #0466c8;
   }
 }
