@@ -88,7 +88,7 @@
   }
 }
 @mixin smarthpone-landscape (){
-  @media screen and (min-width: 320px) and (max-width: 1023px)  {
+  @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
     @content;
   }
 }
