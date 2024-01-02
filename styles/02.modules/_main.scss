@@ -504,7 +504,8 @@ main {
       margin-top: 1px;
     }
     @include smarthpone-landscape{
-      grid-template-columns: 1fr 45vw 45vw 1fr;
+      // grid-template-columns: 1fr 45vw 45vw 1fr;
+      grid-template-columns:minmax(24px,calc(50% - 600px)) repeat(2,minmax(0,600px)) minmax(24px,calc(50% - 600px));
       grid-template-rows: 350px 340px ;
       margin-top: 1px;
       overflow-x: hidden;
@@ -855,7 +856,8 @@ main {
       margin-top: 1px;
     }
     @include smarthpone-landscape{
-      grid-template-columns: 1fr 45vw 45vw 1fr;
+      // grid-template-columns: 1fr 45vw 45vw 1fr;
+      grid-template-columns:minmax(24px,calc(50% - 600px)) repeat(2,minmax(0,600px)) minmax(24px,calc(50% - 600px));
       grid-template-rows: 380px 380px 330px 380px 330px 380px ;
       margin-top: 1px;
       overflow-x: hidden;
