@@ -85,7 +85,7 @@ body {
 }
 
 body {
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
 }
 
@@ -110,11 +110,12 @@ header {
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
   header {
-    grid-template-columns: 1fr 40vw 40vw 1fr;
+    grid-template-columns: 1fr 45vw 45vw 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-rows: 80px;
     column-gap: 1px;
+    overflow-x: hidden;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) {
@@ -882,7 +883,8 @@ body {
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
   body {
     overflow-x: hidden;
-    min-width: 100vw;
+    width: 100vw;
+    height: 100vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) {
@@ -917,8 +919,9 @@ body {
 }
 @media screen and (min-width: 565px) and (max-width: 670px) and (orientation: landscape) {
   body {
-    overflow: auto;
-    min-width: 100vw;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
   }
 }
 @media screen and (min-width: 671px) and (max-width: 1023px) and (orientation: landscape) {
@@ -952,6 +955,7 @@ main .nomJob {
     grid-template-columns: 1fr 40vw 40vw 1fr;
     grid-template-rows: 250px 250px;
     margin-top: 1px;
+    overflow-x: hidden;
   }
 }
 @media screen and (min-width: 390px) and (max-width: 767px) {
@@ -962,9 +966,10 @@ main .nomJob {
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
   main .nomJob {
-    grid-template-columns: 1fr 40vw 40vw 1fr;
+    grid-template-columns: 1fr 45vw 45vw 1fr;
     grid-template-rows: 250px 340px;
     margin-top: 1px;
+    overflow-x: hidden;
   }
 }
 @media screen and (min-width: 671px) and (max-width: 1023px) and (orientation: landscape) {
@@ -972,6 +977,7 @@ main .nomJob {
     grid-template-columns: 1fr 40vw 40vw 1fr;
     grid-template-rows: 300px 300px;
     margin-top: 1px;
+    overflow-x: hidden;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) {
@@ -1367,6 +1373,7 @@ main .social-img {
     grid-template-columns: 1fr 45vw 45vw 1fr;
     grid-template-rows: 350px 340px;
     margin-top: 1px;
+    overflow-x: hidden;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) {
@@ -1779,6 +1786,7 @@ main .work {
     grid-template-columns: 1fr 45vw 45vw 1fr;
     grid-template-rows: 380px 380px 330px 370px 330px 370px;
     margin-top: 1px;
+    overflow-x: hidden;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) {
