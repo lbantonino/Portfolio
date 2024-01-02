@@ -151,12 +151,15 @@ main {
       grid-template-rows: 250px 340px ;
       margin-top: 1px;
       overflow-x: hidden;
+      width: 100vw;
+      min-width: 100vw;
     }
     
-    @include tablet{
-      grid-template-columns: 1fr 45vw 45vw 1fr;
+    @include tablet {
+      grid-template-columns: 1fr 45vw 45vw 1fr !important;
       grid-template-rows: 350px 350px ;
       margin-top: 1px;
+
     }
     .el1n {
       grid-column: 1 / 1;
@@ -311,7 +314,10 @@ main {
         border-bottom: 1px solid $bluegrid;
         border-right: 1px solid $bluegrid;
       }
-      
+      @include tablet{
+        padding-left: inherit;
+        justify-content: center;
+      }
       .mobile-portrait{
         @media screen and (min-width:390px) and (max-width:767px){
           height: 100%;
@@ -525,6 +531,8 @@ main {
       grid-template-rows: 350px 340px ;
       margin-top: 1px;
       overflow-x: hidden;
+      width: 100vw;
+      min-width: 100vw;
       
     }
     @include tablet{
@@ -890,6 +898,8 @@ main {
       grid-template-rows: 380px 380px 330px 380px 330px 380px ;
       margin-top: 1px;
       overflow-x: hidden;
+      width: 100vw;
+      min-width: 100vw;
     }
     @include tablet{
       grid-template-columns: 1fr 45vw 45vw 1fr;
@@ -1825,6 +1835,8 @@ main {
     grid-template-columns:minmax(24px,calc(50% - 600px)) repeat(2,minmax(0,600px)) minmax(24px,calc(50% - 600px));
     grid-template-rows: 1fr 400px 300px ;
     margin-top: 1px;
+    width: 100vw;
+    min-width: 100vw;
 
   }
   @include tablet{

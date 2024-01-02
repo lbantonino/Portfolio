@@ -23,6 +23,8 @@ footer {
     grid-template-rows: 200px 80px;
     column-gap: 1px;
     row-gap: 1px;
+    width: 100vw;
+    min-width: 100vw;
   }
   @include tablet{
     grid-template-columns: 1fr 45vw 45vw 1fr;

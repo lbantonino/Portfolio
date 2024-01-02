@@ -436,6 +436,8 @@ footer {
     grid-template-rows: 200px 80px;
     column-gap: 1px;
     row-gap: 1px;
+    width: 100vw;
+    min-width: 100vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
@@ -962,11 +964,13 @@ main .nomJob {
     grid-template-rows: 250px 340px;
     margin-top: 1px;
     overflow-x: hidden;
+    width: 100vw;
+    min-width: 100vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .nomJob {
-    grid-template-columns: 1fr 45vw 45vw 1fr;
+    grid-template-columns: 1fr 45vw 45vw 1fr !important;
     grid-template-rows: 350px 350px;
     margin-top: 1px;
   }
@@ -1129,6 +1133,12 @@ main .nomJob .nomJob-global {
     justify-content: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.0941176471);
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  main .nomJob .nomJob-global {
+    padding-left: inherit;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 390px) and (max-width: 767px) {
@@ -1384,6 +1394,8 @@ main .social-img {
     grid-template-rows: 350px 340px;
     margin-top: 1px;
     overflow-x: hidden;
+    width: 100vw;
+    min-width: 100vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
@@ -1811,6 +1823,8 @@ main .work {
     grid-template-rows: 380px 380px 330px 380px 330px 380px;
     margin-top: 1px;
     overflow-x: hidden;
+    width: 100vw;
+    min-width: 100vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
@@ -2895,6 +2909,8 @@ main .work .el22 {
     grid-template-columns: minmax(24px, calc(50% - 600px)) repeat(2, minmax(0, 600px)) minmax(24px, calc(50% - 600px));
     grid-template-rows: 1fr 400px 300px;
     margin-top: 1px;
+    width: 100vw;
+    min-width: 100vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
