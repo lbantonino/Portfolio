@@ -57,6 +57,8 @@ document.onpointermove = (event) => {
 const btnMoon = document.querySelector('.btn-moon');
 const btnSun = document.querySelector('.btn-sun');
 
+
+
 const applylightTheme = () => {
     overlayAnimation2()
     setTimeout(() => {
@@ -70,12 +72,17 @@ const applylightTheme = () => {
             }
         });
 
+
+
         text.forEach(element => {
             const color = window.getComputedStyle(element).color;
             if (color === 'rgb(255, 255, 255)' || color === 'rgba(255, 255, 255, 0.753)') {
                 element.style.color = '#121c46';
             }
         });
+
+
+
 
         btnMoon.style.display = 'none';
         btnSun.style.display = 'block';
@@ -93,7 +100,6 @@ const applyDarkTheme = () => {
     setTimeout(() => {
         const elements = document.querySelectorAll('*');
         const text = document.querySelectorAll('p , h1 , h2 , h3 , h4 , h5 , h6 , a , span , li , label , input , textarea , button , .word-container');
-
         elements.forEach(element => {
             const backgroundColor = window.getComputedStyle(element).backgroundColor;
             if (backgroundColor === 'rgb(255, 255, 255)' || backgroundColor === 'rgba(255, 255, 255, 0)') {

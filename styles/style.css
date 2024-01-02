@@ -130,7 +130,7 @@ header {
     min-width: 100vw;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   header {
     grid-template-columns: 1fr 45vw 45vw 1fr;
     grid-column-gap: 0px;
@@ -163,7 +163,7 @@ header .el1 {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   header .el1 {
     display: flex;
     grid-column: 1/1;
@@ -192,7 +192,7 @@ header .logo {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   header .logo {
     grid-column: 2/2;
   }
@@ -251,7 +251,7 @@ header .el3 {
     display: none;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   header .el3 {
     display: none;
   }
@@ -278,7 +278,7 @@ header .menu-global {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   header .menu-global {
     grid-column: 3/3;
     grid-row: 1/1;
@@ -402,7 +402,7 @@ header .el4 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   header .el4 {
     grid-column: 4/4;
   }
@@ -438,7 +438,7 @@ footer {
     row-gap: 1px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   footer {
     grid-template-columns: 1fr 45vw 45vw 1fr;
     grid-column-gap: 0px;
@@ -466,7 +466,7 @@ footer .el1f {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   footer .el1f {
     grid-column: 1/1;
     background-color: #070b1c;
@@ -495,7 +495,7 @@ footer .el2f {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   footer .el2f {
     grid-column: 2/4;
     background-color: #070b1c;
@@ -519,7 +519,7 @@ footer .el2f .contact {
     top: 20px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   footer .el2f .contact {
     left: 20px;
     top: 20px;
@@ -580,7 +580,7 @@ footer .el2f a {
     padding: 9.5px 250px 9.5px 25px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   footer .el2f a {
     margin-top: 60px;
     padding: 9.5px 345px 9.5px 25px;
@@ -615,7 +615,7 @@ footer .el3f {
     border-bottom: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   footer .el3f {
     grid-column: 4/4;
     background-color: #070b1c;
@@ -650,7 +650,7 @@ footer .el5f {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   footer .el5f {
     grid-column: 1/1;
     grid-row: 2/2;
@@ -681,7 +681,7 @@ footer .el6f {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   footer .el6f {
     grid-column: 2/2;
     grid-row: 2/2;
@@ -747,7 +747,7 @@ footer .el7f {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   footer .el7f {
     grid-column: 3/3;
     grid-row: 2/2;
@@ -777,7 +777,7 @@ footer .el8f {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   footer .el8f {
     grid-column: 3/3;
     grid-row: 2/2;
@@ -822,7 +822,7 @@ footer .el9f {
     border-bottom: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   footer .el9f {
     grid-column: 4/4;
     grid-row: 2/2;
@@ -873,7 +873,7 @@ footer .el9f {
     display: none;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   #blob {
     display: none;
   }
@@ -902,7 +902,7 @@ footer .el9f {
     display: none;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   #blur {
     display: none;
   }
@@ -941,7 +941,7 @@ main .nomJob {
     margin-top: 1px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 374px) {
+@media screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
   main .nomJob {
     grid-template-columns: 1fr 40vw 40vw 1fr;
     grid-template-rows: 250px 250px;
@@ -949,7 +949,7 @@ main .nomJob {
     overflow-x: hidden;
   }
 }
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 390px) and (max-width: 767px) and (orientation: portrait) {
   main .nomJob {
     grid-template-columns: 1fr 40vw 40vw 1fr;
     grid-template-rows: 370px 370px;
@@ -963,15 +963,7 @@ main .nomJob {
     overflow-x: hidden;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
-  main .nomJob {
-    grid-template-columns: 1fr 45vw 45vw 1fr;
-    grid-template-rows: 300px 300px;
-    margin-top: 1px;
-    overflow-x: hidden;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .nomJob {
     grid-template-columns: 1fr 45vw 45vw 1fr;
     grid-template-rows: 350px 350px;
@@ -1016,7 +1008,7 @@ main .nomJob .el2 {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .nomJob .el2 {
     grid-column: 2/4 !important;
     grid-row: 2/2 !important;
@@ -1191,7 +1183,7 @@ main .nomJob .nomJob-global .title {
 }
 @media screen and (min-width: 671px) and (max-width: 1023px) and (orientation: landscape) {
   main .nomJob .nomJob-global .title {
-    top: 65px;
+    top: 40px;
     left: 18px;
     margin-right: 10px;
   }
@@ -1302,7 +1294,7 @@ main .nomJob .nomJob-global .word-container {
     top: inherit;
     font-size: 50px;
     left: 24px;
-    top: 116px;
+    top: 120px;
   }
 }
 main .nomJob .el1Smart {
@@ -1326,7 +1318,7 @@ main .nomJob .el1Smart {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .nomJob .el1Smart {
     display: block;
     grid-column: 1/1;
@@ -1354,7 +1346,7 @@ main .nomJob .el2Smart {
     border-bottom: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .nomJob .el2Smart {
     display: block;
     grid-column: 4/4;
@@ -1385,7 +1377,7 @@ main .social-img {
     overflow-x: hidden;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .social-img {
     grid-template-columns: 1fr 45vw 45vw 1fr;
     grid-template-rows: 350px 340px;
@@ -1428,7 +1420,7 @@ main .social-img .aboutMe {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .social-img .aboutMe {
     grid-column: 2/4 !important;
     grid-row: 1/1 !important;
@@ -1455,7 +1447,7 @@ main .social-img .aboutMe .about-text {
     left: 20px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .social-img .aboutMe .about-text {
     top: 20px;
     left: 20px;
@@ -1500,7 +1492,7 @@ main .social-img .aboutMe p {
     data-aos: none !important;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .social-img .aboutMe p {
     padding: 0 20px;
     margin-top: 70px;
@@ -1546,7 +1538,7 @@ main .social-img .aboutMe a:hover {
     data-aos: none !important;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .social-img .aboutMe a {
     padding: 7px 145px 7px 25px;
   }
@@ -1582,7 +1574,7 @@ main .social-img .social {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .social-img .social {
     grid-column: 2/4 !important;
     grid-row: 2/2 !important;
@@ -1696,7 +1688,7 @@ main .social-img .social .logo-social ul li .github {
 main .social-img .social .logo-social ul .githubli {
   transform: translateY(8px);
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .social-img .social .logo-social ul .githubli {
     transform: translateY(-12px);
   }
@@ -1725,7 +1717,7 @@ main .social-img .el6 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .social-img .el6 {
     grid-column: 4/4 !important;
     grid-row: 1/1 !important;
@@ -1753,7 +1745,7 @@ main .social-img .el7 {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .social-img .el7 {
     display: block;
     grid-column: 1/1;
@@ -1781,7 +1773,7 @@ main .social-img .el8 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .social-img .el8 {
     display: block;
     grid-column: 4/4;
@@ -1812,7 +1804,7 @@ main .work {
     overflow-x: hidden;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work {
     grid-template-columns: 1fr 45vw 45vw 1fr;
     grid-template-rows: 380px 410px 350px 410px 350px 410px;
@@ -1839,7 +1831,7 @@ main .work .el5 {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el5 {
     grid-column: 1/1 !important;
     grid-row: 1/1 !important;
@@ -1871,7 +1863,7 @@ main .work .el6w {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el6w {
     grid-column: 2/4 !important;
     grid-row: 1/1 !important;
@@ -1899,7 +1891,7 @@ main .work .el6w .work-text {
     left: 20px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el6w .work-text {
     top: 20px;
     left: 20px;
@@ -1934,7 +1926,7 @@ main .work .el6w .width {
     padding: 0 20px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el6w .width {
     width: 100%;
     padding: 0 120px;
@@ -2021,7 +2013,7 @@ main .work .el7 {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el7 {
     grid-column: 2/4 !important;
     grid-row: 2/2 !important;
@@ -2045,7 +2037,7 @@ main .work .el7 a {
     height: 100%;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el7 a {
     position: inherit;
     width: 100%;
@@ -2101,7 +2093,7 @@ main .work .el7bis {
     display: none;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el7bis {
     display: none;
   }
@@ -2138,7 +2130,7 @@ main .work .el8 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el8 {
     grid-column: 4/4 !important;
     grid-row: 1/1 !important;
@@ -2165,7 +2157,7 @@ main .work .el9 {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el9 {
     grid-column: 1/1 !important;
     grid-row: 2/2 !important;
@@ -2199,7 +2191,7 @@ main .work .el10 {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el10 {
     grid-column: 2/4 !important;
     grid-row: 3/3 !important;
@@ -2231,7 +2223,7 @@ main .work .el10 .width {
     transform: translateY(-10px);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el10 .width {
     width: 100%;
     padding: 0 120px;
@@ -2257,7 +2249,7 @@ main .work .el10 .width .description span {
   font-weight: 500;
   font-size: 1rem;
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el10 .width .description br {
     display: none;
   }
@@ -2268,7 +2260,7 @@ main .work .el10 .width .work-techno {
   font-size: 0.7rem;
   margin-bottom: 10px;
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el10 .width .work-techno {
     margin-bottom: 0px;
   }
@@ -2317,7 +2309,7 @@ main .work .el11 {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el11 {
     grid-column: 2/4 !important;
     grid-row: 4/4 !important;
@@ -2417,7 +2409,7 @@ main .work .el12 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el12 {
     grid-column: 4/4 !important;
     grid-row: 2/2 !important;
@@ -2444,7 +2436,7 @@ main .work .el13 {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el13 {
     grid-column: 1/1 !important;
     grid-row: 3/3 !important;
@@ -2475,7 +2467,7 @@ main .work .el14 {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el14 {
     grid-column: 2/4 !important;
     grid-row: 5/5 !important;
@@ -2503,7 +2495,7 @@ main .work .el14 .width {
     justify-content: center;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el14 .width {
     width: 100%;
     padding: 0 110px;
@@ -2540,7 +2532,7 @@ main .work .el14 .width .work-techno {
   font-size: 0.7rem;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el14 .width .work-techno {
     margin-bottom: inherit;
   }
@@ -2600,7 +2592,7 @@ main .work .el15 {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el15 {
     grid-column: 2/4 !important;
     grid-row: 6/6 !important;
@@ -2695,7 +2687,7 @@ main .work .el16 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el16 {
     grid-column: 4/4 !important;
     grid-row: 3/3 !important;
@@ -2723,7 +2715,7 @@ main .work .el17 {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el17 {
     display: block;
     grid-column: 1/1;
@@ -2751,7 +2743,7 @@ main .work .el18 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el18 {
     display: block;
     grid-column: 4/4;
@@ -2780,7 +2772,7 @@ main .work .el19 {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el19 {
     display: block;
     grid-column: 1/1;
@@ -2808,7 +2800,7 @@ main .work .el20 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el20 {
     display: block;
     grid-column: 4/4;
@@ -2837,7 +2829,7 @@ main .work .el21 {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el21 {
     display: block;
     grid-column: 1/1;
@@ -2865,7 +2857,7 @@ main .work .el22 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el22 {
     display: block;
     grid-column: 4/4;
@@ -2896,7 +2888,7 @@ main .work .el22 {
     margin-top: 1px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   .about-section {
     grid-template-columns: 1fr 45vw 45vw 1fr;
     grid-template-rows: 1fr 400px 300px;
@@ -2923,7 +2915,7 @@ main .work .el22 {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   .about-section .el1 {
     grid-column: 1/1 !important;
     grid-row: 1/1 !important;
@@ -2954,7 +2946,7 @@ main .work .el22 {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   .about-section .el2 {
     grid-column: 2/4 !important;
     grid-row: 1/1 !important;
@@ -2981,7 +2973,7 @@ main .work .el22 {
     left: 20px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   .about-section .el2 .title {
     top: 20px;
     left: 20px;
@@ -3009,7 +3001,7 @@ main .work .el22 {
     margin-top: 100px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   .about-section .el2 .first {
     margin-top: 100px;
   }
@@ -3042,7 +3034,7 @@ main .work .el22 {
     margin-bottom: 50px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   .about-section .el2 .last {
     margin-bottom: 50px;
   }
@@ -3075,7 +3067,7 @@ main .work .el22 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   .about-section .el4 {
     grid-column: 4/4 !important;
     grid-row: 1/1 !important;
@@ -3102,7 +3094,7 @@ main .work .el22 {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   .about-section .el5 {
     grid-column: 1/1 !important;
     grid-row: 2/3 !important;
@@ -3133,7 +3125,7 @@ main .work .el22 {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   .about-section .el6 {
     grid-column: 2/4 !important;
     grid-row: 2/2 !important;
@@ -3259,7 +3251,7 @@ main .work .el22 {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   .about-section .el7 {
     grid-column: 2/4 !important;
     grid-row: 3/3 !important;
@@ -3327,7 +3319,7 @@ main .work .el22 {
     margin-top: 0px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   .about-section .el7 .files a {
     padding: 9.5px 340px 9.5px 25px;
     margin-top: 0px;
@@ -3379,7 +3371,7 @@ main .work .el22 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   .about-section .el8 {
     grid-column: 4/4 !important;
     grid-row: 2/2 !important;
@@ -3407,7 +3399,7 @@ main .work .el22 {
     border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   .about-section .el9 {
     display: block;
     grid-column: 1/1;
@@ -3435,7 +3427,7 @@ main .work .el22 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1190px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   .about-section .el10 {
     display: block;
     grid-column: 4/4;

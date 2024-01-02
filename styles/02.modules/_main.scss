@@ -134,13 +134,13 @@ main {
       margin-top: 1px;
     }
     
-    @media screen and (min-width:320px) and (max-width:374px){
+    @media screen and (min-width:320px) and (max-width:374px) and (orientation: portrait){
       grid-template-columns: 1fr 40vw 40vw 1fr;
       grid-template-rows: 250px 250px ;
       margin-top: 1px;
       overflow-x: hidden;
     }
-    @media screen and (min-width:390px) and (max-width: 767px){
+    @media screen and (min-width:390px) and (max-width: 767px) and (orientation: portrait){
       grid-template-columns: 1fr 40vw 40vw 1fr;
       grid-template-rows: 370px 370px;
     }
@@ -152,12 +152,6 @@ main {
       overflow-x: hidden;
     }
     
-    @media screen and (min-width:768px) and (max-width:1023px) and (orientation: landscape){
-      grid-template-columns: 1fr 45vw 45vw 1fr;
-      grid-template-rows: 300px 300px ;
-      margin-top: 1px;
-      overflow-x: hidden;
-    }
     @include tablet{
       grid-template-columns: 1fr 45vw 45vw 1fr;
       grid-template-rows: 350px 350px ;
@@ -360,7 +354,7 @@ main {
         margin-right: 10px;
        } 
        @media screen and (min-width:671px) and (max-width:1023px) and (orientation: landscape){
-        top: 65px;
+        top: 40px;
         left: 18px;
         margin-right: 10px;
        }
@@ -452,7 +446,7 @@ main {
           top: inherit;
           font-size: 50px;
           left: 24px;
-          top: 116px;
+          top: 120px;
         }
       }
 
@@ -470,8 +464,8 @@ main {
         grid-column: 1/1;
         grid-row: 2/2;
         background-color: #070b1c;
-        border-bottom: 1px solid $bluegrid;
-        border-right: 1px solid $bluegrid;
+        border-bottom: 1px solid #ffffff18;
+        border-right: 1px solid #ffffff18;
       }
       @include tablet {
         display: block;
