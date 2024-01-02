@@ -125,9 +125,9 @@ header {
     grid-row-gap: 0px;
     grid-template-rows: 80px;
     column-gap: 1px;
-    overflow-x: hidden;
-    width: 100vw;
-    min-width: 100vw;
+    overflow-x: hidden !important;
+    width: 100vw !important;
+    min-width: 100vw !important;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
