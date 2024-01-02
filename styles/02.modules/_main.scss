@@ -71,7 +71,7 @@ body{
   }
   @include smarthpone-landscape{
     overflow-x: hidden;
-    max-width: 100vw;
+    min-width: 100vw;
   }
   @include tablet{
     overflow-x: hidden;
@@ -83,11 +83,11 @@ body{
   }
   @media screen and (min-width:320px) and (max-width: 374px){
     overflow: auto;
-    width: 100vw;
+    min-width: 100vw;
   }
   @media screen and (min-width:375px) and (max-width: 389px){
     overflow: auto;
-    width: 100vw;
+    min-width: 100vw;
   }
   @media screen and (min-width:390px) and (max-width: 767px){
     overflow: auto;
@@ -95,11 +95,11 @@ body{
   }
   @media screen and (min-width:565px) and (max-width:670px) and (orientation: landscape){
     overflow: auto;
-    width: 100vw;
+    min-width: 100vw;
   }
   @media screen and (min-width:671px) and (max-width:1023px) and (orientation: landscape){
     overflow: auto;
-    width: 100vw;
+    min-width: 100vw;
   }
 
 }

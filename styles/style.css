@@ -882,7 +882,7 @@ body {
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
   body {
     overflow-x: hidden;
-    max-width: 100vw;
+    min-width: 100vw;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) {
@@ -900,13 +900,13 @@ body {
 @media screen and (min-width: 320px) and (max-width: 374px) {
   body {
     overflow: auto;
-    width: 100vw;
+    min-width: 100vw;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 389px) {
   body {
     overflow: auto;
-    width: 100vw;
+    min-width: 100vw;
   }
 }
 @media screen and (min-width: 390px) and (max-width: 767px) {
@@ -918,13 +918,13 @@ body {
 @media screen and (min-width: 565px) and (max-width: 670px) and (orientation: landscape) {
   body {
     overflow: auto;
-    width: 100vw;
+    min-width: 100vw;
   }
 }
 @media screen and (min-width: 671px) and (max-width: 1023px) and (orientation: landscape) {
   body {
     overflow: auto;
-    width: 100vw;
+    min-width: 100vw;
   }
 }
 
