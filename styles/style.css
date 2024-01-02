@@ -915,7 +915,7 @@ body {
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
   body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     background-color: #070b1c;
   }
   body ::-webkit-scrollbar {
@@ -3992,4 +3992,10 @@ main .work .el22 {
 }
 .about-footer .el9 {
   grid-column: 5/5;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  body {
+    overflow-x: hidden !important;
+  }
 }

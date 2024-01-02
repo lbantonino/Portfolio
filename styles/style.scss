@@ -14,3 +14,9 @@
 @import "02.modules/footer";
 @import "02.modules/main";
 @import "02.modules/about";
+
+body {
+    @include smarthpone-landscape{
+        overflow-x: hidden !important;
+    }
+}

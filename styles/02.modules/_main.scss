@@ -109,7 +109,7 @@ body{
     background-color: #070b1ce2;
     
     @include smarthpone-landscape{
-      overflow-x: hidden;
+      overflow-x: hidden !important;
       background-color: #070b1c;
       ::-webkit-scrollbar{
         background: inherit; 
