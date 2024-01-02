@@ -120,7 +120,7 @@ header {
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
   header {
     display: grid;
-    grid-template-columns: 1fr 350px 350px 1fr;
+    grid-template-columns: 1fr minmax(0, 40vw) minmax(0, 40vw) 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-rows: 80px;
@@ -422,7 +422,7 @@ footer {
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
   footer {
-    grid-template-columns: 1fr 400px 400px 1fr;
+    grid-template-columns: 1fr minmax(0, 40vw) minmax(0, 40vw) 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-rows: 200px 80px;
@@ -948,7 +948,7 @@ main .nomJob {
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
   main .nomJob {
-    grid-template-columns: 1fr 400px 400px 1fr;
+    grid-template-columns: 1fr minmax(0, 40vw) minmax(0, 40vw) 1fr;
     grid-template-rows: 250px 340px;
     margin-top: 1px;
     overflow-x: hidden;
@@ -1366,7 +1366,7 @@ main .social-img {
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
   main .social-img {
-    grid-template-columns: 1fr 400px 400px 1fr;
+    grid-template-columns: 1fr minmax(0, 40vw) minmax(0, 40vw) 1fr;
     grid-template-rows: 350px 340px;
     margin-top: 1px;
     overflow-x: hidden;
@@ -1781,7 +1781,7 @@ main .work {
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
   main .work {
-    grid-template-columns: 1fr 400px 400px 1fr;
+    grid-template-columns: 1fr minmax(0, 40vw) minmax(0, 40vw) 1fr;
     grid-template-rows: 380px 380px 330px 380px 330px 380px;
     margin-top: 1px;
     overflow-x: hidden;
@@ -2837,7 +2837,7 @@ main .work .el22 {
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
   .about-section {
-    grid-template-columns: 1fr 400px 400px 1fr;
+    grid-template-columns: 1fr minmax(0, 40vw) minmax(0, 40vw) 1fr;
     grid-template-rows: 1fr 400px 300px;
     margin-top: 1px;
     width: 100vw;
