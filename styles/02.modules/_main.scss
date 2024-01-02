@@ -67,11 +67,11 @@ body{
   background-color: #070b1ce2;
   @include smartphone{
     overflow: auto;
-   width: 100vw;
+    max-width: 100vw;
   }
   @include smarthpone-landscape{
-    overflow: auto;
-    width: 100vw;
+    overflow-x: hidden;
+    max-width: 100vw;
   }
   @include tablet{
     overflow-x: hidden;
