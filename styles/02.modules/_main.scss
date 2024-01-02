@@ -133,6 +133,7 @@ main {
       margin-top: 1px;
     }
     @media screen and (min-width:671px) and (max-width:1023px) and (orientation: landscape){
+      grid-template-columns: 1fr 40vw 40vw 1fr;
       grid-template-rows: 300px 300px ;
       margin-top: 1px;
     }
