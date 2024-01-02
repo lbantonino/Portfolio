@@ -120,7 +120,7 @@ header {
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
   header {
     display: grid;
-    grid-template-columns: 1fr minmax(0, 40vw) minmax(0, 40vw) 1fr;
+    grid-template-columns: 1fr 45vw 45vw 1fr !important;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-rows: 80px;
@@ -422,7 +422,7 @@ footer {
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
   footer {
-    grid-template-columns: 1fr minmax(0, 40vw) minmax(0, 40vw) 1fr;
+    grid-template-columns: 1fr 45vw 45vw 1fr !important;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-rows: 200px 80px;
@@ -925,14 +925,15 @@ main .nomJob {
   row-gap: 1px;
   margin-top: 1px;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+@media screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
   main .nomJob {
     grid-template-columns: 1fr 40vw 40vw 1fr;
-    grid-template-rows: 340px 340px;
+    grid-template-rows: 200px 250px;
     margin-top: 1px;
+    overflow-x: hidden;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
+@media screen and (min-width: 375px) and (max-width: 389px) and (orientation: portrait) {
   main .nomJob {
     grid-template-columns: 1fr 40vw 40vw 1fr;
     grid-template-rows: 250px 250px;
@@ -943,12 +944,12 @@ main .nomJob {
 @media screen and (min-width: 390px) and (max-width: 767px) and (orientation: portrait) {
   main .nomJob {
     grid-template-columns: 1fr 40vw 40vw 1fr;
-    grid-template-rows: 370px 370px;
+    grid-template-rows: 300px 370px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
   main .nomJob {
-    grid-template-columns: 1fr minmax(0, 40vw) minmax(0, 40vw) 1fr;
+    grid-template-columns: 1fr 45vw 45vw 1fr !important;
     grid-template-rows: 250px 340px;
     margin-top: 1px;
     overflow-x: hidden;
@@ -1131,7 +1132,7 @@ main .nomJob .nomJob-global .title {
 }
 @media screen and (min-width: 320px) and (max-width: 374px) {
   main .nomJob .nomJob-global .title {
-    top: 60px;
+    top: 40px;
     left: 20px;
     margin-right: inherit;
     width: 100%;
@@ -1141,7 +1142,7 @@ main .nomJob .nomJob-global .title {
 }
 @media screen and (min-width: 375px) and (max-width: 389px) {
   main .nomJob .nomJob-global .title {
-    top: 90px;
+    top: 50px;
     left: 25px;
     margin-right: inherit;
     display: flex;
@@ -1150,25 +1151,47 @@ main .nomJob .nomJob-global .title {
 }
 @media screen and (min-width: 390px) and (max-width: 767px) {
   main .nomJob .nomJob-global .title {
-    top: 100px;
+    top: 70px;
     left: 20px;
     margin-right: inherit;
     display: flex;
     align-items: center;
   }
 }
-@media screen and (min-width: 565px) and (max-width: 670px) and (orientation: landscape) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   main .nomJob .nomJob-global .title {
-    top: 75px;
-    left: 18px;
-    margin-right: 10px;
+    top: 70px;
+    left: 10%;
+    margin-right: inherit;
+    display: flex;
+    align-items: center;
   }
 }
-@media screen and (min-width: 671px) and (max-width: 1023px) and (orientation: landscape) {
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
   main .nomJob .nomJob-global .title {
-    top: 60px;
-    left: 18px;
-    margin-right: 10px;
+    top: 80px;
+    left: 20%;
+    margin-right: inherit;
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 565px) and (max-width: 800px) and (orientation: landscape) {
+  main .nomJob .nomJob-global .title {
+    top: 80px;
+    left: 80px;
+    margin-right: inherit;
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1023px) and (orientation: landscape) {
+  main .nomJob .nomJob-global .title {
+    top: 40px;
+    left: 17%;
+    margin-right: inherit;
+    display: flex;
+    align-items: center;
   }
 }
 main .nomJob .nomJob-global .title h1 {
@@ -1240,58 +1263,56 @@ main .nomJob .nomJob-global .word-container {
   text-transform: uppercase;
   top: 180px;
 }
-@media screen and (min-width: 320px) and (max-width: 374px) {
+@media screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
   main .nomJob .nomJob-global .word-container {
     top: inherit;
-    font-size: 23px;
+    font-size: 22px;
     left: 20px;
-    top: 135px;
+    top: 115px;
   }
 }
-@media screen and (min-width: 375px) and (max-width: 389px) {
+@media screen and (min-width: 375px) and (max-width: 389px) and (orientation: portrait) {
   main .nomJob .nomJob-global .word-container {
     top: inherit;
-    font-size: 29px;
-    left: 25px;
-    top: 185px;
+    font-size: 27px;
+    left: 27px;
+    top: 145px;
   }
 }
-@media screen and (min-width: 390px) and (max-width: 565px) {
+@media screen and (min-width: 390px) and (max-width: 767px) and (orientation: portrait) {
   main .nomJob .nomJob-global .word-container {
     top: inherit;
-    font-size: 29px;
+    font-size: 31.5px;
     left: 20px;
-    top: 200px;
+    top: 170px;
   }
 }
-@media screen and (min-width: 565px) and (max-width: 659px) and (orientation: landscape) {
+@media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
   main .nomJob .nomJob-global .word-container {
     top: inherit;
-    font-size: 50px;
-    left: 24px;
+    font-size: 68.5px;
+    left: 75px;
+    top: 155px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: portrait) {
+  main .nomJob .nomJob-global .word-container {
+    top: 170px;
+    left: 21%;
+  }
+}
+@media screen and (min-width: 565px) and (max-width: 800px) and (orientation: landscape) {
+  main .nomJob .nomJob-global .word-container {
+    top: 120px;
+    left: 90px;
+    font-size: 54px;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1023px) and (orientation: landscape) {
+  main .nomJob .nomJob-global .word-container {
     top: 110px;
-  }
-}
-@media screen and (min-width: 660px) and (max-width: 679px) and (orientation: landscape) {
-  main .nomJob .nomJob-global .word-container {
-    top: inherit;
-    font-size: 50px;
-    left: 24px;
-    top: 110px;
-  }
-}
-@media screen and (min-width: 679px) and (max-width: 1023px) and (orientation: landscape) {
-  main .nomJob .nomJob-global .word-container {
-    top: inherit;
-    font-size: 50px;
-    left: 24px;
-    top: 140px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
-  main .nomJob .nomJob-global .word-container {
-    top: 180px;
-    left: 25px;
+    left: 18%;
+    font-size: 61.5px;
   }
 }
 main .nomJob .el1Smart {
@@ -1365,7 +1386,7 @@ main .social-img {
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
   main .social-img {
-    grid-template-columns: 1fr minmax(0, 40vw) minmax(0, 40vw) 1fr;
+    grid-template-columns: 1fr 45vw 45vw 1fr !important;
     grid-template-rows: 350px 340px;
     margin-top: 1px;
     overflow-x: hidden;
@@ -1780,7 +1801,7 @@ main .work {
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
   main .work {
-    grid-template-columns: 1fr minmax(0, 40vw) minmax(0, 40vw) 1fr;
+    grid-template-columns: 1fr 45vw 45vw 1fr !important;
     grid-template-rows: 380px 380px 330px 380px 330px 380px;
     margin-top: 1px;
     overflow-x: hidden;
@@ -2836,7 +2857,7 @@ main .work .el22 {
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
   .about-section {
-    grid-template-columns: 1fr minmax(0, 40vw) minmax(0, 40vw) 1fr;
+    grid-template-columns: 1fr 45vw 45vw 1fr !important;
     grid-template-rows: 1fr 400px 300px;
     margin-top: 1px;
     width: 100vw;
