@@ -4,16 +4,48 @@ footer {
   display: grid;
   grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
   grid-template-rows: 200px 80px;
-  // grid-column-gap: 0px;
-  // grid-row-gap: 0px;
   column-gap: 1px;
   row-gap: 1px;
   margin-top: 1px;
+  @include smartphone{
+    grid-template-columns: 1fr 40vw 40vw 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-rows: 200px 80px;
+    column-gap: 1px;
+    row-gap: 1px;
+  }
+  @include smarthpone-landscape{
+    grid-template-columns: 1fr 45vw 45vw 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-rows: 200px 80px;
+    column-gap: 1px;
+    row-gap: 1px;
+  }
+  @include tablet{
+    grid-template-columns: 1fr 45vw 45vw 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-rows: 200px 80px;
+    column-gap: 1px;
+    row-gap: 1px;
+  }
   .el1f {
     grid-column: 1/1;
-    // border-right: 0.5px solid $bluegrid;
-    // border-bottom: 0.5px solid $bluegrid;
     background-color: #070b1c;
+    @include smartphone{
+      grid-column: 1/1;
+      background-color: #070b1c;
+    }
+    @include smarthpone-landscape{
+      grid-column: 1/1;
+      background-color: #070b1c;
+    }
+    @include tablet{
+      grid-column: 1/1;
+      background-color: #070b1c;
+    }
   }
   .el2f {
     grid-column: 2/5;
@@ -23,11 +55,35 @@ footer {
     justify-content: center;
     align-items: center;
     position: relative;
+    @include smartphone{
+      grid-column: 2/4;
+      background-color: #070b1c;
+    }
+    @include smarthpone-landscape{
+      grid-column: 2/4;
+      background-color: #070b1c;
+    }
+    @include tablet{
+      grid-column: 2/4;
+      background-color: #070b1c;
+    }
     .contact{
       margin-bottom: 10px;
       position: absolute;
       left: 30px;
       top: 20px;
+      @include smartphone{
+        left: 20px;
+        top: 20px;
+      }
+      @include smarthpone-landscape{
+        left: 20px;
+        top: 20px;
+      }
+      @include tablet{
+        left: 20px;
+        top: 20px;
+      }
     h1 {
       font-family: $fontOswald;
       color: $lightBlue;
@@ -52,6 +108,31 @@ footer {
       text-decoration: none;
       position: relative;
       margin-top: 20px;
+      @include smartphone{
+        padding: 9.5px 130px 9.5px 25px;
+        border: 1px solid $lightBlue;
+        background-color: rgba(4, 102, 200, 0.04);
+        border-radius: 30px;
+        color: $white;
+        font-family: $fontSyne;
+        font-size: 1rem;
+        line-height: 25px;
+        text-decoration: underline;
+        text-decoration: none;
+        position: relative;
+        margin-top: 65px;
+      }
+      @media screen and (min-width:320px) and (max-width: 374px) {
+        padding: 9.5px 80px 9.5px 25px;
+      }
+      @include smarthpone-landscape{
+        margin-top: 60px;
+        padding: 9.5px 400px 9.5px 25px;
+      }
+      @include tablet{
+        margin-top: 60px;
+        padding: 9.5px 345px 9.5px 25px;
+      }
       .arrow-link {
         position: absolute;
         right: 34px;
@@ -66,12 +147,21 @@ footer {
 }
   .el3f {
     grid-column: 5/5;
-    // border-left: 0.5px solid $bluegrid;
-    // border-right: 0.5px solid $bluegrid;
-    // border-bottom: 0.5px solid $bluegrid;
     background-color: #070b1c;
     overflow: hidden;
     position: relative;
+    @include smartphone{
+      grid-column: 4/4;
+      background-color: #070b1c;
+    }
+    @include smarthpone-landscape{
+      grid-column: 4/4;
+      background-color: #070b1c;
+    }
+    @include tablet{
+      grid-column: 4/4;
+      background-color: #070b1c;
+    }
     img {
       position: absolute;
       top: 124px;
@@ -85,8 +175,22 @@ footer {
   }
   .el5f {
     grid-column: 1/1;
-    // border-right: 0.5px solid $bluegrid;
     background-color: #070b1c;
+    @include smartphone{
+      grid-column: 1/1;
+      grid-row: 2/2;
+      background-color: #070b1c;
+    }
+    @include smarthpone-landscape{
+      grid-column: 1/1;
+      grid-row: 2/2;
+      background-color: #070b1c;
+    }
+    @include tablet{
+      grid-column: 1/1;
+      grid-row: 2/2;
+      background-color: #070b1c;
+    }
   }
   .el6f {
     grid-column: 2/2;
@@ -96,6 +200,21 @@ footer {
     justify-content: start;
     align-items: center;
     padding: 0 30px;
+    @include smartphone{
+      grid-column: 2/2;
+      grid-row: 2/2;
+      background-color: #070b1c;
+    }
+    @include smarthpone-landscape{
+      grid-column: 2/2;
+      grid-row: 2/2;
+      background-color: #070b1c;
+    }
+    @include tablet{
+      grid-column: 2/2;
+      grid-row: 2/2;
+      background-color: #070b1c;
+    }
     .logo-group {
       display: flex;
       align-items: center;
@@ -117,6 +236,9 @@ footer {
       display: flex;
       justify-content: center;
       align-items: center;
+      @include smartphone{
+        display: none;
+      }
       h1 {
         font-size: 1rem;
         font-family: $fontSyne;
@@ -134,25 +256,78 @@ footer {
   .el7f {
     grid-column: 3/3;
     background-color: #070b1c;
+    @include smartphone{
+      grid-column: 3/3;
+      grid-row: 2/2;
+      background-color: #070b1c;
+    }
+    @include smarthpone-landscape{
+      grid-column: 3/3;
+      grid-row: 2/2;
+      background-color: #070b1c;
+    }
+    @include tablet{
+      grid-column: 3/3;
+      grid-row: 2/2;
+      background-color: #070b1c;
+    }
   }
   .el8f {
     grid-column: 4/4;
-    // border-right: 0.5px solid $bluegrid;
     background-color: #070b1c;
     display: flex;
     justify-content: center;
     align-items: center;
-    // border-left: 0.5px solid rgba(255, 255, 255, 0.0941176471);
+    @include smartphone{
+      grid-column: 3/3;
+      grid-row: 2/2;
+      background-color: #070b1c;
+    }
+    @include smarthpone-landscape{
+      grid-column: 3/3;
+      grid-row: 2/2;
+      background-color: #070b1c;
+    }
+    @include tablet{
+      grid-column: 3/3;
+      grid-row: 2/2;
+      background-color: #070b1c;
+    }
     h1{
       font-size: 11px;
       font-family: $fontInter;
       font-weight: 300;
       letter-spacing: -0.5px;
       color: $white;
+      br{
+        display: none;
+      }
+      @include smartphone{
+        font-size: 10px;
+        text-align: center;
+        br{
+          display: block;
+        }
+      }
     }
   }
   .el9f {
     grid-column: 5/5;
     background-color: #070b1c;
+    @include smartphone{
+      grid-column: 4/4;
+      grid-row: 2/2;
+      background-color: #070b1c;
+    }
+    @include smarthpone-landscape{
+      grid-column: 4/4;
+      grid-row: 2/2;
+      background-color: #070b1c;
+    }
+    @include tablet{
+      grid-column: 4/4;
+      grid-row: 2/2;
+      background-color: #070b1c;
+    }
   }
 }
