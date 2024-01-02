@@ -76,19 +76,19 @@ main {
     row-gap: 1px;
     margin-top: 1px;
     @media screen and (min-width:320px) and (max-width:374px) and (orientation: portrait){
-      grid-template-columns: 1fr 40vw 40vw 1fr;
+      grid-template-columns: 1fr 45vw 45vw 1fr;
       grid-template-rows: 200px 250px ;
       margin-top: 1px;
       overflow-x: hidden;
     }
     @media screen and (min-width:375px) and (max-width:389px) and (orientation: portrait){
-      grid-template-columns: 1fr 40vw 40vw 1fr;
+      grid-template-columns: 1fr 45vw 45vw 1fr;
       grid-template-rows: 250px 250px ;
       margin-top: 1px;
       overflow-x: hidden;
     }
     @media screen and (min-width:390px) and (max-width: 767px) and (orientation: portrait){
-      grid-template-columns: 1fr 40vw 40vw 1fr;
+      grid-template-columns: 1fr 45vw 45vw 1fr;
       grid-template-rows: 300px 370px;
     }
 
@@ -117,8 +117,6 @@ main {
       z-index: 3;
       position: relative;
      }
-
-
     .el2 {
     background-color: #070b1c;
     overflow: hidden;
@@ -303,7 +301,7 @@ main {
        }
        @media screen and (min-width:390px) and (max-width:767px){
         top:70px;
-        left: 20px;
+        left: 42.5px;
         margin-right: inherit;
         display: flex;
         align-items: center;
@@ -374,9 +372,9 @@ main {
           }
           // Iphone 13-14-15 pro (max)
           @media screen and (min-width:390px) and (max-width: 767px){
-            font-size: 55px;
+            font-size: 60px;
             letter-spacing: -1px;
-            line-height: 52px;
+            line-height: 55px;
           }
           // PAYSAGE iphone 6-7-8
           @media screen and (min-width:565px) and (max-width:670px) and (orientation: landscape){
@@ -395,7 +393,8 @@ main {
           span {
             color: $lightBlue;
             font-style: italic;
-            // transform: inherit;
+            @include smartphone{
+            }
           }
         }
       }
@@ -427,9 +426,9 @@ main {
         // Iphone 13-14-15 pro (max)
         @media screen and (min-width:390px) and (max-width: 767px)and (orientation: portrait){
           top: inherit;
-          font-size: 31.5px;
-          left: 20px;
-          top: 170px;
+          font-size: 34px;
+          left: 44px;
+          top: 175px;
         }
         //ipad mini et normal 
         @media screen and (min-width:768px) and (max-width: 1023px)and (orientation: portrait){
@@ -534,7 +533,7 @@ main {
     row-gap: 1px;
     margin-top: 1px;
     @include smartphone{
-      grid-template-columns: 1fr 40vw 40vw 1fr;
+      grid-template-columns: 1fr 45vw 45vw 1fr;
       grid-template-rows: 450px 340px ;
       margin-top: 1px;
     }
@@ -635,8 +634,9 @@ main {
           @include smartphone{
             padding: 0 20px;
             margin-top: 70px;
-            font-size: 1rem;
-            data-aos: none !important;
+            font-size: 0.90rem;
+            font-weight: 300;
+            text-align: center;
           }
           @include smarthpone-landscape{
             padding: 0 20px;
@@ -646,7 +646,7 @@ main {
           }
           @media screen and (min-width:320px) and (max-width: 374px){
             margin-top: 20px;
-            data-aos: none !important;
+            text-align: center;
           }
           @include tablet{
             padding: 0 20px;
@@ -680,7 +680,7 @@ main {
             border: 2px solid $lightBlue2;
           }
           @include smartphone{
-            padding: 7px 70px 7px 25px;
+            padding: 12px 70px 12px 25px;
             margin: 40px 10px 0;
             data-aos: none !important;
           }
@@ -706,6 +706,10 @@ main {
           position: absolute;
           right: 34px;
           top: 12px;
+          @include smartphone{
+            right: 34px;
+            top: 18px;
+          }
         }
     }
     .social {
@@ -776,8 +780,6 @@ main {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 100%;
-            height: 90%;
           }
           li {
             transform: translateY(17px);
@@ -803,7 +805,11 @@ main {
                 top: 12px;
               }
               @include smartphone{
-                padding: 9.5px 170px 9.5px 25px;
+                padding:12px 170px 12px 25px;
+                .arrow-link{
+                  right: 34px;
+                  top: 15px;
+                }
               }
               @media screen and (min-width:320px) and (max-width: 374px){
                 padding: 9.5px 140px 9.5px 25px;
@@ -816,7 +822,11 @@ main {
             .github {
               padding: 9.5px 244px 9.5px 25px;
               @include smartphone{
-                padding: 9.5px 178px 9.5px 25px;
+                padding: 12px 178px 12px 25px;
+                .arrow-link{
+                  right: 34px;
+                  top: 15px;
+                }
               }
               @media screen and (min-width:320px) and (max-width: 374px){
                 padding: 9.5px 145px 9.5px 25px;
@@ -930,7 +940,7 @@ main {
     row-gap: 1px;
     margin-top: 1px;
     @include smartphone{
-      grid-template-columns: 1fr 40vw 40vw 1fr;
+      grid-template-columns: 1fr 45vw 45vw 1fr;
       grid-template-rows: 490px 330px 450px 330px 450px 330px ;
       margin-top: 1px;
     }
@@ -1051,7 +1061,6 @@ main {
           width: 100%;
           padding: 0 20px;
           line-height: 20px;
-          margin-top: 20px;
         }
         @include smarthpone-landscape{
           width: 100%;
@@ -1088,12 +1097,19 @@ main {
           @include smarthpone-landscape{
             margin-top: 30px;
           }
+          @include smartphone{
+            text-align: center;
+          }
         }
         .description {
           color: $white;
           font-family: $fontInter;
           font-size: 0.8rem;
           margin-bottom: 10px;
+          @include smartphone{
+            text-align: center;
+            padding: 0 30px;
+          }
           span{
             color: $lightBlue;
             font-weight: 500;
@@ -1105,10 +1121,13 @@ main {
           font-family: $fontInter;
           font-size: 0.7rem;
           margin-bottom: 20px;
+          @include smartphone{
+            text-align: center;
+            padding: 0 30px;
+          }
         }
         .website {
           color: $white;
-          // background-color: #0466c81b;
           background-color: rgba(4, 102, 200, 0.04);
           padding: 9.5px 150px 9.5px 25px;
           border: 1px solid $lightBlue;
@@ -1117,13 +1136,22 @@ main {
           font-size: 16px;
           font-weight: 400;
           position: relative;
-          // margin-top: 50px;
+
+          @include smartphone{
+            padding: 12px 30px 12px 20px;
+            margin: 0 42.5px;
+            text-align: center;
+          }
           .arrow-link {
             position: absolute;
             right: 34px;
             top: 8px;
             font-size: 15px;
             transform: translateY(4px);
+            @include smartphone{
+              right: 34px;
+              top: 10px;
+            }
           }
           &:hover {
             border: 2px solid $lightBlue2;
@@ -1346,7 +1374,8 @@ main {
         @include smartphone{
           width: 100%;
           padding: 0 20px;
-          line-height: 20px;
+          align-items: center;
+          justify-content: center;
           br{
             display: none;
           }
@@ -1382,6 +1411,10 @@ main {
           font-family: $fontOswald;
           color: $white;
           font-weight: 500;
+          @include smartphone {
+            margin-top: 0px;
+          }
+          
         }
         .description {
           color: $white;
@@ -1398,6 +1431,8 @@ main {
           }
           @include smartphone{
             line-height: 20px;
+            padding: 0 20px;
+            text-align: center;
           }
           @include smarthpone-landscape{
             line-height: 20px;
@@ -1423,10 +1458,21 @@ main {
           font-family: $fontInter;
           font-size: 0.7rem;
           margin-bottom: 10px;
+          br{
+            display:none;
+          }
           @include tablet   {
             margin-bottom: 0px;
           }
+          @include smartphone  {
+            margin-bottom: 30px;
+            text-align: center;
+            br{
+              display: block;
+            
+            }
         }
+      }
         .website {
           color: $white;
           // background-color: #0466c81b;
@@ -1438,12 +1484,20 @@ main {
           font-size: 16px;
           font-weight: 400;
           position: relative;
+          @include smartphone{
+            padding: 12px 65px 12px 45px;
+            text-align: center;
+          }
           .arrow-link {
             position: absolute;
             right: 34px;
             top: 8px;
             font-size: 15px;
             transform: translateY(4px);
+            @include smartphone{
+              right: 34px;
+              top: 10px;
+            }
           }
           &:hover {
             border: 2px solid $lightBlue2;
@@ -1638,6 +1692,8 @@ main {
         @include smartphone{
           width: 100%;
           padding: 0 20px;
+          align-items: center;
+          justify-content: center;
         }
         @include smarthpone-landscape{
           width: 100%;
@@ -1666,6 +1722,10 @@ main {
           @include smarthpone-landscape{
             transform: translate(0px, -5px);
           }
+          @include smartphone{
+            text-align: center;
+            margin-bottom: inherit;
+          }
         }
         .description {
           color: $white;
@@ -1688,6 +1748,9 @@ main {
           }
           @include smartphone{
             line-height: 20px;
+            padding: 0 27px;
+            text-align: center;
+            
           }
         }
         .work-techno{
@@ -1698,10 +1761,19 @@ main {
           @include tablet{
             margin-bottom: inherit;
           }
+          @include smartphone{
+            text-align: center;
+            padding: 0 27px;
+            margin-bottom: 10px;
+          }
+        }
+        br{
+          @include smartphone{
+            display: none;
+          }
         }
         .website {
           color: $white;
-          // background-color: #0466c81b;
           background-color: rgba(4, 102, 200, 0.04);
           padding: 9.5px 150px 9.5px 25px;
           border: 1px solid $lightBlue;
@@ -1710,10 +1782,14 @@ main {
           font-size: 16px;
           font-weight: 400;
           position: relative;
-          // margin-top: 50px;
           @media  screen and (min-width:320px) and (max-width: 374px){
             padding: 9.5px 50px 9.5px 25px;
             transform: translateY(-20px);
+          }
+          @include smartphone{
+            width: 200px;
+            padding: 12px 25px 12px 15px;
+            text-align: center;
           }
           .arrow-link {
             position: absolute;
@@ -1721,6 +1797,10 @@ main {
             top: 8px;
             font-size: 15px;
             transform: translateY(4px);
+            @include smartphone{
+              right: 34px;
+              top: 10px;
+            }
           }
           &:hover {
             border: 2px solid $lightBlue2;
@@ -2039,7 +2119,7 @@ main {
   row-gap: 1px;
   column-gap: 1px;
   @include smartphone{
-    grid-template-columns: 1fr 40vw 40vw 1fr;
+    grid-template-columns: 1fr 45vw 45vw 1fr;
     grid-template-rows: 1fr 400px 300px ;
     margin-top: 1px;
   }
@@ -2184,7 +2264,7 @@ main {
             padding: 0 20px;
             margin-bottom: 20px;
             text-align: inherit;
-            font-size: 13px;
+            font-size: 11px;
             br{
               display: none;
             }
@@ -2347,19 +2427,23 @@ main {
       gap: 20px;
       .line{
         width: 600px;
-        height:0.5px;
+        height: 1px;
         background-color: $lightBlue;
         @include smartphone{
           width: 90%;
+          height: 1px;
         }
         @include smarthpone-landscape{
           width: 90%;
+          height: 1px;
         }
         @include tablet{
           width: 90%;
+          height: 1px;
         }
         @include tablet-landscape{
           width: 90%;
+          height: 1px;
         }
       }
       .crispin{
@@ -2475,6 +2559,9 @@ main {
       justify-content: center;
       flex-direction: column;
       height: 62.5%;
+      @include smartphone{
+        margin-top: 97px;
+      }
       a{
         color: $white;
         padding:9.5px 170px 9.5px 25px;
@@ -2487,7 +2574,7 @@ main {
         position: relative;
         margin-top: 30px;
         @include smartphone{
-          padding:9.5px 120px 9.5px 25px;
+          padding:12px 80px 12px 25px;
           margin-top: 0px;
         }
         @media screen and (min-width:320px) and (max-width : 374px) and (orientation: portrait ){
@@ -2511,6 +2598,10 @@ main {
           right: 34px;
           top: 12px;
           font-size: 16px;
+          @include smartphone{
+            right: 34px;
+            top: 15px;
+          }
         }
         &:hover {
           border: 2px solid $lightBlue;
@@ -2525,8 +2616,8 @@ main {
         padding: 20px 60px;
         line-height: 20px;
         @include smartphone{
-          padding: 20px 20px;
-          margin-left: 15px;
+          padding: 12px 80px;
+          text-align: center;
         }
         span{
           color: $lightBlue;

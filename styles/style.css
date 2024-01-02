@@ -110,7 +110,7 @@ header {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   header {
-    grid-template-columns: 1fr 40vw 40vw 1fr;
+    grid-template-columns: 1fr 45vw 45vw 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-rows: 80px;
@@ -450,7 +450,7 @@ footer {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   footer {
-    grid-template-columns: 1fr 40vw 40vw 1fr;
+    grid-template-columns: 1fr 45vw 45vw 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-rows: 200px 80px;
@@ -610,7 +610,7 @@ footer .el2f a {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   footer .el2f a {
-    padding: 9.5px 130px 9.5px 25px;
+    padding: 12px 80px 12px 25px;
     border: 1px solid #0466c8;
     background-color: rgba(4, 102, 200, 0.04);
     border-radius: 30px;
@@ -657,6 +657,13 @@ footer .el2f a .arrow-link {
   right: 34px;
   top: 13px;
   font-size: 15px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  footer .el2f a .arrow-link {
+    right: 34px;
+    top: 17px;
+    font-size: 15px;
+  }
 }
 footer .el2f a:hover {
   border: 2px solid #0466c8;
@@ -1026,7 +1033,7 @@ main .nomJob {
 }
 @media screen and (min-width: 320px) and (max-width: 374px) and (orientation: portrait) {
   main .nomJob {
-    grid-template-columns: 1fr 40vw 40vw 1fr;
+    grid-template-columns: 1fr 45vw 45vw 1fr;
     grid-template-rows: 200px 250px;
     margin-top: 1px;
     overflow-x: hidden;
@@ -1034,7 +1041,7 @@ main .nomJob {
 }
 @media screen and (min-width: 375px) and (max-width: 389px) and (orientation: portrait) {
   main .nomJob {
-    grid-template-columns: 1fr 40vw 40vw 1fr;
+    grid-template-columns: 1fr 45vw 45vw 1fr;
     grid-template-rows: 250px 250px;
     margin-top: 1px;
     overflow-x: hidden;
@@ -1042,7 +1049,7 @@ main .nomJob {
 }
 @media screen and (min-width: 390px) and (max-width: 767px) and (orientation: portrait) {
   main .nomJob {
-    grid-template-columns: 1fr 40vw 40vw 1fr;
+    grid-template-columns: 1fr 45vw 45vw 1fr;
     grid-template-rows: 300px 370px;
   }
 }
@@ -1271,7 +1278,7 @@ main .nomJob .nomJob-global .title {
 @media screen and (min-width: 390px) and (max-width: 767px) {
   main .nomJob .nomJob-global .title {
     top: 70px;
-    left: 20px;
+    left: 42.5px;
     margin-right: inherit;
     display: flex;
     align-items: center;
@@ -1350,9 +1357,9 @@ main .nomJob .nomJob-global .title h1 br {
 }
 @media screen and (min-width: 390px) and (max-width: 767px) {
   main .nomJob .nomJob-global .title h1 {
-    font-size: 55px;
+    font-size: 60px;
     letter-spacing: -1px;
-    line-height: 52px;
+    line-height: 55px;
   }
 }
 @media screen and (min-width: 565px) and (max-width: 670px) and (orientation: landscape) {
@@ -1401,9 +1408,9 @@ main .nomJob .nomJob-global .word-container {
 @media screen and (min-width: 390px) and (max-width: 767px) and (orientation: portrait) {
   main .nomJob .nomJob-global .word-container {
     top: inherit;
-    font-size: 31.5px;
-    left: 20px;
-    top: 170px;
+    font-size: 34px;
+    left: 44px;
+    top: 175px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
@@ -1521,7 +1528,7 @@ main .social-img {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   main .social-img {
-    grid-template-columns: 1fr 40vw 40vw 1fr;
+    grid-template-columns: 1fr 45vw 45vw 1fr;
     grid-template-rows: 450px 340px;
     margin-top: 1px;
   }
@@ -1645,8 +1652,9 @@ main .social-img .aboutMe p {
   main .social-img .aboutMe p {
     padding: 0 20px;
     margin-top: 70px;
-    font-size: 1rem;
-    data-aos: none !important;
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-align: center;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
@@ -1660,7 +1668,7 @@ main .social-img .aboutMe p {
 @media screen and (min-width: 320px) and (max-width: 374px) {
   main .social-img .aboutMe p {
     margin-top: 20px;
-    data-aos: none !important;
+    text-align: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
@@ -1699,7 +1707,7 @@ main .social-img .aboutMe a:hover {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   main .social-img .aboutMe a {
-    padding: 7px 70px 7px 25px;
+    padding: 12px 70px 12px 25px;
     margin: 40px 10px 0;
     data-aos: none !important;
   }
@@ -1732,6 +1740,12 @@ main .social-img .aboutMe .arrow-link {
   position: absolute;
   right: 34px;
   top: 12px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  main .social-img .aboutMe .arrow-link {
+    right: 34px;
+    top: 18px;
+  }
 }
 main .social-img .social {
   grid-column: 4/4;
@@ -1814,8 +1828,6 @@ main .social-img .social .logo-social {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 90%;
   }
 }
 main .social-img .social .logo-social ul li {
@@ -1844,7 +1856,11 @@ main .social-img .social .logo-social ul li a .arrow-link {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   main .social-img .social .logo-social ul li a {
-    padding: 9.5px 170px 9.5px 25px;
+    padding: 12px 170px 12px 25px;
+  }
+  main .social-img .social .logo-social ul li a .arrow-link {
+    right: 34px;
+    top: 15px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 374px) {
@@ -1862,7 +1878,11 @@ main .social-img .social .logo-social ul li .github {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   main .social-img .social .logo-social ul li .github {
-    padding: 9.5px 178px 9.5px 25px;
+    padding: 12px 178px 12px 25px;
+  }
+  main .social-img .social .logo-social ul li .github .arrow-link {
+    right: 34px;
+    top: 15px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 374px) {
@@ -2000,7 +2020,7 @@ main .work {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   main .work {
-    grid-template-columns: 1fr 40vw 40vw 1fr;
+    grid-template-columns: 1fr 45vw 45vw 1fr;
     grid-template-rows: 490px 330px 450px 330px 450px 330px;
     margin-top: 1px;
   }
@@ -2150,7 +2170,6 @@ main .work .el6w .width br {
     width: 100%;
     padding: 0 20px;
     line-height: 20px;
-    margin-top: 20px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
@@ -2196,11 +2215,22 @@ main .work .el6w .width h1 {
     margin-top: 30px;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  main .work .el6w .width h1 {
+    text-align: center;
+  }
+}
 main .work .el6w .width .description {
   color: #ffffff;
   font-family: "Inter", sans-serif;
   font-size: 0.8rem;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  main .work .el6w .width .description {
+    text-align: center;
+    padding: 0 30px;
+  }
 }
 main .work .el6w .width .description span {
   color: #0466c8;
@@ -2213,6 +2243,12 @@ main .work .el6w .width .work-techno {
   font-size: 0.7rem;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  main .work .el6w .width .work-techno {
+    text-align: center;
+    padding: 0 30px;
+  }
+}
 main .work .el6w .width .website {
   color: #ffffff;
   background-color: rgba(4, 102, 200, 0.04);
@@ -2224,12 +2260,25 @@ main .work .el6w .width .website {
   font-weight: 400;
   position: relative;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  main .work .el6w .width .website {
+    padding: 12px 30px 12px 20px;
+    margin: 0 42.5px;
+    text-align: center;
+  }
+}
 main .work .el6w .width .website .arrow-link {
   position: absolute;
   right: 34px;
   top: 8px;
   font-size: 15px;
   transform: translateY(4px);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  main .work .el6w .width .website .arrow-link {
+    right: 34px;
+    top: 10px;
+  }
 }
 main .work .el6w .width .website:hover {
   border: 2px solid #2592ff;
@@ -2500,7 +2549,8 @@ main .work .el10 .width {
   main .work .el10 .width {
     width: 100%;
     padding: 0 20px;
-    line-height: 20px;
+    align-items: center;
+    justify-content: center;
   }
   main .work .el10 .width br {
     display: none;
@@ -2544,6 +2594,11 @@ main .work .el10 .width h1 {
   color: #ffffff;
   font-weight: 500;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  main .work .el10 .width h1 {
+    margin-top: 0px;
+  }
+}
 main .work .el10 .width .description {
   color: #ffffff;
   font-family: "Inter", sans-serif;
@@ -2561,6 +2616,8 @@ main .work .el10 .width .description span {
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   main .work .el10 .width .description {
     line-height: 20px;
+    padding: 0 20px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
@@ -2593,9 +2650,21 @@ main .work .el10 .width .work-techno {
   font-size: 0.7rem;
   margin-bottom: 10px;
 }
+main .work .el10 .width .work-techno br {
+  display: none;
+}
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el10 .width .work-techno {
     margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  main .work .el10 .width .work-techno {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  main .work .el10 .width .work-techno br {
+    display: block;
   }
 }
 main .work .el10 .width .website {
@@ -2609,12 +2678,24 @@ main .work .el10 .width .website {
   font-weight: 400;
   position: relative;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  main .work .el10 .width .website {
+    padding: 12px 65px 12px 45px;
+    text-align: center;
+  }
+}
 main .work .el10 .width .website .arrow-link {
   position: absolute;
   right: 34px;
   top: 8px;
   font-size: 15px;
   transform: translateY(4px);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  main .work .el10 .width .website .arrow-link {
+    right: 34px;
+    top: 10px;
+  }
 }
 main .work .el10 .width .website:hover {
   border: 2px solid #2592ff;
@@ -2848,6 +2929,8 @@ main .work .el14 .width {
   main .work .el14 .width {
     width: 100%;
     padding: 0 20px;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
@@ -2886,6 +2969,12 @@ main .work .el14 .width h1 {
     transform: translate(0px, -5px);
   }
 }
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  main .work .el14 .width h1 {
+    text-align: center;
+    margin-bottom: inherit;
+  }
+}
 main .work .el14 .width .description {
   color: #ffffff;
   font-family: "Inter", sans-serif;
@@ -2915,6 +3004,8 @@ main .work .el14 .width .description span {
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   main .work .el14 .width .description {
     line-height: 20px;
+    padding: 0 27px;
+    text-align: center;
   }
 }
 main .work .el14 .width .work-techno {
@@ -2926,6 +3017,18 @@ main .work .el14 .width .work-techno {
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work .el14 .width .work-techno {
     margin-bottom: inherit;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  main .work .el14 .width .work-techno {
+    text-align: center;
+    padding: 0 27px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  main .work .el14 .width br {
+    display: none;
   }
 }
 main .work .el14 .width .website {
@@ -2945,12 +3048,25 @@ main .work .el14 .width .website {
     transform: translateY(-20px);
   }
 }
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  main .work .el14 .width .website {
+    width: 200px;
+    padding: 12px 25px 12px 15px;
+    text-align: center;
+  }
+}
 main .work .el14 .width .website .arrow-link {
   position: absolute;
   right: 34px;
   top: 8px;
   font-size: 15px;
   transform: translateY(4px);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  main .work .el14 .width .website .arrow-link {
+    right: 34px;
+    top: 10px;
+  }
 }
 main .work .el14 .width .website:hover {
   border: 2px solid #2592ff;
@@ -3331,7 +3447,7 @@ main .work .el22 {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   .about-section {
-    grid-template-columns: 1fr 40vw 40vw 1fr;
+    grid-template-columns: 1fr 45vw 45vw 1fr;
     grid-template-rows: 1fr 400px 300px;
     margin-top: 1px;
   }
@@ -3517,7 +3633,7 @@ main .work .el22 {
     padding: 0 20px;
     margin-bottom: 20px;
     text-align: inherit;
-    font-size: 13px;
+    font-size: 11px;
   }
   .about-section .el2 p br {
     display: none;
@@ -3713,27 +3829,31 @@ main .work .el22 {
 }
 .about-section .el6 .xp-text .line {
   width: 600px;
-  height: 0.5px;
+  height: 1px;
   background-color: #0466c8;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   .about-section .el6 .xp-text .line {
     width: 90%;
+    height: 1px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
   .about-section .el6 .xp-text .line {
     width: 90%;
+    height: 1px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   .about-section .el6 .xp-text .line {
     width: 90%;
+    height: 1px;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   .about-section .el6 .xp-text .line {
     width: 90%;
+    height: 1px;
   }
 }
 .about-section .el6 .xp-text .crispin h1 {
@@ -3854,6 +3974,11 @@ main .work .el22 {
   flex-direction: column;
   height: 62.5%;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  .about-section .el7 .files {
+    margin-top: 97px;
+  }
+}
 .about-section .el7 .files a {
   color: #ffffff;
   padding: 9.5px 170px 9.5px 25px;
@@ -3868,7 +3993,7 @@ main .work .el22 {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   .about-section .el7 .files a {
-    padding: 9.5px 120px 9.5px 25px;
+    padding: 12px 80px 12px 25px;
     margin-top: 0px;
   }
 }
@@ -3902,6 +4027,12 @@ main .work .el22 {
   top: 12px;
   font-size: 16px;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  .about-section .el7 .files a .arrow-link {
+    right: 34px;
+    top: 15px;
+  }
+}
 .about-section .el7 .files a:hover {
   border: 2px solid #0466c8;
   cursor: pointer;
@@ -3916,8 +4047,8 @@ main .work .el22 {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   .about-section .el7 .files p {
-    padding: 20px 20px;
-    margin-left: 15px;
+    padding: 12px 80px;
+    text-align: center;
   }
 }
 .about-section .el7 .files p span {
