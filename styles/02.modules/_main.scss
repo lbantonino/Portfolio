@@ -1,4 +1,4 @@
-///////////////////////////// Effects Overlay
+
 .overlay {
   position: fixed;
   top: 0;
@@ -19,7 +19,6 @@
   transform-origin: top left;
   transform: translateY(0) translateX(0);
 }
-// Mouse effect
 #blob {
   height: 300px;
  width: 200px;
@@ -62,60 +61,10 @@
     display: none;
   }
 }
-// body{
-//   width: 100vw;
-//   background-color: #070b1ce2;
-//   @include smartphone{
-//     overflow: auto;
-//     max-width: 100vw;
-//   }
-//   @include smarthpone-landscape{
-//     overflow-x: hidden;
-//     width: 100vw;
-//     height: 100vw;
-//   }
-//   @include tablet{
-//     overflow-x: hidden;
-//     width: 100vw;
-//   }
-//   @include tablet{
-//     overflow: auto;
-//     width: 100vw;
-//   }
-//   @media screen and (min-width:320px) and (max-width: 374px){
-//     overflow: auto;
-//     min-width: 100vw;
-//   }
-//   @media screen and (min-width:375px) and (max-width: 389px){
-//     overflow: auto;
-//     min-width: 100vw;
-//   }
-//   @media screen and (min-width:390px) and (max-width: 767px){
-//     overflow: auto;
-//     width: 100vw;
-//   }
-//   @media screen and (min-width:565px) and (max-width:670px) and (orientation: landscape){
-//     overflow-x: hidden;
-//     width: 100vw;
-//     height: 100vh;
-//   }
-//   @media screen and (min-width:671px) and (max-width:1023px) and (orientation: landscape){
-//     overflow: auto;
-//     min-width: 100vw;
-//   }
-
-// }
 body{
     background-color: #070b1ce2;
     position: relative;
-    @include smarthpone-landscape{
-      overflow-x: hidden !important;
-      // width: 100vw !important;
-      // min-width: 100vw !important;
-      width: 100%;
 }
-}
-////////////////////////////////// main :
 main {
   z-index: 3;
   position: relative;
@@ -157,12 +106,18 @@ main {
       margin-top: 1px;
 
     }
+    @include tablet-landscape {
+      grid-template-columns: 1fr 45vw 45vw 1fr !important;
+      grid-template-rows: 350px 350px ;
+      margin-top: 1px;
+    }
     .el1n {
       grid-column: 1 / 1;
       background-color: #070b1c;
       z-index: 3;
       position: relative;
      }
+
 
     .el2 {
     background-color: #070b1c;
@@ -190,6 +145,11 @@ main {
       grid-column: 2/4 !important;
       grid-row: 2/2 !important;
       // background-color: #070b1c !important;
+      overflow: hidden;
+    }
+    @include tablet-landscape {
+      grid-column: 2/4 !important;
+      grid-row: 2/2 !important;
       overflow: hidden;
     }
     .logo-techno{
@@ -280,10 +240,10 @@ main {
   }
   }
     .el3n {
-      // border-bottom: 0.5px solid $bluegrid;
       background-color: #070b1c;
       @include smarthpone-landscape{
       }
+
     }
     .nomJob-global {
       background-color: #070b1c;
@@ -304,6 +264,10 @@ main {
         justify-content: center;
       }
       @include tablet{
+        padding-left: inherit;
+        justify-content: center;
+      }
+      @include tablet-landscape{
         padding-left: inherit;
         justify-content: center;
       }
@@ -495,7 +459,11 @@ main {
           font-size: 61.5px;
         
         }
-
+        @include tablet-landscape{
+          top: 170px;
+          left: 21%;
+          font-size: 68px;
+        }
       }
 
     }
@@ -520,6 +488,12 @@ main {
         grid-row: 2/2;
         background-color: #070b1c;
       }
+      @include tablet-landscape {
+        display: block;
+        grid-column: 1/1;
+        grid-row: 2/2;
+        background-color: #070b1c;
+      }
     }
     .el2Smart{
       display: none;
@@ -537,6 +511,12 @@ main {
 
       }
       @include tablet {
+        display: block;
+        grid-column: 4/4;
+        grid-row: 2/2;
+        background-color: #070b1c;
+      }
+      @include tablet-landscape {
         display: block;
         grid-column: 4/4;
         grid-row: 2/2;
@@ -572,13 +552,18 @@ main {
       grid-template-rows: 350px 340px ;
       margin-top: 1px;
     }
+    @include tablet-landscape{
+      grid-template-columns: 1fr 45vw 45vw 1fr;
+      grid-template-rows: 350px 340px ;
+      margin-top: 1px;
+    }
     .el4s {
       grid-column: 1 / 1;
       background-color: #070b1c;
       @include smarthpone-landscape{
       }
     }
-      .aboutMe {
+    .aboutMe {
         grid-column: 2 / 4;
         background-color: #070b1c;
         display: flex;
@@ -602,6 +587,11 @@ main {
           grid-row: 1/1 !important;
           overflow: hidden;
         }
+        @include tablet-landscape{
+          grid-column: 2/4 !important;
+          grid-row: 1/1 !important;
+          overflow: hidden;
+        }
         .about-text{
           position: absolute;
           top: 20px;
@@ -618,6 +608,10 @@ main {
             left: 20px;
           }
           @include tablet{
+            top: 20px;
+            left: 20px;
+          }
+          @include tablet-landscape{
             top: 20px;
             left: 20px;
           }
@@ -661,6 +655,13 @@ main {
             data-aos: none !important;
             text-align: center;
           }
+          @include tablet-landscape{
+            padding: 0 20px;
+            margin-top: 70px;
+            font-size: 1rem;
+            data-aos: none !important;
+            text-align: center;
+          }
         }
         a {
           padding: 7px 549px 7px 25px;
@@ -696,6 +697,9 @@ main {
           @include tablet{
             padding: 7px 145px 7px 25px;
           }
+          @include tablet-landscape{
+            padding: 7px 145px 7px 25px;
+          }
         }
   
         .arrow-link {
@@ -703,13 +707,9 @@ main {
           right: 34px;
           top: 12px;
         }
-      }
-    
+    }
     .social {
       grid-column: 4/ 4;
-      // border-left: 0.5px solid $bluegrid;
-      // border-bottom: 0.5px solid $bluegrid;
-      // border-right: 0.5px solid $bluegrid;
       background-color: #070b1c;
       display: flex;
       align-items: center;
@@ -728,6 +728,11 @@ main {
         overflow: hidden;
       }
       @include tablet{
+        grid-column: 2/4 !important;
+        grid-row: 2/2 !important;
+        overflow: hidden;
+      }
+      @include tablet-landscape{
         grid-column: 2/4 !important;
         grid-row: 2/2 !important;
         overflow: hidden;
@@ -834,7 +839,6 @@ main {
         }
       }
     }
-
     .el6 {
       grid-column: 5 / 5;
       // border-bottom: 0.5px solid $bluegrid;
@@ -850,6 +854,11 @@ main {
         overflow: hidden;
       }
       @include tablet{
+        grid-column: 4/4 !important;
+        grid-row: 1/1 !important;
+        overflow: hidden;
+      }
+      @include tablet-landscape{
         grid-column: 4/4 !important;
         grid-row: 1/1 !important;
         overflow: hidden;
@@ -876,6 +885,12 @@ main {
         grid-row: 2/2;
         background-color: #070b1c;
       }
+      @include tablet-landscape {
+        display: block;
+        grid-column: 1/1;
+        grid-row: 2/2;
+        background-color: #070b1c;
+      }
     }
     .el8{
       display: none;
@@ -897,6 +912,12 @@ main {
         grid-row: 2/2;
         background-color: #070b1c;
       }
+      @include tablet-landscape {
+        display: block;
+        grid-column: 4/4;
+        grid-row: 2/2;
+        background-color: #070b1c;
+      }
     }
   }
 
@@ -905,14 +926,12 @@ main {
     display: grid;
     grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
     grid-template-rows:   540px 490px 550px;
-    // grid-column-gap: 0px;
-    // grid-row-gap: 0px;
     column-gap: 1px;
     row-gap: 1px;
     margin-top: 1px;
     @include smartphone{
       grid-template-columns: 1fr 40vw 40vw 1fr;
-      grid-template-rows: 450px 330px 450px 330px 450px 330px ;
+      grid-template-rows: 490px 330px 450px 330px 450px 330px ;
       margin-top: 1px;
     }
     @include smarthpone-landscape{
@@ -925,13 +944,16 @@ main {
     }
     @include tablet{
       grid-template-columns: 1fr 45vw 45vw 1fr;
-      grid-template-rows: 380px 410px 350px 410px 350px 410px ;
+      grid-template-rows: 420px 450px 350px 450px 350px 450px ;
+      margin-top: 1px;
+    }
+    @include tablet-landscape{
+      grid-template-columns: 1fr 45vw 45vw 1fr;
+      grid-template-rows: 420px 450px 350px 450px 350px 450px ;
       margin-top: 1px;
     }
     .el5 {
       grid-column: 1 / 1;
-      // border-bottom: 0.5px solid $bluegrid;
-      // border-right: 0.5px solid $bluegrid;
       background-color: #070b1c;
       @include smartphone{
         grid-column: 1/1 !important;
@@ -945,6 +967,11 @@ main {
 
       }
       @include tablet{
+        grid-column: 1/1 !important;
+        grid-row: 1/1 !important;
+        overflow: hidden;
+      }
+      @include tablet-landscape{
         grid-column: 1/1 !important;
         grid-row: 1/1 !important;
         overflow: hidden;
@@ -970,6 +997,11 @@ main {
 
       }
       @include tablet{
+        grid-column: 2/4 !important;
+        grid-row: 1/1 !important;
+        overflow: hidden;
+      }
+      @include tablet-landscape{
         grid-column: 2/4 !important;
         grid-row: 1/1 !important;
         overflow: hidden;
@@ -1012,13 +1044,20 @@ main {
         flex-direction: column;
         gap: 10px;
         transform: translateY(50px);
+        br{
+          display: none;
+        }
         @include smartphone{
           width: 100%;
           padding: 0 20px;
+          line-height: 20px;
+          margin-top: 20px;
         }
         @include smarthpone-landscape{
           width: 100%;
           padding: 0 20px;
+          line-height: 20px;
+          margin-top: 20px;
         }
         @include tablet{
           width: 100%;
@@ -1026,6 +1065,19 @@ main {
           height: inherit;
           transform: inherit;
           margin-top: 65px;
+          line-height: 20px;
+        }
+        @include tablet-landscape{
+          width: 100%;
+          padding: 0 150px;
+          height: inherit;
+          transform: inherit;
+          margin-top: 65px;
+          line-height: 20px;
+          br{
+            display: block;
+          
+          }
         }
         h1{
           margin-bottom: 10px;
@@ -1086,8 +1138,6 @@ main {
       justify-content: center;
       align-items: center;
       grid-column: 3 / 5;
-      // border-bottom: 0.5px solid $bluegrid;
-      // border-right: 0.5px solid $bluegrid;
       background-color: #070b1c;
       overflow: hidden;
       position: relative;
@@ -1096,15 +1146,24 @@ main {
       }
       @include smarthpone-landscape{
         grid-column: 2/4 !important;
-    grid-row: 2/2 !important;
-    overflow: hidden;
-    background-color: #070b1c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        grid-row: 2/2 !important;
+        overflow: hidden;
+        background-color: #070b1c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
       }
       @include tablet{
+        grid-column: 2/4 !important;
+        grid-row: 2/2 !important;
+        overflow: hidden;
+        background-color: #070b1c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @include tablet-landscape{
         grid-column: 2/4 !important;
         grid-row: 2/2 !important;
         overflow: hidden;
@@ -1124,6 +1183,11 @@ main {
           height: 100%;
         }
         @include tablet{
+          position: inherit;
+          width: 100%;
+          height: 100%;
+        }
+        @include tablet-landscape{
           position: inherit;
           width: 100%;
           height: 100%;
@@ -1170,6 +1234,9 @@ main {
       @include tablet{
         display: none;
       }
+      @include tablet-landscape{
+        display: none;
+      }
       a{
         display: flex;
         justify-content: center;
@@ -1187,7 +1254,6 @@ main {
     }
     .el8 {
       grid-column: 5 / 5;
-      // border-bottom: 0.5px solid $bluegrid;
       background-color: #070b1c;
       @include smartphone{
         grid-column: 4/4 !important;
@@ -1205,11 +1271,14 @@ main {
         grid-row: 1/1 !important;
         overflow: hidden;
       }
+      @include tablet-landscape{
+        grid-column: 4/4 !important;
+        grid-row: 1/1 !important;
+        overflow: hidden;
+      }
     }
     .el9 {
       grid-column: 1 / 1;
-      // border-right: 0.5px solid $bluegrid;
-      // border-bottom: 0.5px solid $bluegrid;
       background-color: #070b1c;
       @include smartphone{
         grid-column: 1/1 !important;
@@ -1222,6 +1291,11 @@ main {
         overflow: hidden;
       }
       @include tablet{
+        grid-column: 1/1 !important;
+        grid-row: 2/2 !important;
+        overflow: hidden;
+      }
+      @include tablet-landscape{
         grid-column: 1/1 !important;
         grid-row: 2/2 !important;
         overflow: hidden;
@@ -1255,6 +1329,14 @@ main {
         justify-content: center;
         align-items: center;
       }
+      @include tablet-landscape{
+        grid-column: 2/4 !important;
+        grid-row: 3/3 !important;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       .width{
         width: 334px;
         height: 300px;
@@ -1264,6 +1346,10 @@ main {
         @include smartphone{
           width: 100%;
           padding: 0 20px;
+          line-height: 20px;
+          br{
+            display: none;
+          }
         }
         @include smarthpone-landscape{
           width: 100%;
@@ -1271,12 +1357,24 @@ main {
           display: flex;
           justify-content: center;
           transform: translateY(-10px);
+          line-height: 20px;
+          br{
+            display: none;
+          }
         }
         @include tablet{
           width: 100%;
           padding: 0 120px;
           height: inherit;
           transform: inherit;
+          line-height: 20px;
+        }
+        @include tablet-landscape{
+          width: 100%;
+          padding: 0 120px;
+          height: inherit;
+          transform: inherit;
+          line-height: 20px;
         }
         h1{
           margin-bottom: 10px;
@@ -1290,16 +1388,34 @@ main {
           font-family: $fontInter;
           font-size: 0.8rem;
           margin-bottom: 10px;
+          br{
+            display:none;
+          }
           span{
             color: $lightBlue;
             font-weight: 500;
             font-size: 1rem;
           }
+          @include smartphone{
+            line-height: 20px;
+          }
+          @include smarthpone-landscape{
+            line-height: 20px;
+          }
           @include tablet{
             br{
               display: none;
-            
             }
+            line-height: 20px;
+            .br{
+              display: block;
+            }
+          }
+          @include tablet-landscape{
+            .br{
+              display: block;
+            }
+            line-height: 20px;
           }
         }
         .work-techno{
@@ -1341,8 +1457,6 @@ main {
       justify-content: center;
       align-items: center;
       grid-column:  2 / 4;
-      // border-right: 0.5px solid $bluegrid;
-      // border-bottom: 0.5px solid $bluegrid;
       overflow: hidden;
       position: relative;
       background-color: #070b1c;
@@ -1357,6 +1471,15 @@ main {
 
       }
       @include tablet{
+        grid-column: 2/4 !important;
+        grid-row: 4/4 !important;
+        overflow: hidden;
+        background-color: #070b1c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @include tablet-landscape{
         grid-column: 2/4 !important;
         grid-row: 4/4 !important;
         overflow: hidden;
@@ -1424,10 +1547,13 @@ main {
     @include smarthpone-landscape{
       display: none;
     }
+    @include tablet{
+      display: none;
+    }
+    
   }
     .el12 {
       grid-column: 5 / 5;
-      // border-bottom: 0.5px solid $bluegrid;
       background-color: #070b1c;
       @include smartphone{
         grid-column: 4/4 !important;
@@ -1438,9 +1564,13 @@ main {
         grid-column: 4/4 !important;
         grid-row: 2/2 !important;
         overflow: hidden;
-
       }
       @include tablet{
+        grid-column: 4/4 !important;
+        grid-row: 2/2 !important;
+        overflow: hidden;
+      }
+      @include tablet-landscape{
         grid-column: 4/4 !important;
         grid-row: 2/2 !important;
         overflow: hidden;
@@ -1448,8 +1578,6 @@ main {
     }
     .el13 {
       grid-column: 1 / 1;
-      // border-right: 0.5px solid $bluegrid;
-      // border-bottom: 0.5px solid $bluegrid;
       background-color: #070b1c;
       @include smartphone{
         grid-column: 1/1 !important;
@@ -1462,6 +1590,11 @@ main {
         overflow: hidden;
       }
       @include tablet{
+        grid-column: 1/1 !important;
+        grid-row: 3/3 !important;
+        overflow: hidden;
+      }
+      @include tablet-landscape{
         grid-column: 1/1 !important;
         grid-row: 3/3 !important;
         overflow: hidden;
@@ -1473,8 +1606,6 @@ main {
       flex-direction: column;
       align-items: center;
       grid-column: 2 / 2;
-      // border-bottom: 0.5px solid $bluegrid;
-      // border-right: 0.5px solid $bluegrid;
       background-color: #070b1c;
       @include smartphone{
         grid-column: 2/4 !important;
@@ -1492,12 +1623,18 @@ main {
         grid-row: 5/5 !important;
         overflow: hidden;
       }
+      @include tablet-landscape{
+        grid-column: 2/4 !important;
+        grid-row: 5/5 !important;
+        overflow: hidden;
+      }
       .width{
         width: 334px;
         height: 300px;
         display: flex;
         flex-direction: column;
         gap: 10px;
+     
         @include smartphone{
           width: 100%;
           padding: 0 20px;
@@ -1513,6 +1650,12 @@ main {
           padding: 0 110px;
           height: inherit;
           transform: inherit;
+        }
+        @include tablet-landscape{
+          width: 100%;
+          padding: 0 110px;
+          height: inherit;
+          transform: inherit;;
         }
         h1{
           margin-bottom: 20px;
@@ -1533,6 +1676,18 @@ main {
             color: $lightBlue;
             font-weight: 500;
             font-size: 1rem;
+          }
+          @include smarthpone-landscape{
+            line-height: 20px;
+          }
+          @include tablet{
+            line-height: 20px;
+          }
+          @include tablet-landscape{
+            line-height: 20px;
+          }
+          @include smartphone{
+            line-height: 20px;
           }
         }
         .work-techno{
@@ -1606,6 +1761,15 @@ main {
         justify-content: center;
         align-items: center;
       }
+      @include tablet-landscape{
+        grid-column: 2/4 !important;
+        grid-row: 6/6 !important;
+        overflow: hidden;
+        background-color: #070b1c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       a{
         position: absolute;
         display: flex;
@@ -1639,7 +1803,7 @@ main {
     }
     .el15bis{
       display: none;
-      @include smartphone{
+    @include smartphone{
         grid-column: 2/4 !important;
         grid-row: 6/6 !important;
         overflow: hidden;
@@ -1662,6 +1826,12 @@ main {
     @include smarthpone-landscape{
       display: none;
     }
+    @include tablet{
+      display: none;
+    }
+    @include tablet-landscape{
+      display: none;
+    }
   }
     .el16 {
       grid-column: 5 / 5;
@@ -1679,6 +1849,11 @@ main {
 
       }
       @include tablet{
+        grid-column: 4/4 !important;
+        grid-row: 3/3 !important;
+        overflow: hidden;
+      }
+      @include tablet-landscape{
         grid-column: 4/4 !important;
         grid-row: 3/3 !important;
         overflow: hidden;
@@ -1704,6 +1879,12 @@ main {
         grid-row: 4/4;
         background-color: #070b1c;
       }
+      @include tablet-landscape{
+        display: block;
+        grid-column: 1/1;
+        grid-row: 4/4;
+        background-color: #070b1c;
+      }
     }
     .el18{
       display: none;
@@ -1720,6 +1901,12 @@ main {
         background-color: #070b1c;
       }
       @include tablet{
+        display: block;
+        grid-column: 4/4;
+        grid-row: 4/4;
+        background-color: #070b1c;
+      }
+      @include tablet-landscape{
         display: block;
         grid-column: 4/4;
         grid-row: 4/4;
@@ -1747,6 +1934,12 @@ main {
         grid-row: 5/5;
         background-color: #070b1c;
       }
+      @include tablet-landscape{
+        display: block;
+        grid-column: 1/1;
+        grid-row: 5/5;
+        background-color: #070b1c;
+      }
     }
     .el20{
       display: none;
@@ -1769,6 +1962,12 @@ main {
         grid-row: 5/5;
         background-color: #070b1c;
       }
+      @include tablet-landscape{
+        display: block;
+        grid-column: 4/4;
+        grid-row: 5/5;
+        background-color: #070b1c;
+      }
     }
     .el21{
       display: none;
@@ -1785,6 +1984,12 @@ main {
         background-color: #070b1c;
       }
       @include tablet{
+        display: block;
+        grid-column: 1/1;
+        grid-row: 6/6;
+        background-color: #070b1c;
+      }
+      @include tablet-landscape{
         display: block;
         grid-column: 1/1;
         grid-row: 6/6;
@@ -1812,13 +2017,19 @@ main {
         grid-row: 6/6;
         background-color: #070b1c;
       }
+      @include tablet-landscape{
+        display: block;
+        grid-column: 4/4;
+        grid-row: 6/6;
+        background-color: #070b1c;
+      }
     }
 
   }
 }
 
 
-///////// 
+
 // pages about
 .about-section {
   display: grid;
@@ -1845,6 +2056,11 @@ main {
     grid-template-rows: 1fr 400px 300px ;
     margin-top: 1px;
   }
+  @include tablet-landscape{
+    grid-template-columns: 1fr 45vw 45vw 1fr;
+    grid-template-rows: 1fr 400px 300px ;
+    margin-top: 1px;
+  }
   .el1 {
     grid-column: 1/1;
     background-color: #070b1c;
@@ -1857,13 +2073,16 @@ main {
       grid-column: 1/1 !important;
       grid-row: 1/1 !important;
       overflow: hidden;
-
     }
     @include tablet{
       grid-column: 1/1 !important;
       grid-row: 1/1 !important;
       overflow: hidden;
-    
+    }
+    @include tablet-landscape{
+      grid-column: 1/1 !important;
+      grid-row: 1/1 !important;
+      overflow: hidden;
     }
   }
   .el2 {
@@ -1889,6 +2108,11 @@ main {
       grid-row: 1/1 !important;
       overflow: hidden;
     }
+    @include tablet-landscape{
+      grid-column: 2/4 !important;
+      grid-row: 1/1 !important;
+      overflow: hidden;
+    }
       .title{
         display: flex;
         align-items: start;
@@ -1905,6 +2129,10 @@ main {
           left: 20px;
         }
         @include tablet{
+          top: 20px;
+          left: 20px;
+        }
+        @include tablet-landscape{
           top: 20px;
           left: 20px;
         }
@@ -1929,6 +2157,9 @@ main {
         @include tablet{
           margin-top: 100px;
         }
+        @include tablet-landscape{
+          margin-top: 100px;
+        }
       }
         p {
           font-family: $fontInter;
@@ -1939,8 +2170,42 @@ main {
           text-align: justify;
           font-weight: 400;
           padding: 0 30px;
+          
           @include smartphone{
             padding: 0 20px;
+            margin-bottom: 20px;
+            text-align: inherit;
+            font-size: 0.8rem;
+            br{
+              display: none;
+            }
+          }
+          @include smarthpone-landscape{
+            padding: 0 20px;
+            margin-bottom: 20px;
+            text-align: inherit;
+            font-size: 0.8rem;
+            br{
+              display: none;
+            }
+          }
+          @include tablet-landscape{
+            padding: 0 20px;
+            margin-bottom: 20px;
+            text-align: inherit;
+            font-size: 0.8rem;
+            br{
+              display: none;
+            }
+          }
+          @include tablet{
+            padding: 0 20px;
+            margin-bottom: 20px;
+            text-align: inherit;
+            font-size: 0.9rem;
+            br{
+              display: none;
+            }
           }
 
         }
@@ -1956,6 +2221,9 @@ main {
               margin-bottom: 50px;
             }
             @include tablet{
+              margin-bottom: 50px;
+            }
+            @include tablet-landscape{
               margin-bottom: 50px;
             }
           }
@@ -1982,9 +2250,13 @@ main {
       grid-column: 4/4 !important;
       grid-row: 1/1 !important;
       overflow: hidden;
-
     }
     @include tablet{
+      grid-column: 4/4 !important;
+      grid-row: 1/1 !important;
+      overflow: hidden;
+    }
+    @include tablet-landscape{
       grid-column: 4/4 !important;
       grid-row: 1/1 !important;
       overflow: hidden;
@@ -2008,6 +2280,11 @@ main {
         grid-row: 2/3 !important;
         overflow: hidden;
       }
+      @include tablet-landscape{
+        grid-column: 1/1 !important;
+        grid-row: 2/3 !important;
+        overflow: hidden;
+      }
 }
 
   .el6 {
@@ -2026,9 +2303,13 @@ main {
       grid-column: 2/4 !important;
       grid-row: 2/2 !important;
       overflow: hidden;
-
     }
     @include tablet{
+      grid-column: 2/4 !important;
+      grid-row: 2/2 !important;
+      overflow: hidden;
+    }
+    @include tablet-landscape{
       grid-column: 2/4 !important;
       grid-row: 2/2 !important;
       overflow: hidden;
@@ -2069,6 +2350,15 @@ main {
         height:0.5px;
         background-color: $lightBlue;
         @include smartphone{
+          width: 90%;
+        }
+        @include smarthpone-landscape{
+          width: 90%;
+        }
+        @include tablet{
+          width: 90%;
+        }
+        @include tablet-landscape{
           width: 90%;
         }
       }
@@ -2152,6 +2442,11 @@ main {
       grid-row: 3/3 !important;
       overflow: hidden;
     }
+    @include tablet-landscape{
+      grid-column: 2/4 !important;
+      grid-row: 3/3 !important;
+      overflow: hidden;
+    }
     .title{
       display: flex;
       align-items: start;
@@ -2207,6 +2502,10 @@ main {
           padding:9.5px 340px 9.5px 25px;
           margin-top: 0px;
         }
+        @include tablet-landscape{
+          padding:9.5px 340px 9.5px 25px;
+          margin-top: 0px;
+        }
         .arrow-link {
           position: absolute;
           right: 34px;
@@ -2254,6 +2553,11 @@ main {
       grid-row: 2/2 !important;
       overflow: hidden;
     }
+    @include tablet-landscape{
+      grid-column: 4/4 !important;
+      grid-row: 2/2 !important;
+      overflow: hidden;
+    }
   }
   .el9{
     display: none;
@@ -2276,6 +2580,12 @@ main {
       grid-row: 3/3;
       background-color: #070b1c;
     }
+    @include tablet-landscape{
+      display: block;
+      grid-column: 1/1;
+      grid-row: 3/3;
+      background-color: #070b1c;
+    }
   }
   .el10{
     display: none;
@@ -2290,10 +2600,14 @@ main {
       grid-column: 4/4;
       grid-row: 3/3;
       background-color: #070b1c;
-
-
     }
     @include tablet{
+      display: block;
+      grid-column: 4/4;
+      grid-row: 3/3;
+      background-color: #070b1c;
+    }
+    @include tablet-landscape{
       display: block;
       grid-column: 4/4;
       grid-row: 3/3;
@@ -2302,7 +2616,3 @@ main {
   }
 }
 
-.square{
-  display: none;
-
-}

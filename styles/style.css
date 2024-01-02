@@ -139,6 +139,15 @@ header {
     column-gap: 1px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  header {
+    grid-template-columns: 1fr 45vw 45vw 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-rows: 80px;
+    column-gap: 1px;
+  }
+}
 header .el1 {
   display: flex;
   grid-column: 1/1;
@@ -168,6 +177,14 @@ header .el1 {
     background-color: #070b1c;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  header .el1 {
+    display: flex;
+    grid-column: 1/1;
+    grid-row: 1/1;
+    background-color: #070b1c;
+  }
+}
 header .logo {
   grid-column: 2/2;
   grid-row: 1/1;
@@ -188,6 +205,11 @@ header .logo {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  header .logo {
+    grid-column: 2/2;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   header .logo {
     grid-column: 2/2;
   }
@@ -251,6 +273,11 @@ header .el3 {
     display: none;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  header .el3 {
+    display: none;
+  }
+}
 header .menu-global {
   display: flex;
   align-items: center;
@@ -272,6 +299,12 @@ header .menu-global {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  header .menu-global {
+    grid-column: 3/3;
+    grid-row: 1/1;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   header .menu-global {
     grid-column: 3/3;
     grid-row: 1/1;
@@ -399,6 +432,11 @@ header .el4 {
     grid-column: 4/4;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  header .el4 {
+    grid-column: 4/4;
+  }
+}
 
 footer {
   z-index: 2;
@@ -442,6 +480,16 @@ footer {
     row-gap: 1px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  footer {
+    grid-template-columns: 1fr 45vw 45vw 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-rows: 200px 80px;
+    column-gap: 1px;
+    row-gap: 1px;
+  }
+}
 footer .el1f {
   grid-column: 1/1;
   background-color: #070b1c;
@@ -461,6 +509,12 @@ footer .el1f {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  footer .el1f {
+    grid-column: 1/1;
+    background-color: #070b1c;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   footer .el1f {
     grid-column: 1/1;
     background-color: #070b1c;
@@ -495,6 +549,12 @@ footer .el2f {
     background-color: #070b1c;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  footer .el2f {
+    grid-column: 2/4;
+    background-color: #070b1c;
+  }
+}
 footer .el2f .contact {
   margin-bottom: 10px;
   position: absolute;
@@ -514,6 +574,12 @@ footer .el2f .contact {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  footer .el2f .contact {
+    left: 20px;
+    top: 20px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   footer .el2f .contact {
     left: 20px;
     top: 20px;
@@ -577,7 +643,13 @@ footer .el2f a {
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   footer .el2f a {
     margin-top: 60px;
-    padding: 9.5px 345px 9.5px 25px;
+    padding: 9.5px 350px 9.5px 25px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  footer .el2f a {
+    margin-top: 60px;
+    padding: 9.5px 350px 9.5px 25px;
   }
 }
 footer .el2f a .arrow-link {
@@ -606,10 +678,15 @@ footer .el3f {
   footer .el3f {
     grid-column: 4/4;
     background-color: #070b1c;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  footer .el3f {
+    grid-column: 4/4;
+    background-color: #070b1c;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   footer .el3f {
     grid-column: 4/4;
     background-color: #070b1c;
@@ -640,11 +717,16 @@ footer .el5f {
     grid-column: 1/1;
     grid-row: 2/2;
     background-color: #070b1c;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.0941176471);
-    border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  footer .el5f {
+    grid-column: 1/1;
+    grid-row: 2/2;
+    background-color: #070b1c;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   footer .el5f {
     grid-column: 1/1;
     grid-row: 2/2;
@@ -671,11 +753,16 @@ footer .el6f {
     grid-column: 2/2;
     grid-row: 2/2;
     background-color: #070b1c;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.0941176471);
-    border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  footer .el6f {
+    grid-column: 2/2;
+    grid-row: 2/2;
+    background-color: #070b1c;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   footer .el6f {
     grid-column: 2/2;
     grid-row: 2/2;
@@ -737,11 +824,16 @@ footer .el7f {
     grid-column: 3/3;
     grid-row: 2/2;
     background-color: #070b1c;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.0941176471);
-    border-right: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  footer .el7f {
+    grid-column: 3/3;
+    grid-row: 2/2;
+    background-color: #070b1c;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   footer .el7f {
     grid-column: 3/3;
     grid-row: 2/2;
@@ -772,6 +864,13 @@ footer .el8f {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  footer .el8f {
+    grid-column: 3/3;
+    grid-row: 2/2;
+    background-color: #070b1c;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   footer .el8f {
     grid-column: 3/3;
     grid-row: 2/2;
@@ -813,10 +912,16 @@ footer .el9f {
     grid-column: 4/4;
     grid-row: 2/2;
     background-color: #070b1c;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.0941176471);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  footer .el9f {
+    grid-column: 4/4;
+    grid-row: 2/2;
+    background-color: #070b1c;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   footer .el9f {
     grid-column: 4/4;
     grid-row: 2/2;
@@ -906,12 +1011,6 @@ body {
   background-color: rgba(7, 11, 28, 0.8862745098);
   position: relative;
 }
-@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
-  body {
-    overflow-x: hidden !important;
-    width: 100%;
-  }
-}
 
 main {
   z-index: 3;
@@ -963,6 +1062,13 @@ main .nomJob {
     margin-top: 1px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  main .nomJob {
+    grid-template-columns: 1fr 45vw 45vw 1fr !important;
+    grid-template-rows: 350px 350px;
+    margin-top: 1px;
+  }
+}
 main .nomJob .el1n {
   grid-column: 1/1;
   background-color: #070b1c;
@@ -994,6 +1100,13 @@ main .nomJob .el2 {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  main .nomJob .el2 {
+    grid-column: 2/4 !important;
+    grid-row: 2/2 !important;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   main .nomJob .el2 {
     grid-column: 2/4 !important;
     grid-row: 2/2 !important;
@@ -1109,6 +1222,12 @@ main .nomJob .nomJob-global {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  main .nomJob .nomJob-global {
+    padding-left: inherit;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   main .nomJob .nomJob-global {
     padding-left: inherit;
     justify-content: center;
@@ -1315,6 +1434,13 @@ main .nomJob .nomJob-global .word-container {
     font-size: 61.5px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  main .nomJob .nomJob-global .word-container {
+    top: 170px;
+    left: 21%;
+    font-size: 68px;
+  }
+}
 main .nomJob .el1Smart {
   display: none;
 }
@@ -1335,6 +1461,14 @@ main .nomJob .el1Smart {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  main .nomJob .el1Smart {
+    display: block;
+    grid-column: 1/1;
+    grid-row: 2/2;
+    background-color: #070b1c;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   main .nomJob .el1Smart {
     display: block;
     grid-column: 1/1;
@@ -1369,6 +1503,14 @@ main .nomJob .el2Smart {
     background-color: #070b1c;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  main .nomJob .el2Smart {
+    display: block;
+    grid-column: 4/4;
+    grid-row: 2/2;
+    background-color: #070b1c;
+  }
+}
 main .social-img {
   display: grid;
   grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
@@ -1395,6 +1537,13 @@ main .social-img {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  main .social-img {
+    grid-template-columns: 1fr 45vw 45vw 1fr;
+    grid-template-rows: 350px 340px;
+    margin-top: 1px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   main .social-img {
     grid-template-columns: 1fr 45vw 45vw 1fr;
     grid-template-rows: 350px 340px;
@@ -1436,6 +1585,13 @@ main .social-img .aboutMe {
     overflow: hidden;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  main .social-img .aboutMe {
+    grid-column: 2/4 !important;
+    grid-row: 1/1 !important;
+    overflow: hidden;
+  }
+}
 main .social-img .aboutMe .about-text {
   position: absolute;
   top: 20px;
@@ -1457,6 +1613,12 @@ main .social-img .aboutMe .about-text {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  main .social-img .aboutMe .about-text {
+    top: 20px;
+    left: 20px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   main .social-img .aboutMe .about-text {
     top: 20px;
     left: 20px;
@@ -1510,6 +1672,15 @@ main .social-img .aboutMe p {
     text-align: center;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  main .social-img .aboutMe p {
+    padding: 0 20px;
+    margin-top: 70px;
+    font-size: 1rem;
+    data-aos: none !important;
+    text-align: center;
+  }
+}
 main .social-img .aboutMe a {
   padding: 7px 549px 7px 25px;
   border: 1px solid #0466c8;
@@ -1552,6 +1723,11 @@ main .social-img .aboutMe a:hover {
     padding: 7px 145px 7px 25px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  main .social-img .aboutMe a {
+    padding: 7px 145px 7px 25px;
+  }
+}
 main .social-img .aboutMe .arrow-link {
   position: absolute;
   right: 34px;
@@ -1582,6 +1758,13 @@ main .social-img .social {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  main .social-img .social {
+    grid-column: 2/4 !important;
+    grid-row: 2/2 !important;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   main .social-img .social {
     grid-column: 2/4 !important;
     grid-row: 2/2 !important;
@@ -1730,6 +1913,13 @@ main .social-img .el6 {
     overflow: hidden;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  main .social-img .el6 {
+    grid-column: 4/4 !important;
+    grid-row: 1/1 !important;
+    overflow: hidden;
+  }
+}
 main .social-img .el7 {
   display: none;
 }
@@ -1750,6 +1940,14 @@ main .social-img .el7 {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  main .social-img .el7 {
+    display: block;
+    grid-column: 1/1;
+    grid-row: 2/2;
+    background-color: #070b1c;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   main .social-img .el7 {
     display: block;
     grid-column: 1/1;
@@ -1784,6 +1982,14 @@ main .social-img .el8 {
     background-color: #070b1c;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  main .social-img .el8 {
+    display: block;
+    grid-column: 4/4;
+    grid-row: 2/2;
+    background-color: #070b1c;
+  }
+}
 main .work {
   display: grid;
   grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
@@ -1795,7 +2001,7 @@ main .work {
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   main .work {
     grid-template-columns: 1fr 40vw 40vw 1fr;
-    grid-template-rows: 450px 330px 450px 330px 450px 330px;
+    grid-template-rows: 490px 330px 450px 330px 450px 330px;
     margin-top: 1px;
   }
 }
@@ -1812,7 +2018,14 @@ main .work {
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
   main .work {
     grid-template-columns: 1fr 45vw 45vw 1fr;
-    grid-template-rows: 380px 410px 350px 410px 350px 410px;
+    grid-template-rows: 420px 450px 350px 450px 350px 450px;
+    margin-top: 1px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  main .work {
+    grid-template-columns: 1fr 45vw 45vw 1fr;
+    grid-template-rows: 420px 450px 350px 450px 350px 450px;
     margin-top: 1px;
   }
 }
@@ -1835,6 +2048,13 @@ main .work .el5 {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  main .work .el5 {
+    grid-column: 1/1 !important;
+    grid-row: 1/1 !important;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   main .work .el5 {
     grid-column: 1/1 !important;
     grid-row: 1/1 !important;
@@ -1865,6 +2085,13 @@ main .work .el6w {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  main .work .el6w {
+    grid-column: 2/4 !important;
+    grid-row: 1/1 !important;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   main .work .el6w {
     grid-column: 2/4 !important;
     grid-row: 1/1 !important;
@@ -1915,16 +2142,23 @@ main .work .el6w .width {
   gap: 10px;
   transform: translateY(50px);
 }
+main .work .el6w .width br {
+  display: none;
+}
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   main .work .el6w .width {
     width: 100%;
     padding: 0 20px;
+    line-height: 20px;
+    margin-top: 20px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
   main .work .el6w .width {
     width: 100%;
     padding: 0 20px;
+    line-height: 20px;
+    margin-top: 20px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
@@ -1934,6 +2168,20 @@ main .work .el6w .width {
     height: inherit;
     transform: inherit;
     margin-top: 65px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  main .work .el6w .width {
+    width: 100%;
+    padding: 0 150px;
+    height: inherit;
+    transform: inherit;
+    margin-top: 65px;
+    line-height: 20px;
+  }
+  main .work .el6w .width br {
+    display: block;
   }
 }
 main .work .el6w .width h1 {
@@ -2023,6 +2271,17 @@ main .work .el7 {
     align-items: center;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  main .work .el7 {
+    grid-column: 2/4 !important;
+    grid-row: 2/2 !important;
+    overflow: hidden;
+    background-color: #070b1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 main .work .el7 a {
   position: absolute;
   display: flex;
@@ -2037,6 +2296,13 @@ main .work .el7 a {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  main .work .el7 a {
+    position: inherit;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   main .work .el7 a {
     position: inherit;
     width: 100%;
@@ -2097,6 +2363,11 @@ main .work .el7bis {
     display: none;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  main .work .el7bis {
+    display: none;
+  }
+}
 main .work .el7bis a {
   display: flex;
   justify-content: center;
@@ -2135,6 +2406,13 @@ main .work .el8 {
     overflow: hidden;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  main .work .el8 {
+    grid-column: 4/4 !important;
+    grid-row: 1/1 !important;
+    overflow: hidden;
+  }
+}
 main .work .el9 {
   grid-column: 1/1;
   background-color: #070b1c;
@@ -2154,6 +2432,13 @@ main .work .el9 {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  main .work .el9 {
+    grid-column: 1/1 !important;
+    grid-row: 2/2 !important;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   main .work .el9 {
     grid-column: 1/1 !important;
     grid-row: 2/2 !important;
@@ -2194,6 +2479,16 @@ main .work .el10 {
     align-items: center;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  main .work .el10 {
+    grid-column: 2/4 !important;
+    grid-row: 3/3 !important;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 main .work .el10 .width {
   width: 334px;
   height: 300px;
@@ -2205,6 +2500,10 @@ main .work .el10 .width {
   main .work .el10 .width {
     width: 100%;
     padding: 0 20px;
+    line-height: 20px;
+  }
+  main .work .el10 .width br {
+    display: none;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
@@ -2214,6 +2513,10 @@ main .work .el10 .width {
     display: flex;
     justify-content: center;
     transform: translateY(-10px);
+    line-height: 20px;
+  }
+  main .work .el10 .width br {
+    display: none;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
@@ -2222,6 +2525,16 @@ main .work .el10 .width {
     padding: 0 120px;
     height: inherit;
     transform: inherit;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  main .work .el10 .width {
+    width: 100%;
+    padding: 0 120px;
+    height: inherit;
+    transform: inherit;
+    line-height: 20px;
   }
 }
 main .work .el10 .width h1 {
@@ -2237,14 +2550,41 @@ main .work .el10 .width .description {
   font-size: 0.8rem;
   margin-bottom: 10px;
 }
+main .work .el10 .width .description br {
+  display: none;
+}
 main .work .el10 .width .description span {
   color: #0466c8;
   font-weight: 500;
   font-size: 1rem;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  main .work .el10 .width .description {
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el10 .width .description {
+    line-height: 20px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  main .work .el10 .width .description {
+    line-height: 20px;
+  }
   main .work .el10 .width .description br {
     display: none;
+  }
+  main .work .el10 .width .description .br {
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  main .work .el10 .width .description {
+    line-height: 20px;
+  }
+  main .work .el10 .width .description .br {
+    display: block;
   }
 }
 main .work .el10 .width .work-techno {
@@ -2301,6 +2641,17 @@ main .work .el11 {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  main .work .el11 {
+    grid-column: 2/4 !important;
+    grid-row: 4/4 !important;
+    overflow: hidden;
+    background-color: #070b1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   main .work .el11 {
     grid-column: 2/4 !important;
     grid-row: 4/4 !important;
@@ -2381,6 +2732,11 @@ main .work .el11bis {
     display: none;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  main .work .el11bis {
+    display: none;
+  }
+}
 main .work .el12 {
   grid-column: 5/5;
   background-color: #070b1c;
@@ -2406,6 +2762,13 @@ main .work .el12 {
     overflow: hidden;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  main .work .el12 {
+    grid-column: 4/4 !important;
+    grid-row: 2/2 !important;
+    overflow: hidden;
+  }
+}
 main .work .el13 {
   grid-column: 1/1;
   background-color: #070b1c;
@@ -2425,6 +2788,13 @@ main .work .el13 {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  main .work .el13 {
+    grid-column: 1/1 !important;
+    grid-row: 3/3 !important;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   main .work .el13 {
     grid-column: 1/1 !important;
     grid-row: 3/3 !important;
@@ -2460,6 +2830,13 @@ main .work .el14 {
     overflow: hidden;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  main .work .el14 {
+    grid-column: 2/4 !important;
+    grid-row: 5/5 !important;
+    overflow: hidden;
+  }
+}
 main .work .el14 .width {
   width: 334px;
   height: 300px;
@@ -2489,6 +2866,14 @@ main .work .el14 .width {
     transform: inherit;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  main .work .el14 .width {
+    width: 100%;
+    padding: 0 110px;
+    height: inherit;
+    transform: inherit;
+  }
+}
 main .work .el14 .width h1 {
   margin-bottom: 20px;
   font-size: 2rem;
@@ -2511,6 +2896,26 @@ main .work .el14 .width .description span {
   color: #0466c8;
   font-weight: 500;
   font-size: 1rem;
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  main .work .el14 .width .description {
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  main .work .el14 .width .description {
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  main .work .el14 .width .description {
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  main .work .el14 .width .description {
+    line-height: 20px;
+  }
 }
 main .work .el14 .width .work-techno {
   color: #0466c8;
@@ -2587,6 +2992,17 @@ main .work .el15 {
     align-items: center;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  main .work .el15 {
+    grid-column: 2/4 !important;
+    grid-row: 6/6 !important;
+    overflow: hidden;
+    background-color: #070b1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 main .work .el15 a {
   position: absolute;
   display: flex;
@@ -2652,6 +3068,16 @@ main .work .el15bis {
     display: none;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  main .work .el15bis {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  main .work .el15bis {
+    display: none;
+  }
+}
 main .work .el16 {
   grid-column: 5/5;
   background-color: #070b1c;
@@ -2671,6 +3097,13 @@ main .work .el16 {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  main .work .el16 {
+    grid-column: 4/4 !important;
+    grid-row: 3/3 !important;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   main .work .el16 {
     grid-column: 4/4 !important;
     grid-row: 3/3 !important;
@@ -2697,6 +3130,14 @@ main .work .el17 {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  main .work .el17 {
+    display: block;
+    grid-column: 1/1;
+    grid-row: 4/4;
+    background-color: #070b1c;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   main .work .el17 {
     display: block;
     grid-column: 1/1;
@@ -2731,6 +3172,14 @@ main .work .el18 {
     background-color: #070b1c;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  main .work .el18 {
+    display: block;
+    grid-column: 4/4;
+    grid-row: 4/4;
+    background-color: #070b1c;
+  }
+}
 main .work .el19 {
   display: none;
 }
@@ -2751,6 +3200,14 @@ main .work .el19 {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  main .work .el19 {
+    display: block;
+    grid-column: 1/1;
+    grid-row: 5/5;
+    background-color: #070b1c;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   main .work .el19 {
     display: block;
     grid-column: 1/1;
@@ -2785,6 +3242,14 @@ main .work .el20 {
     background-color: #070b1c;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  main .work .el20 {
+    display: block;
+    grid-column: 4/4;
+    grid-row: 5/5;
+    background-color: #070b1c;
+  }
+}
 main .work .el21 {
   display: none;
 }
@@ -2812,6 +3277,14 @@ main .work .el21 {
     background-color: #070b1c;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  main .work .el21 {
+    display: block;
+    grid-column: 1/1;
+    grid-row: 6/6;
+    background-color: #070b1c;
+  }
+}
 main .work .el22 {
   display: none;
 }
@@ -2832,6 +3305,14 @@ main .work .el22 {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  main .work .el22 {
+    display: block;
+    grid-column: 4/4;
+    grid-row: 6/6;
+    background-color: #070b1c;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   main .work .el22 {
     display: block;
     grid-column: 4/4;
@@ -2871,6 +3352,13 @@ main .work .el22 {
     margin-top: 1px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  .about-section {
+    grid-template-columns: 1fr 45vw 45vw 1fr;
+    grid-template-rows: 1fr 400px 300px;
+    margin-top: 1px;
+  }
+}
 .about-section .el1 {
   grid-column: 1/1;
   background-color: #070b1c;
@@ -2890,6 +3378,13 @@ main .work .el22 {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  .about-section .el1 {
+    grid-column: 1/1 !important;
+    grid-row: 1/1 !important;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   .about-section .el1 {
     grid-column: 1/1 !important;
     grid-row: 1/1 !important;
@@ -2925,6 +3420,13 @@ main .work .el22 {
     overflow: hidden;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  .about-section .el2 {
+    grid-column: 2/4 !important;
+    grid-row: 1/1 !important;
+    overflow: hidden;
+  }
+}
 .about-section .el2 .title {
   display: flex;
   align-items: start;
@@ -2946,6 +3448,12 @@ main .work .el22 {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  .about-section .el2 .title {
+    top: 20px;
+    left: 20px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   .about-section .el2 .title {
     top: 20px;
     left: 20px;
@@ -2978,6 +3486,11 @@ main .work .el22 {
     margin-top: 100px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  .about-section .el2 .first {
+    margin-top: 100px;
+  }
+}
 .about-section .el2 p {
   font-family: "Inter", sans-serif;
   color: #ffffff;
@@ -2991,6 +3504,45 @@ main .work .el22 {
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   .about-section .el2 p {
     padding: 0 20px;
+    margin-bottom: 20px;
+    text-align: inherit;
+    font-size: 0.8rem;
+  }
+  .about-section .el2 p br {
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  .about-section .el2 p {
+    padding: 0 20px;
+    margin-bottom: 20px;
+    text-align: inherit;
+    font-size: 0.8rem;
+  }
+  .about-section .el2 p br {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  .about-section .el2 p {
+    padding: 0 20px;
+    margin-bottom: 20px;
+    text-align: inherit;
+    font-size: 0.8rem;
+  }
+  .about-section .el2 p br {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  .about-section .el2 p {
+    padding: 0 20px;
+    margin-bottom: 20px;
+    text-align: inherit;
+    font-size: 0.9rem;
+  }
+  .about-section .el2 p br {
+    display: none;
   }
 }
 .about-section .el2 span {
@@ -3007,6 +3559,11 @@ main .work .el22 {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  .about-section .el2 .last {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   .about-section .el2 .last {
     margin-bottom: 50px;
   }
@@ -3045,6 +3602,13 @@ main .work .el22 {
     overflow: hidden;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  .about-section .el4 {
+    grid-column: 4/4 !important;
+    grid-row: 1/1 !important;
+    overflow: hidden;
+  }
+}
 .about-section .el5 {
   grid-column: 1/1;
   background-color: #070b1c;
@@ -3064,6 +3628,13 @@ main .work .el22 {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  .about-section .el5 {
+    grid-column: 1/1 !important;
+    grid-row: 2/3 !important;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   .about-section .el5 {
     grid-column: 1/1 !important;
     grid-row: 2/3 !important;
@@ -3093,6 +3664,13 @@ main .work .el22 {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  .about-section .el6 {
+    grid-column: 2/4 !important;
+    grid-row: 2/2 !important;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   .about-section .el6 {
     grid-column: 2/4 !important;
     grid-row: 2/2 !important;
@@ -3139,6 +3717,21 @@ main .work .el22 {
   background-color: #0466c8;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  .about-section .el6 .xp-text .line {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  .about-section .el6 .xp-text .line {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  .about-section .el6 .xp-text .line {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   .about-section .el6 .xp-text .line {
     width: 90%;
   }
@@ -3223,6 +3816,13 @@ main .work .el22 {
     overflow: hidden;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  .about-section .el7 {
+    grid-column: 2/4 !important;
+    grid-row: 3/3 !important;
+    overflow: hidden;
+  }
+}
 .about-section .el7 .title {
   display: flex;
   align-items: start;
@@ -3290,6 +3890,12 @@ main .work .el22 {
     margin-top: 0px;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  .about-section .el7 .files a {
+    padding: 9.5px 340px 9.5px 25px;
+    margin-top: 0px;
+  }
+}
 .about-section .el7 .files a .arrow-link {
   position: absolute;
   right: 34px;
@@ -3342,6 +3948,13 @@ main .work .el22 {
     overflow: hidden;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  .about-section .el8 {
+    grid-column: 4/4 !important;
+    grid-row: 2/2 !important;
+    overflow: hidden;
+  }
+}
 .about-section .el9 {
   display: none;
 }
@@ -3362,6 +3975,14 @@ main .work .el22 {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1190px) and (orientation: portrait) {
+  .about-section .el9 {
+    display: block;
+    grid-column: 1/1;
+    grid-row: 3/3;
+    background-color: #070b1c;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
   .about-section .el9 {
     display: block;
     grid-column: 1/1;
@@ -3396,546 +4017,11 @@ main .work .el22 {
     background-color: #070b1c;
   }
 }
-
-.square {
-  display: none;
-}
-
-.about-header {
-  display: grid;
-  grid-template-columns: 1fr repeat(3, 400px) 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  grid-template-rows: 80px;
-}
-.about-header .el1 {
-  display: flex;
-  grid-column: 1/1;
-  grid-row: 1/1;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-}
-.about-header .logo {
-  grid-column: 2/2;
-  grid-row: 1/1;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-  border-left: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  padding: 0 20px;
-}
-.about-header .logo .logo-svg {
-  width: 35px;
-}
-.about-header .logo .logo-svg:hover {
-  transform: scale(1.2);
-}
-.about-header .logo .name-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.about-header .logo .name-logo h1 {
-  font-size: 1rem;
-  font-family: "Syne", sans-serif;
-  font-weight: 600;
-  color: #ffffff;
-  padding-left: 20px;
-}
-.about-header .logo .name-logo h1 a {
-  color: #ffffff;
-}
-.about-header .logo .name-logo h1 a:hover {
-  cursor: pointer;
-}
-.about-header .el3 {
-  grid-column: 3/3;
-  grid-row: 1/1;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-}
-.about-header .menu-global {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  grid-column: 4/4;
-  grid-row: 1/1;
-  border-left: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-}
-.about-header .menu-global nav ul {
-  display: flex;
-}
-.about-header .menu-global nav ul li {
-  margin: 0 10px;
-}
-.about-header .menu-global nav ul li a {
-  font-size: 1rem;
-  font-family: "Syne", sans-serif;
-  font-weight: 600;
-  color: #ffffff;
-  position: relative;
-}
-.about-header .menu-global nav ul li a:hover {
-  padding-bottom: 3px;
-  border-bottom: 2px solid #0466c8;
-  color: #0466c8;
-}
-.about-header .menu-global .theme-switcher label {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.about-header .menu-global .theme-switcher input {
-  position: absolute;
-  opacity: 0;
-}
-.about-header .menu-global .theme-switcher .moon {
-  font-size: 19px;
-  color: #ffffff;
-  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.504));
-  transition: 0.8s ease;
-  transition-delay: 0.4s;
-}
-.about-header .menu-global .theme-switcher .moon:hover {
-  color: #0466c8;
-}
-.about-header .menu-global .theme-switcher input:checked ~ .moon {
-  transition-delay: 0.5s;
-  transform: rotate(360deg) scale(0);
-}
-.about-header .menu-global .theme-switcher .sun {
-  position: absolute;
-  font-size: 19px;
-  color: #050712;
-  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.6));
-  transform: scale(0);
-  transition: 1s ease;
-  transition-delay: 0.4s;
-}
-.about-header .menu-global .theme-switcher .sun:hover {
-  color: #0466c8;
-}
-.about-header .menu-global .theme-switcher input:checked ~ .sun {
-  transition-delay: 0.5s;
-  transform: scale(1) rotate(360deg);
-}
-.about-header .menu-global .theme-switcher .toggle {
-  position: absolute;
-  display: block;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1), inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px -4px rgba(0, 0, 0, 0.1);
-  z-index: -1;
-  transition: 0.2s;
-}
-.about-header .el4 {
-  grid-column: 5/5;
-  grid-row: 1/1;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-}
-
-.about {
-  display: grid;
-  grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-  grid-template-rows: 680px 399px;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-.about .el1 {
-  grid-column: 1/1;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-}
-.about .el2 {
-  grid-column: 2/5;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-}
-.about .el2 .title {
-  width: 720px;
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  margin-bottom: 30px;
-  margin-left: 30px;
-  margin-top: 20px;
-}
-.about .el2 .title h1 {
-  font-family: "Oswald", sans-serif;
-  color: #0466c8;
-  padding: 3px 0;
-  border-bottom: 1px solid #0466c8;
-  font-size: 22px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.about .el2 .text-about {
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  margin-bottom: 10px;
-  margin-left: 30px;
-  margin-right: 30px;
-  transform: translateY(10px);
-}
-.about .el2 .text-about p {
-  font-family: "Inter", sans-serif;
-  color: #ffffff;
-  font-size: 0.9rem;
-  line-height: 25px;
-  text-decoration: none;
-  text-align: justify;
-  font-weight: 400;
-}
-.about .el2 .text-about p span {
-  color: #0466c8;
-}
-.about .el2 .text-about a {
-  font-family: "Inter", sans-serif;
-  color: #0466c8;
-  font-size: 0.85rem;
-  line-height: 25px;
-  text-decoration: none;
-  text-align: justify;
-  font-weight: 400;
-}
-.about .el4 {
-  grid-column: 5/5;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-}
-.about .el5 {
-  grid-column: 1/1;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-}
-.about .el6 {
-  grid-column: 2/4;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.about .el6 .title {
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  margin-bottom: 30px;
-  margin-left: 30px;
-  margin-top: 20px;
-  transform: translate(-330px, -55px);
-}
-.about .el6 .title h1 {
-  font-family: "Oswald", sans-serif;
-  color: #0466c8;
-  padding: 3px 0;
-  border-bottom: 1px solid #0466c8;
-  font-size: 22px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.about .el6 .xp-text {
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
-  margin-bottom: 10px;
-  margin-left: 30px;
-  margin-right: 30px;
-  transform: translate(-73px, -20px);
-  gap: 20px;
-}
-.about .el6 .xp-text .line {
-  width: 600px;
-  border: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-}
-.about .el6 .xp-text .crispin h1 {
-  font-family: "Inter", sans-serif;
-  color: #ffffff;
-  font-size: 0.95rem;
-  text-transform: uppercase;
-  font-weight: 400;
-  padding-bottom: 10px;
-}
-.about .el6 .xp-text .crispin h2 {
-  font-family: "Inter", sans-serif;
-  color: white;
-  font-size: 0.85rem;
-  font-weight: 300;
-  padding-bottom: 10px;
-  font-style: italic;
-}
-.about .el6 .xp-text .crispin p {
-  font-family: "Inter", sans-serif;
-  color: rgba(255, 255, 255, 0.753);
-  font-size: 0.8rem;
-  text-decoration: none;
-  text-align: justify;
-  font-weight: 100;
-}
-.about .el6 .xp-text .crispin p span {
-  color: #0466c8;
-}
-.about .el6 .xp-text .voo h1 {
-  font-family: "Inter", sans-serif;
-  color: #ffffff;
-  font-size: 0.95rem;
-  text-transform: uppercase;
-  font-weight: 400;
-  padding-bottom: 10px;
-}
-.about .el6 .xp-text .voo h2 {
-  font-family: "Inter", sans-serif;
-  color: white;
-  font-size: 0.85rem;
-  font-weight: 300;
-  padding-bottom: 10px;
-  font-style: italic;
-}
-.about .el6 .xp-text .voo p {
-  font-family: "Inter", sans-serif;
-  color: rgba(255, 255, 255, 0.753);
-  font-size: 0.8rem;
-  text-decoration: none;
-  text-align: justify;
-  font-weight: 100;
-}
-.about .el6 .xp-text .voo p span {
-  color: #0466c8;
-}
-.about .el7 {
-  grid-column: 4/4;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.about .el7 .title {
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  margin-bottom: 30px;
-  margin-left: 30px;
-  margin-top: 20px;
-  transform: translate(-130px, -94px);
-}
-.about .el7 .title h1 {
-  font-family: "Oswald", sans-serif;
-  color: #0466c8;
-  padding: 3px 0;
-  border-bottom: 1px solid #0466c8;
-  font-size: 22px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.about .el7 .files {
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  flex-direction: column;
-  margin-bottom: 10px;
-  margin-left: 30px;
-  margin-right: 30px;
-  transform: translate(0px, -20px);
-}
-.about .el7 .files a {
-  transform: translateY(-10px);
-  padding: 7px 150px 7px 25px;
-  border: 1px solid rgba(255, 255, 255, 0.1490196078);
-  border-radius: 30px;
-  color: #ffffff;
-  font-family: "Syne", sans-serif;
-  font-size: 1rem;
-  line-height: 25px;
-  text-decoration: underline;
-  text-decoration: none;
-}
-.about .el7 .files a .arrow-link {
-  position: absolute;
-  right: 34px;
-  top: 13px;
-  font-size: 15px;
-}
-.about .el7 .files a .arrow-link:hover {
-  color: #0466c8;
-  transform: rotate(-45deg);
-}
-.about .el7 .files a:hover {
-  color: #0466c8;
-  border: 1px solid #0466c8;
-  cursor: pointer;
-}
-.about .el7 .files p {
-  margin-top: 20px;
-  width: 290px;
-  line-height: 23px;
-  font-family: "Inter", sans-serif;
-  color: rgba(255, 255, 255, 0.753);
-  font-size: 0.8rem;
-  text-decoration: none;
-  font-weight: 100;
-}
-.about .el8 {
-  grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-}
-
-.about-footer {
-  display: grid;
-  grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-  grid-template-rows: 200px 80px;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-.about-footer .el1 {
-  grid-column: 1/1;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-}
-.about-footer .el2 {
-  grid-column: 2/4;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.about-footer .el2 .contact {
-  width: 720px;
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  margin-bottom: 10px;
-  transform: translate(-13px, -40px);
-}
-.about-footer .el2 .contact h1 {
-  font-family: "Oswald", sans-serif;
-  color: #0466c8;
-  padding: 3px 0;
-  border-bottom: 1px solid #0466c8;
-  font-size: 22px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.about-footer .el2 a {
-  transform: translateY(-10px);
-  padding: 7px 534px 7px 25px;
-  border: 1px solid rgba(255, 255, 255, 0.1490196078);
-  border-radius: 30px;
-  color: #ffffff;
-  font-family: "Syne", sans-serif;
-  font-size: 1rem;
-  line-height: 25px;
-  text-decoration: underline;
-  text-decoration: none;
-  transform: translate(-15px, -15px);
-}
-.about-footer .el2 a .arrow-link {
-  position: absolute;
-  right: 34px;
-  top: 13px;
-  font-size: 15px;
-}
-.about-footer .el2 a .arrow-link:hover {
-  color: #0466c8;
-  transform: rotate(-45deg);
-}
-.about-footer .el2 a:hover {
-  color: #0466c8;
-  border: 1px solid #0466c8;
-  cursor: pointer;
-}
-.about-footer .el3 {
-  grid-column: 4/5;
-  border-left: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-  overflow: hidden;
-  position: relative;
-}
-.about-footer .el3 img {
-  position: absolute;
-  top: 124px;
-  left: -134px;
-  right: -197px;
-  object-fit: contain;
-  transform: scale(2);
-  width: 100%;
-}
-.about-footer .el4 {
-  grid-column: 5/5;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-}
-.about-footer .el5 {
-  grid-column: 1/1;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-}
-.about-footer .el6 {
-  grid-column: 2/2;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  padding: 0 20px;
-}
-.about-footer .el6 .logo-svg {
-  width: 35px;
-}
-.about-footer .el6 .logo-svg:hover {
-  transform: scale(1.2);
-}
-.about-footer .el6 .name-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.about-footer .el6 .name-logo h1 {
-  font-size: 1rem;
-  font-family: "Syne", sans-serif;
-  font-weight: 600;
-  color: #ffffff;
-  padding-left: 20px;
-}
-.about-footer .el6 .name-logo h1 a {
-  color: #ffffff;
-}
-.about-footer .el6 .name-logo h1 a:hover {
-  cursor: pointer;
-}
-.about-footer .el7 {
-  grid-column: 3/3;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-}
-.about-footer .el8 {
-  grid-column: 4/4;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.0941176471);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.about-footer .el8 h1 {
-  font-size: 0.85rem;
-  font-family: "Inter", sans-serif;
-  font-weight: 300;
-  letter-spacing: -0.5px;
-  color: #ffffff;
-}
-.about-footer .el9 {
-  grid-column: 5/5;
-}
-
-@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
-  body {
-    overflow-x: hidden !important;
+@media screen and (min-width: 1024px) and (max-width: 1200px) and (orientation: landscape) {
+  .about-section .el10 {
+    display: block;
+    grid-column: 4/4;
+    grid-row: 3/3;
+    background-color: #070b1c;
   }
 }

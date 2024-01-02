@@ -33,6 +33,14 @@ footer {
     column-gap: 1px;
     row-gap: 1px;
   }
+  @include tablet-landscape{
+    grid-template-columns: 1fr 45vw 45vw 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-rows: 200px 80px;
+    column-gap: 1px;
+    row-gap: 1px;
+  }
   .el1f {
     grid-column: 1/1;
     background-color: #070b1c;
@@ -47,6 +55,10 @@ footer {
       border-right: 1px solid $bluegrid;
     }
     @include tablet{
+      grid-column: 1/1;
+      background-color: #070b1c;
+    }
+    @include tablet-landscape{
       grid-column: 1/1;
       background-color: #070b1c;
     }
@@ -73,6 +85,10 @@ footer {
       grid-column: 2/4;
       background-color: #070b1c;
     }
+    @include tablet-landscape{
+      grid-column: 2/4;
+      background-color: #070b1c;
+    }
     .contact{
       margin-bottom: 10px;
       position: absolute;
@@ -87,6 +103,10 @@ footer {
         top: 20px;
       }
       @include tablet{
+        left: 20px;
+        top: 20px;
+      }
+      @include tablet-landscape{
         left: 20px;
         top: 20px;
       }
@@ -141,7 +161,11 @@ footer {
 
       @include tablet{
         margin-top: 60px;
-        padding: 9.5px 345px 9.5px 25px;
+        padding: 9.5px 350px 9.5px 25px;
+      }
+      @include tablet-landscape{
+        margin-top: 60px;
+        padding: 9.5px 350px 9.5px 25px;
       }
       .arrow-link {
         position: absolute;
@@ -167,9 +191,12 @@ footer {
     @include smarthpone-landscape{
       grid-column: 4/4;
       background-color: #070b1c;
-      border-bottom: 1px solid $bluegrid;
     }
     @include tablet{
+      grid-column: 4/4;
+      background-color: #070b1c;
+    }
+    @include tablet-landscape{
       grid-column: 4/4;
       background-color: #070b1c;
     }
@@ -196,10 +223,13 @@ footer {
       grid-column: 1/1;
       grid-row: 2/2;
       background-color: #070b1c;
-      border-bottom: 1px solid $bluegrid;
-      border-right: 1px solid $bluegrid;
     }
     @include tablet{
+      grid-column: 1/1;
+      grid-row: 2/2;
+      background-color: #070b1c;
+    }
+    @include tablet-landscape{
       grid-column: 1/1;
       grid-row: 2/2;
       background-color: #070b1c;
@@ -207,7 +237,6 @@ footer {
   }
   .el6f {
     grid-column: 2/2;
-    // border-right: 0.5px solid $bluegrid;
     background-color: #070b1c;
     display: flex;
     justify-content: start;
@@ -222,10 +251,13 @@ footer {
       grid-column: 2/2;
       grid-row: 2/2;
       background-color: #070b1c;
-      border-bottom: 1px solid $bluegrid;
-      border-right: 1px solid $bluegrid;
     }
     @include tablet{
+      grid-column: 2/2;
+      grid-row: 2/2;
+      background-color: #070b1c;
+    }
+    @include tablet-landscape{
       grid-column: 2/2;
       grid-row: 2/2;
       background-color: #070b1c;
@@ -280,10 +312,13 @@ footer {
       grid-column: 3/3;
       grid-row: 2/2;
       background-color: #070b1c;
-       border-bottom: 1px solid $bluegrid;
-        border-right: 1px solid $bluegrid;
     }
     @include tablet{
+      grid-column: 3/3;
+      grid-row: 2/2;
+      background-color: #070b1c;
+    }
+    @include tablet-landscape{
       grid-column: 3/3;
       grid-row: 2/2;
       background-color: #070b1c;
@@ -308,6 +343,11 @@ footer {
       border-right: 1px solid $bluegrid;
     }
     @include tablet{
+      grid-column: 3/3;
+      grid-row: 2/2;
+      background-color: #070b1c;
+    }
+    @include tablet-landscape{
       grid-column: 3/3;
       grid-row: 2/2;
       background-color: #070b1c;
@@ -342,9 +382,13 @@ footer {
       grid-column: 4/4;
       grid-row: 2/2;
       background-color: #070b1c;
-      border-bottom: 1px solid $bluegrid;
     }
     @include tablet{
+      grid-column: 4/4;
+      grid-row: 2/2;
+      background-color: #070b1c;
+    }
+    @include tablet-landscape{
       grid-column: 4/4;
       grid-row: 2/2;
       background-color: #070b1c;
