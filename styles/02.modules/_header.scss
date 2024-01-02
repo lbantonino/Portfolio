@@ -53,6 +53,8 @@ header {
       grid-column: 1/1;
     grid-row: 1 / 1;
     background-color: #070b1c;
+    border-bottom: 1px solid $bluegrid;
+    border-right: 1px solid $bluegrid;
     }
     @include tablet{
       display: flex;
@@ -74,6 +76,8 @@ header {
     }
     @include smarthpone-landscape{
       grid-column: 2 / 2;
+      border-bottom: 1px solid $bluegrid;
+      border-right: 1px solid $bluegrid;
     }
     @include tablet{
       grid-column: 2 / 2;
@@ -148,6 +152,8 @@ header {
     @include smarthpone-landscape{
       grid-column: 3 / 3;
       grid-row: 1/1;
+      border-bottom: 1px solid $bluegrid;
+      border-right: 1px solid $bluegrid;
     }
     @include tablet{
       grid-column: 3 / 3;
@@ -266,6 +272,7 @@ header {
     }
     @include smarthpone-landscape{
       grid-column: 4 / 4;
+      border-bottom: 1px solid $bluegrid;
     }
     @include tablet{
       grid-column: 4 / 4;
