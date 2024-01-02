@@ -148,7 +148,8 @@ main {
     }
     @include smarthpone-landscape {
       // grid-template-columns: 1fr 45vw 45vw 1fr !important;
-      grid-template-columns:minmax(24px,calc(50% - 600px)) repeat(2,minmax(0,600px)) minmax(24px,calc(50% - 600px));
+      // grid-template-columns:minmax(24px,calc(50% - 600px)) repeat(2,minmax(0,600px)) minmax(24px,calc(50% - 600px));
+      grid-template-columns: 1fr 400px 400px 1fr;
       grid-template-rows: 250px 340px ;
       margin-top: 1px;
       overflow-x: hidden;
@@ -453,7 +454,11 @@ main {
           top: inherit;
           font-size: 50px;
           left: 24px;
-          top: 120px;
+          top: 140px;
+        }
+        @include tablet{
+          top: 180px;
+    left: 25px;
         }
       }
 
@@ -519,7 +524,8 @@ main {
     }
     @include smarthpone-landscape{
       // grid-template-columns: 1fr 45vw 45vw 1fr;
-      grid-template-columns:minmax(24px,calc(50% - 600px)) repeat(2,minmax(0,600px)) minmax(24px,calc(50% - 600px));
+      // grid-template-columns:minmax(24px,calc(50% - 600px)) repeat(2,minmax(0,600px)) minmax(24px,calc(50% - 600px));
+      grid-template-columns: 1fr 400px 400px 1fr;
       grid-template-rows: 350px 340px ;
       margin-top: 1px;
       overflow-x: hidden;
@@ -877,7 +883,8 @@ main {
     }
     @include smarthpone-landscape{
       // grid-template-columns: 1fr 45vw 45vw 1fr;
-      grid-template-columns:minmax(24px,calc(50% - 600px)) repeat(2,minmax(0,600px)) minmax(24px,calc(50% - 600px));
+      // grid-template-columns:minmax(24px,calc(50% - 600px)) repeat(2,minmax(0,600px)) minmax(24px,calc(50% - 600px));
+      grid-template-columns: 1fr 400px 400px 1fr;
       grid-template-rows: 380px 380px 330px 380px 330px 380px ;
       margin-top: 1px;
       overflow-x: hidden;
@@ -1743,7 +1750,7 @@ main {
         display: block;
         grid-column: 1/1;
         grid-row: 6/6;
-
+        background-color: #070b1c;
       }
       @include tablet{
         display: block;
@@ -1795,7 +1802,8 @@ main {
   }
   @include smarthpone-landscape{
     // grid-template-columns: 1fr 45vw 45vw 1fr;
-    grid-template-columns:minmax(24px,calc(50% - 600px)) repeat(2,minmax(0,600px)) minmax(24px,calc(50% - 600px));
+    // grid-template-columns:minmax(24px,calc(50% - 600px)) repeat(2,minmax(0,600px)) minmax(24px,calc(50% - 600px));
+    grid-template-columns: 1fr 400px 400px 1fr;
     grid-template-rows: 1fr 400px 300px ;
     margin-top: 1px;
     width: 100vw;
