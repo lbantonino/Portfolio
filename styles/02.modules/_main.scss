@@ -62,48 +62,51 @@
     display: none;
   }
 }
-body{
-  width: 100vw;
-  background-color: #070b1ce2;
-  @include smartphone{
-    overflow: auto;
-    max-width: 100vw;
-  }
-  @include smarthpone-landscape{
-    overflow-x: hidden;
-    width: 100vw;
-    height: 100vw;
-  }
-  @include tablet{
-    overflow-x: hidden;
-    width: 100vw;
-  }
-  @include tablet{
-    overflow: auto;
-    width: 100vw;
-  }
-  @media screen and (min-width:320px) and (max-width: 374px){
-    overflow: auto;
-    min-width: 100vw;
-  }
-  @media screen and (min-width:375px) and (max-width: 389px){
-    overflow: auto;
-    min-width: 100vw;
-  }
-  @media screen and (min-width:390px) and (max-width: 767px){
-    overflow: auto;
-    width: 100vw;
-  }
-  @media screen and (min-width:565px) and (max-width:670px) and (orientation: landscape){
-    overflow-x: hidden;
-    width: 100vw;
-    height: 100vh;
-  }
-  @media screen and (min-width:671px) and (max-width:1023px) and (orientation: landscape){
-    overflow: auto;
-    min-width: 100vw;
-  }
+// body{
+//   width: 100vw;
+//   background-color: #070b1ce2;
+//   @include smartphone{
+//     overflow: auto;
+//     max-width: 100vw;
+//   }
+//   @include smarthpone-landscape{
+//     overflow-x: hidden;
+//     width: 100vw;
+//     height: 100vw;
+//   }
+//   @include tablet{
+//     overflow-x: hidden;
+//     width: 100vw;
+//   }
+//   @include tablet{
+//     overflow: auto;
+//     width: 100vw;
+//   }
+//   @media screen and (min-width:320px) and (max-width: 374px){
+//     overflow: auto;
+//     min-width: 100vw;
+//   }
+//   @media screen and (min-width:375px) and (max-width: 389px){
+//     overflow: auto;
+//     min-width: 100vw;
+//   }
+//   @media screen and (min-width:390px) and (max-width: 767px){
+//     overflow: auto;
+//     width: 100vw;
+//   }
+//   @media screen and (min-width:565px) and (max-width:670px) and (orientation: landscape){
+//     overflow-x: hidden;
+//     width: 100vw;
+//     height: 100vh;
+//   }
+//   @media screen and (min-width:671px) and (max-width:1023px) and (orientation: landscape){
+//     overflow: auto;
+//     min-width: 100vw;
+//   }
 
+// }
+body{
+    background-color: #070b1ce2;
 }
 ////////////////////////////////// main :
 main {
@@ -122,16 +125,16 @@ main {
       margin-top: 1px;
     }
     
-    @media screen and (min-width:320px) and (max-width:374px){
-      grid-template-columns: 1fr 40vw 40vw 1fr;
-      grid-template-rows: 250px 250px ;
-      margin-top: 1px;
-      overflow-x: hidden;
-    }
-    @media screen and (min-width:390px) and (max-width: 767px){
-      grid-template-columns: 1fr 40vw 40vw 1fr;
-      grid-template-rows: 370px 370px;
-    }
+    // @media screen and (min-width:320px) and (max-width:374px){
+    //   grid-template-columns: 1fr 40vw 40vw 1fr;
+    //   grid-template-rows: 250px 250px ;
+    //   margin-top: 1px;
+    //   overflow-x: hidden;
+    // }
+    // @media screen and (min-width:390px) and (max-width: 767px){
+    //   grid-template-columns: 1fr 40vw 40vw 1fr;
+    //   grid-template-rows: 370px 370px;
+    // }
     @include smarthpone-landscape {
       grid-template-columns: 1fr 45vw 45vw 1fr;
       grid-template-rows: 250px 340px ;
@@ -139,12 +142,12 @@ main {
       overflow-x: hidden;
     }
     
-    @media screen and (min-width:671px) and (max-width:1023px) and (orientation: landscape){
-      grid-template-columns: 1fr 45vw 45vw 1fr;
-      grid-template-rows: 300px 300px ;
-      margin-top: 1px;
-      overflow-x: hidden;
-    }
+    // @media screen and (min-width:768px) and (max-width:102px) and (orientation: landscape){
+    //   grid-template-columns: 1fr 45vw 45vw 1fr;
+    //   grid-template-rows: 300px 300px ;
+    //   margin-top: 1px;
+    //   overflow-x: hidden;
+    // }
     @include tablet{
       grid-template-columns: 1fr 45vw 45vw 1fr;
       grid-template-rows: 350px 350px ;
