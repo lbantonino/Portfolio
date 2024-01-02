@@ -140,7 +140,7 @@ main {
     }
     
     @media screen and (min-width:671px) and (max-width:1023px) and (orientation: landscape){
-      grid-template-columns: 1fr 40vw 40vw 1fr;
+      grid-template-columns: 1fr 45vw 45vw 1fr;
       grid-template-rows: 300px 300px ;
       margin-top: 1px;
       overflow-x: hidden;
@@ -845,7 +845,7 @@ main {
     }
     @include smarthpone-landscape{
       grid-template-columns: 1fr 45vw 45vw 1fr;
-      grid-template-rows: 380px 380px 330px 370px 330px 370px ;
+      grid-template-rows: 380px 380px 330px 380px 330px 380px ;
       margin-top: 1px;
       overflow-x: hidden;
     }
