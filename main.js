@@ -64,7 +64,6 @@ const applylightTheme = () => {
     setTimeout(() => {
         const elements = document.querySelectorAll('*');
         const text = document.querySelectorAll('p , h1 , h2 , h3 , h4 , h5 , h6 , a , span , li , label , input , textarea , button , .word-container');
-
         elements.forEach(element => {
             const backgroundColor = window.getComputedStyle(element).backgroundColor;
             if (backgroundColor === 'rgb(7, 11, 28)') {
@@ -72,17 +71,12 @@ const applylightTheme = () => {
             }
         });
 
-
-
         text.forEach(element => {
             const color = window.getComputedStyle(element).color;
             if (color === 'rgb(255, 255, 255)' || color === 'rgba(255, 255, 255, 0.753)') {
                 element.style.color = '#121c46';
             }
         });
-
-
-
 
         btnMoon.style.display = 'none';
         btnSun.style.display = 'block';
@@ -93,10 +87,7 @@ const applylightTheme = () => {
 };
 
 const applyDarkTheme = () => {
-    // Déclencher l'animation de l'overlay immédiatement
     overlayAnimation2();
-
-    // Ajouter un délai de 1001 ms avant d'appliquer le thème
     setTimeout(() => {
         const elements = document.querySelectorAll('*');
         const text = document.querySelectorAll('p , h1 , h2 , h3 , h4 , h5 , h6 , a , span , li , label , input , textarea , button , .word-container');
@@ -106,7 +97,6 @@ const applyDarkTheme = () => {
                 element.style.backgroundColor = '#070b1c';
             }
         });
-
         text.forEach(element => {
             const color = window.getComputedStyle(element).color;
             if (color === 'rgb(18, 28, 70)') {
@@ -117,7 +107,6 @@ const applyDarkTheme = () => {
         btnMoon.style.display = 'block';
         btnSun.style.display = 'none';
 
-        // Stocker le thème actuel dans le local storage
         localStorage.setItem('theme', 'dark');
     }, 1001);
 };
@@ -143,6 +132,8 @@ const setLightTheme = () => {
             element.style.backgroundColor = '#ffffff';
         }
     });
+
+
 
     text.forEach(element => {
         const color = window.getComputedStyle(element).color;

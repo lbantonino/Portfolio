@@ -110,7 +110,7 @@ body{
     
     @include smarthpone-landscape{
       overflow-x: hidden !important;
-      background-color: #070b1c;
+      // background-color: #070b1c;
       ::-webkit-scrollbar{
         background: inherit; 
      width: inherit; 
@@ -167,10 +167,7 @@ main {
       background-color: #070b1c;
       z-index: 3;
       position: relative;
-      @include smarthpone-landscape{
-        border-bottom: 1px solid $bluegrid;
-        border-right: 1px solid $bluegrid;
-      } }
+     }
 
     .el2 {
     background-color: #070b1c;
@@ -192,8 +189,7 @@ main {
       grid-row: 2/2 !important;
       // background-color: #070b1c !important;
       overflow: hidden;
-      border-bottom: 1px solid $bluegrid;
-      border-right: 1px solid $bluegrid;
+
     }
     @include tablet {
       grid-column: 2/4 !important;
@@ -292,7 +288,6 @@ main {
       // border-bottom: 0.5px solid $bluegrid;
       background-color: #070b1c;
       @include smarthpone-landscape{
-        border-bottom: 1px solid $bluegrid;
       }
     }
     .nomJob-global {
@@ -312,8 +307,6 @@ main {
       @include smarthpone-landscape{
         padding-left: inherit;
         justify-content: center;
-        border-bottom: 1px solid $bluegrid;
-        border-right: 1px solid $bluegrid;
       }
       @include tablet{
         padding-left: inherit;
@@ -478,8 +471,7 @@ main {
         grid-column: 1/1;
         grid-row: 2/2;
         background-color: #070b1c;
-        border-bottom: 1px solid #ffffff18;
-        border-right: 1px solid #ffffff18;
+
       }
       @include tablet {
         display: block;
@@ -501,7 +493,6 @@ main {
         grid-column: 4/4;
         grid-row: 2/2;
         background-color: #070b1c;
-        border-bottom: 1px solid $bluegrid;
 
       }
       @include tablet {
@@ -545,8 +536,6 @@ main {
       grid-column: 1 / 1;
       background-color: #070b1c;
       @include smarthpone-landscape{
-        border-bottom: 1px solid $bluegrid;
-        border-right: 1px solid $bluegrid;
       }
     }
       .aboutMe {
@@ -567,8 +556,6 @@ main {
           grid-column: 2/4 !important;
           grid-row: 1/1 !important;
           overflow: hidden;
-          border-bottom: 1px solid $bluegrid;
-          border-right: 1px solid $bluegrid;
         }
         @include tablet{
           grid-column: 2/4 !important;
@@ -699,8 +686,6 @@ main {
         grid-column: 2/4 !important;
         grid-row: 2/2 !important;
         overflow: hidden;
-        border-bottom: 1px solid $bluegrid;
-        border-right: 1px solid $bluegrid;
       }
       @include tablet{
         grid-column: 2/4 !important;
@@ -823,7 +808,6 @@ main {
         grid-column: 4/4 !important;
         grid-row: 1/1 !important;
         overflow: hidden;
-        border-bottom: 1px solid $bluegrid;
       }
       @include tablet{
         grid-column: 4/4 !important;
@@ -844,8 +828,7 @@ main {
         grid-column: 1/1;
         grid-row: 2/2;
         background-color: #070b1c;
-        border-bottom: 1px solid $bluegrid;
-        border-right: 1px solid $bluegrid;
+
       }
       @include tablet {
         display: block;
@@ -867,7 +850,6 @@ main {
         grid-column: 4/4;
         grid-row: 2/2;
         background-color: #070b1c;
-        border-bottom: 1px solid $bluegrid;
       }
       @include tablet {
         display: block;
@@ -921,8 +903,7 @@ main {
         grid-column: 1/1 !important;
         grid-row: 1/1 !important;
         overflow: hidden;
-        border-bottom: 1px solid $bluegrid;
-        border-right: 1px solid $bluegrid;
+
       }
       @include tablet{
         grid-column: 1/1 !important;
@@ -947,8 +928,7 @@ main {
         grid-column: 2/4 !important;
         grid-row: 1/1 !important;
         overflow: hidden;
-        border-bottom: 1px solid $bluegrid;
-        border-right: 1px solid $bluegrid;
+
       }
       @include tablet{
         grid-column: 2/4 !important;
@@ -1083,8 +1063,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid $bluegrid;
-    border-right: 1px solid $bluegrid;
+
       }
       @include tablet{
         grid-column: 2/4 !important;
@@ -1180,7 +1159,6 @@ main {
         grid-column: 4/4 !important;
         grid-row: 1/1 !important;
         overflow: hidden;
-        border-bottom: 1px solid $bluegrid;
 
       }
       @include tablet{
@@ -1203,8 +1181,6 @@ main {
         grid-column: 1/1 !important;
         grid-row: 2/2 !important;
         overflow: hidden;
-        border-bottom: 1px solid $bluegrid;
-        border-right: 1px solid $bluegrid;
       }
       @include tablet{
         grid-column: 1/1 !important;
@@ -1230,9 +1206,7 @@ main {
         overflow: hidden;
         display: flex;
         justify-content: center;
-        align-items: center;
-        border-bottom: 1px solid $bluegrid;
-        border-right: 1px solid $bluegrid;
+
       }
       @include tablet{
         grid-column: 2/4 !important;
@@ -1341,8 +1315,7 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        border-bottom: 1px solid $bluegrid;
-        border-right: 1px solid $bluegrid;
+
       }
       @include tablet{
         grid-column: 2/4 !important;
@@ -1426,7 +1399,7 @@ main {
         grid-column: 4/4 !important;
         grid-row: 2/2 !important;
         overflow: hidden;
-        border-bottom: 1px solid $bluegrid;
+
       }
       @include tablet{
         grid-column: 4/4 !important;
@@ -1448,8 +1421,6 @@ main {
         grid-column: 1/1 !important;
         grid-row: 3/3 !important;
         overflow: hidden;
-        border-bottom: 1px solid $bluegrid;
-        border-right: 1px solid $bluegrid;
       }
       @include tablet{
         grid-column: 1/1 !important;
@@ -1475,8 +1446,7 @@ main {
         grid-column: 2/4 !important;
         grid-row: 5/5 !important;
         overflow: hidden;
-        border-bottom: 1px solid $bluegrid;
-        border-right: 1px solid $bluegrid;
+
       }
       @include tablet{
         grid-column: 2/4 !important;
@@ -1586,8 +1556,7 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        border-bottom: 1px solid $bluegrid;
-        border-right: 1px solid $bluegrid;
+
       }
       @include tablet{
         grid-column: 2/4 !important;
@@ -1668,7 +1637,6 @@ main {
         grid-column: 4/4 !important;
         grid-row: 3/3 !important;
         overflow: hidden;
-        border-bottom: 1px solid $bluegrid;
 
       }
       @include tablet{
@@ -1690,8 +1658,6 @@ main {
         grid-column: 1/1;
         grid-row: 4/4;
         background-color: #070b1c;
-        border-bottom: 1px solid $bluegrid;
-        border-right: 1px solid $bluegrid;
       }
       @include tablet{
         display: block;
@@ -1713,7 +1679,6 @@ main {
         grid-column: 4/4;
         grid-row: 4/4;
         background-color: #070b1c;
-        border-bottom: 1px solid $bluegrid;
       }
       @include tablet{
         display: block;
@@ -1735,8 +1700,7 @@ main {
         grid-column: 1/1;
         grid-row: 5/5;
         background-color: #070b1c;
-        border-bottom: 1px solid $bluegrid;
-        border-right: 1px solid $bluegrid;
+
       }
       @include tablet{
         display: block;
@@ -1758,7 +1722,7 @@ main {
         grid-column: 4/4;
         grid-row: 5/5;
         background-color: #070b1c;
-        border-bottom: 1px solid $bluegrid;
+
       }
       @include tablet{
         display: block;
@@ -1779,9 +1743,7 @@ main {
         display: block;
         grid-column: 1/1;
         grid-row: 6/6;
-        background-color: #070b1c;
-        border-bottom: 1px solid $bluegrid;
-        border-right: 1px solid $bluegrid;
+
       }
       @include tablet{
         display: block;
@@ -1803,7 +1765,7 @@ main {
         grid-column: 4/4;
         grid-row: 6/6;
         background-color: #070b1c;
-        border-bottom: 1px solid $bluegrid;
+
       }
       @include tablet{
         display: block;
@@ -1857,8 +1819,7 @@ main {
       grid-column: 1/1 !important;
       grid-row: 1/1 !important;
       overflow: hidden;
-      border-bottom: 1px solid $bluegrid;
-      border-right: 1px solid $bluegrid;
+
     }
     @include tablet{
       grid-column: 1/1 !important;
@@ -1883,8 +1844,7 @@ main {
       grid-column: 2/4 !important;
       grid-row: 1/1 !important;
       overflow: hidden;
-      border-bottom: 1px solid $bluegrid;
-      border-right: 1px solid $bluegrid;
+
     }
     @include tablet{
       grid-column: 2/4 !important;
@@ -1984,7 +1944,6 @@ main {
       grid-column: 4/4 !important;
       grid-row: 1/1 !important;
       overflow: hidden;
-      border-bottom: 1px solid $bluegrid;
 
     }
     @include tablet{
@@ -2005,8 +1964,6 @@ main {
         grid-column: 1/1 !important;
         grid-row: 2/3 !important;
         overflow: hidden;
-        border-bottom: 1px solid $bluegrid;
-        border-right: 1px solid $bluegrid;
       }
       @include tablet{
         grid-column: 1/1 !important;
@@ -2031,8 +1988,7 @@ main {
       grid-column: 2/4 !important;
       grid-row: 2/2 !important;
       overflow: hidden;
-      border-bottom: 1px solid $bluegrid;
-      border-right: 1px solid $bluegrid;
+
     }
     @include tablet{
       grid-column: 2/4 !important;
@@ -2151,8 +2107,7 @@ main {
       grid-column: 2/4 !important;
       grid-row: 3/3 !important;
       overflow: hidden;
-      border-bottom: 1px solid $bluegrid;
-      border-right: 1px solid $bluegrid;
+
     }
     @include tablet{
       grid-column: 2/4 !important;
@@ -2254,7 +2209,7 @@ main {
       grid-column: 4/4 !important;
       grid-row: 2/2 !important;
       overflow: hidden;
-      border-bottom: 1px solid $bluegrid;
+
     }
     @include tablet{
       grid-column: 4/4 !important;
@@ -2275,8 +2230,7 @@ main {
       grid-column: 1/1;
       grid-row: 3/3;
       background-color: #070b1c;
-      border-bottom: 1px solid $bluegrid;
-      border-right: 1px solid $bluegrid;
+
     }
     @include tablet{
       display: block;
@@ -2298,7 +2252,7 @@ main {
       grid-column: 4/4;
       grid-row: 3/3;
       background-color: #070b1c;
-      border-bottom: 1px solid $bluegrid;
+
 
     }
     @include tablet{
