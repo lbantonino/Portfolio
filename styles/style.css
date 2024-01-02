@@ -110,7 +110,7 @@ header {
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
   header {
-    grid-template-columns: 1fr 40% 40% 1fr;
+    grid-template-columns: 1fr 40vw 40vw 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-rows: 80px;
@@ -824,6 +824,21 @@ footer .el9f {
   border-radius: 50%;
   background: #2592ff;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #blob {
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  #blob {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1190px) {
+  #blob {
+    display: none;
+  }
+}
 
 #blur {
   height: 100%;
@@ -837,6 +852,21 @@ footer .el9f {
   height: 100vh;
   width: 100%;
   padding: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #blur {
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
+  #blur {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1190px) {
+  #blur {
+    display: none;
+  }
 }
 
 body {
@@ -930,7 +960,7 @@ main .nomJob {
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
   main .nomJob {
-    grid-template-columns: 1fr 40% 40% 1fr;
+    grid-template-columns: 1fr 40vw 40vw 1fr;
     grid-template-rows: 250px 340px;
     margin-top: 1px;
   }
