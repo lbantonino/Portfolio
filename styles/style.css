@@ -79,25 +79,6 @@ a {
   text-decoration: none;
 }
 
-body {
-  font-size: 16px;
-  background-color: rgba(255, 255, 255, 0.0941176471);
-}
-
-@media screen and (max-device-width: 767px) and (orientation: landscape) {
-  .hidden-desktop {
-    display: inherit !important;
-  }
-  .visible-desktop {
-    display: none !important;
-  }
-  .visible-phone {
-    display: inherit !important;
-  }
-  .hidden-phone {
-    display: none !important;
-  }
-}
 header {
   position: relative;
   z-index: 2;
@@ -1067,13 +1048,6 @@ footer .el9f {
     font-size: 40px;
     cursor: pointer;
   }
-}
-
-body {
-  background-color: rgba(8, 5, 28, 0.8392156863);
-  position: relative;
-  width: 100vw;
-  overflow-x: hidden;
 }
 
 main {
@@ -4212,4 +4186,13 @@ main .work .el22 {
     grid-row: 3/3;
     background-color: #070b1c;
   }
+}
+
+body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(8, 5, 28, 0.8392156863);
+  position: relative;
+  font-size: 16px;
 }

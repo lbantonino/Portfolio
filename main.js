@@ -43,6 +43,8 @@ document.onpointermove = (event) => {
         { duration: 600, fill: "forwards" }
     );
 };
+
+
 //theme switcher
 const btnMoon = document.querySelector('.btn-moon');
 const btnSun = document.querySelector('.btn-sun');
@@ -52,6 +54,7 @@ const applylightTheme = () => {
         const elements = document.querySelectorAll('*');
         const text = document.querySelectorAll('p , h1 , h2 , h3 , h4 , h5 , h6 , a , span , li , label , input , textarea , button , .word-container');
         const body = document.querySelector('body');
+        const hamburger = document.querySelector('.hamburger')
         const modal = document.querySelector('.modal');
         const about = document.querySelector('.about-li-modal');
         const work = document.querySelector('.work-li-modal');
@@ -74,12 +77,35 @@ const applylightTheme = () => {
         btnMoon.style.display = 'none';
         btnSun.style.display = 'block';
 
-        modal.style.backgroundColor = 'rgb(18, 28, 70)'
-        about.style.color = '#ffffff';
-        work.style.color = '#ffffff';
-        cross.style.color = '#ffffff';
-        line.style.backgroundColor = '#ffffff';
-        copyright.style.color = '#ffffff'
+        hamburger.addEventListener('click', () => {
+            setTimeout(() => {
+                modal.style.display = 'block'
+                modal.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    modal.style.transition = 'transform 500ms ease-in-out';
+                    modal.style.transform = 'translateX(0%)';
+                    modal.style.backgroundColor = 'rgb(7, 11, 28)';
+                    about.style.color = '#ffffff';
+                    work.style.color = '#ffffff';
+                    copyright.style.color = '#ffffff';
+                    btnMoon.style.display = 'none';
+                    btnSun.style.display = 'block';
+                    cross.style.color = '#ffffff';
+                    line.style.backgroundColor = '#ffffff';
+                }, 10)
+            }, 10);
+            cross.addEventListener('click', () => {
+                setTimeout(() => {
+                    modal.style.transition = 'transform 500ms ease-in-out';
+                    modal.style.transform = 'translateX(100%)';
+                    setTimeout(() => {
+                        modal.style.display = 'none';
+                    }, 510)
+                }, 10)
+            })
+
+        });
+
 
         localStorage.setItem('theme', 'light');
     }, 1001);
@@ -90,6 +116,7 @@ const applyDarkTheme = () => {
         const elements = document.querySelectorAll('*');
         const text = document.querySelectorAll('p , h1 , h2 , h3 , h4 , h5 , h6 , a , span , li , label , input , textarea , button , .word-container');
         const body = document.querySelector('body');
+        const hamburger = document.querySelector('.hamburger')
         const modal = document.querySelector('.modal');
         const about = document.querySelector('.about-li-modal');
         const work = document.querySelector('.work-li-modal');
@@ -112,16 +139,36 @@ const applyDarkTheme = () => {
         btnMoon.style.display = 'block';
         btnSun.style.display = 'none';
 
-        modal.style.backgroundColor = 'rgba(255, 255, 255, 0.99)';
-        about.style.color = 'rgb(18, 28, 70)';
-        work.style.color = 'rgb(18, 28, 70)';
-        copyrigth.style.color = 'rgb(18, 28, 70)';
-        btnMoon.style.display = 'block';
-        btnSun.style.display = 'none';
-        about.style.color = 'rgb(18, 28, 70)';
-        work.style.color = 'rgb(18, 28, 70)';
-        cross.style.color = 'rgb(18, 28, 70)';
-        line.style.backgroundColor = 'rgb(18, 28, 70)';
+        hamburger.addEventListener('click', () => {
+            setTimeout(() => {
+                modal.style.display = 'block'
+                modal.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    modal.style.transition = 'transform 500ms ease-in-out';
+                    modal.style.transform = 'translateX(0%)';
+                    modal.style.backgroundColor = 'rgba(255, 255, 255, 0.99)';
+                    about.style.color = 'rgb(18, 28, 70)';
+                    work.style.color = 'rgb(18, 28, 70)';
+                    copyrigth.style.color = 'rgb(18, 28, 70)';
+                    btnMoon.style.display = 'block';
+                    btnSun.style.display = 'none';
+                    about.style.color = 'rgb(18, 28, 70)';
+                    work.style.color = 'rgb(18, 28, 70)';
+                    cross.style.color = 'rgb(18, 28, 70)';
+                    line.style.backgroundColor = 'rgb(18, 28, 70)';
+                }, 10)
+            }, 10);
+            cross.addEventListener('click', () => {
+                setTimeout(() => {
+                    modal.style.transition = 'transform 500ms ease-in-out';
+                    modal.style.transform = 'translateX(100%)';
+                    setTimeout(() => {
+                        modal.style.display = 'none';
+                    }, 510)
+                }, 10)
+            })
+
+        });
 
 
         localStorage.setItem('theme', 'dark');
@@ -161,24 +208,88 @@ const setLightTheme = () => {
     body.style.backgroundColor = 'rgb(223, 223, 223)';
     btnMoon.style.display = 'none';
     btnSun.style.display = 'block';
+    body.style.overflowX = 'hidden';
+    body.style.maxWidth = '100vw';
+    modal.style.display = 'none';
+    hamburger.addEventListener('click', () => {
+        setTimeout(() => {
+            modal.style.display = 'block'
+            modal.style.transform = 'translateX(100%)';
+            setTimeout(() => {
+                modal.style.transition = 'transform 500ms ease-in-out';
+                modal.style.transform = 'translateX(0%)';
+                modal.style.backgroundColor = 'rgb(7, 11, 28)';
+                about.style.color = '#ffffff';
+                work.style.color = '#ffffff';
+                copyright.style.color = '#ffffff';
+                btnMoon.style.display = 'none';
+                btnSun.style.display = 'block';
+                cross.style.color = '#ffffff';
+                line.style.backgroundColor = '#ffffff';
+            }, 10)
+        }, 10);
+        cross.addEventListener('click', () => {
+            setTimeout(() => {
+                modal.style.transition = 'transform 500ms ease-in-out';
+                modal.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    modal.style.display = 'none';
+                }, 510)
+            }, 10)
+        })
 
-    modal.style.backgroundColor = 'rgb(18, 28, 70)'
-    about.style.color = '#ffffff';
-    work.style.color = '#ffffff';
-    cross.style.color = '#ffffff';
-    line.style.backgroundColor = '#ffffff';
-    copyright.style.color = '#ffffff'
+    });
+
+
 };
+
+
+
 const setDarkTheme = () => {
     const elements = document.querySelectorAll('*');
     const text = document.querySelectorAll('p , h1 , h2 , h3 , h4 , h5 , h6 , a , span , li , label , input , textarea , button , .word-container');
     const body = document.querySelector('body');
+    const hamburger = document.querySelector('.hamburger')
     const modal = document.querySelector('.modal');
     const about = document.querySelector('.about-li-modal');
     const work = document.querySelector('.work-li-modal');
     const cross = document.querySelector('.cross');
     const line = document.querySelector('.line');
     const copyrigth = document.querySelector('.copyright-modal');
+    body.style.overflowX = 'hidden';
+    body.style.maxWidth = '100vw';
+    modal.style.display = 'none';
+    hamburger.addEventListener('click', () => {
+        setTimeout(() => {
+            modal.style.display = 'block'
+            modal.style.transform = 'translateX(100%)';
+            setTimeout(() => {
+                modal.style.transition = 'transform 500ms ease-in-out';
+                modal.style.transform = 'translateX(0%)';
+                modal.style.backgroundColor = 'rgba(255, 255, 255, 0.99)';
+                about.style.color = 'rgb(18, 28, 70)';
+                work.style.color = 'rgb(18, 28, 70)';
+                copyrigth.style.color = 'rgb(18, 28, 70)';
+                btnMoon.style.display = 'block';
+                btnSun.style.display = 'none';
+                about.style.color = 'rgb(18, 28, 70)';
+                work.style.color = 'rgb(18, 28, 70)';
+                cross.style.color = 'rgb(18, 28, 70)';
+                line.style.backgroundColor = 'rgb(18, 28, 70)';
+            }, 10)
+        }, 10);
+        cross.addEventListener('click', () => {
+            setTimeout(() => {
+                modal.style.transition = 'transform 500ms ease-in-out';
+                modal.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    modal.style.display = 'none';
+                }, 510)
+            }, 10)
+        })
+
+    });
+
     elements.forEach(element => {
         const backgroundColor = window.getComputedStyle(element).backgroundColor;
         if (backgroundColor === 'rgb(255, 255, 255)' || backgroundColor === 'rgba(255, 255, 255, 0)') {
@@ -192,48 +303,10 @@ const setDarkTheme = () => {
         }
     });
     body.style.backgroundColor = '#08051cd6';
-    modal.style.backgroundColor = 'rgba(255, 255, 255, 0.99)';
-    about.style.color = 'rgb(18, 28, 70)';
-    work.style.color = 'rgb(18, 28, 70)';
-    copyrigth.style.color = 'rgb(18, 28, 70)';
-    btnMoon.style.display = 'block';
-    btnSun.style.display = 'none';
-    about.style.color = 'rgb(18, 28, 70)';
-    work.style.color = 'rgb(18, 28, 70)';
-    cross.style.color = 'rgb(18, 28, 70)';
-    line.style.backgroundColor = 'rgb(18, 28, 70)';
+
+
 };
 
-function modal() {
-    const hamburger = document.querySelector('.hamburger');
-    const modal = document.querySelector('.modal');
-    const cross = document.querySelector('.cross');
-    const about = document.querySelector('.about-li-modal');
-    const work = document.querySelector('.work-li-modal');
-    hamburger.addEventListener('click', () => {
-        console.log('click on the button');
-        modal.style.transition = 'transform 700ms ease-in-out';
-        modal.style.transform = 'translateX(0%)';
-        cross.addEventListener('click', () => {
-            modal.style.transition = 'transform 700ms ease-in-out';
-            modal.style.transform = 'translateX(100%)';
-        });
-        about.addEventListener('click', () => {
-            setTimeout(() => {
-                modal.style.transform = 'translateX(100%)';
-            }, 1001);
-
-        });
-        work.addEventListener('click', () => {
-            setTimeout(() => {
-                modal.style.transition = 'transform 100ms ease-in-out';
-                modal.style.transform = 'translateX(100%)';
-            }, 1001);
-
-        });
-    });
-}
-modal();
 
 document.addEventListener('DOMContentLoaded', function () {
     const savedTheme = localStorage.getItem('theme');
