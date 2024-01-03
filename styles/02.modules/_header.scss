@@ -173,6 +173,7 @@ header {
     nav {
       ul {
         display: flex;
+        position: relative;
         .menu-hamburger{
           display: none;
           @include smartphone{
@@ -194,6 +195,7 @@ header {
             }
           }
         }}
+        
         li {
           @include smartphone{
             display: none;
