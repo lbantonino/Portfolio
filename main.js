@@ -79,6 +79,7 @@ const applylightTheme = () => {
 
         hamburger.addEventListener('click', () => {
             setTimeout(() => {
+                body.style.overflowY = 'hidden';
                 modal.style.display = 'block'
                 modal.style.transform = 'translateX(100%)';
                 setTimeout(() => {
@@ -96,6 +97,7 @@ const applylightTheme = () => {
             }, 10);
             cross.addEventListener('click', () => {
                 setTimeout(() => {
+                    body.style.overflowY = 'scroll';
                     modal.style.transition = 'transform 500ms ease-in-out';
                     modal.style.transform = 'translateX(100%)';
                     setTimeout(() => {
@@ -105,6 +107,7 @@ const applylightTheme = () => {
             })
             work.addEventListener('click', () => {
                 setTimeout(() => {
+                    body.style.overflowY = 'scroll';
                     modal.style.transition = 'transform 500ms ease-in-out';
                     modal.style.transform = 'translateX(100%)';
                     setTimeout(() => {
@@ -150,6 +153,7 @@ const applyDarkTheme = () => {
 
         hamburger.addEventListener('click', () => {
             setTimeout(() => {
+                body.style.overflowY = 'hidden';
                 modal.style.display = 'block'
                 modal.style.transform = 'translateX(100%)';
                 setTimeout(() => {
@@ -169,6 +173,7 @@ const applyDarkTheme = () => {
             }, 10);
             cross.addEventListener('click', () => {
                 setTimeout(() => {
+                    body.style.overflowY = 'scroll';
                     modal.style.transition = 'transform 500ms ease-in-out';
                     modal.style.transform = 'translateX(100%)';
                     setTimeout(() => {
@@ -178,6 +183,7 @@ const applyDarkTheme = () => {
             })
             work.addEventListener('click', () => {
                 setTimeout(() => {
+                    body.style.overflowY = 'scroll';
                     modal.style.transition = 'transform 500ms ease-in-out';
                     modal.style.transform = 'translateX(100%)';
                     setTimeout(() => {
@@ -231,6 +237,7 @@ const setLightTheme = () => {
     modal.style.display = 'none';
     hamburger.addEventListener('click', () => {
         setTimeout(() => {
+            body.style.overflowY = 'hidden';
             modal.style.display = 'block'
             modal.style.transform = 'translateX(100%)';
             setTimeout(() => {
@@ -248,6 +255,7 @@ const setLightTheme = () => {
         }, 10);
         cross.addEventListener('click', () => {
             setTimeout(() => {
+                body.style.overflowY = 'scroll';
                 modal.style.transition = 'transform 500ms ease-in-out';
                 modal.style.transform = 'translateX(100%)';
                 setTimeout(() => {
@@ -257,6 +265,7 @@ const setLightTheme = () => {
         })
         work.addEventListener('click', () => {
             setTimeout(() => {
+                body.style.overflowY = 'scroll';
                 modal.style.transition = 'transform 500ms ease-in-out';
                 modal.style.transform = 'translateX(100%)';
                 setTimeout(() => {
@@ -269,9 +278,6 @@ const setLightTheme = () => {
 
 
 };
-
-
-
 const setDarkTheme = () => {
     const elements = document.querySelectorAll('*');
     const text = document.querySelectorAll('p , h1 , h2 , h3 , h4 , h5 , h6 , a , span , li , label , input , textarea , button , .word-container');
@@ -288,6 +294,7 @@ const setDarkTheme = () => {
     modal.style.display = 'none';
     hamburger.addEventListener('click', () => {
         setTimeout(() => {
+            body.style.overflowY = 'hidden';
             modal.style.display = 'block'
             modal.style.transform = 'translateX(100%)';
             setTimeout(() => {
@@ -307,6 +314,7 @@ const setDarkTheme = () => {
         }, 10);
         cross.addEventListener('click', () => {
             setTimeout(() => {
+                body.style.overflowY = 'scroll';
                 modal.style.transition = 'transform 500ms ease-in-out';
                 modal.style.transform = 'translateX(100%)';
                 setTimeout(() => {
@@ -316,6 +324,7 @@ const setDarkTheme = () => {
         })
         work.addEventListener('click', () => {
             setTimeout(() => {
+                body.style.overflowY = 'scroll';
                 modal.style.transition = 'transform 500ms ease-in-out';
                 modal.style.transform = 'translateX(100%)';
                 setTimeout(() => {
@@ -342,8 +351,6 @@ const setDarkTheme = () => {
 
 
 };
-
-
 document.addEventListener('DOMContentLoaded', function () {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {

@@ -66,7 +66,7 @@
   @include smartphone{
     display: block;
     z-index: 4;
-    position: absolute;
+    position:fixed;
     transform: translateX(100%);
     width: 100vw;
     height: 100vh;
@@ -649,21 +649,26 @@ main {
           display: flex;
           align-items: start;
           justify-content: start;
+          
           @include smartphone{
             top: 20px;
             left: 20px;
+            padding-right: 0px;
           }
           @include smarthpone-landscape{
             top: 20px;
             left: 20px;
+            padding-right: 0px;
           }
           @include tablet{
             top: 20px;
             left: 20px;
+            padding-right: 0px;
           }
           @include tablet-landscape{
             top: 20px;
             left: 20px;
+            padding-right: 0px;
           }
         h1 {
           font-family: $fontOswald;
@@ -680,49 +685,47 @@ main {
           padding: 0 34px ;
           color: $white;
           font-family: $fontInter;
-          font-size: 0.93rem;
-          line-height: 22px;
+          font-size: 0.9rem;
+          padding-right: 40px;
           @include smartphone{
-            padding: 0 20px;
+            padding: 0 60px;
             margin-top: 70px;
             font-size: 0.90rem;
             font-weight: 300;
             text-align: center;
+            
           }
           @include smarthpone-landscape{
-            padding: 0 20px;
+            padding: 0 150px;
             margin-top: 70px;
-            font-size: 1rem;
-            data-aos: none !important;
+            font-size: 0.9rem;
+            text-align: center;
           }
           @media screen and (min-width:320px) and (max-width: 374px){
             margin-top: 20px;
             text-align: center;
           }
           @include tablet{
-            padding: 0 20px;
+            padding: 0 120px;
             margin-top: 70px;
-            font-size: 1rem;
-            data-aos: none !important;
+            font-size: 0.9rem;
             text-align: center;
           }
           @include tablet-landscape{
-            padding: 0 20px;
+            padding: 0 180px;
             margin-top: 70px;
-            font-size: 1rem;
-            data-aos: none !important;
+            font-size: 0.9rem;
             text-align: center;
           }
         }
         a {
           padding: 7px 549px 7px 25px;
           border: 1px solid $lightBlue;
-          // background-color: #0466c81b;
           background-color: rgba(4, 102, 200, 0.04);
           border-radius: 30px;
           color: $white;
           font-family: $fontSyne;
-          font-size: 1rem;
+          font-size: 0.9rem;
           line-height: 25px;
           text-decoration: underline;
           text-decoration: none;
@@ -731,25 +734,53 @@ main {
             border: 2px solid $lightBlue2;
           }
           @include smartphone{
-            padding: 12px 70px 12px 25px;
-            margin: 40px 10px 0;
-            data-aos: none !important;
+            width: 245px;
+            height: 40px;
+            padding: 0;
+            padding-left: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 30px;
           }
           @include smarthpone-landscape{
-            padding: 7px 143px 7px 25px;
-            margin: 40px 10px 0;
-            data-aos: none !important;
+            width: 245px;
+            height: 40px;
+            padding: 0;
+            padding-left: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 30px;
           }
           @media screen and (min-width:320px) and (max-width: 374px){
-            font-size: 14px;
-            margin: 0 10px 0;
-            data-aos: none !important;
+            width: 245px;
+            height: 40px;
+            padding: 0;
+            padding-left: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
           }
           @include tablet{
-            padding: 7px 145px 7px 25px;
+            width: 245px;
+            height: 40px;
+            padding: 0;
+            padding-left: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 30px;
           }
           @include tablet-landscape{
-            padding: 7px 145px 7px 25px;
+            width: 245px;
+            height: 40px;
+            padding: 0;
+            padding-left: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 30px;
           }
         }
   
@@ -759,7 +790,7 @@ main {
           top: 12px;
           @include smartphone{
             right: 34px;
-            top: 18px;
+            top: 12px;
           }
         }
     }
@@ -831,18 +862,55 @@ main {
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            transform: translateY(-30px);
+          }
+          @include smarthpone-landscape{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transform: translateY(-30px);
+          }
+          @include tablet{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transform: translateY(0px);
+          }
+          @include tablet-landscape{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transform: translateY(0px);
           }
           li {
             transform: translateY(17px);
             margin: 30px 0;
+            @include smartphone{
+              transform: translateY(55px);
+              margin: 0;
+            }
+            @include smarthpone-landscape{
+              transform: translateY(39px);;
+              margin: 0;
+            }
+            @include tablet{
+              transform: translateY(20px);
+              margin: 0;
+            }
+            @include tablet-landscape{
+              transform: translateY(35px);
+              margin: 0;
+            }
             a {
               padding: 9.5px 235px 9.5px 25px;
               border: 1px solid $lightBlue;
-              // background-color: #0466c81b;
               background-color: rgba(4, 102, 200, 0.04);
               border-radius: 30px;
               color: $white;
-              font-size: 16px;
+              font-size: 0.9rem;
               font-family: $fontSyne;
               font-weight: 200;
               position: relative;
@@ -856,11 +924,56 @@ main {
                 top: 12px;
               }
               @include smartphone{
-                padding:12px 170px 12px 25px;
+               padding: 0;
+               width: 245px;
+              height: 40px;
+              padding: 0;
+              padding-left: 25px;
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              margin-top: 0px;
                 .arrow-link{
-                  right: 34px;
-                  top: 15px;
+                  right: 35px;
+                  top: 13px;
                 }
+              }
+              @include smarthpone-landscape{
+                padding: 0;
+                width: 245px;
+               height: 40px;
+               padding: 0;
+               padding-left: 25px;
+               display: flex;
+               align-items: center;
+               justify-content: flex-start;
+               margin-top: 0px;
+                 .arrow-link{
+                   right: 35px;
+                   top: 13px;
+                 }
+               }
+               @include tablet{
+                padding: 0;
+                width: 245px;
+               height: 40px;
+               padding: 0;
+               padding-left: 25px;
+               display: flex;
+               align-items: center;
+               justify-content: flex-start;
+               margin-top: 0px;
+              }
+              @include tablet-landscape{
+                padding: 0;
+                width: 245px;
+               height: 40px;
+               padding: 0;
+               padding-left: 25px;
+               display: flex;
+               align-items: center;
+               justify-content: flex-start;
+               margin-top: 0px;
               }
               @media screen and (min-width:320px) and (max-width: 374px){
                 padding: 9.5px 140px 9.5px 25px;
@@ -872,17 +985,26 @@ main {
             }
             .github {
               padding: 9.5px 244px 9.5px 25px;
-              @include smartphone{
-                padding: 12px 178px 12px 25px;
-                .arrow-link{
-                  right: 34px;
-                  top: 15px;
-                }
-              }
-              @media screen and (min-width:320px) and (max-width: 374px){
+            @include smartphone{
+              padding: 0;
+              padding-left: 25px;
+            }
+            @include smarthpone-landscape{
+              padding: 0;
+              padding-left: 25px;
+            }
+            @include tablet{
+              padding: 0;
+              padding-left: 25px;
+            }
+            @include tablet-landscape{
+              padding: 0;
+              padding-left: 25px;
+            }           
+            @media screen and (min-width:320px) and (max-width: 374px){
                 padding: 9.5px 145px 9.5px 25px;
               }
-              @media screen and (min-width:665px) and (max-width: 667px){
+            @media screen and (min-width:665px) and (max-width: 667px){
                 padding: 9.5px 250px 9.5px 25px;
               }
             }
@@ -990,14 +1112,20 @@ main {
     column-gap: 1px;
     row-gap: 1px;
     margin-top: 1px;
-    @include smartphone{
+    @media screen and (min-width:320px) and (max-width:383px) and (orientation: portrait){
       grid-template-columns: 1fr 45vw 45vw 1fr;
-      grid-template-rows: 490px 330px 450px 330px 450px 330px ;
+      grid-template-rows: 550px 350px 450px 350px 450px 350px ;
+      margin-top: 1px;
+      overflow-x: hidden;
+    }
+    @media screen and (min-width:384px) and (max-width:767px) and (orientation: portrait){
+      grid-template-columns: 1fr 45vw 45vw 1fr;
+      grid-template-rows: 530px 350px 450px 350px 450px 350px ;
       margin-top: 1px;
     }
     @include smarthpone-landscape{
       grid-template-columns: 1fr 45vw 45vw 1fr !important;
-      grid-template-rows: 380px 380px 330px 380px 330px 380px ;
+      grid-template-rows: 380px 380px 380px 380px 380px 380px ;
       margin-top: 1px;
       overflow-x: hidden;
       width: 100vw;
@@ -1112,12 +1240,16 @@ main {
           width: 100%;
           padding: 0 20px;
           line-height: 20px;
+          align-items: center;
+          justify-content: center;
         }
         @include smarthpone-landscape{
           width: 100%;
           padding: 0 20px;
           line-height: 20px;
-          margin-top: 20px;
+          transform: translateY(10px);
+          align-items: center;
+          justify-content: center;
         }
         @include tablet{
           width: 100%;
@@ -1126,6 +1258,8 @@ main {
           transform: inherit;
           margin-top: 65px;
           line-height: 20px;
+          align-items: center;
+          justify-content: center;
         }
         @include tablet-landscape{
           width: 100%;
@@ -1134,6 +1268,8 @@ main {
           transform: inherit;
           margin-top: 65px;
           line-height: 20px;
+          align-items: center;
+          justify-content: center;
           br{
             display: block;
           
@@ -1155,26 +1291,48 @@ main {
         .description {
           color: $white;
           font-family: $fontInter;
-          font-size: 0.8rem;
+          font-size: 0.9rem;
           margin-bottom: 10px;
-          @include smartphone{
+          @media screen and (min-width:320px) and (max-width: 389px){
             text-align: center;
-            padding: 0 30px;
+            padding: 0 0px;
+            font-size: 0.8rem;
+          }
+          @media screen and (min-width:390px) and (max-width: 767px){
+            text-align: center;
+            padding: 0 40px;
+          }
+          @include smarthpone-landscape{
+            text-align: center;
+            padding: 0 190px;
+          }
+          @include tablet{
+            text-align: center;
+            padding: 0 60px;
+          }
+          @include tablet-landscape{
+            text-align: center;
+            padding: 0 140px;
           }
           span{
             color: $lightBlue;
             font-weight: 500;
-            font-size: 1rem;
+            font-size: 0.9rem;
+           
           }
         }
         .work-techno{
           color: $lightBlue;
           font-family: $fontInter;
-          font-size: 0.7rem;
+          font-size: 0.75rem;
           margin-bottom: 20px;
-          @include smartphone{
+          @media screen and (min-width:320px) and (max-width: 389px){
+            padding: 0 40px;
             text-align: center;
-            padding: 0 30px;
+          }
+          @media screen and (min-width:390px) and (max-width: 767px){
+            text-align: center;
+            padding: 0 80px;
           }
         }
         .website {
@@ -1184,14 +1342,37 @@ main {
           border: 1px solid $lightBlue;
           border-radius: 30px;
           font-family: $fontSyne;
-          font-size: 16px;
+          font-size: 0.9rem;
           font-weight: 400;
           position: relative;
-
-          @include smartphone{
-            padding: 12px 30px 12px 20px;
-            margin: 0 42.5px;
-            text-align: center;
+          @media screen and (min-width:320px) and (max-width: 389px){
+            padding: 0px;
+            width: 245px;
+            height: 40px;
+            padding-left: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;     
+          }
+          @media screen and (min-width:390px) and (max-width: 767px){
+            padding: 0px;
+            width: 245px;
+            height: 40px;
+            padding-left: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: O 10px;
+          }
+          @include smarthpone-landscape{
+            padding: 0px;
+            width: 245px;
+            height: 40px;
+            padding-left: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: O 10px;
           }
           .arrow-link {
             position: absolute;
@@ -1201,7 +1382,8 @@ main {
             transform: translateY(4px);
             @include smartphone{
               right: 34px;
-              top: 10px;
+              top: 12px;
+              transform: translateY(0px);
             }
           }
           &:hover {
@@ -1435,9 +1617,10 @@ main {
           width: 100%;
           padding: 0 20px;
           display: flex;
-          justify-content: center;
           transform: translateY(-10px);
           line-height: 20px;
+          align-items: center;
+          justify-content: center;
           br{
             display: none;
           }
@@ -1448,12 +1631,16 @@ main {
           height: inherit;
           transform: inherit;
           line-height: 20px;
+          align-items: center;
+          justify-content: center;
         }
         @include tablet-landscape{
           width: 100%;
           padding: 0 120px;
           height: inherit;
           transform: inherit;
+          align-items: center;
+          justify-content: center;
           line-height: 20px;
         }
         h1{
@@ -1470,73 +1657,105 @@ main {
         .description {
           color: $white;
           font-family: $fontInter;
-          font-size: 0.8rem;
-          margin-bottom: 10px;
+          font-size: 0.9rem;
+          margin-bottom: 20px;
           br{
             display:none;
           }
           span{
             color: $lightBlue;
             font-weight: 500;
-            font-size: 1rem;
+            font-size: 0.9rem;
           }
           @include smartphone{
-            line-height: 20px;
-            padding: 0 20px;
+            padding: 0 50px;
             text-align: center;
           }
           @include smarthpone-landscape{
-            line-height: 20px;
+            text-align: center;
+            padding: 0 130px;
+            
           }
           @include tablet{
-            br{
-              display: none;
-            }
-            line-height: 20px;
-            .br{
-              display: block;
-            }
+            padding: 0 100px;
+            text-align: center;
+           
           }
           @include tablet-landscape{
-            .br{
-              display: block;
-            }
-            line-height: 20px;
+            padding: 0 100px;
+            text-align: center;
           }
         }
         .work-techno{
           color: $lightBlue;
           font-family: $fontInter;
-          font-size: 0.7rem;
+          font-size: 0.75rem;
           margin-bottom: 10px;
+          padding-right: 100px;
           br{
             display:none;
           }
           @include tablet   {
             margin-bottom: 0px;
+            text-align: center;
+            padding-right: 0px;
           }
           @include smartphone  {
             margin-bottom: 30px;
             text-align: center;
+            padding: 0 23px;
+            padding-right: 0px;
             br{
               display: block;
-            
             }
+
         }
+        @include smarthpone-landscape  {
+          margin-bottom: 30px;
+          text-align: center;
+          padding: 0 23px;
+          padding-right: 0px;
+        
+        }
+        @include tablet-landscape  {
+          margin-bottom: 0px;
+          text-align: center;
+          padding: 0 23px;
+          padding-right: 0px;
       }
+    }
         .website {
           color: $white;
-          // background-color: #0466c81b;
           background-color: rgba(4, 102, 200, 0.04);
           padding: 9.5px 150px 9.5px 25px;
           border: 1px solid $lightBlue;
           border-radius: 30px;
           font-family: $fontSyne;
-          font-size: 16px;
+          font-size: 0.9rem;
           font-weight: 400;
           position: relative;
           @include smartphone{
-            padding: 12px 65px 12px 45px;
+            width: 245px;
+            height: 40px;
+            padding-left: 45px;
+            text-align: center;
+          }
+          @include smarthpone-landscape{
+            width: 245px;
+            height: 40px;
+            padding-left: 45px;
+            text-align: center;
+          }
+          @include tablet{
+            width: 245px;
+            height: 40px;
+            padding-left: 45px;
+            text-align: center;
+          }
+          @include tablet-landscape{
+            width: 245px;
+            height: 40px;
+            padding-left: 45px;
             text-align: center;
           }
           .arrow-link {
@@ -1548,6 +1767,7 @@ main {
             @include smartphone{
               right: 34px;
               top: 10px;
+              transform: translateY(0px);
             }
           }
           &:hover {
@@ -1739,7 +1959,6 @@ main {
         display: flex;
         flex-direction: column;
         gap: 10px;
-     
         @include smartphone{
           width: 100%;
           padding: 0 20px;
@@ -1751,18 +1970,23 @@ main {
           padding: 0 20px;
           display: flex;
           justify-content: center;
+          align-items: center;
         }
         @include tablet{
           width: 100%;
           padding: 0 110px;
           height: inherit;
           transform: inherit;
+          align-items: center;
+          justify-content: center;
         }
         @include tablet-landscape{
           width: 100%;
           padding: 0 110px;
           height: inherit;
-          transform: inherit;;
+          transform: inherit;
+          align-items: center;
+          justify-content: center;
         }
         h1{
           margin-bottom: 20px;
@@ -1772,8 +1996,18 @@ main {
           font-weight: 500;
           @include smarthpone-landscape{
             transform: translate(0px, -5px);
+            text-align: center;
+            margin-bottom: inherit;
           }
           @include smartphone{
+            text-align: center;
+            margin-bottom: inherit;
+          }
+          @include tablet{
+            text-align: center;
+            margin-bottom: inherit;
+          }
+          @include tablet-landscape{
             text-align: center;
             margin-bottom: inherit;
           }
@@ -1781,43 +2015,66 @@ main {
         .description {
           color: $white;
           font-family: $fontInter;
-          font-size: 0.8rem;
+          font-size: 0.9rem;
           margin-bottom: 20px;
           span{
             color: $lightBlue;
             font-weight: 500;
-            font-size: 1rem;
+            font-size: 0.9rem;
+          }
+          br{
+            display: none;
           }
           @include smarthpone-landscape{
-            line-height: 20px;
+            text-align: center;
+            padding: 0 130px;
           }
           @include tablet{
-            line-height: 20px;
+            text-align: center;
+            padding: 0 120px;
           }
           @include tablet-landscape{
-            line-height: 20px;
-          }
-          @include smartphone{
-            line-height: 20px;
-            padding: 0 27px;
             text-align: center;
-            
+            padding: 0 120px;
+          }
+         @media screen and (min-width:320px) and (max-width: 375px){
+            padding: 0 10px;
+            text-align: center;
+            br{
+              display: block;
+            }
+          }
+          @media screen and (min-width:376px) and (max-width: 767px){
+            padding: 0 35px;
+            text-align: center;
           }
         }
         .work-techno{
           color: $lightBlue;
           font-family: $fontInter;
-          font-size: 0.7rem;
+          font-size: 0.75rem;
           margin-bottom: 20px;
           @include tablet{
             margin-bottom: inherit;
-          }
-          @include smartphone{
             text-align: center;
-            padding: 0 27px;
-            margin-bottom: 10px;
           }
+          @media screen and (min-width:320px) and (max-width: 374px){
+            text-align: center;
+            padding: 0px 40px 20px;
+          }
+          @media screen and (min-width:375px) and (max-width: 767px){
+            text-align: center;
+            padding: 0 70px;
+          }
+          @include smarthpone-landscape{
+            text-align: center;
+            padding: 0 130px;
+          }
+          @include tablet-landscape{
+            text-align: center;
+            padding: 0 130px;
         }
+      }
         br{
           @include smartphone{
             display: none;
@@ -1830,17 +2087,36 @@ main {
           border: 1px solid $lightBlue;
           border-radius: 30px;
           font-family: $fontSyne;
-          font-size: 16px;
+          font-size: 0.9rem;
           font-weight: 400;
           position: relative;
-          @media  screen and (min-width:320px) and (max-width: 374px){
-            padding: 9.5px 50px 9.5px 25px;
-            transform: translateY(-20px);
-          }
           @include smartphone{
-            width: 200px;
-            padding: 12px 25px 12px 15px;
-            text-align: center;
+            width: 245px;
+            height: 40px;
+            padding-right: 0px;
+            padding-left: 45px;
+            
+          }
+          @include smarthpone-landscape{
+            width: 245px;
+            height: 40px;
+            padding-right: 0px;
+            padding-left: 45px;
+            
+          }
+          @include tablet{
+            width: 245px;
+            height: 40px;
+            padding-right: 0px;
+            padding-left: 45px;
+            
+          }
+          @include tablet-landscape{
+            width: 245px;
+            height: 40px;
+            padding-right: 0px;
+            padding-left: 45px;
+            
           }
           .arrow-link {
             position: absolute;
@@ -1848,9 +2124,26 @@ main {
             top: 8px;
             font-size: 15px;
             transform: translateY(4px);
+          
             @include smartphone{
               right: 34px;
               top: 10px;
+              transform: translateY(0px);
+            }
+            @include smarthpone-landscape{
+              right: 34px;
+              top: 10px;
+              transform: translateY(0px);
+            }
+            @include tablet{
+              right: 34px;
+              top: 10px;
+              transform: translateY(0px);
+            }
+            @include tablet-landscape{
+              right: 34px;
+              top: 10px;
+              transform: translateY(0px);
             }
           }
           &:hover {
@@ -2165,14 +2458,16 @@ main {
 .about-section {
   display: grid;
   grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-  grid-template-rows: 695px  399px ;
+  grid-template-rows: 675px  399px ;
   margin-top: 1px;
   row-gap: 1px;
   column-gap: 1px;
   @include smartphone{
     grid-template-columns: 1fr 45vw 45vw 1fr;
-    grid-template-rows: 1fr 400px 300px ;
+    grid-template-rows: 1fr 400px 400px ;
     margin-top: 1px;
+    row-gap: 1px;
+    column-gap: 1px;
   }
   @include smarthpone-landscape{
     grid-template-columns: 1fr 45vw 45vw 1fr !important;
@@ -2278,15 +2573,16 @@ main {
         }
       }
       .first{
-        br{
-          display: block;
-          margin-bottom: 7px;
-        }
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         margin-top: 70px;
+        span{
+          color: $lightBlue;
+        }
         @include smartphone{
           margin-top: 100px;
-          br {
+          margin-bottom: 20px;
+
+          br{
             display: block;
           }
         }
@@ -2306,16 +2602,16 @@ main {
           font-size: 0.9rem;
           line-height: 25px;
           text-decoration: none;
-          
           font-weight: 400;
           padding: 0 30px;
           line-height: 23px;
+          margin-bottom: 20px;
           @include smartphone{
             padding: 0 20px;
-            margin-bottom: 20px;
             text-align: inherit;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             line-height: 23px;
+            margin-bottom: 20px;
             br{
               display: none;
             }
@@ -2324,7 +2620,7 @@ main {
             padding: 0 20px;
             margin-bottom: 20px;
             text-align: inherit;
-            font-size: 11px;
+            font-size: 0.8rem;
             line-height: 23px;
             br{
               display: none;
@@ -2334,7 +2630,7 @@ main {
             padding: 0 20px;
             margin-bottom: 20px;
             text-align: inherit;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             line-height: 23px;
             br{
               display: none;
@@ -2357,6 +2653,7 @@ main {
           }
 
           .last{ 
+            margin-bottom: 20px;
             @include smartphone{
               margin-bottom: 50px;
             }
@@ -2627,33 +2924,38 @@ main {
       }
       a{
         color: $white;
-        padding:9.5px 170px 9.5px 25px;
+        width: 265px;
+        height: 40px;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 25px;
+        align-items: center;
         border: 1px solid $lightBlue;
         background-color: rgba(4, 102, 200, 0.04);
         border-radius: 30px;
         font-family: $fontSyne;
-        font-size: 16px;
+        font-size: 0.9rem;
         text-decoration: none;
         position: relative;
-        margin-top: 30px;
+        margin-bottom: 30px;
         @include smartphone{
-          padding:12px 80px 12px 25px;
-          margin-top: 0px;
+          width: 245px;
+          height: 40px;
         }
         @media screen and (min-width:320px) and (max-width : 374px) and (orientation: portrait ){
-          padding:9.5px 65px 9.5px 25px;
-          margin-top: 0px;
+          width: 240px;
+          height: 40px;
         }
         @include smarthpone-landscape{
-          padding:9.5px 340px 9.5px 25px;
+
           margin-top: 0px;
         }
         @include tablet{
-          padding:9.5px 340px 9.5px 25px;
+          
           margin-top: 0px;
         }
         @include tablet-landscape{
-          padding:9.5px 340px 9.5px 25px;
+      
           margin-top: 0px;
         }
         .arrow-link {
@@ -2661,9 +2963,17 @@ main {
           right: 34px;
           top: 12px;
           font-size: 16px;
+          &:hover {
+            top: 12px;
+            cursor: pointer;
+          }
           @include smartphone{
+            right: 20px;
+            top: 12px;
+          }
+          @include smarthpone-landscape{
             right: 34px;
-            top: 15px;
+            top: 10px;
           }
         }
         &:hover {
@@ -2671,16 +2981,28 @@ main {
           cursor: pointer;
         }
       }
+      .french {
+        margin-bottom: 20px;
+      }
       p{
         font-family: $fontInter;
         color: rgba(255, 255, 255, 0.753);
         font-size: 0.80rem;
         font-weight: 300;
-        padding: 20px 60px;
+        padding: 0px 90px;
         line-height: 20px;
         @include smartphone{
-          padding: 12px 80px;
+          padding: 12px 70px;
           text-align: center;
+        }
+        @include smarthpone-landscape{
+          padding: 12px 240px;
+          text-align: center;
+        }
+        @include tablet{
+          padding: 12px 240px;
+          text-align: center;
+          line-height: inherit;
         }
         span{
           color: $lightBlue;

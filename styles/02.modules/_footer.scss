@@ -14,7 +14,7 @@ footer {
     grid-template-rows: 200px 80px;
     column-gap: 1px;
     row-gap: 1px;
-    margin-top: 0px;
+    margin-top: 1px;
   }
   @include smarthpone-landscape{
     grid-template-columns: 1fr 45vw 45vw 1fr !important;
@@ -25,6 +25,7 @@ footer {
     row-gap: 1px;
     width: 100vw;
     min-width: 100vw;
+    margin-top: 1px;
   }
   @include tablet{
     grid-template-columns: 1fr 45vw 45vw 1fr;
@@ -33,6 +34,7 @@ footer {
     grid-template-rows: 200px 80px;
     column-gap: 1px;
     row-gap: 1px;
+    margin-top: 1px;
   }
   @include tablet-landscape{
     grid-template-columns: 1fr 45vw 45vw 1fr;
@@ -41,6 +43,7 @@ footer {
     grid-template-rows: 200px 80px;
     column-gap: 1px;
     row-gap: 1px;
+    margin-top: 1px;
   }
   .el1f {
     grid-column: 1/1;
@@ -123,26 +126,30 @@ footer {
     }
 
     a {
-      padding: 9.5px 568px 9.5px 25px;
+      color: $white;
+      width: 665px;
+      height: 40px;
+      display: flex;
+      justify-content: flex-start;
+      padding-left: 25px;
+      align-items: center;
       border: 1px solid $lightBlue;
       background-color: rgba(4, 102, 200, 0.04);
       border-radius: 30px;
-      color: $white;
       font-family: $fontSyne;
-      font-size: 1rem;
-      line-height: 25px;
-      text-decoration: underline;
+      font-size: 0.9rem;
       text-decoration: none;
       position: relative;
       margin-top: 20px;
       @include smartphone{
-        padding: 12px 80px 12px 25px;
+        width: 245px;
+        height: 40px;
         border: 1px solid $lightBlue;
         background-color: rgba(4, 102, 200, 0.04);
         border-radius: 30px;
         color: $white;
         font-family: $fontSyne;
-        font-size: 1rem;
+        font-size: 0.9rem;
         line-height: 25px;
         text-decoration: underline;
         text-decoration: none;
@@ -153,29 +160,79 @@ footer {
         padding: 9.5px 80px 9.5px 25px;
       }
       @include smarthpone-landscape{
-        margin-top: 60px;
-        padding: 9.5px 400px 9.5px 25px;
+        color: $white;
+        width: 265px;
+        height: 40px;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 25px;
+        align-items: center;
+        border: 1px solid $lightBlue;
+        background-color: rgba(4, 102, 200, 0.04);
+        border-radius: 30px;
+        font-family: $fontSyne;
+        font-size: 0.9rem;
+        text-decoration: none;
       }
       @media screen and (max-width:568px) and (orientation: landscape) {
         padding: 9.5px 250px 9.5px 25px;
       }
 
       @include tablet{
-        margin-top: 60px;
-        padding: 9.5px 350px 9.5px 25px;
+        color: $white;
+        width: 265px;
+        height: 40px;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 25px;
+        align-items: center;
+        border: 1px solid $lightBlue;
+        background-color: rgba(4, 102, 200, 0.04);
+        border-radius: 30px;
+        font-family: $fontSyne;
+        font-size: 0.9rem;
+        text-decoration: none;
       }
       @include tablet-landscape{
-        margin-top: 60px;
-        padding: 9.5px 350px 9.5px 25px;
+        color: $white;
+        width: 265px;
+        height: 40px;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 25px;
+        align-items: center;
+        border: 1px solid $lightBlue;
+        background-color: rgba(4, 102, 200, 0.04);
+        border-radius: 30px;
+        font-family: $fontSyne;
+        font-size: 0.9rem;
+        text-decoration: none;
       }
       .arrow-link {
         position: absolute;
-        right: 34px;
-        top: 13px;
         font-size: 15px;
+        right: 25px;
+        top: 12px;
         @include smartphone{
+          right: 20px;
+          top: 12px;
+          font-size: 15px;
+        }
+        @include smarthpone-landscape{
           right: 34px;
-          top: 17px;
+          top: 12px;
+          font-size: 15px;
+        }
+        @include tablet{
+          position: absolute;
+          right: 39px;
+          top: 12px;
+          font-size: 15px;
+        }
+        @include tablet-landscape{
+          position: absolute;
+          right: 35px;
+          top: 12px;
           font-size: 15px;
         }
       }
