@@ -3629,7 +3629,6 @@ main .work .el22 {
   }
   .about-section .el2 .first br {
     display: block;
-    margin-bottom: 5px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
