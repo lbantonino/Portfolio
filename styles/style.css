@@ -3471,7 +3471,7 @@ main .work .el22 {
 .about-section {
   display: grid;
   grid-template-columns: 1fr 399.5px 400px 399.5px 1fr;
-  grid-template-rows: 710px 399px;
+  grid-template-rows: 695px 399px;
   margin-top: 1px;
   row-gap: 1px;
   column-gap: 1px;
@@ -3616,11 +3616,20 @@ main .work .el22 {
   font-weight: 500;
 }
 .about-section .el2 .first {
-  margin-top: 55px;
+  margin-bottom: 15px;
+  margin-top: 70px;
+}
+.about-section .el2 .first br {
+  display: block;
+  margin-bottom: 7px;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   .about-section .el2 .first {
     margin-top: 100px;
+  }
+  .about-section .el2 .first br {
+    display: block;
+    margin-bottom: 5px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 1023px) and (orientation: landscape) {
@@ -3644,9 +3653,9 @@ main .work .el22 {
   font-size: 0.9rem;
   line-height: 25px;
   text-decoration: none;
-  text-align: justify;
   font-weight: 400;
   padding: 0 30px;
+  line-height: 23px;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
   .about-section .el2 p {
@@ -3654,6 +3663,7 @@ main .work .el22 {
     margin-bottom: 20px;
     text-align: inherit;
     font-size: 0.8rem;
+    line-height: 23px;
   }
   .about-section .el2 p br {
     display: none;
@@ -3665,6 +3675,7 @@ main .work .el22 {
     margin-bottom: 20px;
     text-align: inherit;
     font-size: 11px;
+    line-height: 23px;
   }
   .about-section .el2 p br {
     display: none;
@@ -3676,6 +3687,7 @@ main .work .el22 {
     margin-bottom: 20px;
     text-align: inherit;
     font-size: 0.8rem;
+    line-height: 23px;
   }
   .about-section .el2 p br {
     display: none;
@@ -3687,6 +3699,7 @@ main .work .el22 {
     margin-bottom: 20px;
     text-align: inherit;
     font-size: 0.9rem;
+    line-height: 23px;
   }
   .about-section .el2 p br {
     display: none;

@@ -103,6 +103,15 @@ const applylightTheme = () => {
                     }, 510)
                 }, 10)
             })
+            work.addEventListener('click', () => {
+                setTimeout(() => {
+                    modal.style.transition = 'transform 500ms ease-in-out';
+                    modal.style.transform = 'translateX(100%)';
+                    setTimeout(() => {
+                        modal.style.display = 'none';
+                    }, 510)
+                }, 10)
+            })
 
         });
 
@@ -159,6 +168,15 @@ const applyDarkTheme = () => {
                 }, 10)
             }, 10);
             cross.addEventListener('click', () => {
+                setTimeout(() => {
+                    modal.style.transition = 'transform 500ms ease-in-out';
+                    modal.style.transform = 'translateX(100%)';
+                    setTimeout(() => {
+                        modal.style.display = 'none';
+                    }, 510)
+                }, 10)
+            })
+            work.addEventListener('click', () => {
                 setTimeout(() => {
                     modal.style.transition = 'transform 500ms ease-in-out';
                     modal.style.transform = 'translateX(100%)';
@@ -237,6 +255,15 @@ const setLightTheme = () => {
                 }, 510)
             }, 10)
         })
+        work.addEventListener('click', () => {
+            setTimeout(() => {
+                modal.style.transition = 'transform 500ms ease-in-out';
+                modal.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    modal.style.display = 'none';
+                }, 510)
+            }, 10)
+        })
 
     });
 
@@ -279,6 +306,15 @@ const setDarkTheme = () => {
             }, 10)
         }, 10);
         cross.addEventListener('click', () => {
+            setTimeout(() => {
+                modal.style.transition = 'transform 500ms ease-in-out';
+                modal.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    modal.style.display = 'none';
+                }, 510)
+            }, 10)
+        })
+        work.addEventListener('click', () => {
             setTimeout(() => {
                 modal.style.transition = 'transform 500ms ease-in-out';
                 modal.style.transform = 'translateX(100%)';
