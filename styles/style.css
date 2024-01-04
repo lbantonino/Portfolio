@@ -340,32 +340,32 @@ header .menu-global nav ul li a:hover {
   padding-top: 5px;
   border-top: 3px solid #0466c8;
 }
-header .menu-global .btn-moon {
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-}
-header .menu-global .btn-moon .moon {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #ffffff;
-}
-header .menu-global .btn-moon .moon:hover {
-  transition: 200ms ease-in-out;
-  color: #0466c8;
-}
 header .menu-global .btn-sun {
-  display: none;
   cursor: pointer;
   background-color: transparent;
   border: none;
 }
 header .menu-global .btn-sun .sun {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+header .menu-global .btn-sun .sun:hover {
+  transition: 200ms ease-in-out;
+  color: #0466c8;
+}
+header .menu-global .btn-moon {
+  display: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+header .menu-global .btn-moon .moon {
   font-size: 1.4rem;
   font-weight: 700;
   color: #070b1c;
 }
-header .menu-global .btn-sun .sun:hover {
+header .menu-global .btn-moon .moon:hover {
   transition: 200ms ease-in-out;
   color: #0466c8;
 }
@@ -1006,12 +1006,12 @@ footer .el9f {
 }
 
 #blob {
-  height: 300px;
+  height: 200px;
   width: 200px;
   position: absolute;
   left: 50%;
   top: 50%;
-  translate: -50% -50%;
+  translate: -30% -20%;
   border-radius: 50%;
   background: #2592ff;
 }
@@ -1035,7 +1035,7 @@ footer .el9f {
   height: 100%;
   width: 100%;
   z-index: 2;
-  backdrop-filter: blur(50px);
+  backdrop-filter: blur(30px);
   position: fixed;
   margin: 0;
   top: 0;

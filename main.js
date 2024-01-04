@@ -35,10 +35,16 @@ document.onpointermove = (event) => {
     const { clientX, clientY } = event;
     const pageX = clientX + window.pageXOffset;
     const pageY = clientY + window.pageYOffset;
+    const bodyWidth = document.body.offsetWidth;
+    const bodyHeight = document.body.offsetHeight;
+    const maxLeft = bodyWidth - blob.offsetWidth;
+    const maxTop = bodyHeight - blob.offsetHeight;
+    const left = Math.min(pageX, maxLeft);
+    const top = Math.min(pageY, maxTop);
     blob.animate(
         {
-            left: `${pageX}px`,
-            top: `${pageY}px`
+            left: `${left}px`,
+            top: `${top}px`
         },
         { duration: 600, fill: "forwards" }
     );
@@ -46,8 +52,8 @@ document.onpointermove = (event) => {
 
 
 //theme switcher
-const btnMoon = document.querySelector('.btn-moon');
-const btnSun = document.querySelector('.btn-sun');
+const btnMoon = document.querySelector('.btn-sun');
+const btnSun = document.querySelector('.btn-moon');
 const applylightTheme = () => {
     overlayAnimation2()
     setTimeout(() => {

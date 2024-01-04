@@ -20,12 +20,12 @@
   transform: translateY(0) translateX(0);
 }
 #blob {
-  height: 300px;
+  height: 200px;
  width: 200px;
  position: absolute;
  left: 50%;
  top: 50%;
- translate: -50% -50%;
+ translate: -30% -20%;
  border-radius: 50%;
  background: $lightBlue2;
   @include smartphone{
@@ -43,7 +43,7 @@
  height: 100%;
  width: 100%;
  z-index: 2;
- backdrop-filter: blur(50px);
+ backdrop-filter: blur(30px);
  position: fixed;
  margin: 0;
  top: 0;
