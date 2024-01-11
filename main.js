@@ -11,6 +11,7 @@ const overlayAnimation = () => {
         document.querySelector('#bottomOverlay').style.transform = 'translateY(0) translateX(200vw)';
     }, 200);
 }
+
 const overlayAnimation2 = () => {
     document.querySelector('#topOverlay').style.transition = 'transform 1000ms ease-in-out';
     document.querySelector('#bottomOverlay').style.transition = 'transform 1000ms ease-in-out';
