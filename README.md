@@ -8,7 +8,7 @@ Feel free to explore my portfolio to find out more about my skills and projects.
 Thank you for visiting my website! 
 <br>
 
-🔗 PORTFOLIO: **https://lbantonino.vercel.app/**
+🔗 PORTFOLIO: **https://lbantonino.com/**
 
 ✉️ MAIL: antonino.lobianco@outlook.com
 
